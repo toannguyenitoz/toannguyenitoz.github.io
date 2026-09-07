@@ -1,18 +1,37 @@
 <header class="site-header glassmorphism-header">
   <div class="header-container">
-    <!-- Brand / Logo -->
+    <!-- Brand Lockup -->
     <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="IT Support With Toan Homepage">
-      <div class="logo-badge">
-        <span class="pulse-indicator">
-          <span class="pulse-core"></span>
-          <span class="pulse-ring"></span>
-        </span>
-        <div class="brand-text-group">
-          <span class="logo-text">ToanNguyen<span class="brand-accent">.IT</span></span>
-          <span class="oz-flag-chip">OZ</span>
+      <!-- High-tech Logo Mark -->
+      <div class="logo-mark">
+        <svg viewBox="0 0 38 38" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="34" height="34" rx="9" fill="#090D16" stroke="url(#hLogoGrad)" stroke-width="2"/>
+          <path d="M11 14L17 19L11 24" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="20" y1="24" x2="27" y2="24" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="27" cy="13" r="2.5" fill="#10B981"/>
+          <defs>
+            <linearGradient id="hLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0078D4"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Brand Text & Location Tag -->
+      <div class="brand-details">
+        <div class="brand-title-row">
+          <span class="brand-main">IT Support <span class="brand-highlight">With Toan</span></span>
+          <span class="oz-pill">IT OZ</span>
+        </div>
+        <div class="brand-sub-row">
+          <span class="pulse-indicator-inline">
+            <span class="pulse-core"></span>
+            <span class="pulse-ring"></span>
+          </span>
+          <span class="brand-sub-text">Adelaide, South Australia</span>
         </div>
       </div>
-      <span class="system-status-chip">Online</span>
     </a>
 
     <!-- Mobile Menu Toggle Button -->
@@ -27,19 +46,19 @@
       <ul class="nav-list">
         <li class="nav-item">
           <a href="{{ '/' | relative_url }}#powershell" class="nav-link">
-            <span class="nav-icon">&gt;_</span> PowerShell
+            <span class="nav-icon">&gt;_</span> PowerShell Toolbox
           </a>
         </li>
         <li class="nav-item">
           <a href="{{ '/' | relative_url }}#videos" class="nav-link">
-            <svg class="nav-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
               <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
             </svg> Videos
           </a>
         </li>
         <li class="nav-item">
           <a href="{{ '/' | relative_url }}#articles" class="nav-link">
-            <svg class="nav-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
             </svg> Articles
@@ -47,7 +66,7 @@
         </li>
         <li class="nav-item">
           <a href="{{ '/' | relative_url }}#about" class="nav-link">
-            <svg class="nav-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="8" r="4"></circle>
               <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
             </svg> About &amp; Certs
@@ -55,7 +74,7 @@
         </li>
         <li class="nav-item">
           <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-external">
-            <svg class="nav-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
             </svg> GitHub
           </a>
@@ -63,17 +82,22 @@
       </ul>
     </nav>
 
-    <!-- Header Actions (Theme Toggle & Admin quicklink) -->
+    <!-- Header Actions (Theme Toggle, CMS Link & Mini Avatar) -->
     <div class="header-actions">
       <!-- Dark/Light Theme Toggle -->
-      <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Dark/Light Mode">
+      <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Dark/Light Theme">
         <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
         <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
       </button>
 
-      <!-- Decap / Sveltia CMS Link -->
-      <a href="{{ '/admin/' | relative_url }}" class="admin-portal-link" title="Open Content Manager">
+      <!-- CMS Portal Link -->
+      <a href="{{ '/admin/' | relative_url }}" class="admin-portal-link" title="Open Decap / Sveltia CMS">
         <span class="admin-dot"></span> CMS
+      </a>
+
+      <!-- Header Avatar Link to About -->
+      <a href="{{ '/' | relative_url }}#about" class="header-avatar-link" title="Toan Nguyen - Systems Administrator">
+        <img src="{{ '/assets/images/toan-avatar.jpg' | relative_url }}" alt="Toan Nguyen" class="header-avatar-img">
       </a>
     </div>
   </div>
