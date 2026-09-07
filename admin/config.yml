@@ -38,12 +38,14 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - { label: "Tiêu Đề Video", name: "title", widget: "string" }
-              - { label: "YouTube Video ID (ví dụ: dQw4w9WgXcQ)", name: "youtube_id", widget: "string" }
-              - { label: "Thời Lượng (ví dụ: 12:45)", name: "duration", widget: "string" }
-              - { label: "Mô Tả Ngắn", name: "description", widget: "text" }
-              - { label: "Nhãn Danh Mục", name: "category", widget: "string", default: "PowerShell" }
-              - { label: "Ngày Xuất Bản", name: "published_date", widget: "date", required: false }
+              - { label: "Tiêu Đề Video (Tiếng Việt)", name: "title", widget: "string" }
+              - { label: "Tiêu Đề Video (English)", name: "title_en", widget: "string", required: false }
+              - { label: "YouTube Video ID (ví dụ: UWjAO5nLCPI)", name: "youtube_id", widget: "string" }
+              - { label: "Thời Lượng (ví dụ: 10:15)", name: "duration", widget: "string" }
+              - { label: "Mô Tả Ngắn (Tiếng Việt)", name: "description", widget: "text" }
+              - { label: "Mô Tả Ngắn (English)", name: "description_en", widget: "text", required: false }
+              - { label: "Nhãn Danh Mục", name: "category", widget: "string", default: "Windows 11" }
+              - { label: "Ngày Xuất Bản", name: "published_date", widget: "datetime", time_format: false, date_format: "YYYY-MM-DD", required: false }
 
   # 3. Bộ sưu tập Tiếp thị liên kết (Affiliates)
   - name: "affiliates_settings"
@@ -57,9 +59,13 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - { label: "Tên Sản Phẩm / Dịch Vụ", name: "product_name", widget: "string" }
-              - { label: "Mô Tả Giá Trị", name: "description", widget: "text" }
+              - { label: "Tên Sản Phẩm / Dịch Vụ (Tiếng Việt)", name: "product_name", widget: "string" }
+              - { label: "Tên Sản Phẩm (English)", name: "product_name_en", widget: "string", required: false }
+              - { label: "Mô Tả Giá Trị (Tiếng Việt)", name: "description", widget: "text" }
+              - { label: "Mô Tả (English)", name: "description_en", widget: "text", required: false }
               - { label: "Đường Dẫn Tiếp Thị (Affiliate URL)", name: "link", widget: "string" }
-              - { label: "Chữ Nút Bấm (CTA Text)", name: "cta_text", widget: "string", default: "Nhận Ưu Đãi" }
-              - { label: "Huy Hiệu (Badge, ví dụ: 20% OFF, Recommended)", name: "badge", widget: "string", required: false }
+              - { label: "Chữ Nút Bấm (Tiếng Việt)", name: "cta_text", widget: "string", default: "Nhận Ưu Đãi" }
+              - { label: "Chữ Nút Bấm (English)", name: "cta_text_en", widget: "string", default: "Get Deal Now" }
+              - { label: "Huy Hiệu (Tiếng Việt)", name: "badge", widget: "string", required: false }
+              - { label: "Huy Hiệu (English)", name: "badge_en", widget: "string", required: false }
               - { label: "Biểu Tượng (Icon SVG hoặc Emoji)", name: "icon", widget: "string", default: "🚀" }
