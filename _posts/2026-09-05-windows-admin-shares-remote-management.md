@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mastering Windows Admin Shares (C$, ADMIN$) for Silent Remote IT Administration"
-date: 2026-09-09 11:00:00 +0930
+date: 2026-09-05 11:00:00 +0930
 categories: [Windows, SysAdmin, RemoteSupport]
 tags: [AdminShares, SMB, Troubleshooting, ITSupport, Windows11]
 description: "How enterprise systems administrators inspect logs, push hotfixes, and retrieve diagnostic bundles over hidden administrative network shares without interrupting end-user desktop sessions."

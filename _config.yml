@@ -27,6 +27,7 @@ author:
 markdown: kramdown
 highlighter: rouge
 permalink: /posts/:title/
+future: true
 
 kramdown:
   input: GFM

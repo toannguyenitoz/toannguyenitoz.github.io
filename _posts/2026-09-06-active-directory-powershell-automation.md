@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Active Directory & Entra ID User Lifecycle Management with PowerShell Automation"
-date: 2026-09-08 10:00:00 +0930
+date: 2026-09-06 10:00:00 +0930
 categories: [SysAdmin, ActiveDirectory, PowerShell]
 tags: [ActiveDirectory, EntraID, PowerShell, Identity, Automation]
 description: "Mastering user onboarding, group entitlement audits, account lockouts, and secure offboarding across On-Premises Active Directory and Microsoft Entra ID using production-ready PowerShell scripts."

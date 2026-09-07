@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hardening Enterprise Windows Workstations with Essential Group Policy Objects (GPOs)"
-date: 2026-09-11 14:00:00 +0930
+date: 2026-09-03 14:00:00 +0930
 categories: [Security, WindowsServer, GroupPolicy]
 tags: [GPO, Hardening, BitLocker, LAPS, Cybersecurity, CIS]
 description: "A practical baseline implementing enterprise security standards and ACSC Essential 8 strategies across domain-joined Windows 11 endpoints via Active Directory Group Policy Objects (GPOs)."

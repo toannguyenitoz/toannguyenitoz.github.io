@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Enterprise Azure Governance, Resource Tagging & Cost Optimization Best Practices"
-date: 2026-09-10 09:30:00 +0930
+date: 2026-09-04 09:30:00 +0930
 categories: [Cloud, Azure, Architecture]
 tags: [Azure, CloudGovernance, CostOptimization, FinOps, AZ900]
 description: "How enterprise infrastructure engineers establish hierarchical Azure governance, enforce strict tagging taxonomies via Azure Policy, and eliminate cloud waste using proven FinOps methodologies."
