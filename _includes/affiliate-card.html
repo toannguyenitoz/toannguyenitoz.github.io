@@ -1,17 +1,23 @@
-{% comment %}
-  Component: affiliate-card.html
-  Sử dụng: {% include affiliate-card.html item=affiliate_data %}
-  hoặc truyền trực tiếp: {% include affiliate-card.html name="NordVPN" link="..." desc="..." cta="..." badge="..." icon="..." %}
-{% endcomment %}
-
 {% assign item_name = include.item.product_name | default: include.name %}
+{% assign item_name_en = include.item.product_name_en | default: item_name %}
 {% assign item_desc = include.item.description | default: include.desc %}
+{% assign item_desc_en = include.item.description_en | default: item_desc %}
 {% assign item_link = include.item.link | default: include.link %}
 {% assign item_cta = include.item.cta_text | default: include.cta | default: "Nhận Ưu Đãi Ngay" %}
+{% assign item_cta_en = include.item.cta_text_en | default: "Get Deal Now" %}
 {% assign item_badge = include.item.badge | default: include.badge %}
+{% assign item_badge_en = include.item.badge_en | default: item_badge %}
 {% assign item_icon = include.item.icon | default: include.icon | default: "⚡" %}
 
-<div class="affiliate-card modern-card">
+<div class="affiliate-card modern-card"
+     data-title-vi="{{ item_name | escape }}"
+     data-title-en="{{ item_name_en | escape }}"
+     data-desc-vi="{{ item_desc | escape }}"
+     data-desc-en="{{ item_desc_en | escape }}"
+     data-cta-vi="{{ item_cta | escape }}"
+     data-cta-en="{{ item_cta_en | escape }}"
+     data-badge-vi="{{ item_badge | escape }}"
+     data-badge-en="{{ item_badge_en | escape }}">
   <div class="affiliate-card-header">
     <div class="affiliate-icon-wrapper">
       <span class="affiliate-icon">{{ item_icon }}</span>
@@ -31,12 +37,12 @@
        target="_blank" 
        rel="nofollow sponsored noopener noreferrer" 
        class="btn btn-affiliate-cta">
-      <span>{{ item_cta }}</span>
+      <span class="cta-label">{{ item_cta }}</span>
       <svg class="cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="5" y1="12" x2="19" y2="12"></line>
         <polyline points="12 5 19 12 12 19"></polyline>
       </svg>
     </a>
-    <span class="sponsored-notice">Quảng cáo & Liên kết tiếp thị</span>
+    <span class="sponsored-notice" data-i18n="affiliate_notice">Quảng cáo & Liên kết tiếp thị</span>
   </div>
 </div>

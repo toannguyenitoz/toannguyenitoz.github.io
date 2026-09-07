@@ -7,27 +7,27 @@ title: "Bảng Điều Khiển Quản Trị Hệ Thống & Cloud"
 <section class="hero-section">
   <div class="hero-banner">
     <div class="hero-badge">
-      <span class="badge-dot">●</span> Cloud, Systems & Automation Specialist
+      <span class="badge-dot">●</span> <span data-i18n="hero_badge">Cloud, Systems & Automation Specialist</span>
     </div>
-    <h1 class="hero-title">
+    <h1 class="hero-title" data-i18n="hero_title">
       Quản Trị Hệ Thống, Cloud & <br />
       <span class="hero-highlight">Tự Động Hóa Thực Chiến</span>
     </h1>
-    <p class="hero-description">
+    <p class="hero-description" data-i18n="hero_desc">
       Nền tảng chia sẻ tri thức thực chiến về Microsoft 365, Active Directory, Azure Cloud Architecture, xử lý sự cố Windows và tối ưu hóa hạ tầng với PowerShell.
     </p>
     <div class="hero-cta-group">
       <a href="#powershell" class="btn btn-primary">
-        <span>&gt;_ PowerShell Toolbox</span>
+        <span>&gt;_ </span><span data-i18n="hero_btn_powershell">PowerShell Toolbox</span>
       </a>
       <a href="#videos" class="btn btn-secondary">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
           <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
         </svg>
-        <span>Video Hướng Dẫn</span>
+        <span data-i18n="hero_btn_videos">Video Hướng Dẫn</span>
       </a>
       <a href="#articles" class="btn btn-outline">
-        <span>Xem Bài Viết Mới</span>
+        <span data-i18n="hero_btn_articles">Xem Bài Viết Mới</span>
       </a>
     </div>
   </div>
@@ -38,9 +38,9 @@ title: "Bảng Điều Khiển Quản Trị Hệ Thống & Cloud"
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">&gt;_</span> Quick PowerShell Toolbox
+        <span class="section-icon">&gt;_</span> <span data-i18n="ps_title">Quick PowerShell Toolbox</span>
       </h2>
-      <p class="section-subtitle">Tập hợp các lệnh PowerShell xử lý nhanh các tác vụ quản trị hàng ngày chỉ với 1 cú click.</p>
+      <p class="section-subtitle" data-i18n="ps_subtitle">Tập hợp các lệnh PowerShell xử lý nhanh các tác vụ quản trị hàng ngày chỉ với 1 cú click.</p>
     </div>
   </div>
 
@@ -57,16 +57,16 @@ title: "Bảng Điều Khiển Quản Trị Hệ Thống & Cloud"
 
     <!-- Terminal Tabs -->
     <div class="terminal-tabs">
-      <button class="terminal-tab-btn active" data-target="cmd-network">📡 Kiểm Tra Mạng & DNS</button>
-      <button class="terminal-tab-btn" data-target="cmd-ad">👥 Quản Trị User & AD</button>
-      <button class="terminal-tab-btn" data-target="cmd-system">⚡ Tối Ưu & Dọn Dẹp OS</button>
-      <button class="terminal-tab-btn" data-target="cmd-m365">☁️ Chẩn Đoán Cloud & M365</button>
+      <button class="terminal-tab-btn active" data-target="cmd-network" data-i18n="ps_tab1">📡 Kiểm Tra Mạng & DNS</button>
+      <button class="terminal-tab-btn" data-target="cmd-ad" data-i18n="ps_tab2">👥 Quản Trị User & AD</button>
+      <button class="terminal-tab-btn" data-target="cmd-system" data-i18n="ps_tab3">⚡ Tối Ưu & Dọn Dẹp OS</button>
+      <button class="terminal-tab-btn" data-target="cmd-m365" data-i18n="ps_tab4">☁️ Chẩn Đoán Cloud & M365</button>
     </div>
 
     <div class="terminal-body">
       <!-- Tab 1: Mạng & DNS -->
       <div class="cmd-item active" id="cmd-network">
-        <p class="cmd-desc">Kiểm tra kết nối cổng dịch vụ (Port Test), tra cứu nhanh bản ghi DNS và xóa cache DNS máy trạm:</p>
+        <p class="cmd-desc" data-i18n="ps_cmd1_desc">Kiểm tra kết nối cổng dịch vụ (Port Test), tra cứu nhanh bản ghi DNS và xóa cache DNS máy trạm:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Kiểm tra kết nối TCP Port 443 đến máy chủ & xóa bộ nhớ cache DNS
@@ -78,7 +78,7 @@ Resolve-DnsName -Name outlook.office365.com -Type A</code>
 
       <!-- Tab 2: User & AD -->
       <div class="cmd-item" id="cmd-ad">
-        <p class="cmd-desc">Mở khóa tài khoản nhân viên bị khóa mật khẩu (Locked Out) và kiểm tra tình trạng tài khoản:</p>
+        <p class="cmd-desc" data-i18n="ps_cmd2_desc">Mở khóa tài khoản nhân viên bị khóa mật khẩu (Locked Out) và kiểm tra tình trạng tài khoản:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Tìm tài khoản bị khóa và thực hiện mở khóa nhanh
@@ -90,7 +90,7 @@ Get-ADUser -Identity "username" -Properties PasswordLastSet, LockedOut, Enabled<
 
       <!-- Tab 3: Tối ưu & Dọn dẹp -->
       <div class="cmd-item" id="cmd-system">
-        <p class="cmd-desc">Chạy công cụ quét sửa lỗi tệp tin hệ thống (SFC / DISM) và cập nhật tất cả phần mềm qua WinGet:</p>
+        <p class="cmd-desc" data-i18n="ps_cmd3_desc">Chạy công cụ quét sửa lỗi tệp tin hệ thống (SFC / DISM) và cập nhật tất cả phần mềm qua WinGet:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Sửa chữa kho lưu trữ tệp tin hệ điều hành và nâng cấp phần mềm
@@ -102,7 +102,7 @@ winget upgrade --all --include-unknown</code>
 
       <!-- Tab 4: M365 & Cloud -->
       <div class="cmd-item" id="cmd-m365">
-        <p class="cmd-desc">Kiểm tra trạng thái tham gia miền Microsoft Entra ID (Azure AD Join) và Token máy trạm:</p>
+        <p class="cmd-desc" data-i18n="ps_cmd4_desc">Kiểm tra trạng thái tham gia miền Microsoft Entra ID (Azure AD Join) và Token máy trạm:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Kiểm tra kết quả gia nhập Azure AD & Tình trạng thiết bị Intune
@@ -119,20 +119,24 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">▶</span> Video Hướng Dẫn Kỹ Thuật
+        <span class="section-icon">▶</span> <span data-i18n="videos_title">Video Hướng Dẫn Kỹ Thuật</span>
       </h2>
-      <p class="section-subtitle">Các video minh họa thực tế cấu hình, phân tích lỗi và tối ưu hóa hệ thống IT.</p>
+      <p class="section-subtitle" data-i18n="videos_subtitle">Các video từ kênh YouTube IT Support with Toan (@ITSupportwithToan_Adl).</p>
     </div>
   </div>
 
   <div class="video-grid">
     {% if site.data.videos.items %}
       {% for vid in site.data.videos.items %}
-      <div class="video-card">
+      <div class="video-card" 
+           data-title-vi="{{ vid.title | escape }}" 
+           data-title-en="{{ vid.title_en | default: vid.title | escape }}"
+           data-desc-vi="{{ vid.description | escape }}"
+           data-desc-en="{{ vid.description_en | default: vid.description | escape }}">
         {% include youtube.html id=vid.youtube_id title=vid.title %}
         <div class="video-card-body">
           <div class="video-meta-top">
-            <span class="video-category-tag">{{ vid.category | default: "IT Support" }}</span>
+            <span class="video-category-tag">{{ vid.category | default: "Windows" }}</span>
             <span class="video-duration">⏱️ {{ vid.duration }}</span>
           </div>
           <h3 class="video-card-title">{{ vid.title }}</h3>
@@ -151,9 +155,9 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">📄</span> Bài Viết & Tài Liệu Chuyên Môn
+        <span class="section-icon">📄</span> <span data-i18n="articles_title">Bài Viết & Tài Liệu Chuyên Môn</span>
       </h2>
-      <p class="section-subtitle">Kinh nghiệm thực chiến về Quản trị mạng, Máy chủ và Hạ tầng đám mây.</p>
+      <p class="section-subtitle" data-i18n="articles_subtitle">Kinh nghiệm thực chiến về Quản trị mạng, Máy chủ và Hạ tầng đám mây.</p>
     </div>
   </div>
 
@@ -171,7 +175,7 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
         <time datetime="{{ post.date | date_to_xmlschema }}">
           {{ post.date | date: "%d/%m/%Y" }}
         </time>
-        <span class="read-more-link">Đọc chi tiết →</span>
+        <span class="read-more-link" data-i18n="read_more">Đọc chi tiết →</span>
       </div>
     </a>
     {% endfor %}
@@ -183,9 +187,9 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">🛠️</span> Công Cụ Khuyên Dùng Cho SysAdmin
+        <span class="section-icon">🛠️</span> <span data-i18n="tools_title">Công Cụ Khuyên Dùng Cho SysAdmin</span>
       </h2>
-      <p class="section-subtitle">Các dịch vụ hạ tầng đám mây, bảo mật và tiện ích kỹ thuật được tối ưu cho doanh nghiệp.</p>
+      <p class="section-subtitle" data-i18n="tools_subtitle">Các dịch vụ hạ tầng đám mây, bảo mật và tiện ích kỹ thuật được tối ưu cho doanh nghiệp.</p>
     </div>
   </div>
 

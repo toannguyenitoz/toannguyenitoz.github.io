@@ -36,6 +36,10 @@
   <!-- Theme Color Detection Script to prevent flash of wrong theme -->
   <script>
     (function() {
+      // Khởi tạo theme & ngôn ngữ sớm để tối ưu trải nghiệm
+      const savedLang = localStorage.getItem('toannguyen_lang') || 'vi';
+      document.documentElement.setAttribute('lang', savedLang);
+      
       const savedTheme = localStorage.getItem('toannguyen_theme');
       if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
