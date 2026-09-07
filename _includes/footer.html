@@ -2,7 +2,7 @@
   <div class="footer-top-accent"></div>
   <div class="footer-container">
     <div class="footer-grid">
-      <!-- Cột 1: Thông tin hệ thống & Giới thiệu -->
+      <!-- Column 1: Brand & Operational Status -->
       <div class="footer-col col-brand">
         <div class="footer-brand">
           <div class="footer-logo">
@@ -10,53 +10,53 @@
               <span class="pulse-core"></span>
               <span class="pulse-ring"></span>
             </span>
-            <span class="logo-text">ToanNguyen<span class="brand-accent">.IT</span></span>
+            <span class="logo-text">IT Support With Toan</span>
           </div>
-          <p class="footer-bio" data-i18n="footer_bio">
-            Nền tảng tri thức IT Support, Quản trị hệ thống doanh nghiệp (SysAdmin), Microsoft 365, Azure Cloud và Tự động hóa hạ tầng.
+          <p class="footer-bio">
+            Enterprise Systems Administration and Cloud Infrastructure portal by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Based in Adelaide, South Australia. Over 20 years of mission-critical IT support experience across banking and enterprise cloud environments.
           </p>
         </div>
 
         <div class="system-status-box">
           <div class="status-header">
             <span class="status-dot-pulse"></span>
-            <span class="status-title" data-i18n="status_operational">All Systems Operational</span>
+            <span class="status-title">All Systems Operational</span>
           </div>
           <div class="status-metrics">
-            <span class="metric-item">GitHub Pages CDN: <strong>Active</strong></span>
-            <span class="metric-item">Decap CMS: <strong>Ready</strong></span>
+            <span class="metric-item">Base: <strong>Adelaide, South Australia</strong></span>
+            <span class="metric-item">Edge CDN: <strong>GitHub Pages Global</strong></span>
           </div>
         </div>
       </div>
 
-      <!-- Cột 2: Điều hướng nhanh (Quick Links) -->
+      <!-- Column 2: Quick Navigation -->
       <div class="footer-col">
-        <h3 class="footer-heading" data-i18n="footer_nav_heading">Điều Hướng</h3>
+        <h3 class="footer-heading">Navigation</h3>
         <ul class="footer-links">
-          <li><a href="{{ '/' | relative_url }}" data-i18n="footer_link_home">Trang Chủ (Dashboard)</a></li>
-          <li><a href="{{ '/' | relative_url }}#powershell" data-i18n="nav_powershell">PowerShell Toolbox</a></li>
-          <li><a href="{{ '/' | relative_url }}#videos" data-i18n="nav_videos">Video Kỹ Thuật</a></li>
-          <li><a href="{{ '/' | relative_url }}#articles" data-i18n="nav_articles">Bài Viết Mới Nhất</a></li>
-          <li><a href="{{ '/' | relative_url }}#tools" data-i18n="nav_tools">Công Cụ Đề Xuất</a></li>
-          <li><a href="{{ '/admin/' | relative_url }}" data-i18n="footer_link_admin">Trang Quản Trị (/admin)</a></li>
+          <li><a href="{{ '/' | relative_url }}">Dashboard Home</a></li>
+          <li><a href="{{ '/' | relative_url }}#powershell">PowerShell Toolbox</a></li>
+          <li><a href="{{ '/' | relative_url }}#videos">Video Tutorials</a></li>
+          <li><a href="{{ '/' | relative_url }}#articles">Technical Articles</a></li>
+          <li><a href="{{ '/' | relative_url }}#about">About &amp; Credentials</a></li>
+          <li><a href="{{ '/admin/' | relative_url }}">CMS Portal (/admin)</a></li>
         </ul>
       </div>
 
-      <!-- Cột 3: Chủ đề kỹ thuật (Technical Topics) -->
+      <!-- Column 3: Technical Topics -->
       <div class="footer-col">
-        <h3 class="footer-heading" data-i18n="footer_topics_heading">Chuyên Mục Kỹ Thuật</h3>
+        <h3 class="footer-heading">Technical Focus</h3>
         <ul class="footer-links">
-          <li><a href="{{ '/' | relative_url }}#articles">Microsoft 365 & Entra ID</a></li>
-          <li><a href="{{ '/' | relative_url }}#articles">Windows Server & Active Directory</a></li>
-          <li><a href="{{ '/' | relative_url }}#articles">Azure Cloud Infrastructure</a></li>
-          <li><a href="{{ '/' | relative_url }}#articles">PowerShell Automation & Scripting</a></li>
-          <li><a href="{{ '/' | relative_url }}#articles">PC Troubleshooting & Security</a></li>
+          <li><a href="{{ '/' | relative_url }}#articles">Active Directory &amp; Entra ID</a></li>
+          <li><a href="{{ '/' | relative_url }}#articles">Windows Server &amp; Group Policy</a></li>
+          <li><a href="{{ '/' | relative_url }}#articles">Microsoft 365 &amp; Exchange Online</a></li>
+          <li><a href="{{ '/' | relative_url }}#articles">Azure Cloud Infrastructure (AZ-900)</a></li>
+          <li><a href="{{ '/' | relative_url }}#articles">PowerShell Systems Automation</a></li>
         </ul>
       </div>
 
-      <!-- Cột 4: Kết nối & Mạng xã hội -->
+      <!-- Column 4: Connect & Community -->
       <div class="footer-col">
-        <h3 class="footer-heading" data-i18n="footer_connect_heading">Kết Nối Kỹ Thuật</h3>
+        <h3 class="footer-heading">Connect</h3>
         <ul class="footer-links social-links">
           <li>
             <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">
@@ -67,11 +67,19 @@
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@ITSupportwithToan_Adl" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+              </svg>
+              <span>LinkedIn Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer">
               <svg class="footer-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                 <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
               </svg>
-              <span data-i18n="footer_youtube">YouTube: IT Support with Toan</span>
+              <span>YouTube: IT Support with Toan</span>
             </a>
           </li>
           <li>
@@ -80,7 +88,7 @@
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              <span>Email: {{ site.author.email }}</span>
+              <span>{{ site.author.email }}</span>
             </a>
           </li>
         </ul>
@@ -90,12 +98,12 @@
     <!-- Bottom Row: Copyright & Legal -->
     <div class="footer-bottom">
       <div class="copyright-text">
-        &copy; {{ site.time | date: '%Y' }} <strong>ToanNguyen.IT</strong>. <span data-i18n="footer_rights">All rights reserved. Xây dựng trên Jekyll & GitHub Pages.</span>
+        &copy; {{ site.time | date: '%Y' }} <strong>Toan Nguyen (IT Support With Toan)</strong>. All rights reserved. Adelaide, Australia.
       </div>
       <div class="footer-legal-links">
-        <a href="{{ '/' | relative_url }}#" data-i18n="footer_privacy">Bảo Mật</a>
+        <a href="{{ '/' | relative_url }}#">Privacy Policy</a>
         <span class="separator">&bull;</span>
-        <a href="{{ '/' | relative_url }}#" data-i18n="footer_terms">Điều Khoản</a>
+        <a href="{{ '/' | relative_url }}#">Terms of Service</a>
         <span class="separator">&bull;</span>
         <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
       </div>

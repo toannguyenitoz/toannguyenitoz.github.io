@@ -1,34 +1,71 @@
 ---
 layout: default
-title: "Bảng Điều Khiển Quản Trị Hệ Thống & Cloud"
+title: "IT Support With Toan | Systems Administration & Cloud Engineering"
 ---
 
 <!-- 1. HERO SECTION -->
 <section class="hero-section">
   <div class="hero-banner">
-    <div class="hero-badge">
-      <span class="badge-dot">●</span> <span data-i18n="hero_badge">Cloud, Systems & Automation Specialist</span>
-    </div>
-    <h1 class="hero-title" data-i18n="hero_title">
-      Quản Trị Hệ Thống, Cloud & <br />
-      <span class="hero-highlight">Tự Động Hóa Thực Chiến</span>
-    </h1>
-    <p class="hero-description" data-i18n="hero_desc">
-      Nền tảng chia sẻ tri thức thực chiến về Microsoft 365, Active Directory, Azure Cloud Architecture, xử lý sự cố Windows và tối ưu hóa hạ tầng với PowerShell.
-    </p>
-    <div class="hero-cta-group">
-      <a href="#powershell" class="btn btn-primary">
-        <span>&gt;_ </span><span data-i18n="hero_btn_powershell">PowerShell Toolbox</span>
-      </a>
-      <a href="#videos" class="btn btn-secondary">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-        </svg>
-        <span data-i18n="hero_btn_videos">Video Hướng Dẫn</span>
-      </a>
-      <a href="#articles" class="btn btn-outline">
-        <span data-i18n="hero_btn_articles">Xem Bài Viết Mới</span>
-      </a>
+    <div class="hero-content-flex">
+      <div class="hero-text-col">
+        <div class="hero-badge-group">
+          <span class="hero-badge">
+            <span class="badge-dot">●</span> Enterprise IT &amp; Cloud Specialist
+          </span>
+          <span class="hero-location-pill">📍 Adelaide, South Australia</span>
+        </div>
+
+        <h1 class="hero-title">
+          Enterprise Systems Administration, Cloud &amp; <br />
+          <span class="hero-highlight">Infrastructure Automation</span>
+        </h1>
+
+        <p class="hero-description">
+          More than 20 years of hands-on enterprise technology experience supporting mission-critical services in regulated banking and corporate environments. Dedicated to deep-dive engineering across Windows Server, Active Directory, Microsoft 365, Azure Cloud, and PowerShell automation.
+        </p>
+
+        <!-- Credentials Pills -->
+        <div class="hero-credentials">
+          <span class="cred-chip">
+            <span class="chip-icon">☁️</span> Azure Fundamentals (AZ-900)
+          </span>
+          <span class="cred-chip">
+            <span class="chip-icon">🥈</span> WorldSkills Cloud Computing Medalist
+          </span>
+          <span class="cred-chip">
+            <span class="chip-icon">🎓</span> Cert IV Systems Administration (TAFE SA)
+          </span>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#powershell" class="btn btn-primary">
+            <span>&gt;_ PowerShell Toolbox</span>
+          </a>
+          <a href="#videos" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+            </svg>
+            <span>Video Tutorials</span>
+          </a>
+          <a href="#articles" class="btn btn-outline">
+            <span>Explore Technical Articles</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Avatar / Profile Photo -->
+      <div class="hero-profile-col">
+        <div class="hero-avatar-frame">
+          <img src="{{ '/assets/images/toan-avatar.jpg' | relative_url }}" alt="Toan Nguyen - Systems Administrator" class="hero-avatar-img">
+          <div class="avatar-status-badge">
+            <span class="pulse-indicator">
+              <span class="pulse-core"></span>
+              <span class="pulse-ring"></span>
+            </span>
+            <span>Toan Nguyen IT OZ</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -38,9 +75,9 @@ title: "Bảng Điều Khiển Quản Trị Hệ Thống & Cloud"
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">&gt;_</span> <span data-i18n="ps_title">Quick PowerShell Toolbox</span>
+        <span class="section-icon">&gt;_</span> Quick PowerShell Toolbox
       </h2>
-      <p class="section-subtitle" data-i18n="ps_subtitle">Tập hợp các lệnh PowerShell xử lý nhanh các tác vụ quản trị hàng ngày chỉ với 1 cú click.</p>
+      <p class="section-subtitle">Production-ready one-liners and administrative routines designed for 1-click execution.</p>
     </div>
   </div>
 
@@ -57,55 +94,55 @@ title: "Bảng Điều Khiển Quản Trị Hệ Thống & Cloud"
 
     <!-- Terminal Tabs -->
     <div class="terminal-tabs">
-      <button class="terminal-tab-btn active" data-target="cmd-network" data-i18n="ps_tab1">📡 Kiểm Tra Mạng & DNS</button>
-      <button class="terminal-tab-btn" data-target="cmd-ad" data-i18n="ps_tab2">👥 Quản Trị User & AD</button>
-      <button class="terminal-tab-btn" data-target="cmd-system" data-i18n="ps_tab3">⚡ Tối Ưu & Dọn Dẹp OS</button>
-      <button class="terminal-tab-btn" data-target="cmd-m365" data-i18n="ps_tab4">☁️ Chẩn Đoán Cloud & M365</button>
+      <button class="terminal-tab-btn active" data-target="cmd-network">📡 Network &amp; DNS Diagnostics</button>
+      <button class="terminal-tab-btn" data-target="cmd-ad">👥 Active Directory &amp; IAM</button>
+      <button class="terminal-tab-btn" data-target="cmd-system">⚡ OS Repair &amp; Maintenance</button>
+      <button class="terminal-tab-btn" data-target="cmd-m365">☁️ M365 &amp; Entra ID Status</button>
     </div>
 
     <div class="terminal-body">
-      <!-- Tab 1: Mạng & DNS -->
+      <!-- Tab 1: Network & DNS -->
       <div class="cmd-item active" id="cmd-network">
-        <p class="cmd-desc" data-i18n="ps_cmd1_desc">Kiểm tra kết nối cổng dịch vụ (Port Test), tra cứu nhanh bản ghi DNS và xóa cache DNS máy trạm:</p>
+        <p class="cmd-desc">Inspect TCP port handshake, resolve authoritative DNS records, and flush local resolver cache:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Kiểm tra kết nối TCP Port 443 đến máy chủ & xóa bộ nhớ cache DNS
-Test-NetConnection -ComputerName login.microsoftonline.com -Port 443
+          <code><span class="terminal-prompt">PS C:\&gt; </span># Test TCP Port 443 handshake to Microsoft 365 &amp; flush DNS cache
+Test-NetConnection -ComputerName login.microsoftonline.com -Port 443 -InformationLevel Detailed
 Clear-DnsClientCache
 Resolve-DnsName -Name outlook.office365.com -Type A</code>
         </div>
       </div>
 
-      <!-- Tab 2: User & AD -->
+      <!-- Tab 2: AD & IAM -->
       <div class="cmd-item" id="cmd-ad">
-        <p class="cmd-desc" data-i18n="ps_cmd2_desc">Mở khóa tài khoản nhân viên bị khóa mật khẩu (Locked Out) và kiểm tra tình trạng tài khoản:</p>
+        <p class="cmd-desc">Remediate locked-out user accounts, audit bad password attempts, and query account flags:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Tìm tài khoản bị khóa và thực hiện mở khóa nhanh
-Search-ADAccount -LockedOut | Select-Object SamAccountName, Name
+          <code><span class="terminal-prompt">PS C:\&gt; </span># Locate and unlock domain accounts experiencing repeated lockouts
+Search-ADAccount -LockedOut | Select-Object SamAccountName, Name, LastLogonDate
 Unlock-ADAccount -Identity "username"
-Get-ADUser -Identity "username" -Properties PasswordLastSet, LockedOut, Enabled</code>
+Get-ADUser -Identity "username" -Properties BadLogonCount, BadPasswordTime, LockedOut, PasswordLastSet</code>
         </div>
       </div>
 
-      <!-- Tab 3: Tối ưu & Dọn dẹp -->
+      <!-- Tab 3: System Repair & Maintenance -->
       <div class="cmd-item" id="cmd-system">
-        <p class="cmd-desc" data-i18n="ps_cmd3_desc">Chạy công cụ quét sửa lỗi tệp tin hệ thống (SFC / DISM) và cập nhật tất cả phần mềm qua WinGet:</p>
+        <p class="cmd-desc">Execute Windows servicing component store repair, SFC system integrity scan, and bulk app upgrade:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Sửa chữa kho lưu trữ tệp tin hệ điều hành và nâng cấp phần mềm
+          <code><span class="terminal-prompt">PS C:\&gt; </span># Repair Windows Component Store, verify system DLLs, and upgrade software
+DISM.exe /Online /Cleanup-Image /RestoreHealth
 sfc /scannow
-DISM.exe /Online /Cleanup-image /Restorehealth
 winget upgrade --all --include-unknown</code>
         </div>
       </div>
 
-      <!-- Tab 4: M365 & Cloud -->
+      <!-- Tab 4: M365 & Cloud Diagnostics -->
       <div class="cmd-item" id="cmd-m365">
-        <p class="cmd-desc" data-i18n="ps_cmd4_desc">Kiểm tra trạng thái tham gia miền Microsoft Entra ID (Azure AD Join) và Token máy trạm:</p>
+        <p class="cmd-desc">Verify Microsoft Entra ID (Azure AD Join) device enrollment, PRT token health, and Intune enrollment:</p>
         <div class="code-box-wrapper">
           <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Kiểm tra kết quả gia nhập Azure AD & Tình trạng thiết bị Intune
+          <code><span class="terminal-prompt">PS C:\&gt; </span># Check Azure AD join state, Primary Refresh Token (PRT), and MDM enrollment
 dsregcmd /status
 Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object ProviderID, UPN</code>
         </div>
@@ -119,20 +156,16 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">▶</span> <span data-i18n="videos_title">Video Hướng Dẫn Kỹ Thuật</span>
+        <span class="section-icon">▶</span> Video Tutorials — IT Support with Toan
       </h2>
-      <p class="section-subtitle" data-i18n="videos_subtitle">Các video từ kênh YouTube IT Support with Toan (@ITSupportwithToan_Adl).</p>
+      <p class="section-subtitle">Practical, step-by-step technical guides from my YouTube channel (<a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer">@{{ site.author.youtube_channel }}</a>).</p>
     </div>
   </div>
 
   <div class="video-grid">
     {% if site.data.videos.items %}
       {% for vid in site.data.videos.items %}
-      <div class="video-card" 
-           data-title-vi="{{ vid.title | escape }}" 
-           data-title-en="{{ vid.title_en | default: vid.title | escape }}"
-           data-desc-vi="{{ vid.description | escape }}"
-           data-desc-en="{{ vid.description_en | default: vid.description | escape }}">
+      <div class="video-card">
         {% include youtube.html id=vid.youtube_id title=vid.title %}
         <div class="video-card-body">
           <div class="video-meta-top">
@@ -145,7 +178,7 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
       </div>
       {% endfor %}
     {% else %}
-      <p>Chưa có dữ liệu video.</p>
+      <p>No videos available currently.</p>
     {% endif %}
   </div>
 </section>
@@ -155,9 +188,9 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">📄</span> <span data-i18n="articles_title">Bài Viết & Tài Liệu Chuyên Môn</span>
+        <span class="section-icon">📄</span> Technical Articles &amp; SOP Guides
       </h2>
-      <p class="section-subtitle" data-i18n="articles_subtitle">Kinh nghiệm thực chiến về Quản trị mạng, Máy chủ và Hạ tầng đám mây.</p>
+      <p class="section-subtitle">In-depth technical writeups on Systems Administration, Cloud Governance, and Endpoint Security.</p>
     </div>
   </div>
 
@@ -170,34 +203,67 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
         {% endfor %}
       </div>
       <h3 class="post-card-title">{{ post.title }}</h3>
-      <p class="post-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+      <p class="post-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
       <div class="post-card-footer">
         <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%d/%m/%Y" }}
+          {{ post.date | date: "%B %d, %Y" }}
         </time>
-        <span class="read-more-link" data-i18n="read_more">Đọc chi tiết →</span>
+        <span class="read-more-link">Read Full Guide →</span>
       </div>
     </a>
     {% endfor %}
   </div>
 </section>
 
-<!-- 5. RECOMMENDED TOOLS & AFFILIATES -->
-<section class="section-block" id="tools">
-  <div class="section-header">
-    <div>
-      <h2 class="section-title">
-        <span class="section-icon">🛠️</span> <span data-i18n="tools_title">Công Cụ Khuyên Dùng Cho SysAdmin</span>
-      </h2>
-      <p class="section-subtitle" data-i18n="tools_subtitle">Các dịch vụ hạ tầng đám mây, bảo mật và tiện ích kỹ thuật được tối ưu cho doanh nghiệp.</p>
-    </div>
-  </div>
+<!-- 5. ABOUT & CREDENTIALS SECTION -->
+<section class="section-block" id="about">
+  <div class="about-card-banner">
+    <div class="about-grid">
+      <div class="about-avatar-col">
+        <img src="{{ '/assets/images/toan-avatar.jpg' | relative_url }}" alt="Toan Nguyen" class="about-avatar-img">
+      </div>
+      <div class="about-text-col">
+        <div class="about-badge-header">
+          <span class="category-badge">About the Engineer</span>
+          <span class="location-badge">📍 Adelaide, South Australia</span>
+        </div>
+        <h2 class="about-name">Toan Nguyen <span class="brand-accent">(Toan Nguyen IT OZ)</span></h2>
+        <p class="about-role">Enterprise Systems Administrator &amp; Cloud Infrastructure Specialist</p>
+        <p class="about-bio">
+          With over two decades of enterprise IT experience supporting mission-critical banking and corporate systems, I specialize in end-to-end IT service continuity, incident management, Active Directory lifecycle administration, Microsoft 365 deployments, and Azure Cloud solutions. Proven track record in Tier 2/3 troubleshooting, governance compliance, and infrastructure automation.
+        </p>
+        
+        <div class="about-highlights-grid">
+          <div class="highlight-item">
+            <span class="hl-number">20+</span>
+            <span class="hl-label">Years Enterprise IT Experience</span>
+          </div>
+          <div class="highlight-item">
+            <span class="hl-number">AZ-900</span>
+            <span class="hl-label">Microsoft Azure Certified</span>
+          </div>
+          <div class="highlight-item">
+            <span class="hl-number">🥈 Medalist</span>
+            <span class="hl-label">WorldSkills Cloud Computing 2026</span>
+          </div>
+          <div class="highlight-item">
+            <span class="hl-number">TAFE SA</span>
+            <span class="hl-label">Cert IV Systems Administration</span>
+          </div>
+        </div>
 
-  <div class="affiliate-grid">
-    {% if site.data.affiliates.items %}
-      {% for item in site.data.affiliates.items %}
-        {% include affiliate-card.html item=item %}
-      {% endfor %}
-    {% endif %}
+        <div class="about-links-row">
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Connect on LinkedIn</span>
+          </a>
+          <a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>YouTube Channel</span>
+          </a>
+          <a href="mailto:{{ site.author.email }}" class="btn btn-outline">
+            <span>Email Directly</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

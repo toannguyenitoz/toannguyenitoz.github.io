@@ -1,18 +1,27 @@
 # Site Settings
-title: "ToanNguyen.IT | Cloud & Systems Engineering"
-email: "toannguyenitoz@gmail.com"
-description: "Trang chia sẻ kiến thức chuyên sâu về Quản trị hệ thống, Microsoft 365, Azure Cloud, Tự động hóa PowerShell và IT Support thực chiến."
+title: "IT Support With Toan | Systems Administration & Cloud Engineering"
+email: "theodorenguyensa@gmail.com"
+description: "Enterprise Systems Administration, Windows Server, Active Directory, Microsoft 365, Azure Cloud Architecture, and PowerShell Automation by Toan Nguyen (Toan Nguyen IT OZ), Adelaide, South Australia."
 baseurl: ""
 url: "https://toannguyenitoz.github.io"
 
 # Author Information
 author:
-  name: "Toàn Nguyễn"
-  title: "Systems Administrator & Cloud Engineer"
-  bio: "Chuyên viên Quản trị Hệ thống, M365, Azure Cloud và Tự động hóa hạ tầng IT."
+  name: "Toan Nguyen"
+  brand: "IT Support With Toan (Toan Nguyen IT OZ)"
+  title: "Systems Administrator & Cloud Infrastructure Specialist"
+  bio: "Enterprise Systems Administrator with 20+ years of mission-critical IT support experience in regulated banking and cloud environments. Specializing in Windows Server, Active Directory, Microsoft 365, Azure Cloud, and PowerShell infrastructure automation."
+  location: "Adelaide, South Australia"
+  email: "theodorenguyensa@gmail.com"
   github: "toannguyenitoz"
-  email: "toannguyenitoz@gmail.com"
-  location: "Vietnam"
+  linkedin: "toan-nguyen-it-oz"
+  youtube_channel: "ITSupportwithToan_Adl"
+  youtube_name: "IT Support with Toan"
+  avatar: "/assets/images/toan-avatar.jpg"
+  certifications:
+    - "Microsoft Certified: Azure Fundamentals (AZ-900)"
+    - "Silver Medalist - Cloud Computing (WorldSkills Australia SA 2026)"
+    - "Certificate IV in Information Technology (Systems Administration) - TAFE SA"
 
 # Build Settings
 markdown: kramdown
@@ -42,7 +51,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Toàn Nguyễn"
+      author: "Toan Nguyen"
 
 # Exclude list
 exclude:

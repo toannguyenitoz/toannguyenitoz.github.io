@@ -11,19 +11,19 @@
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
   
-  <!-- DNS Prefetch & Preconnect for Performance -->
+  <!-- DNS Prefetch & Preconnect for High Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://www.youtube-nocookie.com">
   <link rel="preconnect" href="https://i.ytimg.com">
   
-  <!-- Typography: Inter for UI & JetBrains Mono for Commands/Code -->
+  <!-- Typography: Inter for UI & JetBrains Mono for Code / Commands -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
-  <!-- Supabase Client Library via CDN (official v2) -->
+  <!-- Supabase Client Library via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   
   <!-- Open Graph / SEO -->
@@ -33,13 +33,10 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   
-  <!-- Theme Color Detection Script to prevent flash of wrong theme -->
+  <!-- Theme Detection Script to prevent flash of wrong theme -->
   <script>
     (function() {
-      // Khởi tạo theme & ngôn ngữ sớm để tối ưu trải nghiệm
-      const savedLang = localStorage.getItem('toannguyen_lang') || 'vi';
-      document.documentElement.setAttribute('lang', savedLang);
-      
+      document.documentElement.setAttribute('lang', 'en');
       const savedTheme = localStorage.getItem('toannguyen_theme');
       if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
