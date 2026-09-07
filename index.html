@@ -71,18 +71,48 @@ title: "Dashboard | IT Support With Toan"
 
     <!-- Terminal Tabs -->
     <div class="terminal-tabs">
-      <button class="terminal-tab-btn active" data-target="cmd-network">📡 Network &amp; DNS Diagnostics</button>
-      <button class="terminal-tab-btn" data-target="cmd-ad">👥 Active Directory &amp; IAM</button>
-      <button class="terminal-tab-btn" data-target="cmd-system">⚡ OS Repair &amp; Maintenance</button>
-      <button class="terminal-tab-btn" data-target="cmd-m365">☁️ M365 &amp; Entra ID Status</button>
+      <button class="terminal-tab-btn active" data-target="cmd-network">📡 Network &amp; DNS</button>
+      <button class="terminal-tab-btn" data-target="cmd-ad">👥 AD &amp; IAM</button>
+      <button class="terminal-tab-btn" data-target="cmd-system">⚡ OS Servicing &amp; SFC</button>
+      <button class="terminal-tab-btn" data-target="cmd-m365">☁️ M365 &amp; Entra ID</button>
+      <button class="terminal-tab-btn" data-target="cmd-storage">💾 Storage Reclamation</button>
+      <button class="terminal-tab-btn" data-target="cmd-security">🛡️ Port &amp; PID Security</button>
     </div>
 
     <div class="terminal-body">
       <!-- Tab 1: Network & DNS -->
       <div class="cmd-item active" id="cmd-network">
+        <!-- Visual Architecture Flow -->
+        <div class="cmd-visual-flow">
+          <div class="flow-node">
+            <span class="flow-node-icon">💻</span>
+            <span class="flow-node-title">Workstation</span>
+            <span class="flow-node-desc">Local Client</span>
+          </div>
+          <span class="flow-arrow">──(SYN :443)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🌐</span>
+            <span class="flow-node-title">DNS Resolver</span>
+            <span class="flow-node-desc">Cache Flushed</span>
+          </div>
+          <span class="flow-arrow">──(Resolved)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">☁️</span>
+            <span class="flow-node-title">Microsoft 365</span>
+            <span class="flow-node-desc">Port 443 Handshake</span>
+          </div>
+          <span class="flow-status-pill">Status: Handshake OK</span>
+        </div>
+
         <p class="cmd-desc">Inspect TCP port handshake, resolve authoritative DNS records, and flush local resolver cache:</p>
         <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
+          <button class="btn-copy-code" aria-label="Copy script to clipboard">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Test TCP Port 443 handshake to Microsoft 365 &amp; flush DNS cache
 Test-NetConnection -ComputerName login.microsoftonline.com -Port 443 -InformationLevel Detailed
 Clear-DnsClientCache
@@ -92,9 +122,37 @@ Resolve-DnsName -Name outlook.office365.com -Type A</code>
 
       <!-- Tab 2: AD & IAM -->
       <div class="cmd-item" id="cmd-ad">
+        <!-- Visual Architecture Flow -->
+        <div class="cmd-visual-flow">
+          <div class="flow-node">
+            <span class="flow-node-icon">🏢</span>
+            <span class="flow-node-title">Domain Controller</span>
+            <span class="flow-node-desc">Kerberos KDC</span>
+          </div>
+          <span class="flow-arrow">──(Event 4740)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🔒</span>
+            <span class="flow-node-title">Account Lockout</span>
+            <span class="flow-node-desc">BadLogonCount &gt; 5</span>
+          </div>
+          <span class="flow-arrow">──(Unlock)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🔓</span>
+            <span class="flow-node-title">Active Token</span>
+            <span class="flow-node-desc">Access Restored</span>
+          </div>
+          <span class="flow-status-pill">Status: Remediated</span>
+        </div>
+
         <p class="cmd-desc">Remediate locked-out user accounts, audit bad password attempts, and query account flags:</p>
         <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
+          <button class="btn-copy-code" aria-label="Copy script to clipboard">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Locate and unlock domain accounts experiencing repeated lockouts
 Search-ADAccount -LockedOut | Select-Object SamAccountName, Name, LastLogonDate
 Unlock-ADAccount -Identity "username"
@@ -104,9 +162,37 @@ Get-ADUser -Identity "username" -Properties BadLogonCount, BadPasswordTime, Lock
 
       <!-- Tab 3: System Repair & Maintenance -->
       <div class="cmd-item" id="cmd-system">
+        <!-- Visual Architecture Flow -->
+        <div class="cmd-visual-flow">
+          <div class="flow-node">
+            <span class="flow-node-icon">🗄️</span>
+            <span class="flow-node-title">WinSxS Store</span>
+            <span class="flow-node-desc">Component Manifest</span>
+          </div>
+          <span class="flow-arrow">──(DISM Repair)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🛡️</span>
+            <span class="flow-node-title">SFC Hash Check</span>
+            <span class="flow-node-desc">System DLLs Verified</span>
+          </div>
+          <span class="flow-arrow">──(WinGet)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">📦</span>
+            <span class="flow-node-title">App Repositories</span>
+            <span class="flow-node-desc">Bulk Upgraded</span>
+          </div>
+          <span class="flow-status-pill">Status: 100% Intact</span>
+        </div>
+
         <p class="cmd-desc">Execute Windows servicing component store repair, SFC system integrity scan, and bulk app upgrade:</p>
         <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
+          <button class="btn-copy-code" aria-label="Copy script to clipboard">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Repair Windows Component Store, verify system DLLs, and upgrade software
 DISM.exe /Online /Cleanup-Image /RestoreHealth
 sfc /scannow
@@ -116,12 +202,122 @@ winget upgrade --all --include-unknown</code>
 
       <!-- Tab 4: M365 & Cloud Diagnostics -->
       <div class="cmd-item" id="cmd-m365">
+        <!-- Visual Architecture Flow -->
+        <div class="cmd-visual-flow">
+          <div class="flow-node">
+            <span class="flow-node-icon">🔐</span>
+            <span class="flow-node-title">Local TPM 2.0</span>
+            <span class="flow-node-desc">Device Cert Key</span>
+          </div>
+          <span class="flow-arrow">──(PRT Token)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">☁️</span>
+            <span class="flow-node-title">Entra ID (Azure AD)</span>
+            <span class="flow-node-desc">Tenant Joined</span>
+          </div>
+          <span class="flow-arrow">──(MDM Sync)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">📱</span>
+            <span class="flow-node-title">Microsoft Intune</span>
+            <span class="flow-node-desc">Compliant Policy</span>
+          </div>
+          <span class="flow-status-pill">Status: PRT Valid</span>
+        </div>
+
         <p class="cmd-desc">Verify Microsoft Entra ID (Azure AD Join) device enrollment, PRT token health, and Intune enrollment:</p>
         <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy code">Copy Command</button>
+          <button class="btn-copy-code" aria-label="Copy script to clipboard">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
           <code><span class="terminal-prompt">PS C:\&gt; </span># Check Azure AD join state, Primary Refresh Token (PRT), and MDM enrollment
 dsregcmd /status
 Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object ProviderID, UPN</code>
+        </div>
+      </div>
+
+      <!-- Tab 5: Storage & Disk Reclamation -->
+      <div class="cmd-item" id="cmd-storage">
+        <!-- Visual Architecture Flow -->
+        <div class="cmd-visual-flow">
+          <div class="flow-node">
+            <span class="flow-node-icon">💽</span>
+            <span class="flow-node-title">Drive C:\ Volume</span>
+            <span class="flow-node-desc">Low Disk Space Alert</span>
+          </div>
+          <span class="flow-arrow">──(Deep Traverse)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🔍</span>
+            <span class="flow-node-title">Top 10 File Hogs</span>
+            <span class="flow-node-desc">Sorted by Size (&gt;1GB)</span>
+          </div>
+          <span class="flow-arrow">──(Reclaim)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">♻️</span>
+            <span class="flow-node-title">Temp Cache Purged</span>
+            <span class="flow-node-desc">Free Space Restored</span>
+          </div>
+          <span class="flow-status-pill">Status: Storage Optimized</span>
+        </div>
+
+        <p class="cmd-desc">Identify top 10 largest files consuming storage on drive C: and safely clear temporary cache buffers:</p>
+        <div class="code-box-wrapper">
+          <button class="btn-copy-code" aria-label="Copy script to clipboard">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+          <code><span class="terminal-prompt">PS C:\&gt; </span># Locate top 10 files over 1GB on system drive and purge recycle bin
+Get-ChildItem -Path C:\ -Recurse -File -ErrorAction SilentlyContinue |
+  Where-Object { $_.Length -gt 1GB } |
+  Sort-Object Length -Descending |
+  Select-Object -First 10 Name, @{Name="SizeGB";Expression={[math]::Round($_.Length/1GB,2)}}, Directory
+Clear-RecycleBin -Force -ErrorAction SilentlyContinue</code>
+        </div>
+      </div>
+
+      <!-- Tab 6: Port & PID Security -->
+      <div class="cmd-item" id="cmd-security">
+        <!-- Visual Architecture Flow -->
+        <div class="cmd-visual-flow">
+          <div class="flow-node">
+            <span class="flow-node-icon">🔌</span>
+            <span class="flow-node-title">TCP Sockets</span>
+            <span class="flow-node-desc">State: LISTENING</span>
+          </div>
+          <span class="flow-arrow">──(NetTCPConnection)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🏷️</span>
+            <span class="flow-node-title">Owning PID</span>
+            <span class="flow-node-desc">Process Identifier</span>
+          </div>
+          <span class="flow-arrow">──(Task Mapping)──►</span>
+          <div class="flow-node">
+            <span class="flow-node-icon">🛡️</span>
+            <span class="flow-node-title">Process Name</span>
+            <span class="flow-node-desc">Threat Triage Complete</span>
+          </div>
+          <span class="flow-status-pill">Status: Ports Audited</span>
+        </div>
+
+        <p class="cmd-desc">Audit all active listening TCP ports, correlate them to Owning Process IDs (PID), and display executable names:</p>
+        <div class="code-box-wrapper">
+          <button class="btn-copy-code" aria-label="Copy script to clipboard">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+          <code><span class="terminal-prompt">PS C:\&gt; </span># Map all listening TCP ports to their owning process names and PIDs
+Get-NetTCPConnection -State Listen |
+  Select-Object LocalAddress, LocalPort, OwningProcess, @{Name="ProcessName";Expression={(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).Name}} |
+  Sort-Object LocalPort | Format-Table -AutoSize</code>
         </div>
       </div>
     </div>
@@ -172,20 +368,30 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
   </div>
 
   <div class="posts-grid">
-    {% for post in site.posts limit:6 %}
+    {% for post in site.posts %}
     <a href="{{ post.url | relative_url }}" class="post-card">
-      <div class="post-card-badges">
-        {% for cat in post.categories %}
-        <span class="category-badge">{{ cat }}</span>
-        {% endfor %}
+      {% if post.image %}
+      <div class="post-card-thumb-frame">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-thumb" loading="lazy">
       </div>
-      <h3 class="post-card-title">{{ post.title }}</h3>
-      <p class="post-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
-      <div class="post-card-footer">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%B %d, %Y" }}
-        </time>
-        <span class="read-more-link">Read Full Guide →</span>
+      {% endif %}
+      <div class="post-card-content">
+        <div class="post-card-badges">
+          {% for cat in post.categories %}
+          <span class="category-badge">{{ cat }}</span>
+          {% endfor %}
+          {% if post.part %}
+          <span class="part-badge">Part {{ post.part }}</span>
+          {% endif %}
+        </div>
+        <h3 class="post-card-title">{{ post.title }}</h3>
+        <p class="post-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        <div class="post-card-footer">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+          <span class="read-more-link">Read Guide →</span>
+        </div>
       </div>
     </a>
     {% endfor %}

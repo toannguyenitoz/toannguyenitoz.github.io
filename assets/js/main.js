@@ -105,12 +105,21 @@
       }
 
       if (buttonElement) {
-        const originalText = buttonElement.innerHTML;
-        buttonElement.innerHTML = '✓ Copied!';
+        const span = buttonElement.querySelector('span');
+        const originalText = span ? span.innerHTML : buttonElement.innerHTML;
+        if (span) {
+          span.innerHTML = 'Copied!';
+        } else {
+          buttonElement.innerHTML = '✓ Copied!';
+        }
         buttonElement.classList.add('copied');
 
         setTimeout(function () {
-          buttonElement.innerHTML = originalText;
+          if (span) {
+            span.innerHTML = originalText;
+          } else {
+            buttonElement.innerHTML = originalText;
+          }
           buttonElement.classList.remove('copied');
         }, 2200);
       }
@@ -124,8 +133,10 @@
     button.addEventListener('click', function () {
       const codeElement = this.closest('.code-box-wrapper').querySelector('code');
       if (codeElement) {
-        let rawCode = codeElement.innerText.trim();
-        rawCode = rawCode.replace(/^PS [^>]+>\s*/g, '');
+        const clone = codeElement.cloneNode(true);
+        clone.querySelectorAll('.terminal-prompt, .btn-copy-code').forEach(el => el.remove());
+        let rawCode = clone.innerText.trim();
+        rawCode = rawCode.replace(/^PS [^>]+>\s*/gm, '');
         window.copyTextToClipboard(rawCode, this);
       }
     });
@@ -135,19 +146,20 @@
   // 4. Auto-Add Copy Buttons to Technical Article Code Blocks
   // =========================================================================
   function enhanceArticleCodeBlocks() {
-    const codeBlocks = document.querySelectorAll('.post-body-content pre, .highlight pre');
+    const codeBlocks = document.querySelectorAll('.post-body-content .rouge-code pre, .post-body-content > pre, .post-body-content div.highlight > pre');
     codeBlocks.forEach(function (pre) {
       if (pre.parentElement.querySelector('.btn-copy-code')) return;
 
       const wrapper = document.createElement('div');
+      wrapper.className = 'code-box-wrapper';
       wrapper.style.position = 'relative';
       pre.parentNode.insertBefore(wrapper, pre);
       wrapper.appendChild(pre);
 
       const copyBtn = document.createElement('button');
       copyBtn.className = 'btn-copy-code';
-      copyBtn.innerHTML = 'Copy';
       copyBtn.setAttribute('aria-label', 'Copy code to clipboard');
+      copyBtn.innerHTML = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> <span>Copy</span>';
 
       copyBtn.addEventListener('click', function () {
         const textToCopy = pre.innerText;
