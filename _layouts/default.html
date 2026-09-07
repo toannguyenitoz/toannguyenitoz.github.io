@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+  {% include head.html %}
+  <body class="site-body">
+    <!-- Header kính mờ cố định -->
+    {% include header.html %}
+
+    <!-- Khung nội dung chính -->
+    <main class="main-content" id="main-content">
+      {{ content }}
+    </main>
+
+    <!-- Footer Enterprise 4 cột -->
+    {% include footer.html %}
+
+    <!-- Main JavaScript (Dark mode, Clipboard Copy, Supabase client) -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

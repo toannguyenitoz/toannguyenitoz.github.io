@@ -1,0 +1,65 @@
+backend:
+  name: github
+  repo: toannguyenitoz/toannguyenitoz.github.io
+  branch: main
+
+# Đường dẫn lưu trữ hình ảnh tải lên qua CMS
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+display_url: "https://toannguyenitoz.github.io"
+
+collections:
+  # 1. Bộ sưu tập Bài viết Blog / Kỹ thuật
+  - name: "posts"
+    label: "Bài Viết Kỹ Thuật"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Tiêu Đề Bài Viết", name: "title", widget: "string" }
+      - { label: "Ngày Đăng", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Mô Tả Tóm Tắt (SEO)", name: "description", widget: "text" }
+      - { label: "Danh Mục", name: "categories", widget: "list", default: ["Windows", "SysAdmin"] }
+      - { label: "Thẻ Tags", name: "tags", widget: "list", required: false }
+      - { label: "Ảnh Bìa", name: "thumbnail", widget: "image", required: false }
+      - { label: "Nội Dung Bài Viết (Markdown)", name: "body", widget: "markdown" }
+
+  # 2. Bộ sưu tập Video YouTube Showcase
+  - name: "videos_settings"
+    label: "Video YouTube Showcase"
+    files:
+      - label: "Danh Sách Video Hướng Dẫn"
+        name: "videos"
+        file: "_data/videos.yml"
+        fields:
+          - label: "Các Video Kỹ Thuật"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Tiêu Đề Video", name: "title", widget: "string" }
+              - { label: "YouTube Video ID (ví dụ: dQw4w9WgXcQ)", name: "youtube_id", widget: "string" }
+              - { label: "Thời Lượng (ví dụ: 12:45)", name: "duration", widget: "string" }
+              - { label: "Mô Tả Ngắn", name: "description", widget: "text" }
+              - { label: "Nhãn Danh Mục", name: "category", widget: "string", default: "PowerShell" }
+              - { label: "Ngày Xuất Bản", name: "published_date", widget: "date", required: false }
+
+  # 3. Bộ sưu tập Tiếp thị liên kết (Affiliates)
+  - name: "affiliates_settings"
+    label: "Công Cụ & Tiếp Thị Liên Kết"
+    files:
+      - label: "Danh Sách Khuyên Dùng"
+        name: "affiliates"
+        file: "_data/affiliates.yml"
+        fields:
+          - label: "Danh Sách Sản Phẩm / Dịch Vụ"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Tên Sản Phẩm / Dịch Vụ", name: "product_name", widget: "string" }
+              - { label: "Mô Tả Giá Trị", name: "description", widget: "text" }
+              - { label: "Đường Dẫn Tiếp Thị (Affiliate URL)", name: "link", widget: "string" }
+              - { label: "Chữ Nút Bấm (CTA Text)", name: "cta_text", widget: "string", default: "Nhận Ưu Đãi" }
+              - { label: "Huy Hiệu (Badge, ví dụ: 20% OFF, Recommended)", name: "badge", widget: "string", required: false }
+              - { label: "Biểu Tượng (Icon SVG hoặc Emoji)", name: "icon", widget: "string", default: "🚀" }

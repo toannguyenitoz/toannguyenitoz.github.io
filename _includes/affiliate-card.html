@@ -1,0 +1,42 @@
+{% comment %}
+  Component: affiliate-card.html
+  Sử dụng: {% include affiliate-card.html item=affiliate_data %}
+  hoặc truyền trực tiếp: {% include affiliate-card.html name="NordVPN" link="..." desc="..." cta="..." badge="..." icon="..." %}
+{% endcomment %}
+
+{% assign item_name = include.item.product_name | default: include.name %}
+{% assign item_desc = include.item.description | default: include.desc %}
+{% assign item_link = include.item.link | default: include.link %}
+{% assign item_cta = include.item.cta_text | default: include.cta | default: "Nhận Ưu Đãi Ngay" %}
+{% assign item_badge = include.item.badge | default: include.badge %}
+{% assign item_icon = include.item.icon | default: include.icon | default: "⚡" %}
+
+<div class="affiliate-card modern-card">
+  <div class="affiliate-card-header">
+    <div class="affiliate-icon-wrapper">
+      <span class="affiliate-icon">{{ item_icon }}</span>
+    </div>
+    {% if item_badge %}
+    <span class="affiliate-badge">{{ item_badge }}</span>
+    {% endif %}
+  </div>
+  
+  <div class="affiliate-card-body">
+    <h4 class="affiliate-title">{{ item_name }}</h4>
+    <p class="affiliate-description">{{ item_desc }}</p>
+  </div>
+
+  <div class="affiliate-card-footer">
+    <a href="{{ item_link }}" 
+       target="_blank" 
+       rel="nofollow sponsored noopener noreferrer" 
+       class="btn btn-affiliate-cta">
+      <span>{{ item_cta }}</span>
+      <svg class="cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+    <span class="sponsored-notice">Quảng cáo & Liên kết tiếp thị</span>
+  </div>
+</div>

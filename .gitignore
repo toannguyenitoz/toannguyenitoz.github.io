@@ -1,0 +1,19 @@
+# Jekyll & Ruby
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# Node & Package Managers
+node_modules/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / Secrets
+.env
+.env.local

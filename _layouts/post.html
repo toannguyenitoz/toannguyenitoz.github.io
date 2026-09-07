@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-container">
+  <div class="reading-progress-bar" id="readingProgressBar"></div>
+</div>
+
+<article class="post-detail-container">
+  <!-- Post Breadcrumbs -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li><a href="{{ '/' | relative_url }}">Trang Chủ</a></li>
+      <li class="separator">/</li>
+      <li><a href="{{ '/' | relative_url }}#articles">Bài Viết</a></li>
+      <li class="separator">/</li>
+      <li class="active">{{ page.title | truncate: 45 }}</li>
+    </ol>
+  </nav>
+
+  <!-- Post Header -->
+  <header class="post-header">
+    <div class="post-meta-badges">
+      {% for cat in page.categories %}
+      <span class="category-badge">{{ cat }}</span>
+      {% endfor %}
+      {% if page.tags %}
+        {% for tag in page.tags %}
+        <span class="tag-badge">#{{ tag }}</span>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.description %}
+    <p class="post-lead">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="post-author-meta">
+      <div class="author-avatar-chip">
+        <span class="avatar-initials">TN</span>
+      </div>
+      <div class="meta-details">
+        <span class="author-name">{{ page.author | default: site.author.name }}</span>
+        <div class="meta-sub">
+          <time datetime="{{ page.date | date_to_xmlschema }}">
+            📅 {{ page.date | date: "%d/%m/%Y" }}
+          </time>
+          <span class="meta-divider">•</span>
+          {% assign words = content | number_of_words %}
+          {% assign read_time = words | divided_by: 180 | plus: 1 %}
+          <span class="read-time">⏱️ {{ read_time }} phút đọc</span>
+          <span class="meta-divider">•</span>
+          <span class="post-views" id="postViewsContainer">👁️ <span id="viewCount">...</span> lượt xem</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content Body -->
+  <div class="post-body-content markdown-body" id="postContent">
+    {{ content }}
+  </div>
+
+  <!-- Post End Callout / Author Box -->
+  <footer class="post-footer">
+    <div class="author-card-box">
+      <div class="author-card-avatar">TN</div>
+      <div class="author-card-info">
+        <h4 class="author-card-name">{{ site.author.name }}</h4>
+        <p class="author-card-bio">{{ site.author.bio }}</p>
+        <div class="author-links">
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub @{{ site.author.github }}</a>
+          <span class="separator">•</span>
+          <a href="mailto:{{ site.author.email }}">Liên Hệ Trực Tiếp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Back / Next -->
+    <div class="post-navigation-links">
+      <a href="{{ '/' | relative_url }}#articles" class="btn btn-secondary">
+        ← Quay lại danh sách bài viết
+      </a>
+      <button class="btn btn-outline" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        ↑ Lên đầu trang
+      </button>
+    </div>
+  </footer>
+</article>

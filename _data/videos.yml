@@ -1,0 +1,28 @@
+items:
+  - title: "Tự Động Hóa Quản Trị Hệ Thống Với PowerShell Cơ Bản Đến Nâng Cao"
+    youtube_id: "dQw4w9WgXcQ"
+    duration: "18:45"
+    category: "PowerShell"
+    description: "Hướng dẫn viết script tự động hóa kiểm tra dịch vụ Windows, quản lý log và giám sát tài nguyên CPU/RAM máy chủ."
+    published_date: "2026-08-20"
+
+  - title: "Triển Khai & Cấu Hình Active Directory Domain Services (AD DS)"
+    youtube_id: "dQw4w9WgXcQ"
+    duration: "24:10"
+    category: "Windows Server"
+    description: "Các bước dựng Domain Controller, tạo Group Policy Objects (GPO) bảo mật và phân quyền nhân viên chuẩn doanh nghiệp."
+    published_date: "2026-08-28"
+
+  - title: "Tối Ưu Hóa Chi Phí & Bảo Mật Hạ Tầng Microsoft Azure"
+    youtube_id: "dQw4w9WgXcQ"
+    duration: "15:30"
+    category: "Azure Cloud"
+    description: "Phân tích bảng giá Azure Cost Management, thiết lập Azure Policy và cấu hình Network Security Groups (NSG) chuẩn CIS Benchmark."
+    published_date: "2026-09-02"
+
+  - title: "Xử Lý Sự Cố Đồng Bộ Hóa Microsoft Entra Connect (Azure AD Sync)"
+    youtube_id: "dQw4w9WgXcQ"
+    duration: "12:15"
+    category: "Microsoft 365"
+    description: "Khắc phục các lỗi trùng UPN, xung đột ObjectGUID và kiểm tra IdFix Tool khi đồng bộ danh bạ On-Premises lên Cloud."
+    published_date: "2026-09-05"

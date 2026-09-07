@@ -1,0 +1,56 @@
+# Site Settings
+title: "ToanNguyen.IT | Cloud & Systems Engineering"
+email: "toannguyenitoz@gmail.com"
+description: "Trang chia sẻ kiến thức chuyên sâu về Quản trị hệ thống, Microsoft 365, Azure Cloud, Tự động hóa PowerShell và IT Support thực chiến."
+baseurl: ""
+url: "https://toannguyenitoz.github.io"
+
+# Author Information
+author:
+  name: "Toàn Nguyễn"
+  title: "Systems Administrator & Cloud Engineer"
+  bio: "Chuyên viên Quản trị Hệ thống, M365, Azure Cloud và Tự động hóa hạ tầng IT."
+  github: "toannguyenitoz"
+  email: "toannguyenitoz@gmail.com"
+  location: "Vietnam"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+# Plugins supported natively by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Defaults for Posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Toàn Nguyễn"
+
+# Exclude list
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .git
+  - .gitignore
+  - README.md
