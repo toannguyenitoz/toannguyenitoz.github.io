@@ -131,13 +131,16 @@
   // Bind toolbox copy buttons
   document.querySelectorAll('.btn-copy-code').forEach(function (button) {
     button.addEventListener('click', function () {
-      const codeElement = this.closest('.code-box-wrapper').querySelector('code');
-      if (codeElement) {
-        const clone = codeElement.cloneNode(true);
-        clone.querySelectorAll('.terminal-prompt, .btn-copy-code').forEach(el => el.remove());
-        let rawCode = clone.innerText.trim();
-        rawCode = rawCode.replace(/^PS [^>]+>\s*/gm, '');
-        window.copyTextToClipboard(rawCode, this);
+      const container = this.closest('.cmd-executable-block') || this.closest('.code-box-wrapper');
+      if (container) {
+        const codeElement = container.querySelector('code');
+        if (codeElement) {
+          const clone = codeElement.cloneNode(true);
+          clone.querySelectorAll('.terminal-prompt, .btn-copy-code').forEach(el => el.remove());
+          let rawCode = clone.innerText.trim();
+          rawCode = rawCode.replace(/^PS [^>]+>\s*/gm, '');
+          window.copyTextToClipboard(rawCode, this);
+        }
       }
     });
   });

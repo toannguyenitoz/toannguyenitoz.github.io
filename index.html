@@ -104,19 +104,40 @@ title: "Dashboard | IT Support With Toan"
           <span class="flow-status-pill">Status: Handshake OK</span>
         </div>
 
-        <p class="cmd-desc">Inspect TCP port handshake, resolve authoritative DNS records, and flush local resolver cache:</p>
-        <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy script to clipboard">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          </button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Test TCP Port 443 handshake to Microsoft 365 &amp; flush DNS cache
-Test-NetConnection -ComputerName login.microsoftonline.com -Port 443 -InformationLevel Detailed
+        <!-- 1. SEPARATE ANNOTATION & COMMENT BOX -->
+        <div class="cmd-annotation-card">
+          <div class="annotation-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Comment &amp; Parameter Breakdown</span>
+          </div>
+          <p class="annotation-text">
+            Validates end-to-end TCP egress connectivity to Microsoft 365 cloud endpoints, flushes corrupted local DNS resolver caches, and queries authoritative DNS records directly.
+          </p>
+          <ul class="annotation-list">
+            <li><span class="cmd-tag">Test-NetConnection</span> Performs a 3-way TCP socket handshake against <code>login.microsoftonline.com:443</code>. <code>-InformationLevel Detailed</code> returns round-trip latency and routing interfaces.</li>
+            <li><span class="cmd-tag">Clear-DnsClientCache</span> Purges all cached DNS name resolution entries locally to resolve poisoned or stale records.</li>
+            <li><span class="cmd-tag">Resolve-DnsName</span> Performs a direct authoritative lookup for IPv4 <code>Type A</code> records on <code>outlook.office365.com</code>.</li>
+          </ul>
+        </div>
+
+        <!-- 2. SEPARATE PURE EXECUTABLE CONSOLE (NO COMMENTS, ONLY RUNNABLE CODE) -->
+        <div class="cmd-executable-block">
+          <div class="executable-header">
+            <span class="executable-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Executable Commands (Ready to Run)</span>
+            </span>
+            <button class="btn-copy-code" aria-label="Copy pure commands to clipboard">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Commands</span>
+            </button>
+          </div>
+          <pre class="executable-code"><code>Test-NetConnection -ComputerName login.microsoftonline.com -Port 443 -InformationLevel Detailed
 Clear-DnsClientCache
-Resolve-DnsName -Name outlook.office365.com -Type A</code>
+Resolve-DnsName -Name outlook.office365.com -Type A</code></pre>
         </div>
       </div>
 
@@ -144,19 +165,40 @@ Resolve-DnsName -Name outlook.office365.com -Type A</code>
           <span class="flow-status-pill">Status: Remediated</span>
         </div>
 
-        <p class="cmd-desc">Remediate locked-out user accounts, audit bad password attempts, and query account flags:</p>
-        <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy script to clipboard">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          </button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Locate and unlock domain accounts experiencing repeated lockouts
-Search-ADAccount -LockedOut | Select-Object SamAccountName, Name, LastLogonDate
+        <!-- 1. SEPARATE ANNOTATION & COMMENT BOX -->
+        <div class="cmd-annotation-card">
+          <div class="annotation-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Comment &amp; Parameter Breakdown</span>
+          </div>
+          <p class="annotation-text">
+            Triages domain user account lockouts in Active Directory, immediately clears the lockout flag without password resets, and audits authentication failure metrics.
+          </p>
+          <ul class="annotation-list">
+            <li><span class="cmd-tag">Search-ADAccount -LockedOut</span> Enumerates all accounts currently locked across the domain partition with their last logon timestamp.</li>
+            <li><span class="cmd-tag">Unlock-ADAccount</span> Unlocks the specified user identity by clearing the lockout attribute on the Domain Controller.</li>
+            <li><span class="cmd-tag">Get-ADUser</span> Inspects <code>BadLogonCount</code>, <code>BadPasswordTime</code>, and <code>PasswordLastSet</code> to detect credential stuffing or cached credentials.</li>
+          </ul>
+        </div>
+
+        <!-- 2. SEPARATE PURE EXECUTABLE CONSOLE (NO COMMENTS, ONLY RUNNABLE CODE) -->
+        <div class="cmd-executable-block">
+          <div class="executable-header">
+            <span class="executable-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Executable Commands (Ready to Run)</span>
+            </span>
+            <button class="btn-copy-code" aria-label="Copy pure commands to clipboard">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Commands</span>
+            </button>
+          </div>
+          <pre class="executable-code"><code>Search-ADAccount -LockedOut | Select-Object SamAccountName, Name, LastLogonDate
 Unlock-ADAccount -Identity "username"
-Get-ADUser -Identity "username" -Properties BadLogonCount, BadPasswordTime, LockedOut, PasswordLastSet</code>
+Get-ADUser -Identity "username" -Properties BadLogonCount, BadPasswordTime, LockedOut, PasswordLastSet</code></pre>
         </div>
       </div>
 
@@ -184,19 +226,40 @@ Get-ADUser -Identity "username" -Properties BadLogonCount, BadPasswordTime, Lock
           <span class="flow-status-pill">Status: 100% Intact</span>
         </div>
 
-        <p class="cmd-desc">Execute Windows servicing component store repair, SFC system integrity scan, and bulk app upgrade:</p>
-        <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy script to clipboard">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          </button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Repair Windows Component Store, verify system DLLs, and upgrade software
-DISM.exe /Online /Cleanup-Image /RestoreHealth
+        <!-- 1. SEPARATE ANNOTATION & COMMENT BOX -->
+        <div class="cmd-annotation-card">
+          <div class="annotation-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Comment &amp; Parameter Breakdown</span>
+          </div>
+          <p class="annotation-text">
+            Repairs the Windows Component Store (WinSxS), scans and restores protected system binaries, and performs silent bulk software updates across all installed enterprise packages.
+          </p>
+          <ul class="annotation-list">
+            <li><span class="cmd-tag">DISM /RestoreHealth</span> Scans and fixes corrupted files in the Windows Component Store using Windows Update as the clean source.</li>
+            <li><span class="cmd-tag">sfc /scannow</span> Scans all protected system files and replaces damaged DLLs with clean cached copies from WinSxS.</li>
+            <li><span class="cmd-tag">winget upgrade</span> Upgrades all installed third-party software packages in unattended mode via Windows Package Manager.</li>
+          </ul>
+        </div>
+
+        <!-- 2. SEPARATE PURE EXECUTABLE CONSOLE (NO COMMENTS, ONLY RUNNABLE CODE) -->
+        <div class="cmd-executable-block">
+          <div class="executable-header">
+            <span class="executable-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Executable Commands (Ready to Run)</span>
+            </span>
+            <button class="btn-copy-code" aria-label="Copy pure commands to clipboard">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Commands</span>
+            </button>
+          </div>
+          <pre class="executable-code"><code>DISM.exe /Online /Cleanup-Image /RestoreHealth
 sfc /scannow
-winget upgrade --all --include-unknown</code>
+winget upgrade --all --include-unknown</code></pre>
         </div>
       </div>
 
@@ -224,18 +287,38 @@ winget upgrade --all --include-unknown</code>
           <span class="flow-status-pill">Status: PRT Valid</span>
         </div>
 
-        <p class="cmd-desc">Verify Microsoft Entra ID (Azure AD Join) device enrollment, PRT token health, and Intune enrollment:</p>
-        <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy script to clipboard">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          </button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Check Azure AD join state, Primary Refresh Token (PRT), and MDM enrollment
-dsregcmd /status
-Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object ProviderID, UPN</code>
+        <!-- 1. SEPARATE ANNOTATION & COMMENT BOX -->
+        <div class="cmd-annotation-card">
+          <div class="annotation-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Comment &amp; Parameter Breakdown</span>
+          </div>
+          <p class="annotation-text">
+            Validates Microsoft Entra ID (Azure AD Join) device enrollment, checks TPM-bound Primary Refresh Token (PRT) health for SSO, and audits Microsoft Intune enrollment keys.
+          </p>
+          <ul class="annotation-list">
+            <li><span class="cmd-tag">dsregcmd /status</span> Inspects <code>AzureAdJoined: YES</code>, <code>DomainJoined</code>, SSO PRT token status, and TPM cryptographic binding.</li>
+            <li><span class="cmd-tag">Get-ItemProperty Enrollments</span> Audits the registry to verify active Microsoft Intune MDM enrollment GUIDs and mapped User Principal Names.</li>
+          </ul>
+        </div>
+
+        <!-- 2. SEPARATE PURE EXECUTABLE CONSOLE (NO COMMENTS, ONLY RUNNABLE CODE) -->
+        <div class="cmd-executable-block">
+          <div class="executable-header">
+            <span class="executable-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Executable Commands (Ready to Run)</span>
+            </span>
+            <button class="btn-copy-code" aria-label="Copy pure commands to clipboard">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Commands</span>
+            </button>
+          </div>
+          <pre class="executable-code"><code>dsregcmd /status
+Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object ProviderID, UPN</code></pre>
         </div>
       </div>
 
@@ -263,21 +346,38 @@ Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Enrollments\* | Select-Object Provider
           <span class="flow-status-pill">Status: Storage Optimized</span>
         </div>
 
-        <p class="cmd-desc">Identify top 10 largest files consuming storage on drive C: and safely clear temporary cache buffers:</p>
-        <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy script to clipboard">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          </button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Locate top 10 files over 1GB on system drive and purge recycle bin
-Get-ChildItem -Path C:\ -Recurse -File -ErrorAction SilentlyContinue |
-  Where-Object { $_.Length -gt 1GB } |
-  Sort-Object Length -Descending |
-  Select-Object -First 10 Name, @{Name="SizeGB";Expression={[math]::Round($_.Length/1GB,2)}}, Directory
-Clear-RecycleBin -Force -ErrorAction SilentlyContinue</code>
+        <!-- 1. SEPARATE ANNOTATION & COMMENT BOX -->
+        <div class="cmd-annotation-card">
+          <div class="annotation-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Comment &amp; Parameter Breakdown</span>
+          </div>
+          <p class="annotation-text">
+            Recursively traverses drive C: while suppressing access-denied errors to locate the top 10 largest files exceeding 1 GB, and empties the Recycle Bin without confirmation prompts.
+          </p>
+          <ul class="annotation-list">
+            <li><span class="cmd-tag">Get-ChildItem -Recurse</span> Deep scans files over 1GB, sorts descending by byte length, and prints size in GB alongside filepath.</li>
+            <li><span class="cmd-tag">Clear-RecycleBin -Force</span> Empties all deleted items across local drives silently without GUI popup confirmation.</li>
+          </ul>
+        </div>
+
+        <!-- 2. SEPARATE PURE EXECUTABLE CONSOLE (NO COMMENTS, ONLY RUNNABLE CODE) -->
+        <div class="cmd-executable-block">
+          <div class="executable-header">
+            <span class="executable-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Executable Commands (Ready to Run)</span>
+            </span>
+            <button class="btn-copy-code" aria-label="Copy pure commands to clipboard">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Commands</span>
+            </button>
+          </div>
+          <pre class="executable-code"><code>Get-ChildItem -Path C:\ -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Length -gt 1GB } | Sort-Object Length -Descending | Select-Object -First 10 Name, @{Name="SizeGB";Expression={[math]::Round($_.Length/1GB,2)}}, Directory
+Clear-RecycleBin -Force -ErrorAction SilentlyContinue</code></pre>
         </div>
       </div>
 
@@ -305,19 +405,37 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue</code>
           <span class="flow-status-pill">Status: Ports Audited</span>
         </div>
 
-        <p class="cmd-desc">Audit all active listening TCP ports, correlate them to Owning Process IDs (PID), and display executable names:</p>
-        <div class="code-box-wrapper">
-          <button class="btn-copy-code" aria-label="Copy script to clipboard">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            <span>Copy</span>
-          </button>
-          <code><span class="terminal-prompt">PS C:\&gt; </span># Map all listening TCP ports to their owning process names and PIDs
-Get-NetTCPConnection -State Listen |
-  Select-Object LocalAddress, LocalPort, OwningProcess, @{Name="ProcessName";Expression={(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).Name}} |
-  Sort-Object LocalPort | Format-Table -AutoSize</code>
+        <!-- 1. SEPARATE ANNOTATION & COMMENT BOX -->
+        <div class="cmd-annotation-card">
+          <div class="annotation-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Comment &amp; Parameter Breakdown</span>
+          </div>
+          <p class="annotation-text">
+            Queries all open listening TCP ports, correlates each socket's Owning PID directly against the operating system process table, and resolves the executable process name.
+          </p>
+          <ul class="annotation-list">
+            <li><span class="cmd-tag">Get-NetTCPConnection -State Listen</span> Enumerates every TCP socket actively bound to listening mode on local network interfaces.</li>
+            <li><span class="cmd-tag">Get-Process -Id $_.OwningProcess</span> Resolves the owning Process ID (PID) to its running process name (e.g. <code>svchost.exe</code>, <code>node.exe</code>) for instant port conflict identification.</li>
+          </ul>
+        </div>
+
+        <!-- 2. SEPARATE PURE EXECUTABLE CONSOLE (NO COMMENTS, ONLY RUNNABLE CODE) -->
+        <div class="cmd-executable-block">
+          <div class="executable-header">
+            <span class="executable-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Executable Commands (Ready to Run)</span>
+            </span>
+            <button class="btn-copy-code" aria-label="Copy pure commands to clipboard">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Commands</span>
+            </button>
+          </div>
+          <pre class="executable-code"><code>Get-NetTCPConnection -State Listen | Select-Object LocalAddress, LocalPort, OwningProcess, @{Name="ProcessName";Expression={(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).Name}} | Sort-Object LocalPort | Format-Table -AutoSize</code></pre>
         </div>
       </div>
     </div>

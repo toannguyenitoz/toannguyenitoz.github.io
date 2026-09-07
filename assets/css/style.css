@@ -825,6 +825,155 @@ code, pre {
   white-space: nowrap;
 }
 
+/* Distinct Annotation & Comment Box (Visual Block 1) */
+.cmd-annotation-card {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="light"] .cmd-annotation-card {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+  border-left-color: var(--accent-primary);
+}
+
+.annotation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent-primary);
+  background: rgba(56, 189, 248, 0.12);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.annotation-text {
+  font-size: 0.88rem;
+  color: #CBD5E1;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+[data-theme="light"] .annotation-text {
+  color: #334155;
+}
+
+.annotation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #94A3B8;
+  line-height: 1.5;
+}
+
+[data-theme="light"] .annotation-list {
+  color: #475569;
+}
+
+.annotation-list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.annotation-list li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.cmd-tag {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #38BDF8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  margin-right: 4px;
+  display: inline-block;
+}
+
+[data-theme="light"] .cmd-tag {
+  color: #0284C7;
+  background: #E0F2FE;
+  border-color: #BAE6FD;
+}
+
+/* Distinct Executable Commands Console (Visual Block 2) */
+.cmd-executable-block {
+  position: relative;
+  background: #030712;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+  transition: border-color var(--transition-fast);
+}
+
+.cmd-executable-block:hover {
+  border-color: var(--accent-primary);
+}
+
+.executable-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.executable-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10B981;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.4px;
+}
+
+.executable-header .btn-copy-code {
+  position: static;
+  margin: 0;
+}
+
+.executable-code {
+  margin: 0;
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #38BDF8;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.executable-code code {
+  color: #F8FAFC;
+  font-family: var(--font-mono);
+}
+
 .code-box-wrapper {
   position: relative;
   background: rgba(0, 0, 0, 0.4);
