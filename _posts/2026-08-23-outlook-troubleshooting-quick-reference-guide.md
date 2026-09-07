@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters"
-date: 2026-05-07 10:36:35 +0930
+title: "Outlook Troubleshooting – Quick Reference Guide"
+date: 2026-08-23 03:10:58 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-10", "ToanNguyenITOz", "Windows11", "Windows10", "Networking"]
-image: /assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/"
-description: "Bypass the Settings Maze: Jump Straight to Network Adapters"
-part: 10
+tags: ["Windows", "IT Support", "Troubleshooting", "ToanNguyenITOz", "Outlook", "Microsoft365", "Office365", "HelpDesk"]
+image: /assets/images/posts/outlook-troubleshooting-quick-reference-guide.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7483993997951098880/"
+description: "Outlook Troubleshooting – Quick Reference Guide"
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,48 +15,52 @@ part: 10
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 10 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of the practical *Windows & IT Support Quick Fix* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483993997951098880/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters](/assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg)
+![Outlook Troubleshooting – Quick Reference Guide](/assets/images/posts/outlook-troubleshooting-quick-reference-guide.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Outlook Troubleshooting – Quick Reference Guide
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Outlook Troubleshooting – Quick Reference Guide
 
-Need to change DNS settings, assign a static IP, or quickly restart a network adapter?
+If you work in IT Support, youve probably answered the same Outlook questions hundreds of times:
 
-Windows 10 and Windows 11 often bury these options deep inside the Settings app. Instead of clicking through multiple menus, IT professionals can jump directly to the classic Network Connections panel in seconds.
+Why wont my email send? Outlook keeps crashing. My mailbox is full. Why is Outlook not responding? How do I add a Shared Mailbox?
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- User cannot access the internet
+- Adding a Shared Mailbox (Classic Outlook)
 
-- Need to switch from DHCP to a static IP
+- Archiving emails to a PST file
 
-- Verify DNS settings after a migration
+- Troubleshooting emails that wont send or receive
 
-- Restart a network adapter without rebooting
+- Recovering from Outlook crashes
 
-- Troubleshoot VPN and connectivity issues
+- Fixing Not Responding issues
+
+- Managing oversized OST files
+
+- Compacting OST files to improve performance
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-No Internet Connection
+Get-Service
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">No</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -77,6 +80,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7483993997951098880/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

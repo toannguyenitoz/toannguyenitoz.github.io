@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush"
-date: 2026-05-10 11:24:52 +0930
+title: "Windows Tips & Tricks – Part 54: Check Account Lockout & Password Status in Seconds"
+date: 2026-06-20 10:16:49 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-24", "ToanNguyenITOz", "Windows11", "Networking", "DNS"]
-image: /assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/"
-description: "Getting Site cant be reached errors while the internet connection is working fine?"
-part: 24
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-54", "ToanNguyenITOz", "ActiveDirectory", "PowerShell", "HelpDesk"]
+image: /assets/images/posts/part-54-check-account-lockout-password-status-in-second.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7487629862476722176/"
+description: "Check Account Lockout & Password Status in Seconds"
+part: 54
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,56 +16,63 @@ part: 24
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 24 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 54 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7487629862476722176/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush](/assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg)
+![Windows Tips & Tricks – Part 54: Check Account Lockout & Password Status in Seconds](/assets/images/posts/part-54-check-account-lockout-password-status-in-second.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Check Account Lockout & Password Status in Seconds
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Check Account Lockout & Password Status in Seconds
 
-Before troubleshooting the router or escalating the issue, try clearing the local DNS cache.
+A user cant sign in and says:
 
-Run as Administrator
+My password isnt working. Is my account locked, or has my password expired?
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Clears outdated DNS records
+- Account Active
 
-- Fixes website access issues after IP changes
+- Account Expires
 
-- Resolves internal application connectivity problems
+- Password Last Set
 
-- Takes only a few seconds to perform
+- Password Expires
+
+- Last Logon
+
+- Verify whether the account is active
+
+- Check password expiration dates
+
+- Review the users last logon
+
+- Confirm the correct username
+
+- Troubleshoot authentication issues without opening ADUC
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-ipconfig /flushdns
+net user username /domain
 ```
 
 ```powershell
-ipconfig /release
-```
-
-```powershell
-ipconfig /renew
+Search-ADAccount -LockedOut |
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">net</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Search-ADAccount</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -85,6 +92,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7487629862476722176/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

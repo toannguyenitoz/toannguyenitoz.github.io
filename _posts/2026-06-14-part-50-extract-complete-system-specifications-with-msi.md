@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters"
-date: 2026-05-07 10:36:35 +0930
+title: "Windows Tips & Tricks – Part 50: Extract Complete System Specifications with msinfo32"
+date: 2026-06-14 08:40:14 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-10", "ToanNguyenITOz", "Windows11", "Windows10", "Networking"]
-image: /assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/"
-description: "Bypass the Settings Maze: Jump Straight to Network Adapters"
-part: 10
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-50", "ToanNguyenITOz", "Windows11", "SystemInformation", "MSInfo32"]
+image: /assets/images/posts/part-50-extract-complete-system-specifications-with-msi.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7486162221186809856/"
+description: "Milestone Reached — 50 Parts"
+part: 50
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,48 +16,48 @@ part: 10
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 10 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 50 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7486162221186809856/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters](/assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg)
+![Windows Tips & Tricks – Part 50: Extract Complete System Specifications with msinfo32](/assets/images/posts/part-50-extract-complete-system-specifications-with-msi.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Milestone Reached — 50 Parts
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Milestone Reached — 50 Parts
 
-Need to change DNS settings, assign a static IP, or quickly restart a network adapter?
+Need to check a users hardware before upgrading RAM, updating the BIOS, or troubleshooting a system issue?
 
-Windows 10 and Windows 11 often bury these options deep inside the Settings app. Instead of clicking through multiple menus, IT professionals can jump directly to the classic Network Connections panel in seconds.
+Instead of asking users to read labels under their desk, let Windows provide the answer.
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- User cannot access the internet
+- View the exact PC model and manufacturer
 
-- Need to switch from DHCP to a static IP
+- Check BIOS version and firmware details
 
-- Verify DNS settings after a migration
+- Verify installed RAM and Windows build
 
-- Restart a network adapter without rebooting
+- Confirm Secure Boot and Virtualization status
 
-- Troubleshoot VPN and connectivity issues
+- Export system information to .txt or .nfo for escalation or documentation
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-No Internet Connection
+ipconfig /all
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">No</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -77,6 +77,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7486162221186809856/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters"
-date: 2026-05-07 10:36:35 +0930
+title: "Windows Tips & Tricks – Part 43: Fix Fake Shutdowns (Disable Fast Startup)"
+date: 2026-06-05 06:15:21 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-10", "ToanNguyenITOz", "Windows11", "Windows10", "Networking"]
-image: /assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/"
-description: "Bypass the Settings Maze: Jump Straight to Network Adapters"
-part: 10
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-43", "ToanNguyenITOz", "Windows11", "FastStartup", "PowerOptions"]
+image: /assets/images/posts/part-43-fix-fake-shutdowns-disable-fast-startup.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7483643174146469888/"
+description: "Fix Fake Shutdowns (Disable Fast Startup)"
+part: 43
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,48 +16,48 @@ part: 10
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 10 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 43 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483643174146469888/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters](/assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg)
+![Windows Tips & Tricks – Part 43: Fix Fake Shutdowns (Disable Fast Startup)](/assets/images/posts/part-43-fix-fake-shutdowns-disable-fast-startup.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Fix Fake Shutdowns (Disable Fast Startup)
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Fix Fake Shutdowns (Disable Fast Startup)
 
-Need to change DNS settings, assign a static IP, or quickly restart a network adapter?
+A user says they shut down their PC every night...
 
-Windows 10 and Windows 11 often bury these options deep inside the Settings app. Instead of clicking through multiple menus, IT professionals can jump directly to the classic Network Connections panel in seconds.
+But Task Manager shows 45 days of Uptime.
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- User cannot access the internet
+- Force a true Windows shutdown
 
-- Need to switch from DHCP to a static IP
+- Fix docking station and audio issues
 
-- Verify DNS settings after a migration
+- Ensure drivers reload correctly
 
-- Restart a network adapter without rebooting
+- Help Group Policy and software updates apply properly
 
-- Troubleshoot VPN and connectivity issues
+- Reset misleading system uptime values
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-No Internet Connection
+powercfg.cpl
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">No</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">powercfg.cpl</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -77,6 +77,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7483643174146469888/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

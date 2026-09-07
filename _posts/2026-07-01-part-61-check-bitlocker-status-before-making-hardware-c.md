@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters"
-date: 2026-05-07 10:36:35 +0930
+title: "Windows Tips & Tricks – Part 61: Check BitLocker Status Before Making Hardware Changes"
+date: 2026-07-01 01:05:51 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-10", "ToanNguyenITOz", "Windows11", "Windows10", "Networking"]
-image: /assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/"
-description: "Bypass the Settings Maze: Jump Straight to Network Adapters"
-part: 10
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-61", "ToanNguyenITOz", "Windows11", "BitLocker", "CyberSecurity"]
+image: /assets/images/posts/part-61-check-bitlocker-status-before-making-hardware-c.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7490147353983639552/"
+description: "Need to update a BIOS, replace hardware, or troubleshoot a Windows device?"
+part: 61
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,48 +16,48 @@ part: 10
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 10 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 61 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7490147353983639552/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters](/assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg)
+![Windows Tips & Tricks – Part 61: Check BitLocker Status Before Making Hardware Changes](/assets/images/posts/part-61-check-bitlocker-status-before-making-hardware-c.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Need to update a BIOS, replace hardware, or troubleshoot a Windows device?
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Before making any changes, always check whether BitLocker is protecting the drive.
 
-Need to change DNS settings, assign a static IP, or quickly restart a network adapter?
+A simple BIOS update can trigger the BitLocker Recovery Key screen if youre not prepared.
 
-Windows 10 and Windows 11 often bury these options deep inside the Settings app. Instead of clicking through multiple menus, IT professionals can jump directly to the classic Network Connections panel in seconds.
+Open Command Prompt as Administrator and run:
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- User cannot access the internet
+- Verify whether BitLocker is enabled
 
-- Need to switch from DHCP to a static IP
+- Check encryption progress and protection status
 
-- Verify DNS settings after a migration
+- View the encryption algorithm (e.g. XTS-AES 256)
 
-- Restart a network adapter without rebooting
+- Prevent unexpected BitLocker Recovery prompts
 
-- Troubleshoot VPN and connectivity issues
+- Essential before BIOS, TPM, or firmware updates
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-No Internet Connection
+ipconfig /all
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">No</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -77,6 +77,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7490147353983639552/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

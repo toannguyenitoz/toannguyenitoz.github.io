@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush"
-date: 2026-05-10 11:24:52 +0930
+title: "Windows Tips & Tricks – Part 77: Securely Wipe Deleted Data With Windows"
+date: 2026-07-20 18:19:45 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-24", "ToanNguyenITOz", "Windows11", "Networking", "DNS"]
-image: /assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/"
-description: "Getting Site cant be reached errors while the internet connection is working fine?"
-part: 24
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-77", "ToanNguyenITOz", "SysAdmin", "HelpDesk", "DataSecurity"]
+image: /assets/images/posts/part-77-securely-wipe-deleted-data-with-windows.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7495242040482349056/"
+description: "I deleted the previous users files. Is the laptop really clean?"
+part: 77
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,56 +16,46 @@ part: 24
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 24 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 77 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7495242040482349056/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush](/assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg)
+![Windows Tips & Tricks – Part 77: Securely Wipe Deleted Data With Windows](/assets/images/posts/part-77-securely-wipe-deleted-data-with-windows.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Getting Site cant be reached errors while the internet connection is working fine?
+I deleted the previous users files. Is the laptop really clean?
 
-Getting Site cant be reached errors while the internet connection is working fine?
+I deleted the previous users files. Is the laptop really clean?
 
-Before troubleshooting the router or escalating the issue, try clearing the local DNS cache.
+Deleting a file doesnt immediately erase its data. The space is simply marked as available for reuse.
 
-Run as Administrator
+For IT Support and SysAdmins preparing devices for a new employee, Windows provides a built-in command to overwrite free space:
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Clears outdated DNS records
+- Helps protect residual user data
 
-- Fixes website access issues after IP changes
+- Useful during device re-provisioning
 
-- Resolves internal application connectivity problems
+- No third-party software required
 
-- Takes only a few seconds to perform
+- Supports good data-security practices during hardware lifecycle management
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-ipconfig /flushdns
-```
-
-```powershell
-ipconfig /release
-```
-
-```powershell
-ipconfig /renew
+cipher /w:C:
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">cipher</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -85,6 +75,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7495242040482349056/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

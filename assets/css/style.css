@@ -1500,6 +1500,18 @@ kbd {
   color: var(--text-primary);
 }
 
+.post-body-content img {
+  max-width: 100%;
+  max-height: 480px;
+  width: auto;
+  height: auto;
+  margin: 18px auto 28px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  display: block;
+  object-fit: contain;
+}
+
 .post-body-content h2 {
   font-size: 1.65rem;
   font-weight: 700;

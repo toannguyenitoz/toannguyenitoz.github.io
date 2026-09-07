@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush"
-date: 2026-05-10 11:24:52 +0930
+title: "Windows Tips & Tricks – Part 93: Fix a Stuck Print Queue in Seconds"
+date: 2026-08-01 21:32:55 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-24", "ToanNguyenITOz", "Windows11", "Networking", "DNS"]
-image: /assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/"
-description: "Getting Site cant be reached errors while the internet connection is working fine?"
-part: 24
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-93", "ToanNguyenITOz", "SysAdmin", "HelpDesk", "Windows11"]
+image: /assets/images/posts/part-93-fix-a-stuck-print-queue-in-seconds.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7500290397190053888/"
+description: "My document has been stuck on Deleting and now nothing else will print"
+part: 93
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,56 +16,44 @@ part: 24
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 24 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 93 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7500290397190053888/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush](/assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg)
+![Windows Tips & Tricks – Part 93: Fix a Stuck Print Queue in Seconds](/assets/images/posts/part-93-fix-a-stuck-print-queue-in-seconds.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Getting Site cant be reached errors while the internet connection is working fine?
+My document has been stuck on Deleting and now nothing else will print
 
-Getting Site cant be reached errors while the internet connection is working fine?
+My document has been stuck on Deleting and now nothing else will print
 
-Before troubleshooting the router or escalating the issue, try clearing the local DNS cache.
+When the Windows Print Queue is frozen, clicking Cancel often does nothing. Instead of rebooting the whole PC, reset the Print Spooler directly from CMD.
 
-Run as Administrator
+Run CMD as Administrator and execute:
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Clears outdated DNS records
+- Clears ghost print jobs
 
-- Fixes website access issues after IP changes
+- Fixes jobs stuck on Deleting
 
-- Resolves internal application connectivity problems
-
-- Takes only a few seconds to perform
+- Saves valuable HelpDesk time
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-ipconfig /flushdns
-```
-
-```powershell
-ipconfig /release
-```
-
-```powershell
-ipconfig /renew
+ipconfig /all
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -85,6 +73,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7500290397190053888/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

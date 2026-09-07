@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters"
-date: 2026-05-07 10:36:35 +0930
+title: "Move Large Files Faster and Safer with Robocopy"
+date: 2026-08-24 15:35:07 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-10", "ToanNguyenITOz", "Windows11", "Windows10", "Networking"]
-image: /assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/"
-description: "Bypass the Settings Maze: Jump Straight to Network Adapters"
-part: 10
+tags: ["Windows", "IT Support", "Troubleshooting", "Robocopy", "WindowsAdmin", "SysAdmin", "TechTips", "Windows11"]
+image: /assets/images/posts/move-large-files-faster-and-safer-with-robocopy.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7470952274245177344/"
+description: "Move Large Files Faster and Safer with Robocopy"
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,48 +15,50 @@ part: 10
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 10 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of the practical *Windows & IT Support Quick Fix* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7470952274245177344/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters](/assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg)
+![Move Large Files Faster and Safer with Robocopy](/assets/images/posts/move-large-files-faster-and-safer-with-robocopy.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Move Large Files Faster and Safer with Robocopy
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Move Large Files Faster and Safer with Robocopy
 
-Need to change DNS settings, assign a static IP, or quickly restart a network adapter?
+Need to move hundreds of GBs or even TBs of data without interruptions?
 
-Windows 10 and Windows 11 often bury these options deep inside the Settings app. Instead of clicking through multiple menus, IT professionals can jump directly to the classic Network Connections panel in seconds.
+Instead of using File Explorer, use Robocopy – Microsofts powerful built-in file copy tool.
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- User cannot access the internet
+1. **Open Command Prompt as Administrator**
 
-- Need to switch from DHCP to a static IP
+2. **Run:**
 
-- Verify DNS settings after a migration
+- Handles network interruptions better
 
-- Restart a network adapter without rebooting
+- Great for large file migrations
 
-- Troubleshoot VPN and connectivity issues
+- Preserves file attributes and permissions
+
+- Built into Windows – no extra software needed
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-No Internet Connection
+robocopy "D:\Source" "E:\Destination" /MOVE /E /R:3 /W:5 /MT:16
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">No</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">robocopy</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -77,6 +78,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7470952274245177344/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush"
-date: 2026-05-10 11:24:52 +0930
+title: "Windows Tips & Tricks – Part 25: Bluetooth Mouse or Headset Keeps Disconnecting?"
+date: 2026-05-11 23:49:01 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-24", "ToanNguyenITOz", "Windows11", "Networking", "DNS"]
-image: /assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/"
-description: "Getting Site cant be reached errors while the internet connection is working fine?"
-part: 24
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-25", "ToanNguyenITOz", "Windows11", "Bluetooth", "HelpDesk"]
+image: /assets/images/posts/part-25-bluetooth-mouse-or-headset-keeps-disconnecting.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477482584327737345/"
+description: "Before replacing the device, check Windows Power Management settings."
+part: 25
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,56 +16,44 @@ part: 24
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 24 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 25 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477482584327737345/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush](/assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg)
+![Windows Tips & Tricks – Part 25: Bluetooth Mouse or Headset Keeps Disconnecting?](/assets/images/posts/part-25-bluetooth-mouse-or-headset-keeps-disconnecting.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Before replacing the device, check Windows Power Management settings.
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Windows X Device Manager
 
-Before troubleshooting the router or escalating the issue, try clearing the local DNS cache.
+Bluetooth or USB Controllers
 
-Run as Administrator
+Properties Power Management
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Clears outdated DNS records
+- Fix random Bluetooth dropouts
 
-- Fixes website access issues after IP changes
+- Improve mouse and headset responsiveness
 
-- Resolves internal application connectivity problems
-
-- Takes only a few seconds to perform
+- Prevent USB devices from sleeping
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-ipconfig /flushdns
-```
-
-```powershell
-ipconfig /release
-```
-
-```powershell
-ipconfig /renew
+ipconfig /all
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -85,6 +73,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477482584327737345/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

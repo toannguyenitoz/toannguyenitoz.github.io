@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters"
-date: 2026-05-07 10:36:35 +0930
+title: "Windows Privacy Settings You Should Change Today"
+date: 2026-08-10 23:57:48 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-10", "ToanNguyenITOz", "Windows11", "Windows10", "Networking"]
-image: /assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/"
-description: "Bypass the Settings Maze: Jump Straight to Network Adapters"
-part: 10
+tags: ["Windows", "IT Support", "Troubleshooting", "Windows11", "PrivacySettings", "CyberSecurity", "TechTips", "WindowsPrivacy"]
+image: /assets/images/posts/windows-privacy-settings-you-should-change-today.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7495778407817986048/"
+description: "Windows Privacy Settings You Should Change Today"
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,48 +15,54 @@ part: 10
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 10 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of the practical *Windows & IT Support Quick Fix* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7495778407817986048/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 10: Bypass the Settings Maze: Jump Straight to Network Adapters](/assets/images/posts/part-10-bypass-the-settings-maze-jump-straight-to-netwo.jpg)
+![Windows Privacy Settings You Should Change Today](/assets/images/posts/windows-privacy-settings-you-should-change-today.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Windows Privacy Settings You Should Change Today
 
-Bypass the Settings Maze: Jump Straight to Network Adapters
+Windows Privacy Settings You Should Change Today
 
-Need to change DNS settings, assign a static IP, or quickly restart a network adapter?
+Your Windows PC may collect and share certain data by default. Take a few minutes to review these privacy settings and take back control:
 
-Windows 10 and Windows 11 often bury these options deep inside the Settings app. Instead of clicking through multiple menus, IT professionals can jump directly to the classic Network Connections panel in seconds.
+Turn off Advertising ID Disable unnecessary Location Tracking Review Camera & Microphone permissions Limit Diagnostic Data collection Disable Activity History Control Background Apps Review Startup Apps Check Speech & Privacy settings
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- User cannot access the internet
+- Turn off Advertising ID
 
-- Need to switch from DHCP to a static IP
+- Disable unnecessary Location Tracking
 
-- Verify DNS settings after a migration
+- Review Camera & Microphone permissions
 
-- Restart a network adapter without rebooting
+- Limit Diagnostic Data collection
 
-- Troubleshoot VPN and connectivity issues
+- Disable Activity History
+
+- Control Background Apps
+
+- Review Startup Apps
+
+- Check Speech & Privacy settings
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-No Internet Connection
+Get-Service
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">No</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -77,6 +82,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7472752225090547712/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7495778407817986048/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

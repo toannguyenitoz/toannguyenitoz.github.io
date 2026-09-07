@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 29: Fix a Frozen Taskbar or Start Menu Instantly"
-date: 2026-05-18 01:25:36 +0930
+title: "Windows CMD Commands Every IT Professional Should Know"
+date: 2026-08-20 02:22:40 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-29", "ToanNguyenITOz", "Windows11", "TaskManager", "ExplorerEXE"]
-image: /assets/images/posts/part-29-fix-a-frozen-taskbar-or-start-menu-instantly.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7478910556624814080/"
-description: "Taskbar frozen? Start Menu wont open? Desktop not responding?"
-part: 29
+tags: ["Windows", "IT Support", "Troubleshooting", "Windows11", "CommandPrompt", "CMD", "PowerShell", "SystemAdministrator"]
+image: /assets/images/posts/windows-cmd-commands-every-it-professional-should.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7488352387397468160/"
+description: "The Command Prompt (CMD) is still one of the most powerful troubleshooting tools in Windows."
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,39 +15,59 @@ part: 29
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 29 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7478910556624814080/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of the practical *Windows & IT Support Quick Fix* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7488352387397468160/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 29: Fix a Frozen Taskbar or Start Menu Instantly](/assets/images/posts/part-29-fix-a-frozen-taskbar-or-start-menu-instantly.jpg)
+![Windows CMD Commands Every IT Professional Should Know](/assets/images/posts/windows-cmd-commands-every-it-professional-should.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Taskbar frozen? Start Menu wont open? Desktop not responding?
+The Command Prompt (CMD) is still one of the most powerful troubleshooting tools in Windows.
 
-Taskbar frozen? Start Menu wont open? Desktop not responding?
+The Command Prompt (CMD) is still one of the most powerful troubleshooting tools in Windows.
 
-Before restarting the PC, try restarting Windows Explorer.
+While many tasks can be completed through the graphical interface, experienced IT professionals often rely on CMD because its faster, more consistent, and works even when the GUI doesnt.
 
-Ctrl Shift Esc
+Whether youre working in Desktop Support, Systems Administration, Network Engineering, or Cybersecurity, mastering a handful of CMD commands can dramatically reduce troubleshooting time.
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Fix frozen Taskbar and Start Menu
+- Diagnose network issues within seconds
 
-- Refresh desktop icons and system tray
+- Verify DNS, DHCP and routing problems
 
-- Avoid losing unsaved work
+- Check running processes and active network connections
 
-- Takes only a few seconds
+- Repair corrupted Windows system files
+
+- Collect system information for incident investigations
+
+- Manage mapped drives and user sessions
+
+- Troubleshoot connectivity before escalating incidents
+
+- Is DNS resolving correctly?
+
+- Is the computer receiving the correct IP address?
+
+- Which process is using this port?
+
+- Is Windows missing system files?
+
+- Is the problem caused by routing or firewall?
+
+- Is the machine communicating with the server?
+
+- Which CMD command do you use the most in your daily work?
 
 
 ## 3. Production Command Scripts
 
 ```powershell
-ipconfig /all
+Get-Service
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
@@ -75,6 +94,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7478910556624814080/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7488352387397468160/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

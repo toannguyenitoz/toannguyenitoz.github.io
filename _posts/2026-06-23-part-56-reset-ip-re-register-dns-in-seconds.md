@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush"
-date: 2026-05-10 11:24:52 +0930
+title: "Windows Tips & Tricks – Part 56: Reset IP & Re-register DNS in Seconds"
+date: 2026-06-23 11:05:07 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-24", "ToanNguyenITOz", "Windows11", "Networking", "DNS"]
-image: /assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/"
-description: "Getting Site cant be reached errors while the internet connection is working fine?"
-part: 24
+tags: ["Windows", "IT Support", "Troubleshooting", "Part-56", "SysAdmin", "HelpDesk", "Networking", "ActiveDirectory"]
+image: /assets/images/posts/part-56-reset-ip-re-register-dns-in-seconds.jpg
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7488331489043132416/"
+description: "Reset IP & Re-register DNS in Seconds"
+part: 56
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,40 +16,30 @@ part: 24
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 24 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of Part 56 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7488331489043132416/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush](/assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg)
+![Windows Tips & Tricks – Part 56: Reset IP & Re-register DNS in Seconds](/assets/images/posts/part-56-reset-ip-re-register-dns-in-seconds.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Reset IP & Re-register DNS in Seconds
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Reset IP & Re-register DNS in Seconds
 
-Before troubleshooting the router or escalating the issue, try clearing the local DNS cache.
+I reconnected to the office Wi-Fi, but I still cant access internal servers or shared drives
 
-Run as Administrator
+This is a common issue in corporate environments.
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Clears outdated DNS records
-
-- Fixes website access issues after IP changes
-
-- Resolves internal application connectivity problems
-
-- Takes only a few seconds to perform
+- Why it works
 
 
 ## 3. Production Command Scripts
-
-```powershell
-ipconfig /flushdns
-```
 
 ```powershell
 ipconfig /release
@@ -57,6 +47,18 @@ ipconfig /release
 
 ```powershell
 ipconfig /renew
+```
+
+```powershell
+ipconfig /registerdns
+```
+
+```powershell
+netsh int ip reset
+```
+
+```powershell
+netsh winsock reset
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
@@ -85,6 +87,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7488331489043132416/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*

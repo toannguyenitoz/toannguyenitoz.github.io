@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush"
-date: 2026-05-10 11:24:52 +0930
+title: "Work Smarter, Not Harder: 10 Hidden Windows Shortcuts That Save Hours"
+date: 2026-08-12 12:21:57 +0930
 categories: [Windows, Troubleshooting]
-tags: ["Windows", "IT Support", "Troubleshooting", "Part-24", "ToanNguyenITOz", "Windows11", "Networking", "DNS"]
-image: /assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg
-linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/"
-description: "Getting Site cant be reached errors while the internet connection is working fine?"
-part: 24
+tags: ["Windows", "IT Support", "Troubleshooting", "1", "ITCommunity", "Efficiency", "TechHacks", "ProfessionalDevelopment"]
+image: /assets/images/posts/work-smarter-not-harder-10-hidden-windows-shortcut.png
+linkedin_url: "https://www.linkedin.com/feed/update/urn:li:activity:7495376758637072384/"
+description: "Work Smarter, Not Harder: 10 Hidden Windows Shortcuts That Save Hours"
 ---
 
 <div class="cmd-annotation-card" style="margin-bottom: 24px;">
@@ -16,56 +15,41 @@ part: 24
     <span>LinkedIn Enterprise Series Origin</span>
   </div>
   <p class="annotation-text">
-    This standard operating procedure is part of Part 24 of the *Windows Tips & Tricks* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    This standard operating procedure is part of the practical *Windows & IT Support Quick Fix* series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Connect with over 20+ years of banking and enterprise systems administration experience on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7495376758637072384/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
 
-![Windows Tips & Tricks – Part 24: Fix Bizarre Web Errors with DNS Flush](/assets/images/posts/part-24-fix-bizarre-web-errors-with-dns-flush.jpg)
+![Work Smarter, Not Harder: 10 Hidden Windows Shortcuts That Save Hours](/assets/images/posts/work-smarter-not-harder-10-hidden-windows-shortcut.png)
 
 ## 1. Scenario Overview & Problem Context
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Work Smarter, Not Harder: 10 Hidden Windows Shortcuts That Save Hours
 
-Getting Site cant be reached errors while the internet connection is working fine?
+Work Smarter, Not Harder: 10 Hidden Windows Shortcuts That Save Hours
 
-Before troubleshooting the router or escalating the issue, try clearing the local DNS cache.
+When working in IT, software development, or corporate office environments, small friction points add up.
 
-Run as Administrator
+A few extra mouse clicks to find a tool, re-typing text you copied 10 minutes ago, or rebooting your whole PC because a screen froze—these cost valuable focus and time.
 
 ## 2. Step-by-Step Diagnostic & Remediation SOP
 
 Execute this procedure using an elevated console (**Run as Administrator**) to ensure necessary system access:
 
-- Clears outdated DNS records
-
-- Fixes website access issues after IP changes
-
-- Resolves internal application connectivity problems
-
-- Takes only a few seconds to perform
-
+1. **Open Elevated Console**: Press `Win + X` and select **Terminal (Admin)** or **Windows PowerShell (Admin)**.
+2. **Execute Administrative Command**: Run the production command below to query or remediate the target service state.
+3. **Verify Remediation**: Review the returned output or status code to confirm expected behavior.
 
 ## 3. Production Command Scripts
 
 ```powershell
-ipconfig /flushdns
-```
-
-```powershell
-ipconfig /release
-```
-
-```powershell
-ipconfig /renew
+Get-Service
 ```
 
 ## 4. Technical Breakdown & Parameter Deep Dive
 
 Understanding how native Windows administrative tools operate helps prevent unintended side effects across domain environments:
 
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
-- `<span class="cmd-tag">ipconfig</span>`: Interacts with the underlying Windows subsystem, CIM/WMI repository, or Active Directory directory partition to execute the administrative operation.
+- `<span class="cmd-tag">Elevated PowerShell</span>`: Operates within the elevated administrative security context to interact directly with core OS services.
 - **Silent Background Execution**: Minimizes end-user disruption by querying or modifying configuration parameters without requiring an intrusive remote desktop takeover.
 
 ## 5. Enterprise Troubleshooting & Verification Checklist
@@ -85,6 +69,6 @@ In high-availability enterprise environments, resolving endpoint anomalies at th
 
 > 🔗 **Join the Live Community Discussion**:
 > Have questions or additional variations for this command?
-> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7477099491217551361/)**
+> 👉 **[View and join the original LinkedIn post discussion](https://www.linkedin.com/feed/update/urn:li:activity:7495376758637072384/)**
 >
 > *Authored by [Toan Nguyen (Toan Nguyen IT OZ)](https://www.linkedin.com/in/toan-nguyen-it-oz/) — 20+ Years Enterprise & Banking IT Experience in Adelaide, South Australia.*
