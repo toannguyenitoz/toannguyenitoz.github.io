@@ -23,6 +23,12 @@ author:
     - "Silver Medalist - Cloud Computing (WorldSkills Australia SA 2026)"
     - "Certificate IV in Information Technology (Systems Administration) - TAFE SA"
 
+# SEO & Webmaster Verification
+keywords: "IT Support, Systems Administration, Windows Server, Active Directory, Microsoft 365, Azure Cloud, PowerShell Automation, Adelaide IT Support, Toan Nguyen IT OZ, Tech Tips"
+google_site_verification: ""  # Paste Google Search Console verification code here
+bing_site_verification: ""    # Paste Bing Webmaster verification code here
+twitter_username: ""
+
 # Build Settings
 markdown: kramdown
 highlighter: rouge
