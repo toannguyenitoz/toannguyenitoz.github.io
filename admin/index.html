@@ -4,18 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>ToanNguyen.IT | Trang Quản Trị Nội Dung (Decap CMS)</title>
-    <!-- Decap CMS Favicon & Identity Widget -->
+    <title>ToanNguyen.IT | Trang Quản Trị Nội Dung (CMS)</title>
+    <!-- CMS Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
   </head>
   <body>
-    <!-- Nạp Decap CMS trực tiếp từ CDN -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      // Đăng ký tùy biến nếu cần
-      if (window.CMS) {
-        console.log("Decap CMS initialized for ToanNguyen.IT");
-      }
-    </script>
+    <!-- 
+      Sveltia CMS: Phiên bản kế nhiệm hiện đại của Decap CMS (100% tương thích admin/config.yml).
+      Giải quyết triệt để lỗi "api.netlify.com Not Found" trên GitHub Pages nhờ tính năng
+      đăng nhập trực tiếp bằng Personal Access Token (PAT) mà không cần cài đặt máy chủ OAuth trung gian.
+    -->
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
   </body>
 </html>
