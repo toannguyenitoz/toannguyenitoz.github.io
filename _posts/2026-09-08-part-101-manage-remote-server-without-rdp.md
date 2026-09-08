@@ -4,6 +4,7 @@ title: "Windows Tips & Tricks – Part 101: Manage a Remote Server Without RDP!"
 date: 2026-09-08 10:00:00 +0930
 categories: [Windows, Troubleshooting]
 tags: ["Windows", "IT Support", "Troubleshooting", "Part-101", "SysAdmin", "HelpDesk", "WindowsServer", "Infrastructure", "SystemAdministrator", "ToanNguyenItOz"]
+image: /assets/images/posts/part-101-manage-remote-server-without-rdp.jpg
 linkedin_url: "https://www.linkedin.com/feed/update/urn:li:share:7502835632860471296"
 description: "Don't RDP into a server for every simple task. Use the built-in Computer Management console to manage remote servers right from your workstation."
 part: 101
@@ -18,6 +19,8 @@ part: 101
     This guide is Part 101 of the <em>Windows Tips & Tricks</em> series published by <strong>Toan Nguyen (Toan Nguyen IT OZ)</strong>. Part 100 was the milestone — now we start <strong>Phase 3</strong>, moving from fixing individual PCs to thinking like a Systems Administrator. Follow on <a href="https://www.linkedin.com/feed/update/urn:li:share:7502835632860471296" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 </div>
+
+![Windows Tips & Tricks – Part 101: Manage a Remote Server Without RDP!](/assets/images/posts/part-101-manage-remote-server-without-rdp.jpg)
 
 ## 1. Scenario Overview & Problem Context
 
@@ -43,16 +46,24 @@ Press **`Win + R`**, then type:
 compmgmt.msc
 ```
 
-Hit **Enter**.
+![Run dialog - compmgmt.msc](/assets/images/posts/part-101-step1-run-compmgmt.png)
+
+Hit **Enter** (or click **OK**). The **Computer Management** console opens on your local machine:
+
+![Computer Management Console Window](/assets/images/posts/part-101-step2-computer-management-open.png)
 
 ### ⌨️ Step 2 — Connect to Another Computer
 
-- Right-click **Computer Management** (top of the left panel)
-- Select **"Connect to another computer..."**
-- Enter the target server name: `SERVERNAME`
-- Click **OK**
+1. In the left navigation pane, right-click on **Computer Management (Local)**.
+2. From the context menu, select **"Connect to another computer..."**:
 
-You can now manage the remote machine's components directly from your workstation — no RDP session required.
+![Right-click Computer Management and select Connect to another computer](/assets/images/posts/part-101-step3-right-click-connect.png)
+
+3. In the **Select Computer** prompt, choose **Another computer**, type the hostname or IP of the target machine (e.g. `pc1` or `SERVERNAME`), and click **OK**:
+
+![Select Computer dialog - Enter target computer name](/assets/images/posts/part-101-step4-select-computer-dialog.png)
+
+You can now manage the remote machine's components directly from your workstation — no RDP session required!
 
 ---
 
