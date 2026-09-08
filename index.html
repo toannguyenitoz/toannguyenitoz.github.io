@@ -207,23 +207,60 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
       </div>
 
       <!-- ================================================================= -->
-      <!-- COLUMN 2 (CENTER): LATEST 5 TECHNICAL ARTICLES                    -->
+      <!-- COLUMN 2 (CENTER): TECHNICAL ARTICLES SHOWCASE                    -->
       <!-- ================================================================= -->
       <div class="dashboard-col col-articles">
         <div class="col-header-bar">
           <div class="col-header-title">
             <span class="col-icon-mark">📄</span>
             <div>
-              <h2 class="col-title">Latest Technical Articles</h2>
-              <p class="col-desc">Showing 5 most recent SOP guides &amp; field blueprints</p>
+              <h2 class="col-title">Latest Technical SOPs</h2>
+              <p class="col-desc">Top 3 recent enterprise blueprints &amp; active archive</p>
             </div>
           </div>
-          <span class="col-status-pill">Latest 5</span>
+          <span class="col-status-pill">Featured Guides</span>
         </div>
 
-        <!-- 5 Recent Articles Feed -->
-        <div class="col-articles-feed">
-          {% for post in site.posts limit: 5 %}
+        <!-- 1. Top 3 Latest Featured Articles Showcase -->
+        <div class="featured-articles-showcase">
+          {% for post in site.posts limit: 3 %}
+          <a href="{{ post.url | relative_url }}" class="featured-article-card">
+            {% if post.image %}
+            <div class="featured-article-thumb-wrap">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="featured-article-thumb" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="featured-article-content">
+              <div class="column-article-badges">
+                {% for cat in post.categories limit: 2 %}
+                <span class="category-badge">{{ cat }}</span>
+                {% endfor %}
+                {% if post.part %}
+                <span class="part-badge">Part {{ post.part }}</span>
+                {% endif %}
+                <time datetime="{{ post.date | date_to_xmlschema }}" class="article-date">
+                  {{ post.date | date: "%b %d, %Y" }}
+                </time>
+              </div>
+              <h3 class="featured-article-title">{{ post.title }}</h3>
+              <p class="featured-article-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
+              <span class="read-sop-link">Read Blueprint SOP →</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+
+        <!-- 2. Older Articles Feed -->
+        <div class="articles-subheading-bar">
+          <span class="articles-subheading-title">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Previous Guides &amp; Archive
+          </span>
+          <span class="category-badge" style="font-size: 0.65rem;">Archive</span>
+        </div>
+
+        <div class="articles-older-feed">
+          {% for post in site.posts offset: 3 limit: 4 %}
           <a href="{{ post.url | relative_url }}" class="column-article-card">
             {% if post.image %}
             <div class="column-article-thumb-wrap">
@@ -242,8 +279,8 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
                   {{ post.date | date: "%b %d, %Y" }}
                 </time>
               </div>
-              <h3 class="column-article-title">{{ post.title }}</h3>
-              <p class="column-article-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+              <h4 class="column-article-title">{{ post.title }}</h4>
+              <p class="column-article-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 110 }}</p>
               <span class="read-sop-link">Read SOP Guide →</span>
             </div>
           </a>
