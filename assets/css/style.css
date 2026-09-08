@@ -3357,3 +3357,199 @@ kbd {
   }
 }
 
+/* --------------------------------------------------------------------------
+   Interactive Weekly Tech Newsletter Subscription Widget
+   Visual Theme: Vibrant Cyan-to-Blue with Warm Sunset Orange CTA Button
+   -------------------------------------------------------------------------- */
+.newsletter-card-widget {
+  background: linear-gradient(145deg, #0099FF 0%, #0077CC 100%);
+  border-radius: 16px;
+  padding: 30px 26px;
+  margin-bottom: 24px;
+  box-shadow: 0 16px 36px -8px rgba(0, 119, 204, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+}
+
+.newsletter-card-widget::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.newsletter-card-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-header {
+  margin-bottom: 14px;
+}
+
+.newsletter-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF !important;
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.newsletter-desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.94);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.newsletter-promise {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 22px;
+}
+
+.newsletter-promise .privacy-link {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.newsletter-promise .privacy-link:hover {
+  opacity: 0.8;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.newsletter-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.newsletter-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.newsletter-input {
+  width: 100%;
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.newsletter-input:focus {
+  border-color: #F59E0B;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.35);
+}
+
+.newsletter-input::placeholder {
+  color: #94A3B8;
+}
+
+/* Bold Orange Pill Submit Button */
+.btn-sign-me-up {
+  background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.05em;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.btn-sign-me-up:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(234, 88, 12, 0.5);
+  filter: brightness(1.05);
+}
+
+.btn-sign-me-up:active {
+  transform: translateY(0);
+}
+
+.btn-sign-me-up:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.newsletter-feedback {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-weight: 600;
+  animation: fadeIn 0.25s ease-in;
+}
+
+.newsletter-feedback.success {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid #10B981;
+  color: #ECFDF5;
+}
+
+.newsletter-feedback.error {
+  background: rgba(239, 68, 68, 0.25);
+  border: 1px solid #EF4444;
+  color: #FEF2F2;
+}
+
+.newsletter-legal {
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  text-align: center;
+}
+
+.newsletter-legal a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.newsletter-legal a:hover {
+  opacity: 0.8;
+}
+
+

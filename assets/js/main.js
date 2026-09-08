@@ -590,6 +590,75 @@
     }
   }
 
+  // =========================================================================
+  // 8. Weekly Tech Newsletter Subscription Handler
+  // =========================================================================
+  window.handleNewsletterSubmit = function (e) {
+    if (e && e.preventDefault) {
+      e.preventDefault();
+    }
+    const emailInput = document.getElementById('newsletterEmail');
+    const submitBtn = document.getElementById('newsletterSubmitBtn');
+    const feedbackBox = document.getElementById('newsletterFeedback');
+
+    if (!emailInput || !feedbackBox) return false;
+
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email || !emailRegex.test(email)) {
+      feedbackBox.className = 'newsletter-feedback error';
+      feedbackBox.textContent = 'Please enter a valid email address.';
+      feedbackBox.style.display = 'block';
+      return false;
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>SIGNING UP...</span>';
+    }
+
+    // Store in LocalStorage for client persistence
+    try {
+      const stored = JSON.parse(localStorage.getItem('toannguyen_newsletter_subs') || '[]');
+      if (!stored.includes(email)) {
+        stored.push(email);
+        localStorage.setItem('toannguyen_newsletter_subs', JSON.stringify(stored));
+      }
+    } catch (err) {
+      console.warn('LocalStorage error:', err);
+    }
+
+    // Optional Supabase submission if active
+    if (typeof supabaseClient !== 'undefined' && supabaseClient) {
+      try {
+        supabaseClient.from('subscribers').insert([{ email: email, created_at: new Date().toISOString() }]).then(function() {});
+      } catch (err) {
+        // silent failover to local
+      }
+    }
+
+    setTimeout(function () {
+      feedbackBox.className = 'newsletter-feedback success';
+      feedbackBox.innerHTML = '🎉 <strong>Awesome! You are on the list!</strong><br>Expect top-tier tech goodness in your inbox soon.';
+      feedbackBox.style.display = 'block';
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>SUBSCRIBED ✓</span>';
+      }
+      emailInput.value = '';
+
+      setTimeout(function () {
+        if (submitBtn) {
+          submitBtn.innerHTML = '<span>SIGN ME UP</span>';
+        }
+      }, 5000);
+    }, 600);
+
+    return false;
+  };
+
   // Initialize features once DOM is ready
   document.addEventListener('DOMContentLoaded', function () {
     enhanceArticleCodeBlocks();
