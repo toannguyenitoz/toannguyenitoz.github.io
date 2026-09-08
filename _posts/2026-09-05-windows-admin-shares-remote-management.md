@@ -4,8 +4,11 @@ title: "Mastering Windows Admin Shares (C$, ADMIN$) for Silent Remote IT Adminis
 date: 2026-09-05 11:00:00 +0930
 categories: [Windows, SysAdmin, RemoteSupport]
 tags: [AdminShares, SMB, Troubleshooting, ITSupport, Windows11]
+image: /assets/images/posts/windows-admin-shares-remote-management.jpg
 description: "How enterprise systems administrators inspect logs, push hotfixes, and retrieve diagnostic bundles over hidden administrative network shares without interrupting end-user desktop sessions."
 ---
+
+![Mastering Windows Admin Shares (C$, ADMIN$) for Silent Remote IT Administration](/assets/images/posts/windows-admin-shares-remote-management.jpg)
 
 When troubleshooting an executive's laptop or an active production workstation, taking over their screen via Remote Desktop (RDP) or Quick Assist causes immediate disruption to their work. 
 

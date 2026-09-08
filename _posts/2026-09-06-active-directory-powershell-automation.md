@@ -4,8 +4,11 @@ title: "Active Directory & Entra ID User Lifecycle Management with PowerShell Au
 date: 2026-09-06 10:00:00 +0930
 categories: [SysAdmin, ActiveDirectory, PowerShell]
 tags: [ActiveDirectory, EntraID, PowerShell, Identity, Automation]
+image: /assets/images/posts/active-directory-powershell-automation.jpg
 description: "Mastering user onboarding, group entitlement audits, account lockouts, and secure offboarding across On-Premises Active Directory and Microsoft Entra ID using production-ready PowerShell scripts."
 ---
+
+![Active Directory & Entra ID User Lifecycle Management with PowerShell Automation](/assets/images/posts/active-directory-powershell-automation.jpg)
 
 Identity and Access Management (IAM) is the cornerstone of corporate cybersecurity. In an enterprise setting, manually creating, modifying, and offboarding users through the GUI (`Active Directory Users and Computers` or the Entra Portal) introduces human error, audit non-compliance, and security risks.
 

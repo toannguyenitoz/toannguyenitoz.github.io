@@ -4,8 +4,11 @@ title: "Hardening Enterprise Windows Workstations with Essential Group Policy Ob
 date: 2026-09-03 14:00:00 +0930
 categories: [Security, WindowsServer, GroupPolicy]
 tags: [GPO, Hardening, BitLocker, LAPS, Cybersecurity, CIS]
+image: /assets/images/posts/group-policy-hardening-baseline.jpg
 description: "A practical baseline implementing enterprise security standards and ACSC Essential 8 strategies across domain-joined Windows 11 endpoints via Active Directory Group Policy Objects (GPOs)."
 ---
+
+![Hardening Enterprise Windows Workstations with Essential Group Policy Objects (GPOs)](/assets/images/posts/group-policy-hardening-baseline.jpg)
 
 In an era of sophisticated ransomware and identity compromise, default operating system configurations are inadequate for enterprise security. Systems Administrators must establish a rigorous **Security Baseline** across all domain-joined Windows 11 and Windows 10 endpoints.
 

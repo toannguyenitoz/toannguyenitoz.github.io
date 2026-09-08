@@ -4,8 +4,11 @@ title: "Enterprise Windows 11 & Network Troubleshooting: A 5-Step SOP for SysAdm
 date: 2026-09-07 09:00:00 +0930
 categories: [Windows, SysAdmin, Networking]
 tags: [PowerShell, Troubleshooting, DNS, TCP-IP, SOP]
+image: /assets/images/posts/enterprise-windows-troubleshooting-sop.jpg
 description: "A battle-tested 5-step Standard Operating Procedure (SOP) for enterprise IT support and systems administrators to diagnose network disconnects, DNS caching anomalies, and Windows 11 system corruption."
 ---
+
+![Enterprise Windows 11 & Network Troubleshooting: A 5-Step SOP for SysAdmins](/assets/images/posts/enterprise-windows-troubleshooting-sop.jpg)
 
 In regulated corporate and banking enterprise environments, "the network is down" is often the initial symptom reported by end-users. Rather than resorting to haphazard reboots or speculative driver reinstalls, experienced Systems Administrators adhere to a structured **Standard Operating Procedure (SOP)**.
 
