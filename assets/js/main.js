@@ -379,9 +379,15 @@
             if (!match) return false;
           }
 
-          // Category check
+          // Category check — special case for Tips & Tricks series (tagged Part-XX)
           if (currentCategory !== 'all') {
-            var matchCat = cats.includes(currentCategory.toLowerCase()) || tags.includes(currentCategory.toLowerCase());
+            var matchCat;
+            if (currentCategory === 'tips-tricks') {
+              // Match any post with a Part-XX tag (e.g. "Part-01", "Part-99", "Part-101")
+              matchCat = /part-\d+/.test(tags) || title.includes('tips') || title.includes('tricks');
+            } else {
+              matchCat = cats.includes(currentCategory.toLowerCase()) || tags.includes(currentCategory.toLowerCase());
+            }
             if (!matchCat) return false;
           }
 
