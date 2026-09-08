@@ -1,0 +1,73 @@
+---
+layout: default
+title: "Newsletter Unsubscribe | IT Support With Toan"
+description: "Manage your subscription to the Weekly Tech Dispatch."
+---
+
+<div class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <div class="subpage-badge">
+      <span>Weekly Tech Dispatch</span>
+    </div>
+    <h1 class="subpage-title">Manage Your Subscription</h1>
+    <p class="subpage-desc">
+      We are sad to see you go! Enter your email below to unsubscribe from our weekly dispatch.
+    </p>
+  </div>
+</div>
+
+<div class="page-container" style="max-width: 580px; margin: 0 auto; padding: 40px 20px 80px;">
+  <div class="dashboard-col" style="padding: 30px;">
+    <h3 style="margin: 0 0 12px; font-size: 1.2rem; color: var(--text-primary);">Unsubscribe Confirmation</h3>
+    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 20px;">
+      If you no longer wish to receive our weekly SysAdmin SOPs, PowerShell scripts, and cloud tips, confirm your email below:
+    </p>
+
+    <form id="unsubForm" onsubmit="return handleUnsubscribe(event)">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <input 
+          type="email" 
+          id="unsubEmail" 
+          class="newsletter-input-field" 
+          placeholder="Enter your email address..." 
+          required 
+          style="width: 100%; box-sizing: border-box;"
+        >
+        <button type="submit" class="btn-column-action" style="justify-content: center; background: #EF4444; border-color: #EF4444; color: #FFFFFF; font-weight: 700; cursor: pointer;">
+          Confirm Unsubscribe
+        </button>
+      </div>
+      <div id="unsubFeedback" style="margin-top: 14px; font-size: 0.88rem; font-weight: 600; display: none;"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+function handleUnsubscribe(e) {
+  e.preventDefault();
+  var email = document.getElementById('unsubEmail').value.trim();
+  var feedback = document.getElementById('unsubFeedback');
+  if (!email) return false;
+
+  // Supabase update status to unsubscribed
+  if (typeof supabaseClient !== 'undefined' && supabaseClient) {
+    try {
+      supabaseClient.from('subscribers').update({ status: 'unsubscribed' }).eq('email', email).then(function() {});
+    } catch (err) {}
+  }
+
+  feedback.style.color = '#10B981';
+  feedback.innerHTML = '✓ You have been successfully unsubscribed. You will not receive future weekly dispatches.';
+  feedback.style.display = 'block';
+  document.getElementById('unsubEmail').value = '';
+  return false;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var emailParam = urlParams.get('email');
+  if (emailParam) {
+    document.getElementById('unsubEmail').value = emailParam;
+  }
+});
+</script>

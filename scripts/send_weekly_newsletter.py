@@ -213,12 +213,18 @@ def render_email_html(post, video, subscriber_email):
 
           <!-- Footer & Unsubscribe -->
           <tr>
-            <td style="padding:24px 30px;background-color:#0B0F19;border-top:1px solid #1E293B;text-align:center;font-size:11px;color:#64748B;line-height:1.6;">
+            <td style="padding:24px 30px;background-color:#0B0F19;border-top:1px solid #1E293B;text-align:center;font-size:12px;color:#64748B;line-height:1.7;">
               You are receiving this email because you subscribed on <a href="{SITE_URL}" style="color:#38BDF8;text-decoration:none;">toannguyenitoz.github.io</a>.<br>
               Published with 💙 by {AUTHOR_NAME} • Adelaide, South Australia.<br><br>
+              <div style="margin-bottom:12px;">
+                <a href="{SITE_URL}/unsubscribe/?email={subscriber_email}" style="display:inline-block;padding:6px 14px;background:#1E293B;border:1px solid #334155;border-radius:4px;color:#EF4444;text-decoration:none;font-weight:600;font-size:11px;">
+                  🚫 Unsubscribe from Weekly Dispatch
+                </a>
+              </div>
               <a href="{SITE_URL}/#contact" style="color:#94A3B8;text-decoration:underline;">Contact</a> • 
               <a href="https://www.linkedin.com/in/toan-nguyen-it-oz/" style="color:#94A3B8;text-decoration:underline;">LinkedIn</a> • 
-              <a href="https://www.youtube.com/@ITSupportwithToan_Adl" style="color:#94A3B8;text-decoration:underline;">YouTube</a>
+              <a href="https://www.youtube.com/@ITSupportwithToan_Adl" style="color:#94A3B8;text-decoration:underline;">YouTube</a> • 
+              <a href="{SITE_URL}/unsubscribe/?email={subscriber_email}" style="color:#64748B;text-decoration:underline;">Unsubscribe</a>
             </td>
           </tr>
 
