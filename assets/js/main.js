@@ -188,17 +188,17 @@
   // 6. Supabase Client Integration Module
   // =========================================================================
   const SUPABASE_CONFIG = {
-    url: 'https://YOUR_PROJECT_ID.supabase.co',
-    anonKey: 'YOUR_SUPABASE_ANON_PUBLIC_KEY',
+    url: 'https://imkgmhdqjloovqvsmifu.supabase.co',
+    anonKey: 'sb_publishable_scdg680eJ1137pIwWz3uFQ_sK_a-TcL',
   };
 
   let supabaseClient = null;
 
   function initSupabase() {
-    if (window.supabase && SUPABASE_CONFIG.url !== 'https://YOUR_PROJECT_ID.supabase.co') {
+    if (window.supabase && SUPABASE_CONFIG.url) {
       try {
         supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-        console.log('⚡ Supabase Client initialized successfully.');
+        console.log('⚡ Supabase Client connected successfully.');
       } catch (e) {
         console.warn('Supabase initialization note:', e.message);
       }
