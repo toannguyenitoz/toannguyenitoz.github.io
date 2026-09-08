@@ -673,18 +673,18 @@
 
     setTimeout(function () {
       feedbackBox.className = 'newsletter-feedback success';
-      feedbackBox.innerHTML = '🎉 <strong>Awesome! You are on the list!</strong><br>Expect top-tier tech goodness in your inbox soon.';
+      feedbackBox.innerHTML = '🎉 <strong>Awesome! You are subscribed!</strong><br>Expect top-tier tech guides in your inbox soon.';
       feedbackBox.style.display = 'block';
 
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<span>SUBSCRIBED ✓</span>';
+        submitBtn.innerHTML = '<span>Subscribed ✓</span>';
       }
       emailInput.value = '';
 
       setTimeout(function () {
         if (submitBtn) {
-          submitBtn.innerHTML = '<span>SIGN ME UP</span>';
+          submitBtn.innerHTML = '<span>Subscribe</span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
         }
       }, 5000);
     }, 600);

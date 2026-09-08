@@ -1,0 +1,5 @@
+# List of newsletter subscribers
+subscribers:
+  - email: "theodorenguyensa@gmail.com"
+    date: "2026-09-08"
+    status: "active"

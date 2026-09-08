@@ -69,3 +69,20 @@ collections:
               - { label: "Huy Hiệu (Tiếng Việt)", name: "badge", widget: "string", required: false }
               - { label: "Huy Hiệu (English)", name: "badge_en", widget: "string", required: false }
               - { label: "Biểu Tượng (Icon SVG hoặc Emoji)", name: "icon", widget: "string", default: "🚀" }
+
+  # 4. Quản lý Độc Giả Đăng Ký Bản Tin (Newsletter Subscribers)
+  - name: "newsletter_settings"
+    label: "Quản Lý Bản Tin & Độc Giả"
+    files:
+      - label: "Danh Sách Email Đăng Ký (Newsletter)"
+        name: "subscribers"
+        file: "_data/subscribers.yml"
+        fields:
+          - label: "Độc Giả Đã Đăng Ký"
+            name: "subscribers"
+            widget: "list"
+            fields:
+              - { label: "Địa Chỉ Email", name: "email", widget: "string" }
+              - { label: "Ngày Đăng Ký", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM-DD" }
+              - { label: "Trạng Thái", name: "status", widget: "select", options: ["active", "unsubscribed"], default: "active" }
+

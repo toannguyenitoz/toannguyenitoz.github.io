@@ -1,40 +1,43 @@
-<!-- Interactive Weekly Tech Newsletter Subscribe Card -->
-<div class="newsletter-card-widget">
-  <div class="newsletter-card-inner">
-    <div class="newsletter-header">
-      <h3 class="newsletter-title">Psst! 👊 You there!</h3>
+<!-- Tech Newsletter Subscription Card (Unified Enterprise Style) -->
+<div class="col-section-block newsletter-section-block">
+  <div class="col-header-bar">
+    <div class="col-header-title">
+      <span class="col-icon-mark">⚡</span>
+      <div>
+        <h2 class="col-title">Weekly Tech Dispatch</h2>
+        <p class="col-desc">Practical SysAdmin tips &amp; Cloud scripts</p>
+      </div>
     </div>
-    
-    <p class="newsletter-desc">
-      We've got something wickedly cool to offer: our weekly tech newsletter. It's refreshingly un-annoying and packed with mind-blowing tech goodness. It'll be your favorite email each week!
-    </p>
-    
-    <p class="newsletter-promise">
-      Expect awesomeness straight to your inbox. No funny business, we promise <a href="{{ '/' | relative_url }}#" class="privacy-link">your privacy</a> is our top priority.
+    <span class="col-status-pill status-weekly">Weekly</span>
+  </div>
+
+  <div class="newsletter-card-inner">
+    <p class="newsletter-desc-concise">
+      Get battle-tested PowerShell one-liners, Windows Server quick-fixes, and Azure blueprints delivered straight to your inbox. No spam, ever.
     </p>
 
-    <form class="newsletter-form" id="newsletterForm" onsubmit="return window.handleNewsletterSubmit(event)">
-      <div class="newsletter-field-group">
-        <label for="newsletterEmail" class="newsletter-label">Your Email*</label>
+    <form class="newsletter-form-compact" id="newsletterForm" onsubmit="return window.handleNewsletterSubmit(event)">
+      <div class="newsletter-input-group">
         <input 
           type="email" 
           id="newsletterEmail" 
-          class="newsletter-input" 
-          placeholder="name@company.com" 
+          class="newsletter-input-field" 
+          placeholder="Enter your email address..." 
           required 
           autocomplete="email"
         >
+        <button type="submit" class="btn-newsletter-subscribe" id="newsletterSubmitBtn">
+          <span>Subscribe</span>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
       </div>
-
-      <button type="submit" class="btn-sign-me-up" id="newsletterSubmitBtn">
-        <span>SIGN ME UP</span>
-      </button>
 
       <div class="newsletter-feedback" id="newsletterFeedback" style="display: none;"></div>
     </form>
 
-    <p class="newsletter-legal">
-      This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
-    </p>
+    <div class="newsletter-micro-footer">
+      <span>🔒 Privacy prioritized. Unsubscribe anytime.</span>
+    </div>
   </div>
 </div>
+
