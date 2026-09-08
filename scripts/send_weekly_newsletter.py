@@ -21,6 +21,7 @@ from email.mime.text import MIMEText
 from datetime import datetime
 import urllib.request
 import urllib.error
+from urllib.parse import quote as url_quote
 
 SITE_URL = "https://toannguyenitoz.github.io"
 AUTHOR_NAME = "Toan Nguyen"
@@ -125,6 +126,7 @@ def get_active_subscribers():
 
 def render_email_html(post, video, subscriber_email):
     now_date = datetime.now().strftime("%B %d, %Y")
+    encoded_email = url_quote(subscriber_email, safe='')
     part_badge = f'<span style="background:#0284C7;color:#ffffff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;margin-right:8px;text-transform:uppercase;">Part {post["part"]}</span>' if post.get('part') else ''
 
     video_block = ""
@@ -217,14 +219,14 @@ def render_email_html(post, video, subscriber_email):
               You are receiving this email because you subscribed on <a href="{SITE_URL}" style="color:#38BDF8;text-decoration:none;">toannguyenitoz.github.io</a>.<br>
               Published with 💙 by {AUTHOR_NAME} • Adelaide, South Australia.<br><br>
               <div style="margin-bottom:12px;">
-                <a href="{SITE_URL}/unsubscribe/?email={subscriber_email}" style="display:inline-block;padding:6px 14px;background:#1E293B;border:1px solid #334155;border-radius:4px;color:#EF4444;text-decoration:none;font-weight:600;font-size:11px;">
+                <a href="{SITE_URL}/unsubscribe/?email={encoded_email}" style="display:inline-block;padding:6px 14px;background:#1E293B;border:1px solid #334155;border-radius:4px;color:#EF4444;text-decoration:none;font-weight:600;font-size:11px;">
                   🚫 Unsubscribe from Weekly Dispatch
                 </a>
               </div>
               <a href="{SITE_URL}/#contact" style="color:#94A3B8;text-decoration:underline;">Contact</a> • 
               <a href="https://www.linkedin.com/in/toan-nguyen-it-oz/" style="color:#94A3B8;text-decoration:underline;">LinkedIn</a> • 
               <a href="https://www.youtube.com/@ITSupportwithToan_Adl" style="color:#94A3B8;text-decoration:underline;">YouTube</a> • 
-              <a href="{SITE_URL}/unsubscribe/?email={subscriber_email}" style="color:#64748B;text-decoration:underline;">Unsubscribe</a>
+              <a href="{SITE_URL}/unsubscribe/?email={encoded_email}" style="color:#64748B;text-decoration:underline;">Unsubscribe</a>
             </td>
           </tr>
 
