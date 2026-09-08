@@ -208,25 +208,58 @@
   async function recordPageView() {
     const postSlug = window.location.pathname;
     const viewCountEl = document.getElementById('viewCount');
+    if (!viewCountEl) return;
 
-    if (!supabaseClient) {
-      if (viewCountEl) {
-        const hash = Math.abs(postSlug.split('').reduce((a, b) => ((a << 5) - a) + b.charCodeAt(0), 0));
-        const estimatedViews = 180 + (hash % 920);
-        viewCountEl.innerText = estimatedViews.toLocaleString('en-US');
-      }
-      return;
+    // Track traffic source (Referrer: LinkedIn, Google, Direct)
+    const referrer = document.referrer || 'Direct';
+    if (window.gtag) {
+      window.gtag('event', 'article_view', {
+        page_location: window.location.href,
+        page_path: postSlug,
+        traffic_source: referrer
+      });
     }
 
-    try {
-      const { data, error } = await supabaseClient.rpc('increment_page_view', { page_slug: postSlug });
-      if (!error && data && viewCountEl) {
-        viewCountEl.innerText = data.toLocaleString('en-US');
-      } else if (viewCountEl) {
-        viewCountEl.innerText = '214';
+    // Sanitize post slug for API key namespace
+    const cleanKey = postSlug.replace(/^\/posts\//, '').replace(/\/$/, '').replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 60);
+
+    // If Supabase is configured, use Supabase RPC
+    if (supabaseClient) {
+      try {
+        const { data, error } = await supabaseClient.rpc('increment_page_view', { page_slug: postSlug });
+        if (!error && data) {
+          viewCountEl.innerText = Number(data).toLocaleString('en-US');
+          return;
+        }
+      } catch (err) {
+        console.warn('Supabase view count fallback:', err);
       }
-    } catch (err) {
-      console.warn('Error recording Supabase page view:', err);
+    }
+
+    // Use free public CountAPI / CounterAPI for live, real-time incrementing views
+    try {
+      const namespace = 'toannguyenitoz_articles';
+      const countRes = await fetch(`https://api.counterapi.dev/v1/${namespace}/${cleanKey}/up`);
+      if (countRes.ok) {
+        const result = await countRes.json();
+        if (result && typeof result.count === 'number') {
+          viewCountEl.innerText = result.count.toLocaleString('en-US');
+          return;
+        }
+      }
+    } catch (apiErr) {
+      // If network fails, fallback to local tracking
+    }
+
+    // LocalStorage fallback for individual browser counts
+    try {
+      const localKey = 'toan_view_' + cleanKey;
+      let currentViews = parseInt(localStorage.getItem(localKey) || '1', 10);
+      currentViews += 1;
+      localStorage.setItem(localKey, currentViews.toString());
+      viewCountEl.innerText = currentViews.toLocaleString('en-US');
+    } catch (storageErr) {
+      viewCountEl.innerText = '1';
     }
   }
 
