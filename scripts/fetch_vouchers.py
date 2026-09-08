@@ -79,7 +79,7 @@ EXCLUDE_KEYWORDS = [
     "quickbooks", "tax", "real estate", "mortgage",
     "mindset", "relationship", "dating", "parenting", "anxiety", "depression",
     "spanish", "french", "german", "chinese", "japanese", "korean", "arabic", "portuguese", "italian", "russian",
-    "cómo", "crear", "página", "curso de", "principiantes", "español", "aprende", "deutsch", "für", "französisch", "italiano", "curso",
+    "cómo", "crear", "crea una", "calculadora", "página", "curso de", "principiantes", "español", "aprende", "deutsch", "für", "französisch", "italiano", "curso",
     "copywriting", "social media marketing", "instagram", "tiktok", "youtube growth",
 ]
 
@@ -208,6 +208,98 @@ def scrape_tutorialbar():
 
     print(f"  -> Discovered {len(discovered)} potential tech courses from TutorialBar feeds")
     return discovered
+
+def scrape_discudemy(max_pages=4):
+    print("[*] Scraping DiscUdemy course feeds (multi-page)...")
+    discovered = []
+    seen = set()
+
+    sources = [
+        f"https://www.discudemy.com/language/english/{p}" for p in range(1, max_pages + 1)
+    ] + [
+        f"https://www.discudemy.com/all/{p}" for p in range(1, 3)
+    ]
+
+    for url in sources:
+        html = fetch_html(url)
+        if not html:
+            continue
+        items = re.findall(r'<a\s+class="card-header"\s+href="([^"]+)">([^<]+)</a>', html)
+        for link, title in items:
+            title_clean = strip_html(title)
+            if not is_tech_course(title_clean):
+                continue
+            slug = link.rstrip("/").split("/")[-1]
+            if slug in seen:
+                continue
+            seen.add(slug)
+            discovered.append({
+                "slug": slug,
+                "title": title_clean,
+                "detail_url": link,
+                "source": "discudemy"
+            })
+        time.sleep(0.3)
+
+    print(f"  -> Discovered {len(discovered)} potential tech courses from DiscUdemy feeds")
+    return discovered
+
+def enrich_discudemy(item):
+    """
+    Resolves DiscUdemy / Couponami detail page and /go/ redirect to obtain active Udemy link with coupon.
+    """
+    detail_url = item.get("detail_url")
+    if not detail_url:
+        return None
+
+    html = fetch_html(detail_url)
+    if not html:
+        return None
+
+    # High-resolution image from Udemy CDN
+    img_match = (
+        re.search(r'property="og:image"\s+content="([^"]+)"', html) or
+        re.search(r'<amp-img\s+src="([^"]+)"', html) or
+        re.search(r'<img[^>]*class="[^"]*image[^"]*"[^>]*src="([^"]+)"', html)
+    )
+    if img_match:
+        item["image"] = img_match.group(1)
+
+    # Description
+    desc_match = re.search(r'property="og:description"\s+content="([^"]+)"', html)
+    if desc_match:
+        item["description"] = truncate(strip_html(desc_match.group(1)))
+
+    # Follow /go/ page link
+    go_match = re.search(r'href="([^"]*/go/[^"]+)"', html)
+    if not go_match:
+        return None
+
+    go_url = go_match.group(1)
+    html_go = fetch_html(go_url)
+    if not html_go:
+        return None
+
+    # Search for udemy link inside /go/ page
+    udemy_match = re.search(r'href="([^"]*udemy\.com/course/[^"]+)"', html_go)
+    if not udemy_match:
+        return None
+
+    udemy_url = udemy_match.group(1)
+    coupon = extract_coupon_from_url(udemy_url)
+    slug = item.get("slug") or extract_udemy_slug(udemy_url)
+
+    item["udemy_url"] = f"https://www.udemy.com/course/{slug}/"
+    item["coupon_url"] = udemy_url
+    item["coupon_code"] = coupon or ""
+    item["source"] = "discudemy"
+    item["rating"] = 4.6
+    item["rating_count"] = 140
+    item["students"] = 1600
+    item["level"] = "All Levels"
+    item["duration"] = "3-5 hours"
+    item["lectures"] = 26
+    return item
 
 def enrich_course_details(item):
     """
@@ -398,25 +490,33 @@ def main():
     history_set = load_history()
     print(f"[*] Known history archive: {len(history_set)} course slugs tracked")
 
-    raw_items = scrape_tutorialbar()
-    print(f"[*] Total raw candidates: {len(raw_items)}")
+    tb_candidates = scrape_tutorialbar()
+    disc_candidates = scrape_discudemy()
+    raw_items = tb_candidates + disc_candidates
+    print(f"[*] Total raw candidates: {len(raw_items)} (TutorialBar: {len(tb_candidates)}, DiscUdemy: {len(disc_candidates)})")
 
     # Filter out courses in history before requesting details to save requests
     filtered_candidates = []
+    seen_in_batch = set()
     for item in raw_items:
         slug = item.get("slug") or extract_udemy_slug(item.get("udemy_url", ""))
-        if slug and slug in history_set:
+        if not slug or slug in history_set or slug in seen_in_batch:
             continue
+        seen_in_batch.add(slug)
         filtered_candidates.append(item)
 
     print(f"[*] Brand-new candidates after history check: {len(filtered_candidates)}")
 
     # Enrich candidates that need coupon resolution
     enriched_items = []
-    for idx, item in enumerate(filtered_candidates[:25]):
-        print(f"[{idx+1}/{min(len(filtered_candidates), 25)}] Processing: {item.get('title', '')[:50]}")
+    for idx, item in enumerate(filtered_candidates[:35]):
+        print(f"[{idx+1}/{min(len(filtered_candidates), 35)}] [{item.get('source', 'tb').upper()}] Processing: {item.get('title', '')[:45]}")
         try:
-            res = enrich_course_details(item)
+            if item.get("source") == "discudemy":
+                res = enrich_discudemy(item)
+            else:
+                res = enrich_course_details(item)
+
             if res and res.get("coupon_url"):
                 enriched_items.append(res)
                 print(f"    [+] Active code: {res.get('coupon_code')} -> {res.get('udemy_url')}")

@@ -771,13 +771,115 @@
   fetched_at: '2026-09-08'
   categories:
   - IT & Tech
-- id: complete-sql-crash-course-from-zero-to-hero
-  title: 'Oracle Sql 2025 : Beginner to Sql Database Pro'
-  description: 'The Complete Oracle SQL Course: Beginner to SQL Database Pro       Course
-    Description:   Welcome to the  Oracle SQL  2025 course – your complete step-by-step
-    guide to learning  Oracle SQL  from beginner to professional level.  In this hands-on
-    course, you’ll gain practical...'
-  image: https://img-c.udemycdn.com/course/480x270/5802976_cfdc_2.jpg
+- id: the-ultimate-python-developer-course-learn-step-by-step
+  title: 'The Ultimate Python Developer Course: Learn Step by Step'
+  description: Ready to become a professional Python developer? This comprehensive
+    course is your complete, step by step guide to mastering Python, the most versatile
+    and in-demand programming language in the world. Whether you're a complete beginner
+    with no coding experience or a seasoned...
+  image: https://img-c.udemycdn.com/course/480x270/6764429_9350_3.jpg
+  instructor: Top IT Instructor
+  rating: 4.3
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: 6C0BF78C22A9567BD16A
+  udemy_url: https://www.udemy.com/course/the-ultimate-python-developer-course-learn-step-by-step/
+  coupon_url: https://www.udemy.com/course/the-ultimate-python-developer-course-learn-step-by-step/?couponCode=6C0BF78C22A9567BD16A
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - Python
+- id: html5-masterclass-build-modern-and-mobile-friendly-websites
+  title: 'HTML5 Masterclass: Build Modern and Mobile Friendly Websites'
+  description: 'HTML5 Masterclass: Build Modern and Mobile Friendly Websites    Are
+    you ready to move beyond simple web pages and start building professional, modern
+    websites?      Many HTML courses teach you the tags, but they leave out the critical
+    skills needed to create websites that are...'
+  image: https://img-c.udemycdn.com/course/480x270/6849593_2e49_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.4
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: 34792CF793C13415627A
+  udemy_url: https://www.udemy.com/course/html5-masterclass-build-modern-and-mobile-friendly-websites/
+  coupon_url: https://www.udemy.com/course/html5-masterclass-build-modern-and-mobile-friendly-websites/?couponCode=34792CF793C13415627A
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - Web
+- id: mastering-mysql-build-and-manage-databases-like-a-pro
+  title: 'Mastering MySQL: Build and Manage Databases Like a Pro'
+  description: Are you ready to take your database skills to the next level? This
+    comprehensive course is designed for aspiring developers, database administrators,
+    and anyone who wants to master MySQL, the world's most popular open source database.
+    I'll go beyond basic queries to give you the...
+  image: https://img-c.udemycdn.com/course/480x270/6761665_664f_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.2
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: 13897547613CD9DF8629
+  udemy_url: https://www.udemy.com/course/mastering-mysql-build-and-manage-databases-like-a-pro/
+  coupon_url: https://www.udemy.com/course/mastering-mysql-build-and-manage-databases-like-a-pro/?couponCode=13897547613CD9DF8629
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - Data
+- id: php-for-beginners-2021-the-complete-php-mysql-pdo-course
+  title: 'PHP for Beginners: The Complete PHP MySQL PDO Course'
+  description: Welcome to my full stack PHP, MySQL, and PDO course where you will
+    learn everything you need to know about one of the most three hot technologies
+    right now. This course is organized systematically from the programming language
+    (PHP) to The most well-known database (MySQL) to the...
+  image: https://img-c.udemycdn.com/course/480x270/3893330_8df1.jpg
+  instructor: Top IT Instructor
+  rating: 4.3
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: FULLSTACK125
+  udemy_url: https://www.udemy.com/course/php-for-beginners-2021-the-complete-php-mysql-pdo-course/
+  coupon_url: https://www.udemy.com/course/php-for-beginners-2021-the-complete-php-mysql-pdo-course/?couponCode=FULLSTACK125
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: cto-chief-technology-officer-en
+  title: 'CTO Course: Chief Technology Officer &amp; Tech Leadership [EN]'
+  description: This course contains the use of artificial intelligence.   A good developer  solves
+    tasks .  A strong team lead  organizes the team .  And a  CTO defines which problems
+    are worth solving at all, which technologies to develop, and how exactly they
+    will move the business forward ....
+  image: https://img-c.udemycdn.com/course/480x270/6986905_3014_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.3
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: PAPAHR_SEP_187442
+  udemy_url: https://www.udemy.com/course/cto-chief-technology-officer-en/
+  coupon_url: https://www.udemy.com/course/cto-chief-technology-officer-en/?couponCode=PAPAHR_SEP_187442
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: practice-tests-for-certified-mcp-security-expert-cmcpse
+  title: 'SQLite Ultimate Course 2025 : From Zero to SQL Expert'
+  description: Free online certification course with full lifetime access.
+  image: https://img-c.udemycdn.com/course/480x270/5861030_4c1a_3.jpg
   instructor: Top IT Instructor
   rating: 4.5
   rating_count: 150
@@ -785,115 +887,323 @@
   level: All Levels
   duration: 3-5 hours
   lectures: 25
-  coupon_code: ''
-  udemy_url: https://www.udemy.com/course/complete-sql-crash-course-from-zero-to-hero/
-  coupon_url: https://www.udemy.com/course/complete-sql-crash-course-from-zero-to-hero/
-  source: tutorialbar
-  fetched_at: '2026-09-08'
-  categories:
-  - Data
-- id: complete-face-recognition-using-sql-database-project
-  title: Complete Face Recognition Using SQL Database Project 2025
-  description: 'Complete Face Recognition Using SQL Database Project From Scratch    Course
-    Description:   Welcome to the  Face Recognition  course – your complete hands-on
-    guide to building a full  Face Recognition  system using Python and SQL Database
-    integration.  In this project-based...'
-  image: https://img-c.udemycdn.com/course/480x270/5841048_da84_2.jpg
-  instructor: Top IT Instructor
-  rating: 4.2
-  rating_count: 150
-  students: 1200
-  level: All Levels
-  duration: 3-5 hours
-  lectures: 25
-  coupon_code: ''
-  udemy_url: https://www.udemy.com/course/complete-face-recognition-using-sql-database-project/
-  coupon_url: https://www.udemy.com/course/complete-face-recognition-using-sql-database-project/
-  source: tutorialbar
-  fetched_at: '2026-09-08'
-  categories:
-  - Data
-- id: complete-python-game-development-course-from-zero-to-hero
-  title: 'Ultimate Python Game Development 2025  : From Zero To Gamer'
-  description: 'Ultimate Python Game Development 2025  : From Zero To Gamer      Welcome
-    to the ultimate  Python Game Development   for 2025 – your complete guide to creating
-    engaging games from scratch using Python.  This  Python Game Development   is
-    designed for beginners and aspiring game...'
-  image: https://img-c.udemycdn.com/course/480x270/6147203_b67f_3.jpg
-  instructor: Top IT Instructor
-  rating: 4.1
-  rating_count: 150
-  students: 1200
-  level: All Levels
-  duration: 3-5 hours
-  lectures: 25
-  coupon_code: ''
-  udemy_url: https://www.udemy.com/course/complete-python-game-development-course-from-zero-to-hero/
-  coupon_url: https://www.udemy.com/course/complete-python-game-development-course-from-zero-to-hero/
-  source: tutorialbar
-  fetched_at: '2026-09-08'
-  categories:
-  - Python
-- id: complete-face-recognition-attendance-system-using-knn
-  title: Face Recognition Attendance Project Using Machine Learning
-  description: 'Course Description:   Welcome to the "Complete Face Recognition Attendance
-    System Using KNN" course! In this hands-on project-based course, you will learn
-    how to build a comprehensive face recognition attendance system using the K-Nearest
-    Neighbors (KNN)   In this hands-on...'
-  image: https://img-c.udemycdn.com/course/480x270/5937084_16d3_3.jpg
-  instructor: Top IT Instructor
-  rating: 3.8
-  rating_count: 150
-  students: 1200
-  level: All Levels
-  duration: 3-5 hours
-  lectures: 25
-  coupon_code: ''
-  udemy_url: https://www.udemy.com/course/complete-face-recognition-attendance-system-using-knn/
-  coupon_url: https://www.udemy.com/course/complete-face-recognition-attendance-system-using-knn/
+  coupon_code: 1A3E6D899B7EAFDED175
+  udemy_url: https://www.udemy.com/course/practice-tests-for-certified-mcp-security-expert-cmcpse/
+  coupon_url: https://www.udemy.com/course/practice-tests-for-certified-mcp-security-expert-cmcpse/?couponCode=1A3E6D899B7EAFDED175
   source: tutorialbar
   fetched_at: '2026-09-08'
   categories:
   - IT & Tech
-- id: complete-mysql-crash-course-from-zero-to-hero
-  title: 'MySQL Ultimate Course 2025 : From Zero To Hero | Learn Mysql'
-  description: 'MySQL Step-by-Step | Real-World MySQL Projects | Master MySQL for
-    Database Development and SQL Queries || SQL Database       Course Description:   Welcome
-    to the  MySQL  Bootcamp 2025 – your complete guide to mastering  MySQL  from absolute
-    beginner to advanced database expert. ...'
-  image: https://img-c.udemycdn.com/course/480x270/5834162_7cc2_3.jpg
+- id: 300-635-automating-cisco-data-center-solutions-practice-exams
+  title: 300-635 Automating Cisco Data Center Solutions Test Exams
+  description: Are you preparing for the  Cisco 300-635 DCAUTO certification exam?  This
+    comprehensive practice exam course is designed to help you pass the  Automating
+    Cisco Data Center Networking Solutions  exam on your first attempt. With  6 exam
+    style practice tests  and  1020 carefully...
+  image: https://img-c.udemycdn.com/course/480x270/7199221_fb95.jpg
   instructor: Top IT Instructor
-  rating: 4.2
+  rating: 5.0
   rating_count: 150
   students: 1200
   level: All Levels
   duration: 3-5 hours
   lectures: 25
-  coupon_code: ''
-  udemy_url: https://www.udemy.com/course/complete-mysql-crash-course-from-zero-to-hero/
-  coupon_url: https://www.udemy.com/course/complete-mysql-crash-course-from-zero-to-hero/
+  coupon_code: NEXARC26092
+  udemy_url: https://www.udemy.com/course/300-635-automating-cisco-data-center-solutions-practice-exams/
+  coupon_url: https://www.udemy.com/course/300-635-automating-cisco-data-center-solutions-practice-exams/?couponCode=NEXARC26092
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - Data
+- id: 300-420-designing-cisco-enterprise-networks-practice-exams
+  title: 300-420 Designing Cisco Enterprise Networks Practice Exams
+  description: Prepare to pass the  Cisco 300-420 Designing Cisco Enterprise Networks
+    (ENSLD) certification exam  with confidence!  This comprehensive practice exam
+    course is built for network architects and senior engineers ready to earn the  CCNP
+    Enterprise  certification or the  Cisco...
+  image: https://img-c.udemycdn.com/course/480x270/7170616_c151.jpg
+  instructor: Top IT Instructor
+  rating: 5.0
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: NEXARC26092
+  udemy_url: https://www.udemy.com/course/300-420-designing-cisco-enterprise-networks-practice-exams/
+  coupon_url: https://www.udemy.com/course/300-420-designing-cisco-enterprise-networks-practice-exams/?couponCode=NEXARC26092
   source: tutorialbar
   fetched_at: '2026-09-08'
   categories:
   - IT & Tech
-- id: complete-sqlite-crash-course-from-zero-to-hero
-  title: 'SQLite Ultimate Course 2025 : From Zero to SQL Expert'
-  description: 'Course Title: Complete SQLite Crash Course: From Zero To Hero    Course
-    Description:   Welcome to the  SQLite  Crash Course 2025 – your beginner-friendly
-    path to mastering  SQLite  and becoming confident with SQL database development.  In
-    this course, you''ll gain hands-on...'
-  image: https://img-c.udemycdn.com/course/480x270/5861030_4c1a_3.jpg
+- id: 300-610-designing-cisco-data-center-infrastructure-test-exams
+  title: 300-610 Designing Cisco Data Center Infrastructure Test Exam
+  description: Are you preparing for the  Cisco 300-610 Designing Cisco Data Center
+    Infrastructure (DCID)  certification exam?  This comprehensive practice exam course
+    is designed to help you pass the exam on your first attempt with confidence. With  6
+    exam style practice tests  and  1020...
+  image: https://img-c.udemycdn.com/course/480x270/7172540_dddc_2.jpg
   instructor: Top IT Instructor
-  rating: 3.9
+  rating: 5.0
   rating_count: 150
   students: 1200
   level: All Levels
   duration: 3-5 hours
   lectures: 25
-  coupon_code: ''
-  udemy_url: https://www.udemy.com/course/complete-sqlite-crash-course-from-zero-to-hero/
-  coupon_url: https://www.udemy.com/course/complete-sqlite-crash-course-from-zero-to-hero/
+  coupon_code: NEXARC26092
+  udemy_url: https://www.udemy.com/course/300-610-designing-cisco-data-center-infrastructure-test-exams/
+  coupon_url: https://www.udemy.com/course/300-610-designing-cisco-data-center-infrastructure-test-exams/?couponCode=NEXARC26092
   source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - Data
+- id: troubleshooting-cisco-data-center-infrastructure-test-exams
+  title: Troubleshooting Cisco Data Center Infrastructure Test Exams
+  description: Prepare to pass the  Cisco 300-615  certification exam with confidence!  This
+    comprehensive practice exam course is designed for IT professionals pursuing the  CCNP
+    Data Center  credential. The  Troubleshooting Cisco Data Center Infrastructure
+    (DCIT)  certification exam...
+  image: https://img-c.udemycdn.com/course/480x270/7172078_7fb8_2.jpg
+  instructor: Top IT Instructor
+  rating: 5.0
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: NEXARC26092
+  udemy_url: https://www.udemy.com/course/troubleshooting-cisco-data-center-infrastructure-test-exams/
+  coupon_url: https://www.udemy.com/course/troubleshooting-cisco-data-center-infrastructure-test-exams/?couponCode=NEXARC26092
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - Data
+- id: 300-110-designing-cisco-wireless-networks-practice-exams
+  title: 300-110 Designing Cisco Wireless Networks Practice Exams
+  description: Get Fully Prepared for the  Cisco 300-110 Designing Cisco Wireless
+    Networks  Certification Exam  This comprehensive practice exam course features  6
+    exam style practice exams  and  1020 carefully crafted exam questions  designed
+    to simulate the real Cisco certification exam...
+  image: https://img-c.udemycdn.com/course/480x270/7170972_d1fd.jpg
+  instructor: Top IT Instructor
+  rating: 5.0
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: NEXARC26092
+  udemy_url: https://www.udemy.com/course/300-110-designing-cisco-wireless-networks-practice-exams/
+  coupon_url: https://www.udemy.com/course/300-110-designing-cisco-wireless-networks-practice-exams/?couponCode=NEXARC26092
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: 500-220-engineering-cisco-meraki-solutions-practice-exams
+  title: 500-220 Engineering Cisco Meraki Solutions Practice Exams
+  description: Are you preparing to earn your  Cisco Meraki Solutions Specialist  certification?  This
+    comprehensive  500-220  practice exam course is designed to help you pass the  Engineering
+    Cisco Meraki Solutions  certification exam on your first attempt. With  6 exam
+    style practice tests ...
+  image: https://img-c.udemycdn.com/course/480x270/7199549_9901.jpg
+  instructor: Top IT Instructor
+  rating: 5.0
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: NEXARC26092
+  udemy_url: https://www.udemy.com/course/500-220-engineering-cisco-meraki-solutions-practice-exams/
+  coupon_url: https://www.udemy.com/course/500-220-engineering-cisco-meraki-solutions-practice-exams/?couponCode=NEXARC26092
+  source: tutorialbar
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: microsoft-excel-basic-to-advanced-a-complete-learning-path
+  title: 'Microsoft Excel Basic to Advanced: A Complete Learning Path'
+  description: Master Microsoft Excel from the ground up, covering essential basics
+    to advanced techniques in this comprehensive course
+  image: https://img-c.udemycdn.com/course/480x270/6186053_f756_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: 46A5E41A57B7DB4BD582
+  udemy_url: https://www.udemy.com/course/microsoft-excel-basic-to-advanced-a-complete-learning-path/
+  coupon_url: https://www.udemy.com/course/microsoft-excel-basic-to-advanced-a-complete-learning-path/?couponCode=46A5E41A57B7DB4BD582
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: excel-microsoft-excel-course-beginner-to-expert-2022
+  title: Excel - Microsoft Excel Course Beginner to Expert 2024
+  description: Beginner to Expert Level - Fundamentals, Charts, Pivot Tables, Micro,
+    Functions, Formula & More. MS Excel 2021
+  image: https://img-c.udemycdn.com/course/480x270/4758504_f0ea_4.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: B477FF81AF4760FA39BB
+  udemy_url: https://www.udemy.com/course/excel-microsoft-excel-course-beginner-to-expert-2022/
+  coupon_url: https://www.udemy.com/course/excel-microsoft-excel-course-beginner-to-expert-2022/?couponCode=B477FF81AF4760FA39BB
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: ai-foundation-introduction-to-mcp
+  title: AI Foundation & Introduction to MCP
+  description: Module-1 of Complete AI course on Model Context Protocol
+  image: https://img-c.udemycdn.com/course/480x270/7276159_73e7.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: FREE07SEP2026
+  udemy_url: https://www.udemy.com/course/ai-foundation-introduction-to-mcp/
+  coupon_url: https://www.udemy.com/course/ai-foundation-introduction-to-mcp/?couponCode=FREE07SEP2026
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - AI
+- id: bootcamp-az-900-microsoft-azure-fundamentals
+  title: 'Bootcamp AZ-900: Microsoft Azure Fundamentals Course'
+  description: 'Bootcamp AZ-900: Microsoft Azure Fundamentals Course | AZ-900, Microsoft
+    Azure Fundamentals AZ900, Azure AZ900, AZ-900'
+  image: https://img-c.udemycdn.com/course/480x270/7126561_0c10_10.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: C11E7F7121185CF49E67
+  udemy_url: https://www.udemy.com/course/bootcamp-az-900-microsoft-azure-fundamentals/
+  coupon_url: https://www.udemy.com/course/bootcamp-az-900-microsoft-azure-fundamentals/?couponCode=C11E7F7121185CF49E67
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: innovative-ai-practices-in-telemedicine-virtual-care
+  title: Innovative AI Practices in Telemedicine & Virtual Care
+  description: 'Deliver Smarter Virtual Care: AI for Diagnostics, RPM, Virtual Assistants
+    & Personalized Treatment Planning'
+  image: https://img-c.udemycdn.com/course/480x270/6758145_5ce7_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: SEP2026-FREE2
+  udemy_url: https://www.udemy.com/course/innovative-ai-practices-in-telemedicine-virtual-care/
+  coupon_url: https://www.udemy.com/course/innovative-ai-practices-in-telemedicine-virtual-care/?couponCode=SEP2026-FREE2
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - AI
+- id: expert-strategies-for-ai-in-clinical-decision-support
+  title: Expert Strategies for AI in Clinical Decision Support
+  description: 'AI-Powered Clinical Decision Support: Imaging, Predictive Analytics
+    & Ethical Integration'
+  image: https://img-c.udemycdn.com/course/480x270/6919915_ea30_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: SEP2026-FREE2
+  udemy_url: https://www.udemy.com/course/expert-strategies-for-ai-in-clinical-decision-support/
+  coupon_url: https://www.udemy.com/course/expert-strategies-for-ai-in-clinical-decision-support/?couponCode=SEP2026-FREE2
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - AI
+- id: credit-portfolio-strategy-and-regulatory-compliance
+  title: Credit Portfolio Strategy and Regulatory Compliance
+  description: Advanced credit analysis course covering bond pricing, CDS, Basel regulations,
+    and credit portfolio management.
+  image: https://img-c.udemycdn.com/course/480x270/6749677_bd3c_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: SEP2026-FREE2
+  udemy_url: https://www.udemy.com/course/credit-portfolio-strategy-and-regulatory-compliance/
+  coupon_url: https://www.udemy.com/course/credit-portfolio-strategy-and-regulatory-compliance/?couponCode=SEP2026-FREE2
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - IT & Tech
+- id: ai-for-product-leaders-strategy-innovation-execution
+  title: 'AI for Product Leaders: Strategy, Innovation & Execution'
+  description: Use AI to Strategize, Design, Automate, and Deliver Sustainable Innovation
+  image: https://img-c.udemycdn.com/course/480x270/6889299_95ca_4.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: SEP2026-FREE2
+  udemy_url: https://www.udemy.com/course/ai-for-product-leaders-strategy-innovation-execution/
+  coupon_url: https://www.udemy.com/course/ai-for-product-leaders-strategy-innovation-execution/?couponCode=SEP2026-FREE2
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - AI
+- id: ai-at-scale-roadmap-for-enterprise-transformation
+  title: 'AI for Enterprise Transformation: A Roadmap for Leaders'
+  description: Design a scalable AI roadmap for enterprise transformation. Align strategy,
+    governance, and automation to drive ROI.
+  image: https://img-c.udemycdn.com/course/480x270/6660247_5cc6_2.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: SEP2026-FREE2
+  udemy_url: https://www.udemy.com/course/ai-at-scale-roadmap-for-enterprise-transformation/
+  coupon_url: https://www.udemy.com/course/ai-at-scale-roadmap-for-enterprise-transformation/?couponCode=SEP2026-FREE2
+  source: discudemy
+  fetched_at: '2026-09-08'
+  categories:
+  - AI
+- id: artificial-intelligence-for-entrepreneurs
+  title: Artificial Intelligence for Entrepreneurs
+  description: Create cost-effective AI strategies to drive growth and innovation
+  image: https://img-c.udemycdn.com/course/480x270/6870541_67fd_3.jpg
+  instructor: Top IT Instructor
+  rating: 4.6
+  rating_count: 140
+  students: 1600
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 26
+  coupon_code: SEP2026-FREE2
+  udemy_url: https://www.udemy.com/course/artificial-intelligence-for-entrepreneurs/
+  coupon_url: https://www.udemy.com/course/artificial-intelligence-for-entrepreneurs/?couponCode=SEP2026-FREE2
+  source: discudemy
   fetched_at: '2026-09-08'
   categories:
   - IT & Tech
