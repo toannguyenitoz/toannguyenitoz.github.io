@@ -2793,52 +2793,118 @@ kbd {
   background: var(--bg-tertiary);
 }
 
-.banner-btn-contact {
-  background: linear-gradient(135deg, #E0F2FE 0%, #D1FAE5 100%);
+/* Individual Menu Button Color Themes */
+/* 1. Articles Button (Blue/Cyan Azure Theme) */
+.banner-btn-articles {
+  background: linear-gradient(135deg, #E0F2FE 0%, #EBF8FF 100%);
   border-color: #BAE6FD;
-  color: #0284C7;
+  color: #0369A1;
   font-weight: 700;
 }
-
-.banner-btn-contact:hover {
-  background: linear-gradient(135deg, #0078D4 0%, #10B981 100%);
+.banner-btn-articles:hover {
+  background: linear-gradient(135deg, #0284C7 0%, #0078D4 100%);
   color: #FFFFFF !important;
   border-color: transparent;
 }
-
-[data-theme="dark"] .banner-btn-contact {
-  background: linear-gradient(135deg, rgba(0, 120, 212, 0.2) 0%, rgba(16, 185, 129, 0.2) 100%);
+[data-theme="dark"] .banner-btn-articles {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.2) 0%, rgba(56, 189, 248, 0.12) 100%);
   border-color: rgba(56, 189, 248, 0.4);
   color: #38BDF8;
 }
-
-[data-theme="dark"] .banner-btn-contact:hover {
-  background: linear-gradient(135deg, #0078D4 0%, #10B981 100%);
+[data-theme="dark"] .banner-btn-articles:hover {
+  background: linear-gradient(135deg, #0284C7 0%, #0078D4 100%);
   color: #FFFFFF !important;
   border-color: transparent;
 }
 
-.banner-btn-courses {
-  background: linear-gradient(135deg, #FEF9C3 0%, #D1FAE5 100%);
-  border-color: #FDE68A;
-  color: #92400E;
+/* 2. YouTube Button (Red / Rose Theme) */
+.banner-btn-youtube {
+  background: linear-gradient(135deg, #FFE4E6 0%, #FFF1F2 100%);
+  border-color: #FECDD3;
+  color: #E11D48;
   font-weight: 700;
 }
+.banner-btn-youtube:hover {
+  background: linear-gradient(135deg, #EF4444 0%, #BE123C 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
+[data-theme="dark"] .banner-btn-youtube {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(244, 63, 94, 0.12) 100%);
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #FB7185;
+}
+[data-theme="dark"] .banner-btn-youtube:hover {
+  background: linear-gradient(135deg, #EF4444 0%, #BE123C 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
 
+/* 3. PowerShell Button (Purple / Indigo Terminal Theme) */
+.banner-btn-powershell {
+  background: linear-gradient(135deg, #EDE9FE 0%, #F5F3FF 100%);
+  border-color: #DDD6FE;
+  color: #6D28D9;
+  font-weight: 700;
+}
+.banner-btn-powershell:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
+[data-theme="dark"] .banner-btn-powershell {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2) 0%, rgba(99, 102, 241, 0.12) 100%);
+  border-color: rgba(167, 139, 250, 0.4);
+  color: #C084FC;
+}
+[data-theme="dark"] .banner-btn-powershell:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
+
+/* 4. Free Tech Courses Button (Gold / Emerald Gift Theme) */
+.banner-btn-courses {
+  background: linear-gradient(135deg, #FEF9C3 0%, #ECFDF5 100%);
+  border-color: #FDE68A;
+  color: #B45309;
+  font-weight: 700;
+}
 .banner-btn-courses:hover {
   background: linear-gradient(135deg, #F59E0B 0%, #10B981 100%);
   color: #FFFFFF !important;
   border-color: transparent;
 }
-
 [data-theme="dark"] .banner-btn-courses {
-  background: linear-gradient(135deg, rgba(245,158,11,0.2) 0%, rgba(16,185,129,0.2) 100%);
-  border-color: rgba(245,158,11,0.4);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(16, 185, 129, 0.15) 100%);
+  border-color: rgba(245, 158, 11, 0.45);
   color: #FCD34D;
 }
-
 [data-theme="dark"] .banner-btn-courses:hover {
   background: linear-gradient(135deg, #F59E0B 0%, #10B981 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
+
+/* 5. Contact & Connect Button (Emerald / Teal Open Theme) */
+.banner-btn-contact {
+  background: linear-gradient(135deg, #D1FAE5 0%, #CCFBF1 100%);
+  border-color: #A7F3D0;
+  color: #047857;
+  font-weight: 700;
+}
+.banner-btn-contact:hover {
+  background: linear-gradient(135deg, #10B981 0%, #0D9488 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
+[data-theme="dark"] .banner-btn-contact {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(20, 184, 166, 0.12) 100%);
+  border-color: rgba(52, 211, 153, 0.4);
+  color: #34D399;
+}
+[data-theme="dark"] .banner-btn-contact:hover {
+  background: linear-gradient(135deg, #10B981 0%, #0D9488 100%);
   color: #FFFFFF !important;
   border-color: transparent;
 }

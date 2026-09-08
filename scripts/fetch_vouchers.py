@@ -37,6 +37,7 @@ import yaml
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FILE = os.path.join(BASE_DIR, "_data", "vouchers.yml")
+HISTORY_FILE = os.path.join(BASE_DIR, "_data", "vouchers_history.json")
 MAX_VOUCHERS = 60
 REQUEST_TIMEOUT = 12
 DELAY_BETWEEN_REQUESTS = 1.0
@@ -277,43 +278,87 @@ def load_existing():
     except Exception:
         return []
 
-def merge_and_sort(new_items, existing_items):
+def load_history():
+    """Load persistent record of all course slugs ever published."""
+    history = set()
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    history = set(data)
+        except Exception as e:
+            print(f"  [!] Failed to read {HISTORY_FILE}: {e}")
+    # Also seed with current vouchers.yml
+    existing = load_existing()
+    for ex in existing:
+        slug = ex.get("id") or extract_udemy_slug(ex.get("udemy_url", ""))
+        if slug:
+            history.add(slug)
+    return history
+
+def save_history(history_set):
+    """Save persistent record of all published course slugs."""
+    try:
+        os.makedirs(os.path.dirname(HISTORY_FILE), exist_ok=True)
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(sorted(list(history_set)), f, indent=2)
+    except Exception as e:
+        print(f"  [!] Failed to write {HISTORY_FILE}: {e}")
+
+def merge_and_sort(new_items, existing_items, history_set):
     today = datetime.date.today().isoformat()
     by_slug = {}
 
-    # Existing items first
+    # 1. Keep existing active vouchers
     for ex in existing_items:
         slug = ex.get("id") or extract_udemy_slug(ex.get("udemy_url", ""))
         if slug:
             by_slug[slug] = ex
 
-    # Update with new items
+    # 2. Add truly NEW courses that have NEVER been posted before
+    added_count = 0
     for item in new_items:
         slug = item.get("slug") or extract_udemy_slug(item.get("udemy_url", ""))
         if not slug:
             continue
 
-        existing = by_slug.get(slug, {})
+        # Check if course is already active or in historical archive
+        if slug in by_slug:
+            # Already active in current list: just update coupon code if fresh
+            if item.get("coupon_code"):
+                by_slug[slug]["coupon_code"] = item.get("coupon_code")
+                by_slug[slug]["coupon_url"] = item.get("coupon_url") or by_slug[slug].get("coupon_url")
+            continue
+
+        if slug in history_set:
+            # Course has been posted in the past -> DO NOT repost
+            continue
+
         merged = {
             "id": slug,
-            "title": item.get("title") or existing.get("title") or slug.replace("-", " ").title(),
-            "description": item.get("description") or existing.get("description") or "Free online certification course with full lifetime access.",
-            "image": item.get("image") or existing.get("image") or "",
-            "instructor": item.get("instructor") or existing.get("instructor") or "Top IT Instructor",
-            "rating": item.get("rating") or existing.get("rating") or 4.5,
-            "rating_count": item.get("rating_count") or existing.get("rating_count") or 150,
-            "students": item.get("students") or existing.get("students") or 1200,
-            "level": item.get("level") or existing.get("level") or "All Levels",
-            "duration": item.get("duration") or existing.get("duration") or "3-5 hours",
-            "lectures": item.get("lectures") or existing.get("lectures") or 25,
-            "coupon_code": item.get("coupon_code") or existing.get("coupon_code") or "",
-            "udemy_url": item.get("udemy_url") or existing.get("udemy_url") or f"https://www.udemy.com/course/{slug}/",
-            "coupon_url": item.get("coupon_url") or existing.get("coupon_url") or "",
-            "source": item.get("source") or existing.get("source") or "tutorialbar",
+            "title": item.get("title") or slug.replace("-", " ").title(),
+            "description": item.get("description") or "Free online certification course with full lifetime access.",
+            "image": item.get("image") or "",
+            "instructor": item.get("instructor") or "Top IT Instructor",
+            "rating": item.get("rating") or 4.5,
+            "rating_count": item.get("rating_count") or 150,
+            "students": item.get("students") or 1200,
+            "level": item.get("level") or "All Levels",
+            "duration": item.get("duration") or "3-5 hours",
+            "lectures": item.get("lectures") or 25,
+            "coupon_code": item.get("coupon_code") or "",
+            "udemy_url": item.get("udemy_url") or f"https://www.udemy.com/course/{slug}/",
+            "coupon_url": item.get("coupon_url") or "",
+            "source": item.get("source") or "tutorialbar",
             "fetched_at": today,
             "categories": [k for k in ["AI", "Python", "Cloud", "Data", "Security", "DevOps", "Web", "IT Support"] if k.lower() in (item.get("title", "")).lower()] or ["IT & Tech"]
         }
         by_slug[slug] = merged
+        history_set.add(slug)
+        added_count += 1
+
+    print(f"[*] Added {added_count} brand-new courses (filtered out duplicates and previously posted)")
 
     results = list(by_slug.values())
     # Sort: courses with coupon_code first, then newest fetched
@@ -322,7 +367,7 @@ def merge_and_sort(new_items, existing_items):
         x.get("fetched_at", "")
     ), reverse=True)
 
-    return results[:MAX_VOUCHERS]
+    return results[:MAX_VOUCHERS], history_set
 
 def write_yaml(vouchers):
     today = datetime.date.today().isoformat()
@@ -346,13 +391,26 @@ def main():
     print("  Free Tech Course Voucher Fetcher (Automated 3x Daily)")
     print("=" * 65)
 
+    history_set = load_history()
+    print(f"[*] Known history archive: {len(history_set)} course slugs tracked")
+
     raw_items = scrape_tutorialbar()
     print(f"[*] Total raw candidates: {len(raw_items)}")
 
+    # Filter out courses in history before requesting details to save requests
+    filtered_candidates = []
+    for item in raw_items:
+        slug = item.get("slug") or extract_udemy_slug(item.get("udemy_url", ""))
+        if slug and slug in history_set:
+            continue
+        filtered_candidates.append(item)
+
+    print(f"[*] Brand-new candidates after history check: {len(filtered_candidates)}")
+
     # Enrich candidates that need coupon resolution
     enriched_items = []
-    for idx, item in enumerate(raw_items[:25]):
-        print(f"[{idx+1}/{min(len(raw_items), 25)}] Processing: {item.get('title', '')[:50]}")
+    for idx, item in enumerate(filtered_candidates[:25]):
+        print(f"[{idx+1}/{min(len(filtered_candidates), 25)}] Processing: {item.get('title', '')[:50]}")
         try:
             res = enrich_course_details(item)
             if res and res.get("coupon_url"):
@@ -365,11 +423,12 @@ def main():
     print(f"\n[*] Successfully resolved {len(enriched_items)} courses with coupon codes")
 
     existing = load_existing()
-    final_list = merge_and_sort(enriched_items, existing)
+    final_list, updated_history = merge_and_sort(enriched_items, existing, history_set)
     write_yaml(final_list)
+    save_history(updated_history)
 
     print("\n" + "=" * 65)
-    print(f"  Run complete! Total active vouchers in database: {len(final_list)}")
+    print(f"  Run complete! Total active vouchers: {len(final_list)} | Lifetime tracked: {len(updated_history)}")
     print("=" * 65)
 
 if __name__ == "__main__":

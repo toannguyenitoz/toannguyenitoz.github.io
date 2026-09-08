@@ -12,197 +12,73 @@ title: "IT Support With Toan | Systems Administration & Cloud Engineering"
     <div class="dashboard-3col-grid">
 
       <!-- ================================================================= -->
-      <!-- COLUMN 1 (LEFT): POWERSHELL COMMAND CENTER                        -->
       <!-- ================================================================= -->
-      <div class="dashboard-col col-powershell">
-        <div class="col-header-bar">
-          <div class="col-header-title">
-            <span class="col-icon-mark">&gt;_</span>
-            <div>
-              <h2 class="col-title">PowerShell Toolbox</h2>
-              <p class="col-desc">Battle-tested one-liners for Tier 2/3 SysAdmins</p>
-            </div>
-          </div>
-          <span class="col-status-pill">1-Click Copy</span>
-        </div>
+      <!-- COLUMN 1 (LEFT): NEWSLETTER & CONTACT & CONNECT                   -->
+      <!-- ================================================================= -->
+      <div class="dashboard-col col-sidebar-left">
+        <!-- Top Section: Weekly Tech Newsletter Subscription -->
+        {% include newsletter.html %}
 
-        <div class="terminal-card col-terminal-card">
-          <div class="terminal-header">
-            <div class="terminal-dots">
-              <span class="terminal-dot dot-red"></span>
-              <span class="terminal-dot dot-yellow"></span>
-              <span class="terminal-dot dot-green"></span>
+        <!-- Bottom Section: Contact & Connect Card -->
+        <div class="col-section-block contact-card-block" id="contact">
+          <div class="col-header-bar">
+            <div class="col-header-title">
+              <span class="col-icon-mark">📬</span>
+              <div>
+                <h2 class="col-title">Contact &amp; Connect</h2>
+                <p class="col-desc">Enterprise consulting &amp; professional inquiries</p>
+              </div>
             </div>
-            <div class="terminal-title">Windows PowerShell (Admin)</div>
+            <span class="col-status-pill status-available">● Open</span>
           </div>
 
-          <!-- Category Selector Tabs -->
-          <div class="terminal-tabs col-terminal-tabs">
-            <button class="terminal-tab-btn active" data-target="cmd-network">📡 Network</button>
-            <button class="terminal-tab-btn" data-target="cmd-ad">👥 AD / IAM</button>
-            <button class="terminal-tab-btn" data-target="cmd-system">⚡ OS / SFC</button>
-            <button class="terminal-tab-btn" data-target="cmd-m365">☁️ M365</button>
-            <button class="terminal-tab-btn" data-target="cmd-storage">💾 Storage</button>
-            <button class="terminal-tab-btn" data-target="cmd-security">🛡️ Port Audit</button>
-          </div>
-
-          <div class="terminal-body col-terminal-body">
-            <!-- Tab 1: Network & DNS -->
-            <div class="cmd-item active" id="cmd-network">
-              <div class="cmd-annotation-card mini-annotation">
-                <div class="annotation-badge">
-                  <span>Parameter Breakdown</span>
-                </div>
-                <p class="annotation-text">
-                  Performs 3-way TCP socket handshake to Microsoft 365 on port 443 and flushes local DNS cache.
-                </p>
-              </div>
-
-              <div class="cmd-executable-block">
-                <div class="executable-header">
-                  <span class="executable-badge">⚡ Executable Cmdlet</span>
-                  <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span>Copy</span>
-                  </button>
-                </div>
-                <pre class="executable-code"><code>Test-NetConnection -ComputerName login.microsoftonline.com -Port 443
-Clear-DnsClientCache
-Resolve-DnsName -Name outlook.office365.com -Type A</code></pre>
+          <div class="contact-box-content">
+            <div class="contact-profile-header">
+              <img src="{{ '/assets/images/toan-avatar.jpg' | relative_url }}" alt="Toan Nguyen" class="contact-profile-avatar">
+              <div class="contact-profile-text">
+                <h3 class="contact-profile-name">Toan Nguyen</h3>
+                <span class="contact-profile-role">Systems Administrator &amp; Cloud Specialist</span>
+                <span class="contact-profile-loc">📍 Adelaide, South Australia</span>
               </div>
             </div>
 
-            <!-- Tab 2: AD & IAM -->
-            <div class="cmd-item" id="cmd-ad">
-              <div class="cmd-annotation-card mini-annotation">
-                <div class="annotation-badge">
-                  <span>Parameter Breakdown</span>
-                </div>
-                <p class="annotation-text">
-                  Enumerates locked accounts across domain and unlocks specific user identity immediately.
-                </p>
-              </div>
+            <p class="contact-profile-bio">
+              Specializing in Active Directory &amp; Entra ID, Windows Server, Microsoft 365, Azure Cloud infrastructure, and PowerShell automation for enterprise systems administration and IT support.
+            </p>
 
-              <div class="cmd-executable-block">
-                <div class="executable-header">
-                  <span class="executable-badge">⚡ Executable Cmdlet</span>
-                  <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span>Copy</span>
-                  </button>
+            <div class="contact-actions-stack">
+              <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-btn-card btn-linkedin">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+                </svg>
+                <div class="contact-btn-text">
+                  <strong>Connect on LinkedIn</strong>
+                  <span>@toan-nguyen-it-oz</span>
                 </div>
-                <pre class="executable-code"><code>Search-ADAccount -LockedOut | Select-Object SamAccountName, Name
-Unlock-ADAccount -Identity "username"
-Get-ADUser -Identity "username" -Properties BadPwdCount</code></pre>
-              </div>
-            </div>
+              </a>
 
-            <!-- Tab 3: OS Servicing -->
-            <div class="cmd-item" id="cmd-system">
-              <div class="cmd-annotation-card mini-annotation">
-                <div class="annotation-badge">
-                  <span>Parameter Breakdown</span>
+              <a href="mailto:{{ site.author.email }}" class="contact-btn-card btn-email">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <div class="contact-btn-text">
+                  <strong>Send Direct Email</strong>
+                  <span>{{ site.author.email }}</span>
                 </div>
-                <p class="annotation-text">
-                  Repairs WinSxS component store from Windows Update, runs SFC integrity scan, and upgrades apps.
-                </p>
-              </div>
+              </a>
 
-              <div class="cmd-executable-block">
-                <div class="executable-header">
-                  <span class="executable-badge">⚡ Executable Cmdlet</span>
-                  <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span>Copy</span>
-                  </button>
+              <a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer" class="contact-btn-card btn-youtube">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                </svg>
+                <div class="contact-btn-text">
+                  <strong>Subscribe on YouTube</strong>
+                  <span>@{{ site.author.youtube_channel }}</span>
                 </div>
-                <pre class="executable-code"><code>DISM /Online /Cleanup-Image /RestoreHealth
-sfc /scannow
-winget upgrade --all --include-unknown</code></pre>
-              </div>
-            </div>
-
-            <!-- Tab 4: M365 & Entra ID -->
-            <div class="cmd-item" id="cmd-m365">
-              <div class="cmd-annotation-card mini-annotation">
-                <div class="annotation-badge">
-                  <span>Parameter Breakdown</span>
-                </div>
-                <p class="annotation-text">
-                  Inspects Hybrid Azure AD Join state, SSO PRT token status, and restarts Intune management agent.
-                </p>
-              </div>
-
-              <div class="cmd-executable-block">
-                <div class="executable-header">
-                  <span class="executable-badge">⚡ Executable Cmdlet</span>
-                  <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span>Copy</span>
-                  </button>
-                </div>
-                <pre class="executable-code"><code>dsregcmd /status
-Get-Service -Name IntuneManagementExtension
-Restart-Service IntuneManagementExtension -Force</code></pre>
-              </div>
-            </div>
-
-            <!-- Tab 5: Storage Reclamation -->
-            <div class="cmd-item" id="cmd-storage">
-              <div class="cmd-annotation-card mini-annotation">
-                <div class="annotation-badge">
-                  <span>Parameter Breakdown</span>
-                </div>
-                <p class="annotation-text">
-                  Deep scans files over 1GB on drive C:, empties the Recycle Bin silently, and purges user temp files.
-                </p>
-              </div>
-
-              <div class="cmd-executable-block">
-                <div class="executable-header">
-                  <span class="executable-badge">⚡ Executable Cmdlet</span>
-                  <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span>Copy</span>
-                  </button>
-                </div>
-                <pre class="executable-code"><code>Get-ChildItem -Path C:\ -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Length -gt 1GB } | Select-Object -First 10 FullName, Length
-Clear-RecycleBin -Force -ErrorAction SilentlyContinue
-Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</code></pre>
-              </div>
-            </div>
-
-            <!-- Tab 6: Port Security -->
-            <div class="cmd-item" id="cmd-security">
-              <div class="cmd-annotation-card mini-annotation">
-                <div class="annotation-badge">
-                  <span>Parameter Breakdown</span>
-                </div>
-                <p class="annotation-text">
-                  Lists listening TCP ports and correlates socket OwningProcess ID directly to executable name.
-                </p>
-              </div>
-
-              <div class="cmd-executable-block">
-                <div class="executable-header">
-                  <span class="executable-badge">⚡ Executable Cmdlet</span>
-                  <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
-                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span>Copy</span>
-                  </button>
-                </div>
-                <pre class="executable-code"><code>Get-NetTCPConnection -State Listen | Select-Object LocalAddress, LocalPort, OwningProcess, @{Name="ProcessName"; Expression={(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).ProcessName}} | Format-Table -AutoSize</code></pre>
-              </div>
+              </a>
             </div>
           </div>
-        </div>
-
-        <!-- Footer Action: Open full PowerShell Hub -->
-        <div class="col-action-footer">
-          <a href="{{ '/powershell/' | relative_url }}" class="btn-column-action">
-            <span>Open Full PowerShell Hub (7 Categories &amp; Search)</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
         </div>
       </div>
 
@@ -297,11 +173,203 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
       </div>
 
       <!-- ================================================================= -->
-      <!-- COLUMN 3 (RIGHT): YOUTUBE VIDEOS & CONTACT                        -->
+      <!-- COLUMN 3 (RIGHT): POWERSHELL & YOUTUBE VIDEOS                     -->
       <!-- ================================================================= -->
-      <div class="dashboard-col col-videos-contact">
-        <!-- Top Section: YouTube Videos -->
+      <div class="dashboard-col col-sidebar-right">
+        <!-- Top Section: PowerShell Command Center -->
         <div class="col-section-block">
+          <div class="col-header-bar">
+            <div class="col-header-title">
+              <span class="col-icon-mark">&gt;_</span>
+              <div>
+                <h2 class="col-title">PowerShell Toolbox</h2>
+                <p class="col-desc">Battle-tested one-liners for SysAdmins</p>
+              </div>
+            </div>
+            <span class="col-status-pill">1-Click Copy</span>
+          </div>
+
+          <div class="terminal-card col-terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="terminal-title">Windows PowerShell (Admin)</div>
+            </div>
+
+            <!-- Category Selector Tabs -->
+            <div class="terminal-tabs col-terminal-tabs">
+              <button class="terminal-tab-btn active" data-target="cmd-network">📡 Network</button>
+              <button class="terminal-tab-btn" data-target="cmd-ad">👥 AD/IAM</button>
+              <button class="terminal-tab-btn" data-target="cmd-system">⚡ OS/SFC</button>
+              <button class="terminal-tab-btn" data-target="cmd-m365">☁️ M365</button>
+              <button class="terminal-tab-btn" data-target="cmd-storage">💾 Disk</button>
+              <button class="terminal-tab-btn" data-target="cmd-security">🛡️ Port</button>
+            </div>
+
+            <div class="terminal-body col-terminal-body">
+              <!-- Tab 1: Network & DNS -->
+              <div class="cmd-item active" id="cmd-network">
+                <div class="cmd-annotation-card mini-annotation">
+                  <div class="annotation-badge">
+                    <span>Parameter Breakdown</span>
+                  </div>
+                  <p class="annotation-text">
+                    Performs 3-way TCP socket handshake to Microsoft 365 on port 443 and flushes local DNS cache.
+                  </p>
+                </div>
+
+                <div class="cmd-executable-block">
+                  <div class="executable-header">
+                    <span class="executable-badge">⚡ Executable Cmdlet</span>
+                    <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <pre class="executable-code"><code>Test-NetConnection -ComputerName login.microsoftonline.com -Port 443
+Clear-DnsClientCache
+Resolve-DnsName -Name outlook.office365.com -Type A</code></pre>
+                </div>
+              </div>
+
+              <!-- Tab 2: AD & IAM -->
+              <div class="cmd-item" id="cmd-ad">
+                <div class="cmd-annotation-card mini-annotation">
+                  <div class="annotation-badge">
+                    <span>Parameter Breakdown</span>
+                  </div>
+                  <p class="annotation-text">
+                    Enumerates locked accounts across domain and unlocks specific user identity immediately.
+                  </p>
+                </div>
+
+                <div class="cmd-executable-block">
+                  <div class="executable-header">
+                    <span class="executable-badge">⚡ Executable Cmdlet</span>
+                    <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <pre class="executable-code"><code>Search-ADAccount -LockedOut | Select-Object SamAccountName, Name
+Unlock-ADAccount -Identity "username"
+Get-ADUser -Identity "username" -Properties BadPwdCount</code></pre>
+                </div>
+              </div>
+
+              <!-- Tab 3: OS Servicing -->
+              <div class="cmd-item" id="cmd-system">
+                <div class="cmd-annotation-card mini-annotation">
+                  <div class="annotation-badge">
+                    <span>Parameter Breakdown</span>
+                  </div>
+                  <p class="annotation-text">
+                    Repairs WinSxS component store from Windows Update, runs SFC integrity scan, and upgrades apps.
+                  </p>
+                </div>
+
+                <div class="cmd-executable-block">
+                  <div class="executable-header">
+                    <span class="executable-badge">⚡ Executable Cmdlet</span>
+                    <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <pre class="executable-code"><code>DISM /Online /Cleanup-Image /RestoreHealth
+sfc /scannow
+winget upgrade --all --include-unknown</code></pre>
+                </div>
+              </div>
+
+              <!-- Tab 4: M365 & Entra ID -->
+              <div class="cmd-item" id="cmd-m365">
+                <div class="cmd-annotation-card mini-annotation">
+                  <div class="annotation-badge">
+                    <span>Parameter Breakdown</span>
+                  </div>
+                  <p class="annotation-text">
+                    Inspects Hybrid Azure AD Join state, SSO PRT token status, and restarts Intune management agent.
+                  </p>
+                </div>
+
+                <div class="cmd-executable-block">
+                  <div class="executable-header">
+                    <span class="executable-badge">⚡ Executable Cmdlet</span>
+                    <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <pre class="executable-code"><code>dsregcmd /status
+Get-Service -Name IntuneManagementExtension
+Restart-Service IntuneManagementExtension -Force</code></pre>
+                </div>
+              </div>
+
+              <!-- Tab 5: Storage Reclamation -->
+              <div class="cmd-item" id="cmd-storage">
+                <div class="cmd-annotation-card mini-annotation">
+                  <div class="annotation-badge">
+                    <span>Parameter Breakdown</span>
+                  </div>
+                  <p class="annotation-text">
+                    Deep scans files over 1GB on drive C:, empties the Recycle Bin silently, and purges user temp files.
+                  </p>
+                </div>
+
+                <div class="cmd-executable-block">
+                  <div class="executable-header">
+                    <span class="executable-badge">⚡ Executable Cmdlet</span>
+                    <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <pre class="executable-code"><code>Get-ChildItem -Path C:\ -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Length -gt 1GB } | Select-Object -First 10 FullName, Length
+Clear-RecycleBin -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</code></pre>
+                </div>
+              </div>
+
+              <!-- Tab 6: Port Security -->
+              <div class="cmd-item" id="cmd-security">
+                <div class="cmd-annotation-card mini-annotation">
+                  <div class="annotation-badge">
+                    <span>Parameter Breakdown</span>
+                  </div>
+                  <p class="annotation-text">
+                    Lists listening TCP ports and correlates socket OwningProcess ID directly to executable name.
+                  </p>
+                </div>
+
+                <div class="cmd-executable-block">
+                  <div class="executable-header">
+                    <span class="executable-badge">⚡ Executable Cmdlet</span>
+                    <button type="button" class="btn-copy-code" aria-label="Copy pure commands">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                  <pre class="executable-code"><code>Get-NetTCPConnection -State Listen | Select-Object LocalAddress, LocalPort, OwningProcess, @{Name="ProcessName"; Expression={(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).ProcessName}} | Format-Table -AutoSize</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-action-footer" style="margin-bottom: 20px;">
+            <a href="{{ '/powershell/' | relative_url }}" class="btn-column-action">
+              <span>Open Full PowerShell Hub (7 Categories &amp; Search)</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Section: YouTube Videos -->
+        <div class="col-section-block" style="margin-top: 10px; padding-top: 16px; border-top: 1px solid var(--border-color);">
           <div class="col-header-bar">
             <div class="col-header-title">
               <span class="col-icon-mark">▶</span>
@@ -330,7 +398,7 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
             {% endfor %}
           </div>
 
-          <div class="col-action-footer" style="margin-top: 14px; margin-bottom: 24px;">
+          <div class="col-action-footer" style="margin-top: 14px;">
             <a href="{{ '/videos/' | relative_url }}" class="btn-column-action">
               <span>View All 15 Video Tutorials &amp; Shorts</span>
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -338,123 +406,8 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
           </div>
         </div>
 
-        <!-- Middle Section: Weekly Tech Newsletter Subscription -->
-        {% include newsletter.html %}
-
-        <!-- Bottom Section: Contact & Connect Card -->
-        <div class="col-section-block contact-card-block" id="contact">
-          <div class="col-header-bar">
-            <div class="col-header-title">
-              <span class="col-icon-mark">📬</span>
-              <div>
-                <h2 class="col-title">Contact &amp; Connect</h2>
-                <p class="col-desc">Enterprise consulting &amp; professional inquiries</p>
-              </div>
-            </div>
-            <span class="col-status-pill status-available">● Open</span>
-          </div>
-
-          <div class="contact-box-content">
-            <div class="contact-profile-header">
-              <img src="{{ '/assets/images/toan-avatar.jpg' | relative_url }}" alt="Toan Nguyen" class="contact-profile-avatar">
-              <div class="contact-profile-text">
-                <h3 class="contact-profile-name">Toan Nguyen</h3>
-                <span class="contact-profile-role">Systems Administrator &amp; Cloud Specialist</span>
-                <span class="contact-profile-loc">📍 Adelaide, South Australia</span>
-              </div>
-            </div>
-
-            <p class="contact-profile-bio">
-              Specializing in Active Directory &amp; Entra ID, Windows Server, Microsoft 365, Azure Cloud infrastructure, and PowerShell automation for enterprise systems administration and IT support.
-            </p>
-
-            <div class="contact-actions-stack">
-              <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-btn-card btn-linkedin">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
-                </svg>
-                <div class="contact-btn-text">
-                  <strong>Connect on LinkedIn</strong>
-                  <span>@toan-nguyen-it-oz</span>
-                </div>
-              </a>
-
-              <a href="mailto:{{ site.author.email }}" class="contact-btn-card btn-email">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                <div class="contact-btn-text">
-                  <strong>Send Direct Email</strong>
-                  <span>{{ site.author.email }}</span>
-                </div>
-              </a>
-
-              <a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer" class="contact-btn-card btn-youtube">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-                </svg>
-                <div class="contact-btn-text">
-                  <strong>Subscribe on YouTube</strong>
-                  <span>@{{ site.author.youtube_channel }}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
   </div>
 </section>
-
-{% if site.data.vouchers and site.data.vouchers.size > 0 %}
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     FREE TECH COURSES PREVIEW SECTION
-     ═══════════════════════════════════════════════════════════════════════════ -->
-<section class="page-container" style="padding: 0 0 60px;">
-  <div class="col-section-block" style="margin-bottom: 0;">
-    <div class="col-header-bar">
-      <div class="col-header-title">
-        <span class="col-icon-mark">🎁</span>
-        <div>
-          <h2 class="col-title">Free Tech Courses — Active Vouchers</h2>
-          <span class="col-subtitle">{{ site.data.vouchers | size }} courses • Updated 3× daily • English only</span>
-        </div>
-      </div>
-      <a href="{{ '/courses/' | relative_url }}" class="btn-column-action btn-column-primary" style="flex-shrink:0;">
-        <span>Browse All Vouchers</span>
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-    <div class="voucher-preview-grid">
-      {% for voucher in site.data.vouchers limit:4 %}
-      <a href="{{ '/courses/' | relative_url }}" class="voucher-preview-card" title="{{ voucher.title }}">
-        {% if voucher.image and voucher.image != '' %}
-        <img 
-          src="{{ voucher.image }}" 
-          alt="{{ voucher.title }}" 
-          class="voucher-preview-img" 
-          loading="lazy"
-          onerror="this.style.display='none'"
-        >
-        {% endif %}
-        <div class="voucher-preview-body">
-          <h4 class="voucher-preview-title">{{ voucher.title }}</h4>
-          <span class="voucher-preview-meta">
-            {% if voucher.rating and voucher.rating > 0 %}⭐ {{ voucher.rating }} • {% endif %}
-            {{ voucher.source | upcase }}
-          </span>
-          {% if voucher.coupon_code and voucher.coupon_code != '' %}
-          <span class="voucher-preview-code">{{ voucher.coupon_code }}</span>
-          {% else %}
-          <span class="voucher-preview-code">Free — No code needed</span>
-          {% endif %}
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
