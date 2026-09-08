@@ -119,6 +119,36 @@ items:
     views_display: "3 views"
     is_pinned: false
 
+  - title: "Unlock Secret \"God Mode\" in Windows 11! 📁⚡"
+    youtube_id: "EiWjMDPo3pE"
+    duration: "00:55"
+    category: "Shorts"
+    description: "Access all Windows 11 administrative tools, hidden control panel applets, and system tweaks from a single unified master folder."
+    published_date: "2026-09-08"
+    views_count: 5
+    views_display: "New"
+    is_pinned: false
+
+  - title: "Boost Slow Wi-Fi to 5GHz in 30s! 🚀⚡"
+    youtube_id: "dJxjPHLJAh4"
+    duration: "00:50"
+    category: "Shorts"
+    description: "Force Windows 11 to prioritize ultra-fast 5GHz / 6GHz Wi-Fi bands over congested 2.4GHz for instant latency reduction and transfer speed boosts."
+    published_date: "2026-09-08"
+    views_count: 46
+    views_display: "46 views"
+    is_pinned: false
+
+  - title: "How to Check Your RAM Before Upgrading (PowerShell Guide)"
+    youtube_id: "OP0EuItOREc"
+    duration: "00:58"
+    category: "Shorts"
+    description: "Inspect RAM speed, form factor, manufacturer, and available empty DIMM memory slots directly via PowerShell before buying upgrades."
+    published_date: "2026-09-07"
+    views_count: 15
+    views_display: "15 views"
+    is_pinned: false
+
   - title: "4 Secret Windows 11 Features You Must Turn On NOW! 💻🔥"
     youtube_id: "DnrB8j9iXPk"
     duration: "00:55"
@@ -148,3 +178,4 @@ items:
     views_count: 22
     views_display: "22 views"
     is_pinned: false
+
