@@ -40,7 +40,7 @@ OUTPUT_FILE = os.path.join(BASE_DIR, "_data", "vouchers.yml")
 HISTORY_FILE = os.path.join(BASE_DIR, "_data", "vouchers_history.json")
 MAX_VOUCHERS = 60
 REQUEST_TIMEOUT = 12
-DELAY_BETWEEN_REQUESTS = 1.0
+DELAY_BETWEEN_REQUESTS = 0.5
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -78,7 +78,8 @@ EXCLUDE_KEYWORDS = [
     "makeup", "fashion", "jewelry", "crochet", "knitting",
     "quickbooks", "tax", "real estate", "mortgage",
     "mindset", "relationship", "dating", "parenting", "anxiety", "depression",
-    "spanish", "french", "german", "chinese", "japanese", "korean", "arabic",
+    "spanish", "french", "german", "chinese", "japanese", "korean", "arabic", "portuguese", "italian", "russian",
+    "cómo", "crear", "página", "curso de", "principiantes", "español", "aprende", "deutsch", "für", "französisch", "italiano", "curso",
     "copywriting", "social media marketing", "instagram", "tiktok", "youtube growth",
 ]
 
@@ -135,15 +136,18 @@ def extract_udemy_slug(url):
 # ─── Scraping Logic ──────────────────────────────────────────────────────────
 
 def scrape_tutorialbar():
-    print("[*] Scraping TutorialBar course feeds...")
+    print("[*] Scraping TutorialBar course feeds (multi-page)...")
     discovered = []
     seen_slugs = set()
 
-    sources = [
-        "https://www.tutorialbar.com/all-courses/",
-        "https://www.tutorialbar.com/category/development",
-        "https://www.tutorialbar.com/category/it-and-software",
-    ]
+    sources = []
+    # Multi-page scanning ensures we discover all newly posted vouchers
+    for p in range(1, 6):
+        sources.append(f"https://www.tutorialbar.com/all-courses/?page={p}")
+    for p in range(1, 5):
+        sources.append(f"https://www.tutorialbar.com/category/development?page={p}")
+    for p in range(1, 5):
+        sources.append(f"https://www.tutorialbar.com/category/it-and-software?page={p}")
 
     for page_url in sources:
         html = fetch_html(page_url)
