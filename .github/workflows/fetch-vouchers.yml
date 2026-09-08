@@ -1,0 +1,48 @@
+name: Fetch Free Tech Course Vouchers
+
+on:
+  schedule:
+    # Chạy 3 lần mỗi ngày theo giờ Adelaide (07:00, 13:00, 19:00 ACST):
+    - cron: '30 21 * * *'
+    - cron: '30 3  * * *'
+    - cron: '30 9  * * *'
+  workflow_dispatch:   # Cho phép bấm nút chạy thủ công bất kỳ lúc nào
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-vouchers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PyYAML
+        run: pip install pyyaml --quiet
+
+      - name: Fetch free tech course vouchers
+        run: python scripts/fetch_vouchers.py
+
+      - name: Commit and push updated vouchers
+        run: |
+          git config user.name  "Voucher Bot"
+          git config user.email "actions@github.com"
+          git add _data/vouchers.yml
+          if git diff --cached --quiet; then
+            echo "No changes to vouchers — skipping commit."
+          else
+            VOUCHER_COUNT=$(python -c "import yaml; d=yaml.safe_load(open('_data/vouchers.yml')); print(len(d))" 2>/dev/null || echo "?")
+            git commit -m "auto: update free course vouchers (${VOUCHER_COUNT} active) [skip ci]"
+            git push
+            echo "✅ Pushed updated vouchers.yml"
+          fi
