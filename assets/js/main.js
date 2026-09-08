@@ -234,269 +234,293 @@
   // 7. Dedicated Video Portal Engine (Filter, Sort by Views/Dates, 10-Item Pagination)
   // =========================================================================
   function initVideoPortal() {
-    const grid = document.getElementById('videoLibraryGrid');
-    if (!grid) return;
+    try {
+      var grid = document.getElementById('videoLibraryGrid');
+      if (!grid) return;
 
-    const items = Array.from(grid.querySelectorAll('.dynamic-video-item'));
-    const sortSelect = document.getElementById('videoSortSelect');
-    const filterPills = document.querySelectorAll('#videoFilterPills .filter-pill');
-    const loadMoreBtn = document.getElementById('btnLoadMoreVideos');
-    const visibleCountEl = document.getElementById('videoVisibleCount');
+      var items = Array.from(grid.querySelectorAll('.dynamic-video-item'));
+      var sortSelect = document.getElementById('videoSortSelect');
+      var filterPills = document.querySelectorAll('#videoFilterPills .filter-pill');
+      var loadMoreBtn = document.getElementById('btnLoadMoreVideos');
+      var visibleCountEl = document.getElementById('videoVisibleCount');
 
-    let currentCategory = 'all';
-    let currentSort = 'views-desc';
-    let visibleLimit = 10;
+      var currentCategory = 'all';
+      var currentSort = 'views-desc';
+      var visibleLimit = 10;
 
-    function applyVideoFiltersAndSort() {
-      // 1. Filter
-      let filtered = items.filter(function (item) {
-        if (currentCategory === 'all') return true;
-        const itemCat = item.getAttribute('data-category') || '';
-        return itemCat.toLowerCase().includes(currentCategory.toLowerCase());
-      });
+      function applyVideoFiltersAndSort() {
+        // 1. Filter — use exact match since data-category is a single value
+        var filtered = items.filter(function (item) {
+          if (currentCategory === 'all') return true;
+          var itemCat = (item.getAttribute('data-category') || '').toLowerCase();
+          var searchCat = currentCategory.toLowerCase();
+          return itemCat === searchCat || itemCat.includes(searchCat);
+        });
 
-      // 2. Sort
-      filtered.sort(function (a, b) {
-        if (currentSort === 'views-desc') {
-          const vA = parseInt(a.getAttribute('data-views'), 10) || 0;
-          const vB = parseInt(b.getAttribute('data-views'), 10) || 0;
-          return vB - vA;
-        } else if (currentSort === 'date-desc') {
-          const dA = a.getAttribute('data-date') || '';
-          const dB = b.getAttribute('data-date') || '';
-          return dB.localeCompare(dA);
-        } else if (currentSort === 'date-asc') {
-          const dA = a.getAttribute('data-date') || '';
-          const dB = b.getAttribute('data-date') || '';
-          return dA.localeCompare(dB);
-        }
-        return 0;
-      });
+        // 2. Sort in memory (no DOM mutation — keeps iframes intact)
+        var sorted = filtered.slice().sort(function (a, b) {
+          if (currentSort === 'views-desc') {
+            var vA = parseInt(a.getAttribute('data-views'), 10) || 0;
+            var vB = parseInt(b.getAttribute('data-views'), 10) || 0;
+            return vB - vA;
+          } else if (currentSort === 'date-desc') {
+            var dA = a.getAttribute('data-date') || '';
+            var dB = b.getAttribute('data-date') || '';
+            return dB.localeCompare(dA);
+          } else if (currentSort === 'date-asc') {
+            var dA2 = a.getAttribute('data-date') || '';
+            var dB2 = b.getAttribute('data-date') || '';
+            return dA2.localeCompare(dB2);
+          }
+          return 0;
+        });
 
-      // 3. Render DOM order
-      items.forEach(function (el) { el.style.display = 'none'; });
-      filtered.forEach(function (el, index) {
-        grid.appendChild(el);
-        if (index < visibleLimit) {
-          el.style.display = '';
-        } else {
-          el.style.display = 'none';
-        }
-      });
+        // 3. Apply CSS order + visibility (no appendChild = no iframe reload)
+        var filteredSet = new Set(filtered);
+        items.forEach(function (el) {
+          if (!filteredSet.has(el)) {
+            el.style.display = 'none';
+            el.style.order = '9999';
+          }
+        });
 
-      // 4. Update counts & button visibility
-      const shownCount = Math.min(visibleLimit, filtered.length);
-      if (visibleCountEl) visibleCountEl.innerText = shownCount;
+        sorted.forEach(function (el, index) {
+          el.style.order = String(index);
+          if (index < visibleLimit) {
+            el.style.display = '';
+          } else {
+            el.style.display = 'none';
+          }
+        });
 
-      if (loadMoreBtn) {
-        if (shownCount >= filtered.length) {
-          loadMoreBtn.style.display = 'none';
-        } else {
-          loadMoreBtn.style.display = 'inline-flex';
+        // 4. Update counts & button visibility
+        var shownCount = Math.min(visibleLimit, sorted.length);
+        if (visibleCountEl) visibleCountEl.innerText = shownCount;
+
+        if (loadMoreBtn) {
+          if (shownCount >= sorted.length) {
+            loadMoreBtn.style.display = 'none';
+          } else {
+            loadMoreBtn.style.display = 'inline-flex';
+          }
         }
       }
-    }
 
-    // Event: Sort changed
-    if (sortSelect) {
-      sortSelect.addEventListener('change', function () {
-        currentSort = this.value;
-        visibleLimit = 10;
-        applyVideoFiltersAndSort();
+      // Event: Sort changed
+      if (sortSelect) {
+        sortSelect.addEventListener('change', function () {
+          currentSort = this.value;
+          visibleLimit = 10;
+          applyVideoFiltersAndSort();
+        });
+      }
+
+      // Event: Category pill clicked
+      filterPills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          filterPills.forEach(function (p) { p.classList.remove('active'); });
+          this.classList.add('active');
+          currentCategory = this.getAttribute('data-category');
+          visibleLimit = 10;
+          applyVideoFiltersAndSort();
+        });
       });
+
+      // Event: Load more clicked
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function () {
+          visibleLimit += 10;
+          applyVideoFiltersAndSort();
+        });
+      }
+
+      // Initial render
+      applyVideoFiltersAndSort();
+    } catch (e) {
+      console.error('[VideoPortal] Initialization error:', e);
     }
-
-    // Event: Category pill clicked
-    filterPills.forEach(function (pill) {
-      pill.addEventListener('click', function () {
-        filterPills.forEach(function (p) { p.classList.remove('active'); });
-        this.classList.add('active');
-        currentCategory = this.getAttribute('data-category');
-        visibleLimit = 10;
-        applyVideoFiltersAndSort();
-      });
-    });
-
-    // Event: Load more clicked
-    if (loadMoreBtn) {
-      loadMoreBtn.addEventListener('click', function () {
-        visibleLimit += 10;
-        applyVideoFiltersAndSort();
-      });
-    }
-
-    // Initial render
-    applyVideoFiltersAndSort();
   }
 
   // =========================================================================
   // 8. Dedicated Articles Portal Engine (Search, Filter, Sort, 10-Item Pagination)
   // =========================================================================
   function initArticlesPortal() {
-    const grid = document.getElementById('articlesLibraryGrid');
-    if (!grid) return;
+    try {
+      var grid = document.getElementById('articlesLibraryGrid');
+      if (!grid) return;
 
-    const items = Array.from(grid.querySelectorAll('.dynamic-article-item'));
-    const searchInput = document.getElementById('articleSearchInput');
-    const clearSearchBtn = document.getElementById('btnClearSearch');
-    const sortSelect = document.getElementById('articleSortSelect');
-    const filterPills = document.querySelectorAll('#articleFilterPills .filter-pill');
-    const loadMoreBtn = document.getElementById('btnLoadMoreArticles');
-    const visibleCountEl = document.getElementById('articleVisibleCount');
-    const totalCountEl = document.getElementById('articleTotalCount');
-    const emptyState = document.getElementById('articlesEmptyState');
-    const resetFiltersBtn = document.getElementById('btnResetArticleFilters');
+      var items = Array.from(grid.querySelectorAll('.dynamic-article-item'));
+      var searchInput = document.getElementById('articleSearchInput');
+      var clearSearchBtn = document.getElementById('btnClearSearch');
+      var sortSelect = document.getElementById('articleSortSelect');
+      var filterPills = document.querySelectorAll('#articleFilterPills .filter-pill');
+      var loadMoreBtn = document.getElementById('btnLoadMoreArticles');
+      var visibleCountEl = document.getElementById('articleVisibleCount');
+      var totalCountEl = document.getElementById('articleTotalCount');
+      var emptyState = document.getElementById('articlesEmptyState');
+      var resetFiltersBtn = document.getElementById('btnResetArticleFilters');
 
-    let currentCategory = 'all';
-    let currentSearch = '';
-    let currentSort = 'date-desc';
-    let visibleLimit = 10;
+      var currentCategory = 'all';
+      var currentSearch = '';
+      var currentSort = 'date-desc';
+      var visibleLimit = 10;
 
-    function applyArticleFiltersAndSort() {
-      // 1. Filter
-      let filtered = items.filter(function (item) {
-        const title = (item.getAttribute('data-title') || '').toLowerCase();
-        const desc = (item.getAttribute('data-desc') || '').toLowerCase();
-        const cats = (item.getAttribute('data-categories') || '').toLowerCase();
-        const tags = (item.getAttribute('data-tags') || '').toLowerCase();
+      function applyArticleFiltersAndSort() {
+        // 1. Filter
+        var filtered = items.filter(function (item) {
+          var title = (item.getAttribute('data-title') || '').toLowerCase();
+          var desc = (item.getAttribute('data-desc') || '').toLowerCase();
+          var cats = (item.getAttribute('data-categories') || '').toLowerCase();
+          var tags = (item.getAttribute('data-tags') || '').toLowerCase();
 
-        // Search check
-        if (currentSearch) {
-          const match = title.includes(currentSearch) || desc.includes(currentSearch) || tags.includes(currentSearch) || cats.includes(currentSearch);
-          if (!match) return false;
+          // Search check
+          if (currentSearch) {
+            var match = title.includes(currentSearch) || desc.includes(currentSearch) || tags.includes(currentSearch) || cats.includes(currentSearch);
+            if (!match) return false;
+          }
+
+          // Category check
+          if (currentCategory !== 'all') {
+            var matchCat = cats.includes(currentCategory.toLowerCase()) || tags.includes(currentCategory.toLowerCase());
+            if (!matchCat) return false;
+          }
+
+          return true;
+        });
+
+        // 2. Sort in memory
+        var sorted = filtered.slice().sort(function (a, b) {
+          if (currentSort === 'date-desc') {
+            var dA = a.getAttribute('data-date') || '';
+            var dB = b.getAttribute('data-date') || '';
+            return dB.localeCompare(dA);
+          } else if (currentSort === 'date-asc') {
+            var dA2 = a.getAttribute('data-date') || '';
+            var dB2 = b.getAttribute('data-date') || '';
+            return dA2.localeCompare(dB2);
+          } else if (currentSort === 'title-asc') {
+            var tA = (a.getAttribute('data-title') || '').toLowerCase();
+            var tB = (b.getAttribute('data-title') || '').toLowerCase();
+            return tA.localeCompare(tB);
+          }
+          return 0;
+        });
+
+        // 3. Apply CSS order + visibility (no DOM mutation)
+        var filteredSet = new Set(filtered);
+        items.forEach(function (el) {
+          if (!filteredSet.has(el)) {
+            el.style.display = 'none';
+            el.style.order = '9999';
+          }
+        });
+
+        sorted.forEach(function (el, index) {
+          el.style.order = String(index);
+          if (index < visibleLimit) {
+            el.style.display = '';
+          } else {
+            el.style.display = 'none';
+          }
+        });
+
+        // 4. Update counts & button
+        var shownCount = Math.min(visibleLimit, sorted.length);
+        if (visibleCountEl) visibleCountEl.innerText = shownCount;
+        if (totalCountEl) totalCountEl.innerText = sorted.length;
+
+        if (emptyState) {
+          if (sorted.length === 0) {
+            emptyState.style.display = 'block';
+          } else {
+            emptyState.style.display = 'none';
+          }
         }
 
-        // Category check
-        if (currentCategory !== 'all') {
-          const matchCat = cats.includes(currentCategory.toLowerCase()) || tags.includes(currentCategory.toLowerCase());
-          if (!matchCat) return false;
-        }
-
-        return true;
-      });
-
-      // 2. Sort
-      filtered.sort(function (a, b) {
-        if (currentSort === 'date-desc') {
-          const dA = a.getAttribute('data-date') || '';
-          const dB = b.getAttribute('data-date') || '';
-          return dB.localeCompare(dA);
-        } else if (currentSort === 'date-asc') {
-          const dA = a.getAttribute('data-date') || '';
-          const dB = b.getAttribute('data-date') || '';
-          return dA.localeCompare(dB);
-        } else if (currentSort === 'title-asc') {
-          const tA = (a.getAttribute('data-title') || '').toLowerCase();
-          const tB = (b.getAttribute('data-title') || '').toLowerCase();
-          return tA.localeCompare(tB);
-        }
-        return 0;
-      });
-
-      // 3. Render DOM order & visibility
-      items.forEach(function (el) { el.style.display = 'none'; });
-      filtered.forEach(function (el, index) {
-        grid.appendChild(el);
-        if (index < visibleLimit) {
-          el.style.display = '';
-        } else {
-          el.style.display = 'none';
-        }
-      });
-
-      // 4. Update counts & button
-      const shownCount = Math.min(visibleLimit, filtered.length);
-      if (visibleCountEl) visibleCountEl.innerText = shownCount;
-      if (totalCountEl) totalCountEl.innerText = filtered.length;
-
-      if (emptyState) {
-        if (filtered.length === 0) {
-          emptyState.style.display = 'block';
-        } else {
-          emptyState.style.display = 'none';
+        if (loadMoreBtn) {
+          if (shownCount >= sorted.length) {
+            loadMoreBtn.style.display = 'none';
+          } else {
+            loadMoreBtn.style.display = 'inline-flex';
+          }
         }
       }
 
-      if (loadMoreBtn) {
-        if (shownCount >= filtered.length) {
-          loadMoreBtn.style.display = 'none';
-        } else {
-          loadMoreBtn.style.display = 'inline-flex';
-        }
+      // Event: Live Search
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          currentSearch = this.value.trim().toLowerCase();
+          visibleLimit = 10;
+          if (clearSearchBtn) {
+            clearSearchBtn.style.display = currentSearch ? 'block' : 'none';
+          }
+          applyArticleFiltersAndSort();
+        });
       }
-    }
 
-    // Event: Live Search
-    if (searchInput) {
-      searchInput.addEventListener('input', function () {
-        currentSearch = this.value.trim().toLowerCase();
-        visibleLimit = 10;
-        if (clearSearchBtn) {
-          clearSearchBtn.style.display = currentSearch ? 'block' : 'none';
-        }
-        applyArticleFiltersAndSort();
-      });
-    }
+      if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', function () {
+          if (searchInput) {
+            searchInput.value = '';
+            currentSearch = '';
+            this.style.display = 'none';
+            visibleLimit = 10;
+            applyArticleFiltersAndSort();
+            searchInput.focus();
+          }
+        });
+      }
 
-    if (clearSearchBtn) {
-      clearSearchBtn.addEventListener('click', function () {
-        if (searchInput) {
-          searchInput.value = '';
-          currentSearch = '';
-          this.style.display = 'none';
+      // Event: Sort Changed
+      if (sortSelect) {
+        sortSelect.addEventListener('change', function () {
+          currentSort = this.value;
           visibleLimit = 10;
           applyArticleFiltersAndSort();
-          searchInput.focus();
-        }
-      });
-    }
-
-    // Event: Sort Changed
-    if (sortSelect) {
-      sortSelect.addEventListener('change', function () {
-        currentSort = this.value;
-        visibleLimit = 10;
-        applyArticleFiltersAndSort();
-      });
-    }
-
-    // Event: Category Pills
-    filterPills.forEach(function (pill) {
-      pill.addEventListener('click', function () {
-        filterPills.forEach(function (p) { p.classList.remove('active'); });
-        this.classList.add('active');
-        currentCategory = this.getAttribute('data-category');
-        visibleLimit = 10;
-        applyArticleFiltersAndSort();
-      });
-    });
-
-    // Event: Load More
-    if (loadMoreBtn) {
-      loadMoreBtn.addEventListener('click', function () {
-        visibleLimit += 10;
-        applyArticleFiltersAndSort();
-      });
-    }
-
-    // Event: Reset Filters
-    if (resetFiltersBtn) {
-      resetFiltersBtn.addEventListener('click', function () {
-        if (searchInput) searchInput.value = '';
-        currentSearch = '';
-        currentCategory = 'all';
-        visibleLimit = 10;
-        filterPills.forEach(function (p) {
-          p.classList.toggle('active', p.getAttribute('data-category') === 'all');
         });
-        if (clearSearchBtn) clearSearchBtn.style.display = 'none';
-        applyArticleFiltersAndSort();
-      });
-    }
+      }
 
-    // Initial render
-    applyArticleFiltersAndSort();
+      // Event: Category Pills
+      filterPills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          filterPills.forEach(function (p) { p.classList.remove('active'); });
+          this.classList.add('active');
+          currentCategory = this.getAttribute('data-category');
+          visibleLimit = 10;
+          applyArticleFiltersAndSort();
+        });
+      });
+
+      // Event: Load More
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function () {
+          visibleLimit += 10;
+          applyArticleFiltersAndSort();
+        });
+      }
+
+      // Event: Reset Filters
+      if (resetFiltersBtn) {
+        resetFiltersBtn.addEventListener('click', function () {
+          if (searchInput) searchInput.value = '';
+          currentSearch = '';
+          currentCategory = 'all';
+          visibleLimit = 10;
+          filterPills.forEach(function (p) {
+            p.classList.toggle('active', p.getAttribute('data-category') === 'all');
+          });
+          if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+          applyArticleFiltersAndSort();
+        });
+      }
+
+      // Initial render
+      applyArticleFiltersAndSort();
+    } catch (e) {
+      console.error('[ArticlesPortal] Initialization error:', e);
+    }
   }
+
 
   // =========================================================================
   // 9. Dedicated PowerShell Command Center Engine

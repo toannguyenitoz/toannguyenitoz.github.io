@@ -43,15 +43,15 @@ description: "Production-tested PowerShell commands, Active Directory one-liners
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>1. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>1. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Chẩn đoán kết nối tầng mạng và DNS bằng các lệnh PowerShell gốc không phụ thuộc vào công cụ Telnet của bên thứ ba:
+          Diagnose network-layer and DNS connectivity using native PowerShell cmdlets without relying on legacy Telnet or third-party tools:
         </p>
         <ul class="annotation-list">
-          <li><code>Test-NetConnection -ComputerName ... -Port 443</code>: Kiểm tra bắt tay 3 bước TCP SYN/ACK đến máy chủ Microsoft 365, xác thực firewall và NAT gateway.</li>
-          <li><code>Clear-DnsClientCache</code>: Xóa sạch bộ đệm DNS cục bộ của máy trạm khi xảy ra hiện tượng Stale IP hoặc DNS Poisoning.</li>
-          <li><code>Resolve-DnsName -Name ... -Type A -DnsOnly</code>: Truy vấn trực tiếp bản ghi A có thẩm quyền từ máy chủ DNS mà không qua file hosts.</li>
+          <li><code>Test-NetConnection -ComputerName ... -Port 443</code>: Performs a 3-way TCP SYN/ACK handshake to Microsoft 365 endpoints, validating firewall rules and NAT gateway egress.</li>
+          <li><code>Clear-DnsClientCache</code>: Purges the local DNS resolver cache on the workstation to clear stale or poisoned DNS records.</li>
+          <li><code>Resolve-DnsName -Name ... -Type A -DnsOnly</code>: Queries authoritative A records directly from the DNS server, bypassing the local hosts file.</li>
         </ul>
       </div>
 
@@ -74,15 +74,15 @@ Resolve-DnsName -Name "login.microsoftonline.com" -Type A -DnsOnly</code></pre>
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>2. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>2. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Quản trị tài khoản Active Directory Domain Services (AD DS) nhanh chóng mà không cần mở giao diện cồng kềnh ADAC:
+          Administer Active Directory Domain Services (AD DS) user accounts rapidly without opening the cumbersome ADAC GUI interface:
         </p>
         <ul class="annotation-list">
-          <li><code>Search-ADAccount -LockedOut</code>: Quét toàn bộ domain và trả về danh sách các user bị khóa do nhập sai mật khẩu quá giới hạn GPO.</li>
-          <li><code>Unlock-ADAccount -Identity "username"</code>: Mở khóa tức thì cho người dùng chỉ trong 1 giây.</li>
-          <li><code>Get-ADUser ... -Properties BadPwdCount</code>: Điều tra chi tiết số lần gõ sai pass và thời điểm xác thực thất bại gần nhất.</li>
+          <li><code>Search-ADAccount -LockedOut</code>: Scans the entire domain and returns all user accounts locked out due to exceeding the bad-password GPO threshold.</li>
+          <li><code>Unlock-ADAccount -Identity "username"</code>: Instantly unlocks the specified user account without requiring a password reset.</li>
+          <li><code>Get-ADUser ... -Properties BadPwdCount</code>: Audits the detailed bad-password count and the timestamp of the most recent failed authentication attempt.</li>
         </ul>
       </div>
 
@@ -105,15 +105,15 @@ Get-ADUser -Identity "jdoe" -Properties BadPwdCount, badPasswordTime, LockedOut 
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>3. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>3. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Khắc phục lỗi màn hình xanh (BSOD), file hệ thống Windows bị hỏng và cập nhật ứng dụng tự động:
+          Repair Blue Screen of Death (BSOD) errors, fix corrupted Windows system files, and automatically update all installed applications:
         </p>
         <ul class="annotation-list">
-          <li><code>DISM /Online /Cleanup-Image /RestoreHealth</code>: Sửa chữa kho lưu trữ thành phần WinSxS trực tiếp từ máy chủ Windows Update của Microsoft.</li>
-          <li><code>sfc /scannow</code>: Quét và tự động thay thế các file DLL/SYS hệ thống bị hỏng bằng bản sao nguyên vẹn.</li>
-          <li><code>winget upgrade --all --include-unknown</code>: Nâng cấp toàn bộ phần mềm trên máy tính lên phiên bản mới nhất một cách tự động.</li>
+          <li><code>DISM /Online /Cleanup-Image /RestoreHealth</code>: Repairs the WinSxS component store directly from Microsoft's Windows Update servers.</li>
+          <li><code>sfc /scannow</code>: Scans all protected system files and automatically replaces corrupted DLL/SYS files with clean copies.</li>
+          <li><code>winget upgrade --all --include-unknown</code>: Upgrades all installed software on the machine to the latest version automatically.</li>
         </ul>
       </div>
 
@@ -136,15 +136,15 @@ winget upgrade --all --include-unknown</code></pre>
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>4. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>4. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Chẩn đoán trạng thái gia nhập Hybrid Azure AD Join, chứng chỉ TPM và Intune Enrollment:
+          Diagnose the Hybrid Azure AD Join enrollment state, TPM certificate binding, and Microsoft Intune management agent status:
         </p>
         <ul class="annotation-list">
-          <li><code>dsregcmd /status</code>: Lệnh chuẩn kiểm tra trạng thái AzureAdJoined, DomainJoined và TPM Primary Refresh Token (PRT).</li>
-          <li><code>dsregcmd /debug /leave</code>: Reset trạng thái đăng ký Cloud Identity nếu thiết bị bị lỗi chứng chỉ xác thực với Entra ID.</li>
-          <li><code>Get-Service IntuneManagementExtension</code>: Kiểm tra trạng thái hoạt động của agent quản lý Microsoft Intune trên máy trạm.</li>
+          <li><code>dsregcmd /status</code>: The standard command to inspect AzureAdJoined, DomainJoined, and TPM Primary Refresh Token (PRT) status on the local machine.</li>
+          <li><code>dsregcmd /debug /leave</code>: Resets the Cloud Identity enrollment state if the device has a broken authentication certificate with Entra ID.</li>
+          <li><code>Get-Service IntuneManagementExtension</code>: Checks the operational status of the Microsoft Intune management agent service on the workstation.</li>
         </ul>
       </div>
 
@@ -167,15 +167,15 @@ Get-WinEvent -LogName "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>5. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>5. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Tự động dọn dẹp dung lượng ổ cứng, xóa file rác và quét các file dung lượng lớn gây đầy ổ C:
+          Automatically reclaim disk space on drive C:, delete junk files, and identify oversized files causing low disk space alerts:
         </p>
         <ul class="annotation-list">
-          <li><code>Get-ChildItem -Path C:\ ... -Length -gt 1GB</code>: Truy quét các tệp tin phình to vượt quá 1GB trong máy tính.</li>
-          <li><code>Clear-RecycleBin -Force</code>: Làm rỗng Thùng rác của toàn bộ các phân vùng ổ đĩa mà không hỏi xác nhận.</li>
-          <li><code>Remove-Item $env:TEMP\*</code>: Dọn sạch file tạm (Temporary files) của người dùng đang đăng nhập.</li>
+          <li><code>Get-ChildItem -Path C:\ ... -Length -gt 1GB</code>: Deep-scans all files exceeding 1GB in size on the local drive and lists them sorted by size.</li>
+          <li><code>Clear-RecycleBin -Force</code>: Permanently empties the Recycle Bin across all drive partitions without any confirmation prompt.</li>
+          <li><code>Remove-Item $env:TEMP\*</code>: Cleans all temporary files belonging to the currently logged-on user session.</li>
         </ul>
       </div>
 
@@ -198,14 +198,14 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>6. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>6. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Điều tra bảo mật cổng mạng, phát hiện phần mềm độc hại đang mở socket lắng nghe trên endpoint:
+          Audit network port security, detect malware or unauthorized services opening listening sockets on the endpoint:
         </p>
         <ul class="annotation-list">
-          <li><code>Get-NetTCPConnection -State Listen</code>: Liệt kê tất cả cổng TCP đang mở trên máy.</li>
-          <li><code>Get-Process -Id $_.OwningProcess</code>: Tự động ánh xạ số hiệu PID của cổng sang tên tiến trình thực thi (Process Name).</li>
+          <li><code>Get-NetTCPConnection -State Listen</code>: Enumerates all open TCP listening ports on the local machine with their addresses and owning processes.</li>
+          <li><code>Get-Process -Id $_.OwningProcess</code>: Automatically maps the port's owning PID to its executable process name for instant threat identification.</li>
         </ul>
       </div>
 
@@ -226,14 +226,14 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
       <div class="cmd-annotation-card">
         <div class="annotation-badge">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>7. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+          <span>7. Technical Annotation (Parameter Breakdown)</span>
         </div>
         <p class="annotation-text">
-          Khắc phục sự cố Windows Server Update Services (WSUS) và tối ưu hóa IIS Application Pool:
+          Troubleshoot Windows Server Update Services (WSUS) synchronization failures and optimize the IIS Application Pool settings:
         </p>
         <ul class="annotation-list">
-          <li><code>recycling.periodicRestart.privateMemory = 0</code>: Gỡ bỏ giới hạn 1.8GB mặc định của IIS WsusPool để tránh lỗi HTTP 503 Service Unavailable khi đồng bộ catalog nặng.</li>
-          <li><code>wsusutil.exe postinstall /servicing</code>: Chạy lại tiến trình cấu hình và gán database schema của WSUS sau khi cài đặt.</li>
+          <li><code>recycling.periodicRestart.privateMemory = 0</code>: Removes the default 1.8GB memory limit from the IIS WsusPool to prevent HTTP 503 Service Unavailable errors during heavy catalog synchronization.</li>
+          <li><code>wsusutil.exe postinstall /servicing</code>: Re-runs the WSUS configuration and database schema assignment process after installation or repair.</li>
         </ul>
       </div>
 
