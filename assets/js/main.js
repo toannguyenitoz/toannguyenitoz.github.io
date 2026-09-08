@@ -226,7 +226,7 @@
     // If Supabase is configured, use Supabase RPC
     if (supabaseClient) {
       try {
-        const { data, error } = await supabaseClient.rpc('increment_page_view', { page_slug: postSlug });
+        const { data, error } = await supabaseClient.rpc('increment_page_view', { p_slug: postSlug });
         if (!error && data) {
           viewCountEl.innerText = Number(data).toLocaleString('en-US');
           return;
