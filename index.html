@@ -370,3 +370,54 @@ Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</c
     </div>
   </div>
 </section>
+
+{% if site.data.vouchers and site.data.vouchers.size > 0 %}
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     FREE TECH COURSES PREVIEW SECTION
+     ═══════════════════════════════════════════════════════════════════════════ -->
+<section class="page-container" style="padding: 0 0 60px;">
+  <div class="col-section-block" style="margin-bottom: 0;">
+    <div class="col-header-bar">
+      <div class="col-header-title">
+        <span class="col-icon-mark">🎁</span>
+        <div>
+          <h2 class="col-title">Free Tech Courses — Active Vouchers</h2>
+          <span class="col-subtitle">{{ site.data.vouchers | size }} courses • Updated 3× daily • English only</span>
+        </div>
+      </div>
+      <a href="{{ '/courses/' | relative_url }}" class="btn-column-action btn-column-primary" style="flex-shrink:0;">
+        <span>Browse All Vouchers</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="voucher-preview-grid">
+      {% for voucher in site.data.vouchers limit:4 %}
+      <a href="{{ '/courses/' | relative_url }}" class="voucher-preview-card" title="{{ voucher.title }}">
+        {% if voucher.image and voucher.image != '' %}
+        <img 
+          src="{{ voucher.image }}" 
+          alt="{{ voucher.title }}" 
+          class="voucher-preview-img" 
+          loading="lazy"
+          onerror="this.style.display='none'"
+        >
+        {% endif %}
+        <div class="voucher-preview-body">
+          <h4 class="voucher-preview-title">{{ voucher.title }}</h4>
+          <span class="voucher-preview-meta">
+            {% if voucher.rating and voucher.rating > 0 %}⭐ {{ voucher.rating }} • {% endif %}
+            {{ voucher.source | upcase }}
+          </span>
+          {% if voucher.coupon_code and voucher.coupon_code != '' %}
+          <span class="voucher-preview-code">{{ voucher.coupon_code }}</span>
+          {% else %}
+          <span class="voucher-preview-code">Free — No code needed</span>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,350 @@
+---
+layout: default
+title: "Free Tech Courses & Udemy Vouchers | IT Support With Toan"
+description: "Free Udemy course vouchers for AI, Machine Learning, Data Science, Cloud, Python, Cybersecurity, and IT courses. Updated 3x daily. English courses only."
+permalink: /courses/
+---
+
+<div class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <div class="subpage-badge">
+      <span>🎁 Free Course Vouchers</span>
+    </div>
+    <h1 class="subpage-title">Free Tech Courses</h1>
+    <p class="subpage-desc">
+      Curated Udemy vouchers for AI, Data Science, Cloud, Python, Cybersecurity &amp; IT. 
+      Updated 3× daily. English courses only. Click to reveal coupon codes.
+    </p>
+  </div>
+</div>
+
+<div class="page-container" style="padding-bottom: 80px;">
+
+  <!-- Stats Bar -->
+  <div class="voucher-stats-header">
+    <div class="voucher-stats-left">
+      <span class="voucher-count-badge">
+        <span id="voucherCount">{{ site.data.vouchers | size }}</span> active vouchers
+      </span>
+      <span class="voucher-update-badge">
+        🔄 Updated 3× daily
+      </span>
+      <span class="voucher-lang-badge">
+        🇬🇧 English only
+      </span>
+    </div>
+    {% if site.data.vouchers.size > 0 %}
+    <div class="voucher-stats-right">
+      <span class="voucher-last-update">
+        Last fetch: {{ site.data.vouchers.first.fetched_at }}
+      </span>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="voucher-filter-bar">
+    <div class="voucher-search-wrap">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="voucher-search-icon">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input 
+        type="text" 
+        id="voucherSearch" 
+        class="voucher-search-input" 
+        placeholder="Search courses..." 
+        oninput="filterVouchers()"
+        autocomplete="off"
+      >
+    </div>
+    <div class="voucher-category-filters" id="categoryFilters">
+      <button class="voucher-filter-chip active" data-cat="all" onclick="setCategoryFilter(this, 'all')">All</button>
+      <button class="voucher-filter-chip" data-cat="ai" onclick="setCategoryFilter(this, 'ai')">🤖 AI / ML</button>
+      <button class="voucher-filter-chip" data-cat="data" onclick="setCategoryFilter(this, 'data')">📊 Data Science</button>
+      <button class="voucher-filter-chip" data-cat="python" onclick="setCategoryFilter(this, 'python')">🐍 Python</button>
+      <button class="voucher-filter-chip" data-cat="cloud" onclick="setCategoryFilter(this, 'cloud')">☁️ Cloud / DevOps</button>
+      <button class="voucher-filter-chip" data-cat="security" onclick="setCategoryFilter(this, 'security')">🔒 Security</button>
+      <button class="voucher-filter-chip" data-cat="web" onclick="setCategoryFilter(this, 'web')">🌐 Web Dev</button>
+      <button class="voucher-filter-chip" data-cat="it" onclick="setCategoryFilter(this, 'it')">💻 IT Support</button>
+    </div>
+  </div>
+
+  <!-- Voucher Grid -->
+  {% if site.data.vouchers and site.data.vouchers.size > 0 %}
+  <div class="voucher-grid" id="voucherGrid">
+    {% for voucher in site.data.vouchers %}
+    <div class="voucher-card" 
+         data-title="{{ voucher.title | downcase }}"
+         data-cats="{{ voucher.categories | join: ',' | downcase }},{{ voucher.title | downcase }}">
+
+      <!-- Thumbnail -->
+      {% if voucher.image and voucher.image != '' %}
+      <div class="voucher-thumbnail">
+        <img 
+          src="{{ voucher.image }}" 
+          alt="{{ voucher.title }}" 
+          loading="lazy"
+          onerror="this.parentElement.style.display='none'"
+        >
+        <span class="voucher-source-tag">{{ voucher.source | upcase }}</span>
+      </div>
+      {% else %}
+      <div class="voucher-thumbnail voucher-thumbnail--placeholder">
+        <div class="voucher-placeholder-icon">🎓</div>
+        <span class="voucher-source-tag">{{ voucher.source | upcase }}</span>
+      </div>
+      {% endif %}
+
+      <!-- Card Body -->
+      <div class="voucher-card-body">
+        <!-- Categories -->
+        {% if voucher.categories and voucher.categories.size > 0 %}
+        <div class="voucher-tags">
+          {% for cat in voucher.categories limit:3 %}
+          <span class="voucher-tag">{{ cat }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Title -->
+        <h3 class="voucher-title">{{ voucher.title }}</h3>
+
+        <!-- Meta info -->
+        <div class="voucher-meta-row">
+          {% if voucher.instructor and voucher.instructor != '' %}
+          <span class="voucher-meta-item">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            {{ voucher.instructor }}
+          </span>
+          {% endif %}
+          {% if voucher.level and voucher.level != '' %}
+          <span class="voucher-meta-item">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            {{ voucher.level }}
+          </span>
+          {% endif %}
+          {% if voucher.duration and voucher.duration != '' %}
+          <span class="voucher-meta-item">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {{ voucher.duration }}
+          </span>
+          {% endif %}
+        </div>
+
+        <!-- Rating & Students -->
+        {% if voucher.rating and voucher.rating > 0 %}
+        <div class="voucher-rating-row">
+          <span class="voucher-rating-stars" title="{{ voucher.rating }} / 5">
+            {% assign full_stars = voucher.rating | floor %}
+            {% for i in (1..full_stars) %}⭐{% endfor %}
+          </span>
+          <span class="voucher-rating-val">{{ voucher.rating }}</span>
+          {% if voucher.rating_count and voucher.rating_count > 0 %}
+          <span class="voucher-rating-count">({{ voucher.rating_count | number_with_delimiter }})</span>
+          {% endif %}
+          {% if voucher.students and voucher.students > 0 %}
+          <span class="voucher-students">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            {{ voucher.students | divided_by: 1000 }}K students
+          </span>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Description -->
+        {% if voucher.description and voucher.description != '' %}
+        <p class="voucher-description">{{ voucher.description | truncate: 180 }}</p>
+        {% endif %}
+
+        <!-- Coupon Reveal Section -->
+        <div class="voucher-coupon-section">
+          {% if voucher.coupon_code and voucher.coupon_code != '' %}
+          <div class="voucher-coupon-hidden" id="coupon-hidden-{{ forloop.index }}">
+            <button 
+              class="voucher-reveal-btn" 
+              onclick="revealCoupon({{ forloop.index }}, '{{ voucher.coupon_code }}')"
+              aria-label="Reveal coupon code"
+            >
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Click to Reveal Free Coupon Code
+            </button>
+          </div>
+          <div class="voucher-coupon-revealed" id="coupon-shown-{{ forloop.index }}" style="display:none;">
+            <div class="voucher-code-box">
+              <span class="voucher-code-label">COUPON CODE</span>
+              <div class="voucher-code-row">
+                <code class="voucher-code-text" id="code-{{ forloop.index }}">{{ voucher.coupon_code }}</code>
+                <button 
+                  class="voucher-copy-btn" 
+                  onclick="copyCoupon('{{ voucher.coupon_code }}', {{ forloop.index }})"
+                  title="Copy coupon code"
+                >
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span id="copy-label-{{ forloop.index }}">Copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="voucher-no-code">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Free — No coupon needed
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Enroll Button -->
+        <a 
+          href="{{ voucher.coupon_url | default: voucher.udemy_url }}" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="voucher-enroll-btn"
+          onclick="trackCouponClick('{{ voucher.id }}', '{{ voucher.title | escape }}')"
+        >
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+          Enroll Free on Udemy
+        </a>
+
+        <!-- Footer -->
+        <div class="voucher-card-footer">
+          <span class="voucher-fetch-date">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            {{ voucher.fetched_at }}
+          </span>
+          {% if voucher.lectures and voucher.lectures > 0 %}
+          <span class="voucher-lectures">{{ voucher.lectures }} lectures</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Empty State (filtered) -->
+  <div class="voucher-empty" id="voucherEmpty" style="display:none;">
+    <div class="voucher-empty-icon">🔍</div>
+    <p>No courses found matching your search. Try a different keyword or category.</p>
+  </div>
+
+  {% else %}
+  <!-- No vouchers yet -->
+  <div class="voucher-empty">
+    <div class="voucher-empty-icon">⏳</div>
+    <h3>Vouchers loading...</h3>
+    <p>Our automated system fetches new free tech course vouchers 3× daily.<br>
+    Check back soon or <a href="{{ '/' | relative_url }}#contact">contact us</a> to be notified.</p>
+  </div>
+  {% endif %}
+
+  <!-- Disclaimer -->
+  <div class="voucher-disclaimer">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    <p>
+      Coupon codes are sourced from public aggregators and have <strong>limited availability</strong> — they may expire quickly. 
+      We are not affiliated with Udemy. This page is updated automatically 3× daily.
+      If a code doesn't work, the offer may have ended — check back later for new ones.
+    </p>
+  </div>
+
+</div>
+
+<script>
+// ─── Voucher Page JS ──────────────────────────────────────────────────────────
+
+var currentCategory = 'all';
+
+function revealCoupon(idx, code) {
+  var hidden = document.getElementById('coupon-hidden-' + idx);
+  var shown  = document.getElementById('coupon-shown-'  + idx);
+  if (hidden) hidden.style.display = 'none';
+  if (shown)  shown.style.display  = 'block';
+  // GA4 event
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'coupon_reveal', { coupon_index: idx });
+  }
+}
+
+function copyCoupon(code, idx) {
+  var btn = document.getElementById('copy-label-' + idx);
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(code).then(function() {
+      showCopySuccess(btn);
+    });
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = code; 
+    ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); showCopySuccess(btn); } catch(e){}
+    document.body.removeChild(ta);
+  }
+  // GA4 event
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'coupon_copy', { coupon_code: code });
+  }
+}
+
+function showCopySuccess(btn) {
+  if (!btn) return;
+  var orig = btn.textContent;
+  btn.textContent = '✓ Copied!';
+  btn.closest('.voucher-copy-btn').classList.add('copied');
+  setTimeout(function() { 
+    btn.textContent = orig;
+    btn.closest('.voucher-copy-btn').classList.remove('copied');
+  }, 2000);
+}
+
+function setCategoryFilter(el, cat) {
+  currentCategory = cat;
+  document.querySelectorAll('.voucher-filter-chip').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.cat === cat);
+  });
+  filterVouchers();
+}
+
+var CATEGORY_KEYWORDS = {
+  'ai':       ['ai', 'machine learning', 'deep learning', 'neural', 'tensorflow', 'pytorch', 'nlp', 'llm', 'gpt', 'artificial intelligence', 'generative'],
+  'data':     ['data science', 'data analysis', 'data engineering', 'pandas', 'numpy', 'scikit', 'power bi', 'tableau', 'databricks', 'analytics'],
+  'python':   ['python', 'django', 'flask', 'fastapi'],
+  'cloud':    ['cloud', 'aws', 'azure', 'gcp', 'google cloud', 'devops', 'docker', 'kubernetes', 'terraform', 'ansible', 'jenkins', 'ci/cd'],
+  'security': ['cybersecurity', 'security', 'hacking', 'penetration', 'comptia', 'cisco', 'ccna', 'network+', 'security+'],
+  'web':      ['web', 'javascript', 'react', 'angular', 'vue', 'node', 'html', 'css', 'full stack', 'frontend', 'backend', 'next.js'],
+  'it':       ['it support', 'sysadmin', 'windows server', 'active directory', 'microsoft 365', 'networking', 'linux', 'powershell'],
+};
+
+function matchesCategory(cardEl, cat) {
+  if (cat === 'all') return true;
+  var searchText = (cardEl.dataset.title || '') + ' ' + (cardEl.dataset.cats || '');
+  var keywords = CATEGORY_KEYWORDS[cat] || [cat];
+  return keywords.some(function(kw) { return searchText.indexOf(kw) !== -1; });
+}
+
+function filterVouchers() {
+  var query = (document.getElementById('voucherSearch').value || '').toLowerCase().trim();
+  var cards = document.querySelectorAll('.voucher-card');
+  var visible = 0;
+
+  cards.forEach(function(card) {
+    var titleText = (card.dataset.title || '').toLowerCase();
+    var catsText  = (card.dataset.cats  || '').toLowerCase();
+    var matchSearch = !query || titleText.indexOf(query) !== -1 || catsText.indexOf(query) !== -1;
+    var matchCat = matchesCategory(card, currentCategory);
+    var show = matchSearch && matchCat;
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+
+  var emptyEl = document.getElementById('voucherEmpty');
+  var countEl = document.getElementById('voucherCount');
+  if (emptyEl) emptyEl.style.display = visible === 0 ? 'block' : 'none';
+  if (countEl) countEl.textContent = visible;
+}
+
+function trackCouponClick(id, title) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'coupon_click', { course_id: id, course_title: title });
+  }
+}
+</script>

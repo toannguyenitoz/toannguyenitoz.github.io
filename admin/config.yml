@@ -86,3 +86,31 @@ collections:
               - { label: "Ngày Đăng Ký", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM-DD" }
               - { label: "Trạng Thái", name: "status", widget: "select", options: ["active", "unsubscribed"], default: "active" }
 
+  # 5. Free Course Voucher Management
+  - name: "voucher_settings"
+    label: "🎁 Voucher Khóa Học Miễn Phí"
+    files:
+      - label: "Danh Sách Voucher Đang Hoạt Động"
+        name: "vouchers"
+        file: "_data/vouchers.yml"
+        fields:
+          - label: "Vouchers"
+            name: "root"
+            widget: "list"
+            fields:
+              - { label: "ID (slug khóa học)", name: "id", widget: "string" }
+              - { label: "Tên Khóa Học", name: "title", widget: "string" }
+              - { label: "Mô Tả Ngắn", name: "description", widget: "text", required: false }
+              - { label: "Ảnh Thumbnail (URL)", name: "image", widget: "string", required: false }
+              - { label: "Giảng Viên", name: "instructor", widget: "string", required: false }
+              - { label: "Rating (0-5)", name: "rating", widget: "number", value_type: "float", min: 0, max: 5, required: false }
+              - { label: "Số Học Viên", name: "students", widget: "number", required: false }
+              - { label: "Cấp Độ", name: "level", widget: "string", required: false }
+              - { label: "Thời Lượng", name: "duration", widget: "string", required: false }
+              - { label: "Số Bài Giảng", name: "lectures", widget: "number", required: false }
+              - { label: "Mã Coupon", name: "coupon_code", widget: "string", required: false }
+              - { label: "Link Udemy (có coupon)", name: "coupon_url", widget: "string" }
+              - { label: "Link Udemy (gốc)", name: "udemy_url", widget: "string" }
+              - { label: "Nguồn", name: "source", widget: "select", options: ["tutorialbar", "real.discount", "coursevania", "couponami", "manual"], default: "manual" }
+              - { label: "Ngày Lấy Voucher", name: "fetched_at", widget: "datetime", time_format: false, date_format: "YYYY-MM-DD" }
+              - { label: "Danh Mục (tags)", name: "categories", widget: "list", required: false }
