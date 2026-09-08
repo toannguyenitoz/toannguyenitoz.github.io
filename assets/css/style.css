@@ -2444,14 +2444,15 @@ kbd {
 }
 
 /* ==========================================================================
-   Header Hero Banner Component
+   Header Hero Banner Component (Light & Dark Theme Aware)
    ========================================================================== */
 .header-hero-banner {
-  background: linear-gradient(135deg, rgba(10, 18, 42, 0.95) 0%, rgba(6, 11, 24, 0.98) 100%);
+  background: linear-gradient(135deg, #EFF6FF 0%, #F8FAFC 50%, #F0FDF4 100%);
   border-bottom: 1px solid var(--border-color);
   padding: 36px 20px 32px;
   position: relative;
   overflow: hidden;
+  transition: background var(--transition-normal), border-color var(--transition-normal);
 }
 
 .header-hero-banner::before {
@@ -2461,7 +2462,7 @@ kbd {
   right: -80px;
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 120, 212, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -2472,8 +2473,20 @@ kbd {
   left: 20%;
   width: 260px;
   height: 260px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
   pointer-events: none;
+}
+
+[data-theme="dark"] .header-hero-banner {
+  background: linear-gradient(135deg, rgba(10, 18, 42, 0.95) 0%, rgba(6, 11, 24, 0.98) 100%);
+}
+
+[data-theme="dark"] .header-hero-banner::before {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+}
+
+[data-theme="dark"] .header-hero-banner::after {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
 }
 
 .header-banner-inner {
@@ -2495,25 +2508,39 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  color: #38BDF8;
+  background: #E0F2FE;
+  border: 1px solid #BAE6FD;
+  color: #0284C7;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 4px 12px;
   border-radius: 9999px;
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .banner-badge-pill {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.3);
+  color: #38BDF8;
 }
 
 .banner-location-pill {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   padding: 4px 12px;
   border-radius: 9999px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .banner-location-pill {
+  background: var(--bg-tertiary);
+  box-shadow: none;
 }
 
 .header-banner-title {
@@ -2523,18 +2550,26 @@ kbd {
   color: var(--text-primary);
   margin-bottom: 10px;
   letter-spacing: -0.02em;
+  transition: color var(--transition-normal);
 }
 
 .oz-badge-lg {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #10B981;
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #059669;
+  background: #D1FAE5;
+  border: 1px solid #A7F3D0;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   vertical-align: middle;
   margin-left: 6px;
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .oz-badge-lg {
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 
 .header-banner-subtitle {
@@ -2543,6 +2578,7 @@ kbd {
   color: var(--text-secondary);
   max-width: 900px;
   margin-bottom: 24px;
+  transition: color var(--transition-normal);
 }
 
 .header-banner-creds {
@@ -2556,17 +2592,30 @@ kbd {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 10px 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: all var(--transition-fast);
 }
 
 .cred-chip:hover {
+  background: #F8FAFC;
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 120, 212, 0.12);
+}
+
+[data-theme="dark"] .cred-chip {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .cred-chip:hover {
   background: rgba(56, 189, 248, 0.06);
   border-color: rgba(56, 189, 248, 0.4);
-  transform: translateY(-2px);
+  box-shadow: none;
 }
 
 .cred-icon {
@@ -2600,7 +2649,7 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--bg-secondary);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   font-size: 0.85rem;
@@ -2608,25 +2657,49 @@ kbd {
   padding: 8px 16px;
   border-radius: var(--radius-md);
   text-decoration: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: all var(--transition-fast);
 }
 
 .banner-btn-action:hover {
-  background: var(--bg-tertiary);
+  background: #F1F5F9;
   border-color: var(--accent-primary);
   color: var(--accent-primary);
   transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .banner-btn-action {
+  background: var(--bg-secondary);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .banner-btn-action:hover {
+  background: var(--bg-tertiary);
 }
 
 .banner-btn-contact {
+  background: linear-gradient(135deg, #E0F2FE 0%, #D1FAE5 100%);
+  border-color: #BAE6FD;
+  color: #0284C7;
+  font-weight: 700;
+}
+
+.banner-btn-contact:hover {
+  background: linear-gradient(135deg, #0078D4 0%, #10B981 100%);
+  color: #FFFFFF !important;
+  border-color: transparent;
+}
+
+[data-theme="dark"] .banner-btn-contact {
   background: linear-gradient(135deg, rgba(0, 120, 212, 0.2) 0%, rgba(16, 185, 129, 0.2) 100%);
   border-color: rgba(56, 189, 248, 0.4);
   color: #38BDF8;
 }
 
-.banner-btn-contact:hover {
+[data-theme="dark"] .banner-btn-contact:hover {
   background: linear-gradient(135deg, #0078D4 0%, #10B981 100%);
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: transparent;
 }
 
