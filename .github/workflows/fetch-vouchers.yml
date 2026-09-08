@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name  "Voucher Bot"
           git config user.email "actions@github.com"
-          git add _data/vouchers.yml
+          git add _data/vouchers.yml _data/vouchers_history.json
           if git diff --cached --quiet; then
             echo "No changes to vouchers — skipping commit."
           else
