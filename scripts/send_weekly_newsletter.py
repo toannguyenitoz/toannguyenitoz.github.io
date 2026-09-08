@@ -216,6 +216,10 @@ def render_email_html(post, video, subscriber_email):
           <!-- Footer & Unsubscribe -->
           <tr>
             <td style="padding:24px 30px;background-color:#0B0F19;border-top:1px solid #1E293B;text-align:center;font-size:12px;color:#64748B;line-height:1.7;">
+              <p style="margin:0 0 10px;font-size:11px;color:#475569;background:#0F172A;border:1px solid #1E293B;border-radius:6px;padding:8px 14px;display:inline-block;">
+                📭 <strong style="color:#64748B;">This is a no-reply mailbox.</strong> To get in touch, use the
+                <a href="{SITE_URL}/#contact" style="color:#38BDF8;text-decoration:none;">contact form on our website</a>.
+              </p><br>
               You are receiving this email because you subscribed on <a href="{SITE_URL}" style="color:#38BDF8;text-decoration:none;">toannguyenitoz.github.io</a>.<br>
               Published with 💙 by {AUTHOR_NAME} • Adelaide, South Australia.<br><br>
               <div style="margin-bottom:12px;">
@@ -245,8 +249,10 @@ def send_via_resend(api_key, recipient, subject, html_content):
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
     }
+    from_addr = f"{SENDER_NAME} <onboarding@resend.dev>" if "onboarding" in SENDER_EMAIL else f"{SENDER_NAME} <{SENDER_EMAIL}>"
     payload = json.dumps({
-        "from": f"{SENDER_NAME} <onboarding@resend.dev>" if "onboarding" in SENDER_EMAIL else f"{SENDER_NAME} <{SENDER_EMAIL}>",
+        "from": from_addr,
+        "reply_to": "noreply@toannguyenitoz.github.io",   # replies go to dead-end, hides real sender
         "to": [recipient],
         "subject": subject,
         "html": html_content
