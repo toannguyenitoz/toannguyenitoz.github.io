@@ -234,7 +234,8 @@ def send_via_resend(api_key, recipient, subject, html_content):
     url = "https://api.resend.com/emails"
     headers = {
         "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
     }
     payload = json.dumps({
         "from": f"{SENDER_NAME} <onboarding@resend.dev>" if "onboarding" in SENDER_EMAIL else f"{SENDER_NAME} <{SENDER_EMAIL}>",
