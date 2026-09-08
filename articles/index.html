@@ -1,0 +1,111 @@
+---
+layout: default
+title: "Technical Articles & SOP Guides | IT Support With Toan"
+description: "Browse 120+ battle-tested enterprise SOP guides, Active Directory scripts, Intune diagnostics, and Windows Server troubleshooting procedures by Toan Nguyen."
+---
+
+<div class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <div class="subpage-badge">
+      <span class="pulse-dot"></span>
+      <span>Enterprise Knowledge Base</span>
+    </div>
+    <h1 class="subpage-title">Technical Articles &amp; SOP Guides</h1>
+    <p class="subpage-desc">
+      In-depth standard operating procedures, Active Directory blueprints, PowerShell automations, and endpoint troubleshooting field manuals.
+    </p>
+  </div>
+</div>
+
+<div class="page-container">
+  <!-- Search & Filter Controls Toolbar -->
+  <div class="controls-toolbar-stacked">
+    <!-- Live Search Bar -->
+    <div class="search-bar-wrapper">
+      <div class="search-input-box">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="articleSearchInput" placeholder="Search 120+ guides by keyword, cmdlet (e.g. 'WSUS', 'Active Directory', 'Invoke-Command', 'IP')..." autocomplete="off">
+        <button type="button" id="btnClearSearch" class="btn-clear-search" style="display: none;">&times;</button>
+      </div>
+
+      <div class="sort-select-wrapper">
+        <label for="articleSortSelect" class="sort-label">Sort by:</label>
+        <select id="articleSortSelect" class="custom-select">
+          <option value="date-desc" selected>📅 Newest Published First</option>
+          <option value="date-asc">📅 Oldest Published First</option>
+          <option value="title-asc">🔤 Title (A → Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="filter-pills-row" id="articleFilterPills">
+      <button class="filter-pill active" data-category="all">All Guides ({{ site.posts.size }})</button>
+      <button class="filter-pill" data-category="Active Directory">Active Directory</button>
+      <button class="filter-pill" data-category="PowerShell">PowerShell</button>
+      <button class="filter-pill" data-category="Windows Server">Windows Server &amp; WSUS</button>
+      <button class="filter-pill" data-category="Microsoft Intune">Microsoft Intune</button>
+      <button class="filter-pill" data-category="Cloud Engineering">Cloud &amp; AWS</button>
+      <button class="filter-pill" data-category="Networking">Networking</button>
+      <button class="filter-pill" data-category="Security">Security</button>
+      <button class="filter-pill" data-category="Troubleshooting">Troubleshooting</button>
+    </div>
+
+    <div class="results-meta-bar">
+      <span class="counter-text">Showing <strong id="articleVisibleCount">10</strong> of <strong id="articleTotalCount">{{ site.posts.size }}</strong> articles</span>
+    </div>
+  </div>
+
+  <!-- Articles Grid -->
+  <div class="posts-grid" id="articlesLibraryGrid">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}"
+       class="post-card dynamic-article-item"
+       data-title="{{ post.title | escape }}"
+       data-desc="{{ post.description | default: post.excerpt | strip_html | escape }}"
+       data-date="{{ post.date | date: '%Y-%m-%d' }}"
+       data-categories="{{ post.categories | join: ',' }}"
+       data-tags="{{ post.tags | join: ',' }}">
+      {% if post.image %}
+      <div class="post-card-thumb-frame">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-thumb" loading="lazy">
+      </div>
+      {% endif %}
+      <div class="post-card-content">
+        <div class="post-card-badges">
+          {% for cat in post.categories %}
+          <span class="category-badge">{{ cat }}</span>
+          {% endfor %}
+          {% if post.part %}
+          <span class="part-badge">Part {{ post.part }}</span>
+          {% endif %}
+        </div>
+        <h3 class="post-card-title">{{ post.title }}</h3>
+        <p class="post-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        <div class="post-card-footer">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+          <span class="read-more-link">Read SOP Guide →</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <!-- Empty State (hidden by default) -->
+  <div id="articlesEmptyState" class="empty-state-card" style="display: none;">
+    <div class="empty-icon">🔍</div>
+    <h3>No matching articles found</h3>
+    <p>Try clearing your search keyword or selecting a different category filter.</p>
+    <button type="button" class="btn-secondary-action" id="btnResetArticleFilters">Reset Filters</button>
+  </div>
+
+  <!-- Pagination / Load More Controls -->
+  <div class="pagination-footer" id="articlePagination">
+    <button type="button" class="btn-primary-action" id="btnLoadMoreArticles">
+      <span>Load More Articles</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+---
+layout: default
+title: "Video Tutorials & Masterclasses | IT Support With Toan"
+description: "Watch practical Windows 11 tutorials, PowerShell automation guides, and IT support masterclasses by Toan Nguyen (Toan Nguyen IT OZ)."
+---
+
+<div class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <div class="subpage-badge">
+      <span class="pulse-dot"></span>
+      <span>Official Video Library</span>
+    </div>
+    <h1 class="subpage-title">Technical Video Tutorials &amp; Shorts</h1>
+    <p class="subpage-desc">
+      Hands-on sysadmin walkthroughs, Windows 11 power tricks, and enterprise automation scripts from my YouTube channel (<a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer">@{{ site.author.youtube_channel }}</a>).
+    </p>
+  </div>
+</div>
+
+<div class="page-container">
+  <!-- 1. PINNED SECTION: TOP 3 MOST-VIEWED VIDEOS -->
+  <section class="pinned-section">
+    <div class="pinned-header">
+      <div class="pinned-header-title">
+        <span class="pinned-icon">📌</span>
+        <h2>Top 3 Most Viewed on YouTube</h2>
+      </div>
+      <span class="pinned-subtitle">Always featured based on community engagement &amp; YouTube views</span>
+    </div>
+
+    <div class="pinned-grid">
+      {% for vid in site.data.videos.items %}
+        {% if vid.is_pinned %}
+        <div class="video-card pinned-video-card">
+          <div class="pinned-badge">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>Top Viewed #{{ forloop.index }}</span>
+          </div>
+          {% include youtube.html id=vid.youtube_id title=vid.title %}
+          <div class="video-card-body">
+            <div class="video-meta-top">
+              <span class="video-category-tag">{{ vid.category }}</span>
+              <span class="video-duration">⏱️ {{ vid.duration }}</span>
+              <span class="video-views-pill">🔥 {{ vid.views_display }}</span>
+            </div>
+            <h3 class="video-card-title">{{ vid.title }}</h3>
+            <p class="video-card-description">{{ vid.description }}</p>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- 2. ALL VIDEOS SECTION WITH FILTER, SORT, AND 10-ITEM PAGINATION -->
+  <section class="catalog-section" id="all-videos">
+    <div class="section-header-compact">
+      <div>
+        <h2 class="section-title">
+          <span class="section-icon">▶</span> All Tutorials &amp; Shorts
+        </h2>
+        <p class="section-subtitle">Showing <span id="videoVisibleCount">10</span> of <span id="videoTotalCount">{{ site.data.videos.items.size }}</span> videos</p>
+      </div>
+    </div>
+
+    <!-- Interactive Filter & Sort Controls Toolbar -->
+    <div class="controls-toolbar">
+      <div class="filter-pills-row" id="videoFilterPills">
+        <button class="filter-pill active" data-category="all">All ({{ site.data.videos.items.size }})</button>
+        <button class="filter-pill" data-category="Windows 11">Windows 11</button>
+        <button class="filter-pill" data-category="PowerShell">PowerShell</button>
+        <button class="filter-pill" data-category="IT Support">IT Support</button>
+        <button class="filter-pill" data-category="SysAdmin">SysAdmin</button>
+        <button class="filter-pill" data-category="Security">Security</button>
+        <button class="filter-pill" data-category="Productivity">Productivity</button>
+        <button class="filter-pill" data-category="Shorts">Shorts</button>
+      </div>
+
+      <div class="sort-select-wrapper">
+        <label for="videoSortSelect" class="sort-label">Sort by:</label>
+        <select id="videoSortSelect" class="custom-select">
+          <option value="views-desc" selected>🔥 Most Viewed (High → Low)</option>
+          <option value="date-desc">📅 Newest Published First</option>
+          <option value="date-asc">📅 Oldest Published First</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="video-grid" id="videoLibraryGrid">
+      {% for vid in site.data.videos.items %}
+      <div class="video-card dynamic-video-item"
+           data-id="{{ vid.youtube_id }}"
+           data-title="{{ vid.title | escape }}"
+           data-views="{{ vid.views_count | default: 0 }}"
+           data-date="{{ vid.published_date | default: '2026-01-01' }}"
+           data-category="{{ vid.category }}">
+        {% include youtube.html id=vid.youtube_id title=vid.title %}
+        <div class="video-card-body">
+          <div class="video-meta-top">
+            <span class="video-category-tag">{{ vid.category }}</span>
+            <span class="video-duration">⏱️ {{ vid.duration }}</span>
+            <span class="video-views-pill">👁️ {{ vid.views_display }}</span>
+          </div>
+          <h3 class="video-card-title">{{ vid.title }}</h3>
+          <p class="video-card-description">{{ vid.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Pagination / Load More Controls -->
+    <div class="pagination-footer" id="videoPagination">
+      <button type="button" class="btn-primary-action" id="btnLoadMoreVideos">
+        <span>Load More Videos</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+  </section>
+</div>

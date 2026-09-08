@@ -45,19 +45,19 @@
     <nav class="site-nav" id="siteNav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="{{ '/' | relative_url }}#powershell" class="nav-link">
-            <span class="nav-icon">&gt;_</span> PowerShell Toolbox
+          <a href="{{ '/powershell/' | relative_url }}" class="nav-link{% if page.url contains '/powershell/' %} active{% endif %}">
+            <span class="nav-icon">&gt;_</span> PowerShell
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ '/' | relative_url }}#videos" class="nav-link">
+          <a href="{{ '/videos/' | relative_url }}" class="nav-link{% if page.url contains '/videos/' %} active{% endif %}">
             <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
               <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
             </svg> Videos
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ '/' | relative_url }}#articles" class="nav-link">
+          <a href="{{ '/articles/' | relative_url }}" class="nav-link{% if page.url contains '/articles/' or page.layout == 'post' %} active{% endif %}">
             <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>

@@ -1,0 +1,255 @@
+---
+layout: default
+title: "Enterprise PowerShell Command Center | IT Support With Toan"
+description: "Production-tested PowerShell commands, Active Directory one-liners, WinRM remoting scripts, and automated repair cmdlets by Toan Nguyen (Toan Nguyen IT OZ)."
+---
+
+<div class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <div class="subpage-badge">
+      <span class="pulse-dot"></span>
+      <span>SysAdmin Production Toolsets</span>
+    </div>
+    <h1 class="subpage-title">Enterprise PowerShell Command Center</h1>
+    <p class="subpage-desc">
+      Battle-tested, copyable one-liners and automation scripts structured for Tier-2/3 SysAdmins. Separated cleanly into technical annotations and executable code blocks.
+    </p>
+  </div>
+</div>
+
+<div class="page-container">
+  <!-- Command Center Live Filter Bar -->
+  <div class="cmd-center-toolbar">
+    <div class="search-input-box" style="flex: 1;">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="cmdSearchInput" placeholder="Filter command scripts by cmdlet (e.g. 'Test-NetConnection', 'Get-ADUser', 'DISM', 'Spooler')..." autocomplete="off">
+    </div>
+  </div>
+
+  <div class="cmd-toolbox-container">
+    <!-- Category Navigation Sidebar/Pills -->
+    <div class="cmd-tabs-header" id="powershellTabs" role="tablist">
+      <button class="cmd-tab-btn active" data-tab="net-tab" role="tab">📡 Network &amp; DNS</button>
+      <button class="cmd-tab-btn" data-tab="ad-tab" role="tab">👥 AD &amp; IAM</button>
+      <button class="cmd-tab-btn" data-tab="os-tab" role="tab">⚡ OS Servicing &amp; SFC</button>
+      <button class="cmd-tab-btn" data-tab="m365-tab" role="tab">☁️ M365 &amp; Entra ID</button>
+      <button class="cmd-tab-btn" data-tab="disk-tab" role="tab">💾 Storage &amp; CleanSweep</button>
+      <button class="cmd-tab-btn" data-tab="sec-tab" role="tab">🛡️ Port &amp; PID Audit</button>
+      <button class="cmd-tab-btn" data-tab="wsus-tab" role="tab">🖥️ WSUS &amp; Server Admin</button>
+    </div>
+
+    <!-- Tab 1: Network & DNS -->
+    <div class="cmd-tab-pane active" id="net-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>1. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Chẩn đoán kết nối tầng mạng và DNS bằng các lệnh PowerShell gốc không phụ thuộc vào công cụ Telnet của bên thứ ba:
+        </p>
+        <ul class="annotation-list">
+          <li><code>Test-NetConnection -ComputerName ... -Port 443</code>: Kiểm tra bắt tay 3 bước TCP SYN/ACK đến máy chủ Microsoft 365, xác thực firewall và NAT gateway.</li>
+          <li><code>Clear-DnsClientCache</code>: Xóa sạch bộ đệm DNS cục bộ của máy trạm khi xảy ra hiện tượng Stale IP hoặc DNS Poisoning.</li>
+          <li><code>Resolve-DnsName -Name ... -Type A -DnsOnly</code>: Truy vấn trực tiếp bản ghi A có thẩm quyền từ máy chủ DNS mà không qua file hosts.</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-net">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-net">Test-NetConnection -ComputerName "login.microsoftonline.com" -Port 443
+Clear-DnsClientCache
+Resolve-DnsName -Name "login.microsoftonline.com" -Type A -DnsOnly</code></pre>
+      </div>
+    </div>
+
+    <!-- Tab 2: Active Directory & IAM -->
+    <div class="cmd-tab-pane" id="ad-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>2. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Quản trị tài khoản Active Directory Domain Services (AD DS) nhanh chóng mà không cần mở giao diện cồng kềnh ADAC:
+        </p>
+        <ul class="annotation-list">
+          <li><code>Search-ADAccount -LockedOut</code>: Quét toàn bộ domain và trả về danh sách các user bị khóa do nhập sai mật khẩu quá giới hạn GPO.</li>
+          <li><code>Unlock-ADAccount -Identity "username"</code>: Mở khóa tức thì cho người dùng chỉ trong 1 giây.</li>
+          <li><code>Get-ADUser ... -Properties BadPwdCount</code>: Điều tra chi tiết số lần gõ sai pass và thời điểm xác thực thất bại gần nhất.</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-ad">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-ad">Search-ADAccount -LockedOut | Select-Object Name, SamAccountName
+Unlock-ADAccount -Identity "jdoe"
+Get-ADUser -Identity "jdoe" -Properties BadPwdCount, badPasswordTime, LockedOut | Select-Object Name, BadPwdCount, badPasswordTime, LockedOut</code></pre>
+      </div>
+    </div>
+
+    <!-- Tab 3: OS Servicing & SFC -->
+    <div class="cmd-tab-pane" id="os-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>3. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Khắc phục lỗi màn hình xanh (BSOD), file hệ thống Windows bị hỏng và cập nhật ứng dụng tự động:
+        </p>
+        <ul class="annotation-list">
+          <li><code>DISM /Online /Cleanup-Image /RestoreHealth</code>: Sửa chữa kho lưu trữ thành phần WinSxS trực tiếp từ máy chủ Windows Update của Microsoft.</li>
+          <li><code>sfc /scannow</code>: Quét và tự động thay thế các file DLL/SYS hệ thống bị hỏng bằng bản sao nguyên vẹn.</li>
+          <li><code>winget upgrade --all --include-unknown</code>: Nâng cấp toàn bộ phần mềm trên máy tính lên phiên bản mới nhất một cách tự động.</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-os">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-os">DISM /Online /Cleanup-Image /RestoreHealth
+sfc /scannow
+winget upgrade --all --include-unknown</code></pre>
+      </div>
+    </div>
+
+    <!-- Tab 4: M365 & Entra ID -->
+    <div class="cmd-tab-pane" id="m365-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>4. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Chẩn đoán trạng thái gia nhập Hybrid Azure AD Join, chứng chỉ TPM và Intune Enrollment:
+        </p>
+        <ul class="annotation-list">
+          <li><code>dsregcmd /status</code>: Lệnh chuẩn kiểm tra trạng thái AzureAdJoined, DomainJoined và TPM Primary Refresh Token (PRT).</li>
+          <li><code>dsregcmd /debug /leave</code>: Reset trạng thái đăng ký Cloud Identity nếu thiết bị bị lỗi chứng chỉ xác thực với Entra ID.</li>
+          <li><code>Get-Service IntuneManagementExtension</code>: Kiểm tra trạng thái hoạt động của agent quản lý Microsoft Intune trên máy trạm.</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-m365">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-m365">dsregcmd /status
+Get-Service -Name "IntuneManagementExtension" | Select-Object Name, Status, StartType
+Get-WinEvent -LogName "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin" -MaxEvents 10 | Select-Object TimeCreated, Id, Message</code></pre>
+      </div>
+    </div>
+
+    <!-- Tab 5: Storage & CleanSweep -->
+    <div class="cmd-tab-pane" id="disk-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>5. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Tự động dọn dẹp dung lượng ổ cứng, xóa file rác và quét các file dung lượng lớn gây đầy ổ C:
+        </p>
+        <ul class="annotation-list">
+          <li><code>Get-ChildItem -Path C:\ ... -Length -gt 1GB</code>: Truy quét các tệp tin phình to vượt quá 1GB trong máy tính.</li>
+          <li><code>Clear-RecycleBin -Force</code>: Làm rỗng Thùng rác của toàn bộ các phân vùng ổ đĩa mà không hỏi xác nhận.</li>
+          <li><code>Remove-Item $env:TEMP\*</code>: Dọn sạch file tạm (Temporary files) của người dùng đang đăng nhập.</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-disk">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-disk">Get-ChildItem -Path C:\ -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Length -gt 1GB } | Select-Object FullName, @{Name="SizeGB"; Expression={[math]::Round($_.Length/1GB, 2)}} | Sort-Object SizeGB -Descending | Select-Object -First 10
+Clear-RecycleBin -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</code></pre>
+      </div>
+    </div>
+
+    <!-- Tab 6: Port & PID Security -->
+    <div class="cmd-tab-pane" id="sec-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>6. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Điều tra bảo mật cổng mạng, phát hiện phần mềm độc hại đang mở socket lắng nghe trên endpoint:
+        </p>
+        <ul class="annotation-list">
+          <li><code>Get-NetTCPConnection -State Listen</code>: Liệt kê tất cả cổng TCP đang mở trên máy.</li>
+          <li><code>Get-Process -Id $_.OwningProcess</code>: Tự động ánh xạ số hiệu PID của cổng sang tên tiến trình thực thi (Process Name).</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-sec">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-sec">Get-NetTCPConnection -State Listen | Select-Object LocalAddress, LocalPort, OwningProcess, @{Name="ProcessName"; Expression={(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue).ProcessName}} | Sort-Object LocalPort | Format-Table -AutoSize</code></pre>
+      </div>
+    </div>
+
+    <!-- Tab 7: WSUS & Server Admin -->
+    <div class="cmd-tab-pane" id="wsus-tab" role="tabpanel">
+      <div class="cmd-annotation-card">
+        <div class="annotation-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>7. Chú Thích Kỹ Thuật (Parameter Breakdown)</span>
+        </div>
+        <p class="annotation-text">
+          Khắc phục sự cố Windows Server Update Services (WSUS) và tối ưu hóa IIS Application Pool:
+        </p>
+        <ul class="annotation-list">
+          <li><code>recycling.periodicRestart.privateMemory = 0</code>: Gỡ bỏ giới hạn 1.8GB mặc định của IIS WsusPool để tránh lỗi HTTP 503 Service Unavailable khi đồng bộ catalog nặng.</li>
+          <li><code>wsusutil.exe postinstall /servicing</code>: Chạy lại tiến trình cấu hình và gán database schema của WSUS sau khi cài đặt.</li>
+        </ul>
+      </div>
+
+      <div class="cmd-executable-block">
+        <div class="executable-header">
+          <span class="executable-badge">⚡ EXECUTABLE POWERSHELL (READY TO RUN)</span>
+          <button type="button" class="btn-copy-code" data-target="#code-wsus">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Commands</span>
+          </button>
+        </div>
+        <pre><code id="code-wsus">Import-Module WebAdministration
+Set-ItemProperty -Path "IIS:\AppPools\WsusPool" -Name "recycling.periodicRestart.privateMemory" -Value 0
+Restart-WebAppPool -Name "WsusPool"
+& "C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall /servicing</code></pre>
+      </div>
+    </div>
+  </div>
+</div>

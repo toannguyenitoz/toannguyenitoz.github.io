@@ -439,54 +439,78 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue</code></pre>
         </div>
       </div>
     </div>
+
+    <div class="section-cta-bar" style="margin-top: 24px;">
+      <a href="{{ '/powershell/' | relative_url }}" class="btn-primary-action">
+        <span>Open Full PowerShell Command Center (7 Enterprise Categories &amp; Search)</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- 3. YOUTUBE VIDEO SHOWCASE -->
+<!-- 3. FEATURED YOUTUBE VIDEOS SHOWCASE (TOP 3 PINNED) -->
 <section class="section-block" id="videos">
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">▶</span> Video Tutorials — IT Support with Toan
+        <span class="section-icon">▶</span> Top Video Tutorials
       </h2>
-      <p class="section-subtitle">Practical, step-by-step technical guides from my YouTube channel (<a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer">@{{ site.author.youtube_channel }}</a>).</p>
+      <p class="section-subtitle">Top-viewed practical guides from my YouTube channel (<a href="https://www.youtube.com/@{{ site.author.youtube_channel }}" target="_blank" rel="noopener noreferrer">@{{ site.author.youtube_channel }}</a>).</p>
     </div>
+    <a href="{{ '/videos/' | relative_url }}" class="section-header-link">
+      <span>View All 15 Videos &amp; Shorts</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 
   <div class="video-grid">
-    {% if site.data.videos.items %}
-      {% for vid in site.data.videos.items %}
-      <div class="video-card">
-        {% include youtube.html id=vid.youtube_id title=vid.title %}
-        <div class="video-card-body">
-          <div class="video-meta-top">
-            <span class="video-category-tag">{{ vid.category | default: "Windows" }}</span>
-            <span class="video-duration">⏱️ {{ vid.duration }}</span>
-          </div>
-          <h3 class="video-card-title">{{ vid.title }}</h3>
-          <p class="video-card-description">{{ vid.description }}</p>
-        </div>
+    {% assign pinned_vids = site.data.videos.items | where: "is_pinned", true %}
+    {% for vid in pinned_vids limit: 3 %}
+    <div class="video-card pinned-video-card">
+      <div class="pinned-badge">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span>Top Viewed #{{ forloop.index }}</span>
       </div>
-      {% endfor %}
-    {% else %}
-      <p>No videos available currently.</p>
-    {% endif %}
+      {% include youtube.html id=vid.youtube_id title=vid.title %}
+      <div class="video-card-body">
+        <div class="video-meta-top">
+          <span class="video-category-tag">{{ vid.category | default: "Windows" }}</span>
+          <span class="video-duration">⏱️ {{ vid.duration }}</span>
+          <span class="video-views-pill">🔥 {{ vid.views_display }}</span>
+        </div>
+        <h3 class="video-card-title">{{ vid.title }}</h3>
+        <p class="video-card-description">{{ vid.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section-cta-bar">
+    <a href="{{ '/videos/' | relative_url }}" class="btn-primary-action">
+      <span>Explore All 15 Video Tutorials &amp; Shorts (Sort by Views &amp; Dates)</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 </section>
 
-<!-- 4. LATEST TECHNICAL ARTICLES -->
+<!-- 4. LATEST TECHNICAL ARTICLES HIGHLIGHT -->
 <section class="section-block" id="articles">
   <div class="section-header">
     <div>
       <h2 class="section-title">
-        <span class="section-icon">📄</span> Technical Articles &amp; SOP Guides
+        <span class="section-icon">📄</span> Latest Technical SOPs &amp; Blueprints
       </h2>
-      <p class="section-subtitle">In-depth technical writeups on Systems Administration, Cloud Governance, and Endpoint Security.</p>
+      <p class="section-subtitle">Battle-tested procedures on Active Directory, Azure Governance, and Endpoint Troubleshooting.</p>
     </div>
+    <a href="{{ '/articles/' | relative_url }}" class="section-header-link">
+      <span>Browse All {{ site.posts.size }} Articles</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 
   <div class="posts-grid">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 4 %}
     <a href="{{ post.url | relative_url }}" class="post-card">
       {% if post.image %}
       <div class="post-card-thumb-frame">
@@ -513,6 +537,13 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue</code></pre>
       </div>
     </a>
     {% endfor %}
+  </div>
+
+  <div class="section-cta-bar">
+    <a href="{{ '/articles/' | relative_url }}" class="btn-primary-action">
+      <span>Browse All {{ site.posts.size }} Technical SOP Guides &amp; Blueprints (Search &amp; Filter)</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 </section>
 

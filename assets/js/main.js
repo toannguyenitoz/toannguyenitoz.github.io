@@ -230,10 +230,325 @@
     }
   }
 
+  // =========================================================================
+  // 7. Dedicated Video Portal Engine (Filter, Sort by Views/Dates, 10-Item Pagination)
+  // =========================================================================
+  function initVideoPortal() {
+    const grid = document.getElementById('videoLibraryGrid');
+    if (!grid) return;
+
+    const items = Array.from(grid.querySelectorAll('.dynamic-video-item'));
+    const sortSelect = document.getElementById('videoSortSelect');
+    const filterPills = document.querySelectorAll('#videoFilterPills .filter-pill');
+    const loadMoreBtn = document.getElementById('btnLoadMoreVideos');
+    const visibleCountEl = document.getElementById('videoVisibleCount');
+
+    let currentCategory = 'all';
+    let currentSort = 'views-desc';
+    let visibleLimit = 10;
+
+    function applyVideoFiltersAndSort() {
+      // 1. Filter
+      let filtered = items.filter(function (item) {
+        if (currentCategory === 'all') return true;
+        const itemCat = item.getAttribute('data-category') || '';
+        return itemCat.toLowerCase().includes(currentCategory.toLowerCase());
+      });
+
+      // 2. Sort
+      filtered.sort(function (a, b) {
+        if (currentSort === 'views-desc') {
+          const vA = parseInt(a.getAttribute('data-views'), 10) || 0;
+          const vB = parseInt(b.getAttribute('data-views'), 10) || 0;
+          return vB - vA;
+        } else if (currentSort === 'date-desc') {
+          const dA = a.getAttribute('data-date') || '';
+          const dB = b.getAttribute('data-date') || '';
+          return dB.localeCompare(dA);
+        } else if (currentSort === 'date-asc') {
+          const dA = a.getAttribute('data-date') || '';
+          const dB = b.getAttribute('data-date') || '';
+          return dA.localeCompare(dB);
+        }
+        return 0;
+      });
+
+      // 3. Render DOM order
+      items.forEach(function (el) { el.style.display = 'none'; });
+      filtered.forEach(function (el, index) {
+        grid.appendChild(el);
+        if (index < visibleLimit) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+
+      // 4. Update counts & button visibility
+      const shownCount = Math.min(visibleLimit, filtered.length);
+      if (visibleCountEl) visibleCountEl.innerText = shownCount;
+
+      if (loadMoreBtn) {
+        if (shownCount >= filtered.length) {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          loadMoreBtn.style.display = 'inline-flex';
+        }
+      }
+    }
+
+    // Event: Sort changed
+    if (sortSelect) {
+      sortSelect.addEventListener('change', function () {
+        currentSort = this.value;
+        visibleLimit = 10;
+        applyVideoFiltersAndSort();
+      });
+    }
+
+    // Event: Category pill clicked
+    filterPills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        filterPills.forEach(function (p) { p.classList.remove('active'); });
+        this.classList.add('active');
+        currentCategory = this.getAttribute('data-category');
+        visibleLimit = 10;
+        applyVideoFiltersAndSort();
+      });
+    });
+
+    // Event: Load more clicked
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function () {
+        visibleLimit += 10;
+        applyVideoFiltersAndSort();
+      });
+    }
+
+    // Initial render
+    applyVideoFiltersAndSort();
+  }
+
+  // =========================================================================
+  // 8. Dedicated Articles Portal Engine (Search, Filter, Sort, 10-Item Pagination)
+  // =========================================================================
+  function initArticlesPortal() {
+    const grid = document.getElementById('articlesLibraryGrid');
+    if (!grid) return;
+
+    const items = Array.from(grid.querySelectorAll('.dynamic-article-item'));
+    const searchInput = document.getElementById('articleSearchInput');
+    const clearSearchBtn = document.getElementById('btnClearSearch');
+    const sortSelect = document.getElementById('articleSortSelect');
+    const filterPills = document.querySelectorAll('#articleFilterPills .filter-pill');
+    const loadMoreBtn = document.getElementById('btnLoadMoreArticles');
+    const visibleCountEl = document.getElementById('articleVisibleCount');
+    const totalCountEl = document.getElementById('articleTotalCount');
+    const emptyState = document.getElementById('articlesEmptyState');
+    const resetFiltersBtn = document.getElementById('btnResetArticleFilters');
+
+    let currentCategory = 'all';
+    let currentSearch = '';
+    let currentSort = 'date-desc';
+    let visibleLimit = 10;
+
+    function applyArticleFiltersAndSort() {
+      // 1. Filter
+      let filtered = items.filter(function (item) {
+        const title = (item.getAttribute('data-title') || '').toLowerCase();
+        const desc = (item.getAttribute('data-desc') || '').toLowerCase();
+        const cats = (item.getAttribute('data-categories') || '').toLowerCase();
+        const tags = (item.getAttribute('data-tags') || '').toLowerCase();
+
+        // Search check
+        if (currentSearch) {
+          const match = title.includes(currentSearch) || desc.includes(currentSearch) || tags.includes(currentSearch) || cats.includes(currentSearch);
+          if (!match) return false;
+        }
+
+        // Category check
+        if (currentCategory !== 'all') {
+          const matchCat = cats.includes(currentCategory.toLowerCase()) || tags.includes(currentCategory.toLowerCase());
+          if (!matchCat) return false;
+        }
+
+        return true;
+      });
+
+      // 2. Sort
+      filtered.sort(function (a, b) {
+        if (currentSort === 'date-desc') {
+          const dA = a.getAttribute('data-date') || '';
+          const dB = b.getAttribute('data-date') || '';
+          return dB.localeCompare(dA);
+        } else if (currentSort === 'date-asc') {
+          const dA = a.getAttribute('data-date') || '';
+          const dB = b.getAttribute('data-date') || '';
+          return dA.localeCompare(dB);
+        } else if (currentSort === 'title-asc') {
+          const tA = (a.getAttribute('data-title') || '').toLowerCase();
+          const tB = (b.getAttribute('data-title') || '').toLowerCase();
+          return tA.localeCompare(tB);
+        }
+        return 0;
+      });
+
+      // 3. Render DOM order & visibility
+      items.forEach(function (el) { el.style.display = 'none'; });
+      filtered.forEach(function (el, index) {
+        grid.appendChild(el);
+        if (index < visibleLimit) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+
+      // 4. Update counts & button
+      const shownCount = Math.min(visibleLimit, filtered.length);
+      if (visibleCountEl) visibleCountEl.innerText = shownCount;
+      if (totalCountEl) totalCountEl.innerText = filtered.length;
+
+      if (emptyState) {
+        if (filtered.length === 0) {
+          emptyState.style.display = 'block';
+        } else {
+          emptyState.style.display = 'none';
+        }
+      }
+
+      if (loadMoreBtn) {
+        if (shownCount >= filtered.length) {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          loadMoreBtn.style.display = 'inline-flex';
+        }
+      }
+    }
+
+    // Event: Live Search
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        currentSearch = this.value.trim().toLowerCase();
+        visibleLimit = 10;
+        if (clearSearchBtn) {
+          clearSearchBtn.style.display = currentSearch ? 'block' : 'none';
+        }
+        applyArticleFiltersAndSort();
+      });
+    }
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', function () {
+        if (searchInput) {
+          searchInput.value = '';
+          currentSearch = '';
+          this.style.display = 'none';
+          visibleLimit = 10;
+          applyArticleFiltersAndSort();
+          searchInput.focus();
+        }
+      });
+    }
+
+    // Event: Sort Changed
+    if (sortSelect) {
+      sortSelect.addEventListener('change', function () {
+        currentSort = this.value;
+        visibleLimit = 10;
+        applyArticleFiltersAndSort();
+      });
+    }
+
+    // Event: Category Pills
+    filterPills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        filterPills.forEach(function (p) { p.classList.remove('active'); });
+        this.classList.add('active');
+        currentCategory = this.getAttribute('data-category');
+        visibleLimit = 10;
+        applyArticleFiltersAndSort();
+      });
+    });
+
+    // Event: Load More
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function () {
+        visibleLimit += 10;
+        applyArticleFiltersAndSort();
+      });
+    }
+
+    // Event: Reset Filters
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener('click', function () {
+        if (searchInput) searchInput.value = '';
+        currentSearch = '';
+        currentCategory = 'all';
+        visibleLimit = 10;
+        filterPills.forEach(function (p) {
+          p.classList.toggle('active', p.getAttribute('data-category') === 'all');
+        });
+        if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+        applyArticleFiltersAndSort();
+      });
+    }
+
+    // Initial render
+    applyArticleFiltersAndSort();
+  }
+
+  // =========================================================================
+  // 9. Dedicated PowerShell Command Center Engine
+  // =========================================================================
+  function initPowershellPortal() {
+    const tabBtns = document.querySelectorAll('#powershellTabs .cmd-tab-btn');
+    const tabPanes = document.querySelectorAll('.cmd-toolbox-container .cmd-tab-pane');
+    const searchInput = document.getElementById('cmdSearchInput');
+
+    if (!tabBtns.length || !tabPanes.length) return;
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const targetTab = this.getAttribute('data-tab');
+        tabBtns.forEach(function (b) { b.classList.remove('active'); });
+        tabPanes.forEach(function (p) { p.classList.remove('active'); });
+
+        this.classList.add('active');
+        const activePane = document.getElementById(targetTab);
+        if (activePane) activePane.classList.add('active');
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        const query = this.value.trim().toLowerCase();
+        if (!query) {
+          tabPanes.forEach(function (p) { p.style.display = ''; });
+          return;
+        }
+
+        tabPanes.forEach(function (pane) {
+          const text = pane.innerText.toLowerCase();
+          if (text.includes(query)) {
+            pane.style.display = 'block';
+            pane.classList.add('active');
+          } else {
+            pane.style.display = 'none';
+            pane.classList.remove('active');
+          }
+        });
+      });
+    }
+  }
+
   // Initialize features once DOM is ready
   document.addEventListener('DOMContentLoaded', function () {
     enhanceArticleCodeBlocks();
     initSupabase();
     recordPageView();
+    initVideoPortal();
+    initArticlesPortal();
+    initPowershellPortal();
   });
 })();
