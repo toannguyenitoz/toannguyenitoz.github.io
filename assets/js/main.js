@@ -542,11 +542,17 @@
       btn.addEventListener('click', function () {
         const targetTab = this.getAttribute('data-tab');
         tabBtns.forEach(function (b) { b.classList.remove('active'); });
-        tabPanes.forEach(function (p) { p.classList.remove('active'); });
+        tabPanes.forEach(function (p) {
+          p.classList.remove('active');
+          p.style.display = '';
+        });
 
         this.classList.add('active');
         const activePane = document.getElementById(targetTab);
-        if (activePane) activePane.classList.add('active');
+        if (activePane) {
+          activePane.classList.add('active');
+          activePane.style.display = 'block';
+        }
       });
     });
 
@@ -554,7 +560,19 @@
       searchInput.addEventListener('input', function () {
         const query = this.value.trim().toLowerCase();
         if (!query) {
-          tabPanes.forEach(function (p) { p.style.display = ''; });
+          const currentActiveBtn = document.querySelector('#powershellTabs .cmd-tab-btn.active') || tabBtns[0];
+          const activeTabId = currentActiveBtn ? currentActiveBtn.getAttribute('data-tab') : null;
+          tabPanes.forEach(function (p) {
+            p.style.display = '';
+            p.classList.remove('active');
+          });
+          if (activeTabId) {
+            const activePane = document.getElementById(activeTabId);
+            if (activePane) {
+              activePane.classList.add('active');
+              activePane.style.display = 'block';
+            }
+          }
           return;
         }
 
