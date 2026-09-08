@@ -2924,7 +2924,7 @@ kbd {
 
 .dashboard-3col-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
   gap: 24px;
   align-items: start;
 }
@@ -2936,11 +2936,26 @@ kbd {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
   transition: border-color var(--transition-normal);
 }
 
 .dashboard-col:hover {
   border-color: rgba(56, 189, 248, 0.3);
+}
+
+.col-sidebar-left {
+  min-width: 0;
+}
+
+.col-articles {
+  min-width: 0;
+}
+
+.col-sidebar-right {
+  min-width: 0;
 }
 
 /* Column Header */
@@ -3529,7 +3544,7 @@ kbd {
 }
 
 /* Responsive Breakpoints for 3-Column Layout */
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .dashboard-3col-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -3610,6 +3625,7 @@ kbd {
 
 .newsletter-input-field {
   flex: 1;
+  min-width: 0;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
@@ -3656,6 +3672,16 @@ kbd {
   filter: brightness(1.1);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 120, 212, 0.4);
+}
+
+.col-sidebar-left .newsletter-input-group {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.col-sidebar-left .btn-newsletter-subscribe {
+  width: 100%;
+  justify-content: center;
 }
 
 .btn-newsletter-subscribe:active {
