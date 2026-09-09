@@ -653,6 +653,28 @@
   fetched_at: '2026-09-09'
   categories:
   - AI
+- id: new-certified-cloud-security-professional-ccsp
+  title: '[NEW] Certified Cloud Security Professional (CCSP) [2026]'
+  description: Certified Cloud Security Professional (CCSP) Detailed Exam Domain Coverage    To
+    successfully pass the CCSP exam, you need to understand exactly how the test is
+    weighted. I have mapped the practice tests in this course directly to the official
+    ISC² domains to ensure your study...
+  image: https://img-c.udemycdn.com/course/480x270/7206425_ac3c.jpg
+  instructor: Top IT Instructor
+  rating: 4.7
+  rating_count: 150
+  students: 1200
+  level: All Levels
+  duration: 3-5 hours
+  lectures: 25
+  coupon_code: 4D85554C68BD59847688
+  udemy_url: https://www.udemy.com/course/new-certified-cloud-security-professional-ccsp/
+  coupon_url: https://www.udemy.com/course/new-certified-cloud-security-professional-ccsp/?couponCode=4D85554C68BD59847688
+  source: tutorialbar
+  fetched_at: '2026-09-09'
+  categories:
+  - Cloud
+  - Security
 - id: excel-vba-learn-visual-basic-macros-beginner-to-advanced
   title: Excel VBA - Learn Visual Basic Macros | Beginner to Advanced
   description: Master Excel Automation with the Excel VBA – Beginner to Advanced Course      Take
@@ -1174,24 +1196,3 @@
   categories:
   - AI
   - Data
-- id: practice-tests-for-aws-certified-developer-associate-exam
-  title: Practice Tests For AWS Certified Developer Associate Exam
-  description: Are you preparing for the AWS Certified Developer Associate exam?   You
-    are in the right place. This practice test course is made for people who want
-    to pass the DVA-C02 exam without wasting time. Whether you are new to AWS or already
-    working with it, these practice tests will...
-  image: https://img-c.udemycdn.com/course/480x270/7230967_2bd6_4.jpg
-  instructor: Top IT Instructor
-  rating: 4.7
-  rating_count: 150
-  students: 1200
-  level: All Levels
-  duration: 3-5 hours
-  lectures: 25
-  coupon_code: 5F3C6217D4633B86E168
-  udemy_url: https://www.udemy.com/course/practice-tests-for-aws-certified-developer-associate-exam/
-  coupon_url: https://www.udemy.com/course/practice-tests-for-aws-certified-developer-associate-exam/?couponCode=5F3C6217D4633B86E168
-  source: tutorialbar
-  fetched_at: '2026-09-08'
-  categories:
-  - IT & Tech
