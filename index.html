@@ -1,12 +1,122 @@
 ---
 layout: default
-title: "IT Support With Toan | Systems Administration & Cloud Engineering"
+title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrastructure"
 ---
 
 <!-- 1. TOP HEADER HERO BANNER -->
 {% include header-banner.html %}
 
-<!-- 2. MAIN 3-COLUMN DASHBOARD PORTAL -->
+<!-- 2. NUMBERS & TRUST METRICS (Section: Why should I trust him?) -->
+<section class="trust-metrics-section">
+  <div class="container">
+    <div class="trust-metrics-grid">
+      <div class="trust-metric-card">
+        <div class="metric-number-wrap">
+          <span class="metric-big-num">20+</span>
+        </div>
+        <div class="metric-text-wrap">
+          <span class="metric-title">Years Experience</span>
+          <span class="metric-desc">Enterprise Systems &amp; Banking</span>
+        </div>
+      </div>
+
+      <div class="trust-metric-card">
+        <div class="metric-number-wrap">
+          <span class="metric-big-num">{{ site.posts.size }}+</span>
+        </div>
+        <div class="metric-text-wrap">
+          <span class="metric-title">Production SOPs</span>
+          <span class="metric-desc">Troubleshooting &amp; Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="trust-metric-card">
+        <div class="metric-number-wrap">
+          <span class="metric-big-num">{{ site.data.videos.items.size }}+</span>
+        </div>
+        <div class="metric-text-wrap">
+          <span class="metric-title">Video Walkthroughs</span>
+          <span class="metric-desc">Hands-on YouTube Lab Demos</span>
+        </div>
+      </div>
+
+      <div class="trust-metric-card">
+        <div class="metric-number-wrap">
+          <span class="metric-big-num">100%</span>
+        </div>
+        <div class="metric-text-wrap">
+          <span class="metric-title">Battle-Tested</span>
+          <span class="metric-desc">Production-Ready PowerShell</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. THE 3 PILLARS: LEARN • BUILD • SHARE (Section: What can I learn?) -->
+<section class="pillars-section">
+  <div class="container">
+    <div class="section-head-center">
+      <span class="section-kicker">Core Ecosystem</span>
+      <h2 class="section-main-title">Learn • Build • Share</h2>
+      <p class="section-main-subtitle">
+        Bridging the gap between theory and enterprise production with standard operating procedures, robust automation scripts, and community knowledge sharing.
+      </p>
+    </div>
+
+    <div class="pillars-grid">
+      <!-- Pillar 1: Learn -->
+      <a href="{{ '/articles/' | relative_url }}" class="pillar-card">
+        <div class="pillar-card-header">
+          <span class="pillar-icon-badge">📄</span>
+          <span class="pillar-meta-pill">Knowledge Base</span>
+        </div>
+        <h3 class="pillar-title">1. Learn (SOPs &amp; Blueprints)</h3>
+        <p class="pillar-desc">
+          Step-by-step Standard Operating Procedures for Windows Server, Active Directory, Entra ID, Microsoft 365, and Azure cloud infrastructure.
+        </p>
+        <div class="pillar-link-row">
+          <span>Explore {{ site.posts.size }} SOP Guides</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <!-- Pillar 2: Build -->
+      <a href="{{ '/powershell/' | relative_url }}" class="pillar-card">
+        <div class="pillar-card-header">
+          <span class="pillar-icon-badge">&gt;_</span>
+          <span class="pillar-meta-pill">Automation &amp; Tools</span>
+        </div>
+        <h3 class="pillar-title">2. Build (PowerShell Hub)</h3>
+        <p class="pillar-desc">
+          Production-tested PowerShell commands, Active Directory one-liners, WinRM remoting scripts, and automated repair cmdlets.
+        </p>
+        <div class="pillar-link-row">
+          <span>Open Command Center</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <!-- Pillar 3: Share -->
+      <a href="{{ '/videos/' | relative_url }}" class="pillar-card">
+        <div class="pillar-card-header">
+          <span class="pillar-icon-badge">▶</span>
+          <span class="pillar-meta-pill">Media &amp; Labs</span>
+        </div>
+        <h3 class="pillar-title">3. Share (Videos &amp; Insights)</h3>
+        <p class="pillar-desc">
+          Official YouTube walkthrough tutorials, live troubleshooting breakdowns, and daily LinkedIn enterprise administration insights.
+        </p>
+        <div class="pillar-link-row">
+          <span>Watch {{ site.data.videos.items.size }} Video Labs</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MAIN 3-COLUMN DASHBOARD PORTAL (Articles, Videos & Connect) -->
 <section class="dashboard-3col-section">
   <div class="dashboard-3col-wrapper">
     <div class="dashboard-3col-grid">
@@ -219,3 +329,70 @@ title: "IT Support With Toan | Systems Administration & Cloud Engineering"
     </div>
   </div>
 </section>
+
+<!-- 5. FEATURED RESOURCES & TOOLKITS (Section: What can I use today?) -->
+<section class="featured-resources-section" id="resources">
+  <div class="container">
+    <div class="section-head-center">
+      <span class="section-kicker">Free Toolkits &amp; Cheat Sheets</span>
+      <h2 class="section-main-title">Featured Resources &amp; Toolsets</h2>
+      <p class="section-main-subtitle">
+        Production-ready templates, command reference cards, and curated free course vouchers designed to accelerate your day-to-day sysadmin workflows.
+      </p>
+    </div>
+
+    <div class="resources-grid">
+      <!-- Resource 1: PowerShell Command Hub -->
+      <a href="{{ '/powershell/' | relative_url }}" class="resource-card">
+        <div class="resource-icon-row">
+          <span class="resource-icon">⚡</span>
+          <span class="resource-badge blue">Interactive Hub</span>
+        </div>
+        <h3 class="resource-title">PowerShell Command Center</h3>
+        <p class="resource-desc">
+          Instant access to copy-pasteable PowerShell one-liners for Network diagnostics, Active Directory audits, OS servicing, and Intune/M365 admin.
+        </p>
+        <span class="resource-action">
+          <span>Open Command Center</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <!-- Resource 2: Free Udemy Vouchers -->
+      <a href="{{ '/courses/' | relative_url }}" class="resource-card">
+        <div class="resource-icon-row">
+          <span class="resource-icon">🎁</span>
+          <span class="resource-badge">Updated 3x Daily</span>
+        </div>
+        <h3 class="resource-title">Free Tech Courses &amp; Certs</h3>
+        <p class="resource-desc">
+          Daily synchronized 100% off Udemy vouchers for Cloud, AI, Python, Cybersecurity, and SysAdmin certifications. English only, zero cost.
+        </p>
+        <span class="resource-action">
+          <span>Browse {{ site.data.vouchers | size }} Active Vouchers</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <!-- Resource 3: Enterprise SOP Templates -->
+      <a href="{{ '/articles/' | relative_url }}" class="resource-card">
+        <div class="resource-icon-row">
+          <span class="resource-icon">📑</span>
+          <span class="resource-badge purple">SOP Blueprints</span>
+        </div>
+        <h3 class="resource-title">Enterprise IT SOP Templates</h3>
+        <p class="resource-desc">
+          Battle-tested Standard Operating Procedures for Windows Server upgrades, Group Policy hardening, and disaster recovery execution checklists.
+        </p>
+        <span class="resource-action">
+          <span>Browse SOP Checklists</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Anchor for #about linking to the Contact/Profile module -->
+<div id="about" style="position: relative; top: -60px; visibility: hidden;"></div>
+

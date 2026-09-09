@@ -1,16 +1,18 @@
 # Site Settings
-title: "IT Support With Toan | Systems Administration & Cloud Engineering"
+title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrastructure"
 email: "theodorenguyensa@gmail.com"
-description: "Enterprise Systems Administration, Windows Server, Active Directory, Microsoft 365, Azure Cloud Architecture, and PowerShell Automation by Toan Nguyen (Toan Nguyen IT OZ), Adelaide, South Australia."
+description: "Real-world IT knowledge, practical automation and tools built from decades of enterprise experience. Windows Server, Active Directory, Azure Cloud, and PowerShell by Toan Nguyen IT Oz, Adelaide, South Australia."
 baseurl: ""
 url: "https://toannguyenitoz.github.io"
 
 # Author Information
 author:
   name: "Toan Nguyen"
-  brand: "IT Support With Toan (Toan Nguyen IT OZ)"
-  title: "Systems Administrator & Cloud Infrastructure Specialist"
-  bio: "Enterprise Systems Administrator specializing in Windows Server, Active Directory, Microsoft 365, Azure Cloud infrastructure, network troubleshooting, and production PowerShell automation."
+  brand: "Toan Nguyen IT Oz"
+  tagline: "Practical Enterprise IT, Automation & Modern Infrastructure"
+  subtagline: "Real-world IT knowledge, practical automation and tools built from decades of enterprise experience."
+  title: "Enterprise Systems Administrator & Automation Specialist"
+  bio: "Specializing in Windows Server, Active Directory/Entra ID, Microsoft 365, Azure Cloud infrastructure, and production PowerShell automation."
   location: "Adelaide, South Australia"
   email: "theodorenguyensa@gmail.com"
   github: "toannguyenitoz"
