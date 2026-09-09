@@ -43,6 +43,7 @@ jobs:
           else
             VOUCHER_COUNT=$(python -c "import yaml; d=yaml.safe_load(open('_data/vouchers.yml')); print(len(d))" 2>/dev/null || echo "?")
             git commit -m "auto: update free course vouchers (${VOUCHER_COUNT} active) [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin main
             echo "✅ Pushed updated vouchers.yml"
           fi
