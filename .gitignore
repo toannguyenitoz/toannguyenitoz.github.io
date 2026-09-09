@@ -17,3 +17,12 @@ desktop.ini
 # Environment / Secrets
 .env
 .env.local
+
+# Python & Temporary Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+*.sqlite3
+*.log
+
