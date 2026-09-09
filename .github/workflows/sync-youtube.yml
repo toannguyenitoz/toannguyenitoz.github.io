@@ -1,0 +1,47 @@
+name: Sync YouTube Videos & Shorts to Website
+
+on:
+  schedule:
+    # Chạy 2 lần mỗi ngày (08:00 sáng và 14:00 chiều giờ Adelaide ACST):
+    - cron: '30 22 * * *'
+    - cron: '30 4  * * *'
+  workflow_dispatch:   # Nút bấm chạy thủ công bất kỳ lúc nào
+
+permissions:
+  contents: write
+
+jobs:
+  sync-youtube:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PyYAML
+        run: pip install pyyaml --quiet
+
+      - name: Sync YouTube Videos
+        run: python scripts/sync_youtube.py
+
+      - name: Commit and push updated videos
+        run: |
+          git config user.name  "YouTube Sync Bot"
+          git config user.email "actions@github.com"
+          git add _data/videos.yml
+          if git diff --cached --quiet; then
+            echo "No new YouTube videos found — skipping commit."
+          else
+            git commit -m "auto: sync latest YouTube videos & shorts [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+            echo "✅ Successfully synced new YouTube videos!"
+          fi
