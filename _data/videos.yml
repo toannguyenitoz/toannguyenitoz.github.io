@@ -1,181 +1,224 @@
 items:
-  - title: "Stop Using 3rd-Party Cleaners! Complete Microsoft PC Manager Tutorial & IT Tips"
-    youtube_id: "UWjAO5nLCPI"
-    duration: "10:15"
-    category: "Windows 11"
-    description: "Discover how to safely clean and optimize Windows workstations using the official, Microsoft-built PC Manager tool, completely replacing third-party bloatware."
-    published_date: "2026-08-20"
-    views_count: 127
-    views_display: "127 views"
-    is_pinned: true
-
-  - title: "Win + Ctrl + Shift + B: The Secret Shortcut to Restart GPU Driver in Windows 11/10!"
-    youtube_id: "67Q1xD3R-Gs"
-    duration: "06:15"
-    category: "Troubleshooting"
-    description: "How to instantly recover from frozen displays, black screens, and graphical glitching without rebooting your PC or losing unsaved work."
-    published_date: "2026-08-18"
-    views_count: 34
-    views_display: "34 views"
-    is_pinned: true
-
-  - title: "The #1 Windows Shortcut for Security"
-    youtube_id: "tjMnYPYN2B8"
-    duration: "04:50"
-    category: "Security"
-    description: "Essential workstation security habits and quick-lock keybindings to safeguard confidential enterprise data and corporate domain credentials whenever stepping away."
-    published_date: "2026-08-15"
-    views_count: 31
-    views_display: "31 views"
-    is_pinned: true
-
-  - title: "20 Windows Shortcuts You Wish You Knew Sooner (Stop Wasting Time!)"
-    youtube_id: "7MuUW7S1rXQ"
-    duration: "14:20"
-    category: "Productivity"
-    description: "Supercharge your daily computer workflow with 20 high-efficiency Windows shortcuts designed to cut navigation time in half for power users and IT pros."
-    published_date: "2026-09-08"
-    views_count: 1
-    views_display: "New"
-    is_pinned: false
-
-  - title: "20 Windows 11 Tips & Tricks You Wish You Knew Sooner! (Boost Productivity)"
-    youtube_id: "ZcSK1jPf9v8"
-    duration: "15:45"
-    category: "Windows 11"
-    description: "Deep dive into hidden Windows 11 features, UI customizations, taskbar optimizations, and multitasking secrets to maximize system efficiency."
-    published_date: "2026-09-07"
-    views_count: 38
-    views_display: "38 views"
-    is_pinned: false
-
-  - title: "All-in-One Windows 11 Health Toolkit in PowerShell! (9 Tools in 1 Script)"
-    youtube_id: "zc70D8zDj8E"
-    duration: "11:40"
-    category: "PowerShell"
-    description: "A complete automated PowerShell maintenance blueprint combining DISM health checks, SFC repairs, temp purge, drive health, and network diagnostics into a single script."
-    published_date: "2026-09-07"
-    views_count: 18
-    views_display: "18 views"
-    is_pinned: false
-
-  - title: "15 Windows Admin Shortcuts Every IT Professional Should Know! 🚀"
-    youtube_id: "Ey2LpCmJKVw"
-    duration: "12:30"
-    category: "IT Support"
-    description: "Master the essential keyboard combinations used by tier-2 and tier-3 sysadmins to instantly access Computer Management, Device Manager, Registry, and Network Adapters."
-    published_date: "2026-09-02"
-    views_count: 42
-    views_display: "42 views"
-    is_pinned: false
-
-  - title: "Access Remote Files Silently Without Remote Desktop! Windows Admin Shares (C$) Guide"
-    youtube_id: "5Nxl9tMoCfQ"
-    duration: "08:45"
-    category: "SysAdmin"
-    description: "A step-by-step guide to leveraging hidden Administrative Shares (C$, ADMIN$) over SMB to inspect event logs, retrieve files, and deploy scripts without disrupting active users."
-    published_date: "2026-09-01"
-    views_count: 20
-    views_display: "20 views"
-    is_pinned: false
-
-  - title: "How to Check Your RAM Before Upgrading (PowerShell Guide)"
-    youtube_id: "OP0EuItOREc"
-    duration: "07:15"
-    category: "Hardware"
-    description: "Extract complete memory specs (speed, form factor, manufacturer, empty slots) directly from the command line without opening the physical PC chassis."
-    published_date: "2026-08-31"
-    views_count: 14
-    views_display: "14 views"
-    is_pinned: false
-
-  - title: "The Win + X Secret: Instant Access to Windows 11 Admin Tools!"
-    youtube_id: "HS7dyfRiPhk"
-    duration: "06:20"
-    category: "Windows 11"
-    description: "Unlocking the full power of the Windows 11 Power User (Win + X) quick menu to launch Terminal (Admin), Disk Management, Device Manager, and PowerShell in seconds."
-    published_date: "2026-08-30"
-    views_count: 5
-    views_display: "5 views"
-    is_pinned: false
-
-  - title: "99% of People DON'T Know These 10 Secret Windows Shortcuts!"
-    youtube_id: "zLNIuJXGnlI"
-    duration: "09:10"
-    category: "Productivity"
-    description: "High-productivity shortcuts and window management techniques designed to supercharge daily workflows for both power users and enterprise IT personnel."
-    published_date: "2026-08-28"
-    views_count: 9
-    views_display: "9 views"
-    is_pinned: false
-
-  - title: "IT Support Quiz Episode 1"
-    youtube_id: "whs3lM6KiUI"
-    duration: "05:30"
-    category: "Troubleshooting"
-    description: "Test your IT support and troubleshooting knowledge with real-world enterprise helpdesk scenarios and diagnostic challenges."
-    published_date: "2026-08-25"
-    views_count: 3
-    views_display: "3 views"
-    is_pinned: false
-
-  - title: "Unlock Secret \"God Mode\" in Windows 11! 📁⚡"
-    youtube_id: "EiWjMDPo3pE"
-    duration: "00:55"
-    category: "Shorts"
-    description: "Access all Windows 11 administrative tools, hidden control panel applets, and system tweaks from a single unified master folder."
-    published_date: "2026-09-08"
-    views_count: 5
-    views_display: "New"
-    is_pinned: false
-
-  - title: "Boost Slow Wi-Fi to 5GHz in 30s! 🚀⚡"
-    youtube_id: "dJxjPHLJAh4"
-    duration: "00:50"
-    category: "Shorts"
-    description: "Force Windows 11 to prioritize ultra-fast 5GHz / 6GHz Wi-Fi bands over congested 2.4GHz for instant latency reduction and transfer speed boosts."
-    published_date: "2026-09-08"
-    views_count: 46
-    views_display: "46 views"
-    is_pinned: false
-
-  - title: "How to Check Your RAM Before Upgrading (PowerShell Guide)"
-    youtube_id: "OP0EuItOREc"
-    duration: "00:58"
-    category: "Shorts"
-    description: "Inspect RAM speed, form factor, manufacturer, and available empty DIMM memory slots directly via PowerShell before buying upgrades."
-    published_date: "2026-09-07"
-    views_count: 15
-    views_display: "15 views"
-    is_pinned: false
-
-  - title: "4 Secret Windows 11 Features You Must Turn On NOW! 💻🔥"
-    youtube_id: "DnrB8j9iXPk"
-    duration: "00:55"
-    category: "Shorts"
-    description: "Must-enable Windows 11 security and productivity settings that enhance daily workstation performance and battery life."
-    published_date: "2026-09-07"
-    views_count: 28
-    views_display: "28 views"
-    is_pinned: false
-
-  - title: "4 Windows Shortcuts That Feel Illegal to Know! ⌨️⚡"
-    youtube_id: "HYmntYPPSNE"
-    duration: "00:58"
-    category: "Shorts"
-    description: "Secret Windows keyboard combinations that unlock hidden clipboard history, emoji pickers, and screen recording without extra software."
-    published_date: "2026-09-06"
-    views_count: 25
-    views_display: "25 views"
-    is_pinned: false
-
-  - title: "PC FROZEN? 3 Emergency Keys To Rescue Your Windows! 🚨⚡"
-    youtube_id: "DEpzPieoF6E"
-    duration: "00:52"
-    category: "Shorts"
-    description: "Three emergency keyboard shortcuts to recover your system, force close unresponsive processes, and unfreeze display drivers."
-    published_date: "2026-09-05"
-    views_count: 22
-    views_display: "22 views"
-    is_pinned: false
-
+- title: Stop Using 3rd-Party Cleaners! Complete Microsoft PC Manager Tutorial & IT
+    Tips
+  youtube_id: UWjAO5nLCPI
+  duration: '10:15'
+  category: Windows 11
+  description: Discover how to safely clean and optimize Windows workstations using
+    the official, Microsoft-built PC Manager tool, completely replacing third-party
+    bloatware.
+  published_date: '2026-08-20'
+  views_count: 127
+  views_display: 127 views
+  is_pinned: true
+- title: 'Win + Ctrl + Shift + B: The Secret Shortcut to Restart GPU Driver in Windows
+    11/10!'
+  youtube_id: 67Q1xD3R-Gs
+  duration: 06:15
+  category: Troubleshooting
+  description: How to instantly recover from frozen displays, black screens, and graphical
+    glitching without rebooting your PC or losing unsaved work.
+  published_date: '2026-08-18'
+  views_count: 34
+  views_display: 34 views
+  is_pinned: true
+- title: 'The #1 Windows Shortcut for Security'
+  youtube_id: tjMnYPYN2B8
+  duration: 04:50
+  category: Security
+  description: Essential workstation security habits and quick-lock keybindings to
+    safeguard confidential enterprise data and corporate domain credentials whenever
+    stepping away.
+  published_date: '2026-08-15'
+  views_count: 31
+  views_display: 31 views
+  is_pinned: true
+- title: 2 Secret PowerShell Commands Every IT Pro Uses! 💻⚡
+  youtube_id: bWKi6w_5e7E
+  duration: 00:40
+  category: Shorts
+  description: 'Are you using PowerShell like a pro? Here are 2 essential Windows
+    commands that sysadmins and IT professionals use every single day to audit PC
+    security and encryption! 🚀  📌 COMMANDS COVERED: 1️⃣ G...'
+  published_date: '2026-09-08'
+  views_count: 6
+  views_display: New
+  is_pinned: false
+- title: How to Automatically Repair Windows 11 Corrupt Files! 🛠️⚡
+  youtube_id: Rr-DRO7DhPY
+  duration: 00:48
+  category: Shorts
+  description: Is your Windows PC freezing, crashing, or throwing blue screens? Here
+    is how to create a 1-click automated system repair script using SFC and DISM to
+    fix broken system files in minutes! 🛠️💻  📌 WHAT...
+  published_date: '2026-09-08'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 9 Windows Settings EVERY User Should Change NOW! (Stop Crashes & Speed Up
+    PC)
+  youtube_id: XDCgnjF-Yqo
+  duration: 03:06
+  category: IT Support
+  description: Are you using Windows with the default settings? In this video, our
+    IT Support guide reveals the 9 critical Windows settings that every user must
+    change right now to dramatically improve security, ...
+  published_date: '2026-09-08'
+  views_count: 3
+  views_display: New
+  is_pinned: false
+- title: 20 Windows Shortcuts You Wish You Knew Sooner (Stop Wasting Time!)
+  youtube_id: 7MuUW7S1rXQ
+  duration: '14:20'
+  category: Productivity
+  description: Supercharge your daily computer workflow with 20 high-efficiency Windows
+    shortcuts designed to cut navigation time in half for power users and IT pros.
+  published_date: '2026-09-08'
+  views_count: 1
+  views_display: New
+  is_pinned: false
+- title: 20 Windows 11 Tips & Tricks You Wish You Knew Sooner! (Boost Productivity)
+  youtube_id: ZcSK1jPf9v8
+  duration: '15:45'
+  category: Windows 11
+  description: Deep dive into hidden Windows 11 features, UI customizations, taskbar
+    optimizations, and multitasking secrets to maximize system efficiency.
+  published_date: '2026-09-07'
+  views_count: 38
+  views_display: 38 views
+  is_pinned: false
+- title: All-in-One Windows 11 Health Toolkit in PowerShell! (9 Tools in 1 Script)
+  youtube_id: zc70D8zDj8E
+  duration: '11:40'
+  category: PowerShell
+  description: A complete automated PowerShell maintenance blueprint combining DISM
+    health checks, SFC repairs, temp purge, drive health, and network diagnostics
+    into a single script.
+  published_date: '2026-09-07'
+  views_count: 18
+  views_display: 18 views
+  is_pinned: false
+- title: 15 Windows Admin Shortcuts Every IT Professional Should Know! 🚀
+  youtube_id: Ey2LpCmJKVw
+  duration: '12:30'
+  category: IT Support
+  description: Master the essential keyboard combinations used by tier-2 and tier-3
+    sysadmins to instantly access Computer Management, Device Manager, Registry, and
+    Network Adapters.
+  published_date: '2026-09-02'
+  views_count: 42
+  views_display: 42 views
+  is_pinned: false
+- title: Access Remote Files Silently Without Remote Desktop! Windows Admin Shares
+    (C$) Guide
+  youtube_id: 5Nxl9tMoCfQ
+  duration: 08:45
+  category: SysAdmin
+  description: A step-by-step guide to leveraging hidden Administrative Shares (C$,
+    ADMIN$) over SMB to inspect event logs, retrieve files, and deploy scripts without
+    disrupting active users.
+  published_date: '2026-09-01'
+  views_count: 20
+  views_display: 20 views
+  is_pinned: false
+- title: How to Check Your RAM Before Upgrading (PowerShell Guide)
+  youtube_id: OP0EuItOREc
+  duration: 07:15
+  category: Hardware
+  description: Extract complete memory specs (speed, form factor, manufacturer, empty
+    slots) directly from the command line without opening the physical PC chassis.
+  published_date: '2026-08-31'
+  views_count: 14
+  views_display: 14 views
+  is_pinned: false
+- title: 'The Win + X Secret: Instant Access to Windows 11 Admin Tools!'
+  youtube_id: HS7dyfRiPhk
+  duration: 06:20
+  category: Windows 11
+  description: Unlocking the full power of the Windows 11 Power User (Win + X) quick
+    menu to launch Terminal (Admin), Disk Management, Device Manager, and PowerShell
+    in seconds.
+  published_date: '2026-08-30'
+  views_count: 5
+  views_display: 5 views
+  is_pinned: false
+- title: 99% of People DON'T Know These 10 Secret Windows Shortcuts!
+  youtube_id: zLNIuJXGnlI
+  duration: 09:10
+  category: Productivity
+  description: High-productivity shortcuts and window management techniques designed
+    to supercharge daily workflows for both power users and enterprise IT personnel.
+  published_date: '2026-08-28'
+  views_count: 9
+  views_display: 9 views
+  is_pinned: false
+- title: IT Support Quiz Episode 1
+  youtube_id: whs3lM6KiUI
+  duration: 05:30
+  category: Troubleshooting
+  description: Test your IT support and troubleshooting knowledge with real-world
+    enterprise helpdesk scenarios and diagnostic challenges.
+  published_date: '2026-08-25'
+  views_count: 3
+  views_display: 3 views
+  is_pinned: false
+- title: Unlock Secret "God Mode" in Windows 11! 📁⚡
+  youtube_id: EiWjMDPo3pE
+  duration: 00:55
+  category: Shorts
+  description: Access all Windows 11 administrative tools, hidden control panel applets,
+    and system tweaks from a single unified master folder.
+  published_date: '2026-09-08'
+  views_count: 5
+  views_display: New
+  is_pinned: false
+- title: Boost Slow Wi-Fi to 5GHz in 30s! 🚀⚡
+  youtube_id: dJxjPHLJAh4
+  duration: 00:50
+  category: Shorts
+  description: Force Windows 11 to prioritize ultra-fast 5GHz / 6GHz Wi-Fi bands over
+    congested 2.4GHz for instant latency reduction and transfer speed boosts.
+  published_date: '2026-09-08'
+  views_count: 46
+  views_display: 46 views
+  is_pinned: false
+- title: How to Check Your RAM Before Upgrading (PowerShell Guide)
+  youtube_id: OP0EuItOREc
+  duration: 00:58
+  category: Shorts
+  description: Inspect RAM speed, form factor, manufacturer, and available empty DIMM
+    memory slots directly via PowerShell before buying upgrades.
+  published_date: '2026-09-07'
+  views_count: 15
+  views_display: 15 views
+  is_pinned: false
+- title: 4 Secret Windows 11 Features You Must Turn On NOW! 💻🔥
+  youtube_id: DnrB8j9iXPk
+  duration: 00:55
+  category: Shorts
+  description: Must-enable Windows 11 security and productivity settings that enhance
+    daily workstation performance and battery life.
+  published_date: '2026-09-07'
+  views_count: 28
+  views_display: 28 views
+  is_pinned: false
+- title: 4 Windows Shortcuts That Feel Illegal to Know! ⌨️⚡
+  youtube_id: HYmntYPPSNE
+  duration: 00:58
+  category: Shorts
+  description: Secret Windows keyboard combinations that unlock hidden clipboard history,
+    emoji pickers, and screen recording without extra software.
+  published_date: '2026-09-06'
+  views_count: 25
+  views_display: 25 views
+  is_pinned: false
+- title: PC FROZEN? 3 Emergency Keys To Rescue Your Windows! 🚨⚡
+  youtube_id: DEpzPieoF6E
+  duration: 00:52
+  category: Shorts
+  description: Three emergency keyboard shortcuts to recover your system, force close
+    unresponsive processes, and unfreeze display drivers.
+  published_date: '2026-09-05'
+  views_count: 22
+  views_display: 22 views
+  is_pinned: false
