@@ -4155,8 +4155,60 @@ kbd {
 .voucher-enroll-btn:hover { opacity: 0.9; transform: translateY(-1px); color: #fff; text-decoration: none; }
 
 /* ── Card Footer ──────────────────────────────────────────────────────────── */
-.voucher-card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--border-color); margin-top: 10px; }
+.voucher-card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--border-color); margin-top: 10px; gap: 8px; }
+.voucher-footer-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .voucher-fetch-date, .voucher-lectures { display: flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-muted); }
+
+.voucher-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.voucher-share-btn:hover {
+  background: var(--bg-hover);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+.voucher-share-btn.copied {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: var(--success);
+  color: var(--success);
+}
+.voucher-share-btn svg {
+  flex-shrink: 0;
+}
+
+/* ── Deep Link Card Highlight ────────────────────────────────────────────── */
+@keyframes voucherHighlightPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 120, 212, 0.7), 0 8px 32px rgba(0, 120, 212, 0.35);
+    border-color: var(--accent-primary);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 120, 212, 0.25), 0 12px 40px rgba(0, 120, 212, 0.45);
+    border-color: var(--accent-secondary);
+  }
+  100% {
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-color);
+  }
+}
+.voucher-card.voucher-highlight {
+  animation: voucherHighlightPulse 3s ease-out forwards;
+  scroll-margin-top: 100px;
+}
 
 /* ── Empty State ──────────────────────────────────────────────────────────── */
 .voucher-empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }

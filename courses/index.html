@@ -74,6 +74,7 @@ permalink: /courses/
   <div class="voucher-grid" id="voucherGrid">
     {% for voucher in site.data.vouchers %}
     <div class="voucher-card" 
+         id="course-{{ voucher.id | default: forloop.index }}"
          data-title="{{ voucher.title | downcase }}"
          data-cats="{{ voucher.categories | join: ',' | downcase }},{{ voucher.title | downcase }}">
 
@@ -207,13 +208,31 @@ permalink: /courses/
 
         <!-- Footer -->
         <div class="voucher-card-footer">
-          <span class="voucher-fetch-date">
-            <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            {{ voucher.fetched_at }}
-          </span>
-          {% if voucher.lectures and voucher.lectures > 0 %}
-          <span class="voucher-lectures">{{ voucher.lectures }} lectures</span>
-          {% endif %}
+          <div class="voucher-footer-meta">
+            <span class="voucher-fetch-date">
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              {{ voucher.fetched_at }}
+            </span>
+            {% if voucher.lectures and voucher.lectures > 0 %}
+            <span class="voucher-lectures">{{ voucher.lectures }} lectures</span>
+            {% endif %}
+          </div>
+          <button 
+            type="button" 
+            class="voucher-share-btn" 
+            onclick="shareCourse('{{ voucher.id | default: forloop.index }}', this)"
+            title="Share direct link to this course"
+            aria-label="Share direct link to this course"
+          >
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <span class="share-btn-text">Share</span>
+          </button>
         </div>
       </div>
     </div>
@@ -347,4 +366,78 @@ function trackCouponClick(id, title) {
     gtag('event', 'coupon_click', { course_id: id, course_title: title });
   }
 }
+
+// ─── Share Course Deep Link ──────────────────────────────────────────────────
+function shareCourse(id, btn) {
+  var baseUrl = window.location.origin + window.location.pathname;
+  var shareUrl = baseUrl + '#course-' + id;
+  var textSpan = btn.querySelector('.share-btn-text');
+
+  function onSuccess() {
+    btn.classList.add('copied');
+    if (textSpan) textSpan.textContent = 'Copied! ✓';
+    setTimeout(function() {
+      btn.classList.remove('copied');
+      if (textSpan) textSpan.textContent = 'Share';
+    }, 2200);
+  }
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(shareUrl).then(onSuccess).catch(function() {
+      fallbackCopy(shareUrl, onSuccess);
+    });
+  } else {
+    fallbackCopy(shareUrl, onSuccess);
+  }
+
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'share_course', { course_id: id });
+  }
+}
+
+function fallbackCopy(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try {
+    document.execCommand('copy');
+    if (callback) callback();
+  } catch (err) {
+    console.error('Fallback copy failed', err);
+  }
+  document.body.removeChild(ta);
+}
+
+// ─── Deep Link Auto-Scroll & Highlight on Load ─────────────────────────────────
+function handleDirectCourseLink() {
+  var hash = window.location.hash;
+  if (!hash || hash.indexOf('#course-') !== 0) return;
+
+  var targetEl = document.querySelector(hash);
+  if (!targetEl) return;
+
+  // If filtered or hidden, reset filters to show all courses so target is visible
+  if (targetEl.style.display === 'none') {
+    var allChip = document.querySelector('.voucher-filter-chip[data-cat="all"]');
+    var searchInput = document.getElementById('voucherSearch');
+    if (searchInput) searchInput.value = '';
+    if (allChip) setCategoryFilter(allChip, 'all');
+  }
+
+  setTimeout(function() {
+    targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    targetEl.classList.add('voucher-highlight');
+    setTimeout(function() {
+      targetEl.classList.remove('voucher-highlight');
+    }, 3500);
+  }, 250);
+}
+
+window.addEventListener('DOMContentLoaded', handleDirectCourseLink);
+window.addEventListener('hashchange', handleDirectCourseLink);
 </script>
