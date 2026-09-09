@@ -80,6 +80,7 @@ EXCLUDE_KEYWORDS = [
     "mindset", "relationship", "dating", "parenting", "anxiety", "depression",
     "spanish", "french", "german", "chinese", "japanese", "korean", "arabic", "portuguese", "italian", "russian",
     "cómo", "crear", "crea una", "calculadora", "página", "curso de", "principiantes", "español", "aprende", "deutsch", "für", "französisch", "italiano", "curso",
+    "inteligente", "transformación", "transformacion", "redes con", "entornos", "corporativos", "gestión", "inteligencia", "gestor", "para principiantes",
     "copywriting", "social media marketing", "instagram", "tiktok", "youtube growth",
 ]
 
@@ -95,14 +96,28 @@ def fetch_html(url, timeout=REQUEST_TIMEOUT):
         print(f"  [!] Fetch failed: {url} -> {e}")
         return None
 
+class NoRedirectHandler(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+_no_redirect_opener = urllib.request.build_opener(NoRedirectHandler)
+
 def get_redirect_url(url, timeout=REQUEST_TIMEOUT):
     req = urllib.request.Request(url, headers=HEADERS)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        try:
+            resp = _no_redirect_opener.open(req, timeout=timeout)
             return resp.geturl()
+        except urllib.error.HTTPError as e:
+            if e.code in (301, 302, 303, 307, 308):
+                loc = e.headers.get("Location")
+                if loc:
+                    return loc
+            return None
     except Exception as e:
         print(f"  [!] Redirect fetch failed: {url} -> {e}")
         return None
+
 
 def is_tech_course(title, description=""):
     text = (title + " " + description).lower()
