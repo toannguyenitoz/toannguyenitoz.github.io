@@ -1,0 +1,20 @@
+# ==============================================================================
+# LinkedIn Posts Sync Queue & Tracker
+# ==============================================================================
+# Hàng ngày vào lúc 14:00 giờ Adelaide (04:30 UTC), GitHub Actions sẽ tự động
+# đọc danh sách các URL bài viết tại đây.
+#
+# Cách sử dụng:
+# 1. Khi đăng bài mới trên LinkedIn, anh chỉ cần copy link bài viết (link rút gọn
+#    lnkd.in hoặc link linkedin.com/posts/...) dán vào danh sách bên dưới.
+# 2. Hoặc mở tab Actions trên GitHub > chọn "Sync LinkedIn Posts to Website" >
+#    bấm "Run workflow" và paste link vào ô input để bài lên web ngay lập tức!
+# 3. Bot sẽ tự động tải ảnh gốc, chuyển đổi nội dung và tạo bài viết trong _posts/.
+#    Các bài đã có trên web sẽ tự động được bỏ qua (không trùng lặp).
+# ==============================================================================
+
+posts:
+  - url: "https://lnkd.in/p/gbwsYVQg"
+    part: 102
+    title: "Why Did the Server Reboot?"
+    status: "synced"
