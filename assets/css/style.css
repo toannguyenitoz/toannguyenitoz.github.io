@@ -312,11 +312,38 @@ code, pre {
   background: var(--bg-tertiary);
 }
 
+.nav-link.active {
+  color: var(--accent-primary);
+  background: var(--accent-light);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .nav-link.active {
+  background: rgba(0, 120, 212, 0.18);
+  color: #38BDF8;
+}
+
+.nav-link-courses {
+  color: #EC4899;
+  font-weight: 600;
+}
+
+.nav-link-courses:hover {
+  color: #DB2777;
+  background: rgba(236, 72, 153, 0.1);
+}
+
+.nav-link-courses.active {
+  color: #EC4899;
+  background: rgba(236, 72, 153, 0.15);
+}
+
 .nav-icon {
   font-family: var(--font-mono);
   color: var(--accent-primary);
   font-weight: 700;
 }
+
 
 /* Header Actions */
 .header-actions {

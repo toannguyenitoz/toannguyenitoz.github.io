@@ -34,9 +34,10 @@
         <h3 class="footer-heading">Portal Navigation</h3>
         <ul class="footer-links">
           <li><a href="{{ '/' | relative_url }}">Dashboard Home</a></li>
+          <li><a href="{{ '/articles/' | relative_url }}">📄 Technical Articles ({{ site.posts.size }} Guides)</a></li>
+          <li><a href="{{ '/videos/' | relative_url }}">▶ Video Tutorials &amp; Shorts ({{ site.data.videos.items.size }} Videos)</a></li>
           <li><a href="{{ '/powershell/' | relative_url }}">&gt;_ PowerShell Hub</a></li>
-          <li><a href="{{ '/articles/' | relative_url }}">📄 Technical Articles (127 Guides)</a></li>
-          <li><a href="{{ '/videos/' | relative_url }}">▶ Video Tutorials &amp; Shorts</a></li>
+          <li><a href="{{ '/courses/' | relative_url }}">🎁 Free Tech Courses</a></li>
           <li><a href="{{ '/' | relative_url }}#contact">📬 Contact &amp; Connect</a></li>
           <li><a href="{{ '/admin/' | relative_url }}">⚙️ CMS Portal (/admin)</a></li>
         </ul>

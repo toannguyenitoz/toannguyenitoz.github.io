@@ -65,6 +65,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="{{ '/courses/' | relative_url }}" class="nav-link{% if page.url contains '/courses/' %} active{% endif %} nav-link-courses">
+            <span class="nav-icon">🎁</span> Free Courses
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="{{ '/' | relative_url }}#about" class="nav-link">
             <svg class="nav-svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="8" r="4"></circle>

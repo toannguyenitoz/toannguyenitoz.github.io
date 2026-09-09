@@ -13,7 +13,7 @@ layout: default
     <ol class="breadcrumb-list">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li class="separator">/</li>
-      <li><a href="{{ '/' | relative_url }}#articles">Articles</a></li>
+      <li><a href="{{ '/articles/' | relative_url }}">Articles</a></li>
       <li class="separator">/</li>
       <li class="active">{{ page.title | truncate: 50 }}</li>
     </ol>
@@ -93,7 +93,7 @@ layout: default
 
     <!-- Navigation Back / Next -->
     <div class="post-navigation-links">
-      <a href="{{ '/' | relative_url }}#articles" class="btn btn-secondary">
+      <a href="{{ '/articles/' | relative_url }}" class="btn btn-secondary">
         ← Back to All Articles
       </a>
       <button class="btn btn-outline" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
