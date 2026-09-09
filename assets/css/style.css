@@ -2935,8 +2935,42 @@ kbd {
   line-height: 1.6;
   color: var(--text-secondary);
   max-width: 920px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   transition: color var(--transition-normal);
+}
+
+/* Brand Tech Ecosystem Chips */
+.brand-tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.tech-chip:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+  color: var(--accent-primary);
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+
+.chip-icon {
+  font-size: 0.95rem;
 }
 
 .header-banner-creds {
