@@ -53,7 +53,16 @@
                 <span class="dropdown-item-icon">📄</span>
                 <div class="dropdown-item-text">
                   <strong>Articles &amp; SOPs</strong>
-                  <span>128+ Enterprise blueprints &amp; guides</span>
+                  <span>128+ Troubleshooting guides</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="{{ '/articles/' | relative_url }}?cat=Tips+%26+Tricks" class="dropdown-item">
+                <span class="dropdown-item-icon">💡</span>
+                <div class="dropdown-item-text">
+                  <strong>Windows Tips &amp; Tricks</strong>
+                  <span>Parts 1 to 102+ sequential series</span>
                 </div>
               </a>
             </li>
@@ -78,16 +87,16 @@
           </ul>
         </li>
 
-        <!-- Courses Direct Link -->
+        <!-- PowerShell Direct Link (Core Feature Promoted) -->
         <li class="nav-item">
-          <a href="{{ '/courses/' | relative_url }}" class="nav-link{% if page.url contains '/courses/' %} active{% endif %} nav-link-courses">
-            <span class="nav-icon">🎁</span> Courses
+          <a href="{{ '/powershell/' | relative_url }}" class="nav-link{% if page.url contains '/powershell/' %} active{% endif %}">
+            <span class="nav-icon">&gt;_</span> PowerShell
           </a>
         </li>
 
         <!-- Resources Dropdown -->
         <li class="nav-item nav-item-has-dropdown">
-          <a href="{{ '/' | relative_url }}#resources" class="nav-link nav-link-dropdown" aria-haspopup="true">
+          <a href="{{ '/' | relative_url }}#resources" class="nav-link nav-link-dropdown{% if page.url contains '/courses/' %} active{% endif %}" aria-haspopup="true">
             <span>Resources</span>
             <svg class="dropdown-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M6 9l6 6 6-6"/>
@@ -113,11 +122,11 @@
               </a>
             </li>
             <li>
-              <a href="{{ '/' | relative_url }}#resources" class="dropdown-item">
-                <span class="dropdown-item-icon">💾</span>
+              <a href="{{ '/courses/' | relative_url }}" class="dropdown-item">
+                <span class="dropdown-item-icon">🎁</span>
                 <div class="dropdown-item-text">
-                  <strong>Downloads &amp; Templates</strong>
-                  <span>Enterprise SOP checklists &amp; configs</span>
+                  <strong>Free Course Vouchers</strong>
+                  <span>Curated Udemy certifications &amp; coupons</span>
                 </div>
               </a>
             </li>

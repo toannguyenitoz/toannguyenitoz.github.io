@@ -67,6 +67,56 @@ layout: default
     {{ content }}
   </div>
 
+  <!-- Sequential Series Navigation (Windows Tips & Tricks Hub) -->
+  {% if page.part %}
+    {% assign prev_part = page.part | minus: 1 %}
+    {% assign next_part = page.part | plus: 1 %}
+    {% assign prev_post = site.posts | where: "part", prev_part | first %}
+    {% assign next_post = site.posts | where: "part", next_part | first %}
+
+    <div class="series-nav-box">
+      <div class="series-nav-header">
+        <span class="series-nav-kicker">💡 Continuous Knowledge Series</span>
+        <h4 class="series-nav-title">
+          Windows Tips &amp; Tricks — Part {{ page.part }}
+        </h4>
+        <a href="{{ '/articles/' | relative_url }}?cat=Tips+%26+Tricks" class="series-hub-link">
+          Browse All 102+ Parts in Series →
+        </a>
+      </div>
+
+      <div class="series-nav-grid">
+        {% if prev_post %}
+        <a href="{{ prev_post.url | relative_url }}" class="series-nav-card series-prev">
+          <span class="series-arrow">←</span>
+          <div class="series-meta">
+            <span class="series-label">Previous • Part {{ prev_part }}</span>
+            <span class="series-card-title">{{ prev_post.title | remove: "Windows Tips & Tricks – " }}</span>
+          </div>
+        </a>
+        {% else %}
+        <div class="series-nav-card series-disabled">
+          <span class="series-label">First in series</span>
+        </div>
+        {% endif %}
+
+        {% if next_post %}
+        <a href="{{ next_post.url | relative_url }}" class="series-nav-card series-next">
+          <div class="series-meta" style="text-align: right;">
+            <span class="series-label">Next • Part {{ next_part }}</span>
+            <span class="series-card-title">{{ next_post.title | remove: "Windows Tips & Tricks – " }}</span>
+          </div>
+          <span class="series-arrow">→</span>
+        </a>
+        {% else %}
+        <div class="series-nav-card series-disabled" style="text-align: right;">
+          <span class="series-label">Latest Part published</span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
   <!-- Post End Author Box -->
   <footer class="post-footer">
     <div class="author-card-box">
