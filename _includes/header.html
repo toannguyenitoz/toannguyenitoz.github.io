@@ -2,20 +2,9 @@
   <div class="header-container">
     <!-- Brand Lockup -->
     <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="IT Support With Toan Homepage">
-      <!-- High-tech Logo Mark -->
+      <!-- Channel Logo Mark -->
       <div class="logo-mark">
-        <svg viewBox="0 0 38 38" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="2" width="34" height="34" rx="9" fill="#090D16" stroke="url(#hLogoGrad)" stroke-width="2"/>
-          <path d="M11 14L17 19L11 24" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <line x1="20" y1="24" x2="27" y2="24" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="27" cy="13" r="2.5" fill="#10B981"/>
-          <defs>
-            <linearGradient id="hLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0078D4"/>
-              <stop offset="100%" stop-color="#38BDF8"/>
-            </linearGradient>
-          </defs>
-        </svg>
+        <img src="{{ '/assets/images/channel-logo.png' | relative_url }}" alt="IT Support With Toan Logo" class="channel-logo-img">
       </div>
 
       <!-- Brand Text & Location Tag -->
@@ -87,23 +76,13 @@
       </ul>
     </nav>
 
-    <!-- Header Actions (Theme Toggle, CMS Link & Mini Avatar) -->
+    <!-- Header Actions (Theme Toggle) -->
     <div class="header-actions">
       <!-- Dark/Light Theme Toggle -->
       <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Dark/Light Theme">
         <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
         <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
       </button>
-
-      <!-- CMS Portal Link -->
-      <a href="{{ '/admin/' | relative_url }}" class="admin-portal-link" title="Open Decap / Sveltia CMS">
-        <span class="admin-dot"></span> CMS
-      </a>
-
-      <!-- Header Avatar Link to About -->
-      <a href="{{ '/' | relative_url }}#about" class="header-avatar-link" title="Toan Nguyen - Systems Administrator">
-        <img src="{{ '/assets/images/toan-avatar.jpg' | relative_url }}" alt="Toan Nguyen" class="header-avatar-img">
-      </a>
     </div>
   </div>
 </header>
