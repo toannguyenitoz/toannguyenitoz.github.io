@@ -1,0 +1,55 @@
+name: Sync LinkedIn Posts to Website
+
+on:
+  schedule:
+    # 14:00 giờ Adelaide ACST mỗi ngày (tức 04:30 UTC):
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+    inputs:
+      post_url:
+        description: 'LinkedIn Post URL to sync immediately (optional)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  sync-linkedin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sync LinkedIn Posts
+        run: |
+          if [ -n "${{ github.event.inputs.post_url }}" ]; then
+            echo "Syncing specific post: ${{ github.event.inputs.post_url }}"
+            python scripts/sync_linkedin_posts.py "${{ github.event.inputs.post_url }}"
+          else
+            echo "Syncing from tracker queue..."
+            python scripts/sync_linkedin_posts.py
+          fi
+
+      - name: Commit and push new articles & images
+        run: |
+          git config user.name  "LinkedIn Sync Bot"
+          git config user.email "actions@github.com"
+          git add _posts/ assets/images/posts/ _data/linkedin_tracker.yml
+          if git diff --cached --quiet; then
+            echo "No new articles — skipping commit."
+          else
+            git commit -m "auto: publish new LinkedIn articles to website [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+            echo "✅ Successfully published new LinkedIn articles!"
+          fi
