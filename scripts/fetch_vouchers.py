@@ -427,25 +427,28 @@ def merge_and_sort(new_items, existing_items, history_set):
         if slug:
             by_slug[slug] = ex
 
-    # 2. Add truly NEW courses that have NEVER been posted before
+    # 2. Process newly fetched items
     added_count = 0
+    updated_count = 0
     for item in new_items:
         slug = item.get("slug") or extract_udemy_slug(item.get("udemy_url", ""))
         if not slug:
             continue
 
-        # Check if course is already active or in historical archive
         if slug in by_slug:
-            # Already active in current list: just update coupon code if fresh
+            # Course is in current active list: update coupon code and refresh fetched_at if new coupon provided
             if item.get("coupon_code"):
                 by_slug[slug]["coupon_code"] = item.get("coupon_code")
                 by_slug[slug]["coupon_url"] = item.get("coupon_url") or by_slug[slug].get("coupon_url")
+                by_slug[slug]["fetched_at"] = today
+                if item.get("title"):
+                    by_slug[slug]["title"] = item.get("title")
+                if item.get("image"):
+                    by_slug[slug]["image"] = item.get("image")
+                updated_count += 1
             continue
 
-        if slug in history_set:
-            # Course has been posted in the past -> DO NOT repost
-            continue
-
+        # Truly new course
         merged = {
             "id": slug,
             "title": item.get("title") or slug.replace("-", " ").title(),
@@ -469,19 +472,19 @@ def merge_and_sort(new_items, existing_items, history_set):
         history_set.add(slug)
         added_count += 1
 
-    print(f"[*] Added {added_count} brand-new courses (filtered out duplicates and previously posted)")
+    print(f"[*] Added {added_count} brand-new courses, refreshed {updated_count} existing courses")
 
     results = list(by_slug.values())
-    # Sort: courses with coupon_code first, then newest fetched
+    # Sort: courses with coupon_code first, then newest fetched_at, then rating
     results.sort(key=lambda x: (
         1 if x.get("coupon_code") else 0,
-        x.get("fetched_at", "")
+        x.get("fetched_at", ""),
+        x.get("rating", 0)
     ), reverse=True)
 
     return results[:MAX_VOUCHERS], history_set
 
 def write_yaml(vouchers):
-    today = datetime.date.today().isoformat()
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 
@@ -503,29 +506,41 @@ def main():
     print("=" * 65)
 
     history_set = load_history()
-    print(f"[*] Known history archive: {len(history_set)} course slugs tracked")
+    existing = load_existing()
+    existing_slugs = {ex.get("id") or extract_udemy_slug(ex.get("udemy_url", "")) for ex in existing}
+    print(f"[*] Known history archive: {len(history_set)} course slugs tracked | Currently active: {len(existing)}")
 
     tb_candidates = scrape_tutorialbar()
     disc_candidates = scrape_discudemy()
     raw_items = tb_candidates + disc_candidates
     print(f"[*] Total raw candidates: {len(raw_items)} (TutorialBar: {len(tb_candidates)}, DiscUdemy: {len(disc_candidates)})")
 
-    # Filter out courses in history before requesting details to save requests
+    # Filter candidates: allow items if they are currently in active vouchers (to refresh) OR not in history
     filtered_candidates = []
     seen_in_batch = set()
     for item in raw_items:
         slug = item.get("slug") or extract_udemy_slug(item.get("udemy_url", ""))
-        if not slug or slug in history_set or slug in seen_in_batch:
+        if not slug or slug in seen_in_batch:
+            continue
+        # If slug is in active courses, we want to check for refreshed coupons
+        # If slug was previously posted and dropped from active list, skip
+        if slug in history_set and slug not in existing_slugs:
             continue
         seen_in_batch.add(slug)
         filtered_candidates.append(item)
 
-    print(f"[*] Brand-new candidates after history check: {len(filtered_candidates)}")
+    print(f"[*] Candidates to process (new + active refreshes): {len(filtered_candidates)}")
 
     # Enrich candidates that need coupon resolution
     enriched_items = []
-    for idx, item in enumerate(filtered_candidates[:35]):
-        print(f"[{idx+1}/{min(len(filtered_candidates), 35)}] [{item.get('source', 'tb').upper()}] Processing: {item.get('title', '')[:45]}")
+    for idx, item in enumerate(filtered_candidates[:40]):
+        # If coupon_url and coupon_code already present, no need to make HTTP request
+        if item.get("coupon_url") and item.get("coupon_code"):
+            enriched_items.append(item)
+            print(f"[{idx+1}/{min(len(filtered_candidates), 40)}] [FAST] {item.get('title', '')[:40]} -> Code: {item.get('coupon_code')}")
+            continue
+
+        print(f"[{idx+1}/{min(len(filtered_candidates), 40)}] [{item.get('source', 'tb').upper()}] Resolving: {item.get('title', '')[:40]}")
         try:
             if item.get("source") == "discudemy":
                 res = enrich_discudemy(item)
@@ -541,7 +556,6 @@ def main():
 
     print(f"\n[*] Successfully resolved {len(enriched_items)} courses with coupon codes")
 
-    existing = load_existing()
     final_list, updated_history = merge_and_sort(enriched_items, existing, history_set)
     write_yaml(final_list)
     save_history(updated_history)
