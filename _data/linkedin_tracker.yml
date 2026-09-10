@@ -14,6 +14,10 @@
 # ==============================================================================
 
 posts:
+  - url: "https://www.linkedin.com/feed/update/urn:li:activity:7503551213120983040/"
+    part: 103
+    title: "Force-Close a Locked File on a Network Share"
+    status: "synced"
   - url: "https://lnkd.in/p/gbwsYVQg"
     part: 102
     title: "Why Did the Server Reboot?"
