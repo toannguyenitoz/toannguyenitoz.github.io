@@ -33,6 +33,100 @@ items:
   views_count: 31
   views_display: 31 views
   is_pinned: true
+- title: Do THIS Before Updating Windows! (Life Saver) 🛡️
+  youtube_id: cwDLoxniA3I
+  duration: 01:00
+  category: Shorts
+  description: A bad Windows update or driver can crash your computer anytime. Turning
+    on System Protection allows you to time-travel back to a working state in minutes!
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Stop Browsing Fake Download Sites! Install Apps via CMD ⚡
+  youtube_id: MT1kXcMws3Y
+  duration: 01:00
+  category: Shorts
+  description: Tired of clicking shady download buttons and risking malware? Use the
+    built-in Windows Package Manager (winget) to install any software directly from
+    the command line!
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Wi-Fi Icon Completely Gone on Windows? 100% Working Fix! 🌐
+  youtube_id: kyYU3EaFzNM
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Bluetooth Icon Disappeared on Windows 11? Fix in 20s! 📶
+  youtube_id: qr50ELXC3kk
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 'The Ultimate Windows Secret Console: compmgmt.msc 💻'
+  youtube_id: JavoxuItzXc
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Stop Windows CPU Throttling in 30 Seconds! ⚡
+  youtube_id: YAsAppPh4pM
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Monitor CPU & RAM Live on Your Desktop! 📊 | Toan Nguyen IT OZ
+  youtube_id: iAyGWrAkax0
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Windows Built-in Packet Sniffer (No Wireshark Needed!) 📡 | Toan Nguyen IT
+    OZ
+  youtube_id: X_4ZoU_yVSo
+  duration: 01:00
+  category: IT Support
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Stop Windows 11 Auto-Installing Junk Bloatware! 🚫 | Toan Nguyen IT OZ
+  youtube_id: vtGCUUkMOQc
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Speed Up Your Windows SSD in 10 Seconds! ⚡ | Toan Nguyen IT OZ
+  youtube_id: CzM49O0Buzo
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-10'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Unlock Secret GOD MODE in Windows 11! 🤯⚡
   youtube_id: 38F1KFKKUX8
   duration: 01:00
