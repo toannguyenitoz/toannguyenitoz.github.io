@@ -30,6 +30,28 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Is Your Windows License Real or Expiring? Check Now! 🔑🖥️
+  youtube_id: hfP8iREoQ9Y
+  duration: 01:00
+  category: Shorts
+  description: Bought a second-hand laptop or got Windows installed at a repair shop?
+    Check whether your Windows license is genuine and permanent, or if it will suddenly
+    expire in a few months!
+  published_date: '2026-09-13'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Secret Windows Virus Scanner Nobody Tells You About! 🛡️💻
+  youtube_id: xDhGMHqtiuU
+  duration: 01:00
+  category: Shorts
+  description: Did you know Windows has a hidden, free malware scanner already pre-installed
+    on your system? You don't need expensive third-party antivirus to find stubborn
+    rootkits. Just run mrt!
+  published_date: '2026-09-13'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: final shorts 40 create windows recovery toolkit bat
   youtube_id: 1xdaaTnKhHg
   duration: 01:00
