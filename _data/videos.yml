@@ -30,6 +30,48 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: final shorts 40 create windows recovery toolkit bat
+  youtube_id: 1xdaaTnKhHg
+  duration: 01:00
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Never Lose PC Drivers Again! 1-Click Backup Trick 💾⚡
+  youtube_id: DKT09b_yrVY
+  duration: 01:00
+  category: Shorts
+  description: Before formatting your computer or installing a fresh copy of Windows,
+    always back up your installed third-party drivers! Here is the built-in Windows
+    pnputil trick to export every single driver to...
+  published_date: '2026-09-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Fix Slow Internet in 10 Seconds! Flush DNS Hack 🌐🚀
+  youtube_id: biNTeQKBv_g
+  duration: 01:00
+  category: Shorts
+  description: Web pages loading slow or giving connection errors even though your
+    internet is fine? Your Windows DNS cache is probably full of stale entries. Here
+    is how to flush it in seconds with ipconfig /flu...
+  published_date: '2026-09-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: How to Reveal Saved Wi-Fi Passwords in 3 Seconds! 🔑📶
+  youtube_id: 7kNy54_OoQs
+  duration: 01:00
+  category: Shorts
+  description: Forgot your Wi-Fi password but your Windows PC is already connected?
+    Here is the secret IT support command to reveal the plain-text password in seconds
+    without installing any shady software!
+  published_date: '2026-09-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Bypass Windows 11 Network Screen in 5 Seconds!
   youtube_id: HtHU1JRk8iM
   duration: 00:34
