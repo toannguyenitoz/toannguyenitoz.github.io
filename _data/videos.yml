@@ -30,6 +30,28 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Secret Built-in Windows Screen Recorder Nobody Knows! 📸🖥️
+  youtube_id: kSMvbZMPVQw
+  duration: 01:00
+  category: Shorts
+  description: Stop downloading shady third-party screen recording tools! Windows
+    has a secret, built-in utility called Steps Recorder (psr) that automatically
+    captures screenshots and documents every single clic...
+  published_date: '2026-09-14'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Control Your PC From Anywhere on Your Phone! 📱💻 (Free & Fast)
+  youtube_id: m7Z7_GtdxP8
+  duration: 01:00
+  category: Shorts
+  description: Did you know you can control your entire Windows computer directly
+    from your iPhone or Android phone from anywhere in the world for free? In this
+    quick guide, Kangaroo Jace & Pip Koala show you how...
+  published_date: '2026-09-14'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
   youtube_id: meX4UKgM24M
   duration: 01:00
