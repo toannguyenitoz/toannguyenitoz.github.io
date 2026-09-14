@@ -4750,5 +4750,244 @@ kbd {
   border-color: transparent;
 }
 
+/* ========================================================================= */
+/* Site Traffic Analytics Report (Badge Cards: 7d, 30d, 1y)                  */
+/* ========================================================================= */
+.site-traffic-report-card {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: all var(--transition-normal);
+}
 
+[data-theme="light"] .site-traffic-report-card {
+  background: #FFFFFF;
+  border-color: #E2E8F0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
 
+.traffic-report-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.traffic-header-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.traffic-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.traffic-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.traffic-heading {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.traffic-subheading {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+.traffic-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  position: relative;
+}
+
+.traffic-pulse-core {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+}
+
+.traffic-pulse-ring {
+  position: absolute;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  animation: trafficPulse 2s infinite ease-out;
+}
+
+.traffic-live-label {
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: #10B981;
+  letter-spacing: 0.5px;
+}
+
+@keyframes trafficPulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  70% { transform: scale(2.5); opacity: 0; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+.traffic-badge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.traffic-badge-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 5px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.traffic-badge-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.badge-item-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.badge-range-tag {
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-trend-tag {
+  font-size: 0.56rem;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+.trend-positive {
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.trend-accent {
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.badge-item-number {
+  font-size: 0.92rem;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.badge-item-caption {
+  font-size: 0.58rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Color theme per badge period */
+.badge-7d {
+  border-color: rgba(56, 189, 248, 0.28);
+}
+.badge-7d .badge-range-tag,
+.badge-7d .badge-item-number {
+  color: #38BDF8;
+}
+.badge-7d:hover {
+  border-color: #38BDF8;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.badge-30d {
+  border-color: rgba(16, 185, 129, 0.28);
+}
+.badge-30d .badge-range-tag,
+.badge-30d .badge-item-number {
+  color: #10B981;
+}
+.badge-30d:hover {
+  border-color: #10B981;
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.badge-1y {
+  border-color: rgba(245, 158, 11, 0.28);
+}
+.badge-1y .badge-range-tag,
+.badge-1y .badge-item-number {
+  color: #F59E0B;
+}
+.badge-1y:hover {
+  border-color: #F59E0B;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+/* Bottom Traffic Meta Channels */
+.traffic-meta-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.traffic-channels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.traffic-channel-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  padding: 3px 5px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  flex: 1;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.traffic-channel-pill svg {
+  flex-shrink: 0;
+}
