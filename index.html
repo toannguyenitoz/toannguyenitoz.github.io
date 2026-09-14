@@ -181,6 +181,184 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
         </div>
 
         <!-- Section 3: Website Traffic & Audience Analytics Card (100% English) -->
+        <!-- Website Traffic Analytics Telemetry Card (GA4 Readership) -->
+        <style>
+          .traffic-section-block {
+            margin-top: 20px;
+            background: var(--bg-secondary, #ffffff);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+          }
+          .traffic-section-block .col-header-bar {
+            padding: 14px 16px 12px;
+            border-bottom: 1px solid var(--border-color, #e2e8f0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .traffic-section-block .traffic-card-content {
+            padding: 14px 16px;
+          }
+          .traffic-metrics-stack {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 10px !important;
+            margin-bottom: 16px !important;
+          }
+          .traffic-metric-row {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 10px 14px !important;
+            background: var(--bg-primary, #ffffff) !important;
+            border: 1px solid var(--border-color, #e2e8f0) !important;
+            border-radius: 10px !important;
+            min-height: 52px !important;
+            box-sizing: border-box !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+          }
+          .traffic-metric-row:hover {
+            transform: translateX(4px) !important;
+            border-color: #0284c7 !important;
+          }
+          .metric-row-left {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            min-width: 0 !important;
+          }
+          .metric-icon-box {
+            width: 32px !important;
+            height: 32px !important;
+            min-width: 32px !important;
+            border-radius: 8px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important;
+          }
+          .metric-info {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            min-width: 0 !important;
+          }
+          .metric-title {
+            font-size: 0.82rem !important;
+            font-weight: 700 !important;
+            color: var(--text-primary, #1e293b) !important;
+            line-height: 1.25 !important;
+            white-space: nowrap !important;
+          }
+          .metric-hint {
+            font-size: 0.68rem !important;
+            color: var(--text-muted, #64748b) !important;
+            line-height: 1.2 !important;
+          }
+          .metric-row-right {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            flex-shrink: 0 !important;
+          }
+          .metric-number {
+            font-size: 1.15rem !important;
+            font-weight: 800 !important;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace !important;
+            line-height: 1 !important;
+          }
+          .metric-badge-pill {
+            font-size: 0.68rem !important;
+            font-weight: 700 !important;
+            padding: 3px 8px !important;
+            border-radius: 6px !important;
+            white-space: nowrap !important;
+            line-height: 1.2 !important;
+          }
+          .row-7d .metric-icon-box { background: rgba(56, 189, 248, 0.15) !important; color: #0284c7 !important; }
+          .row-7d .metric-number { color: #0284c7 !important; }
+          .pill-cyan { background: rgba(56, 189, 248, 0.12) !important; color: #0284c7 !important; border: 1px solid rgba(56, 189, 248, 0.3) !important; }
+
+          .row-30d .metric-icon-box { background: rgba(16, 185, 129, 0.15) !important; color: #059669 !important; }
+          .row-30d .metric-number { color: #059669 !important; }
+          .pill-emerald { background: rgba(16, 185, 129, 0.12) !important; color: #059669 !important; border: 1px solid rgba(16, 185, 129, 0.3) !important; }
+
+          .row-1y .metric-icon-box { background: rgba(129, 140, 248, 0.15) !important; color: #4f46e5 !important; }
+          .row-1y .metric-number { color: #4f46e5 !important; }
+          .pill-indigo { background: rgba(129, 140, 248, 0.12) !important; color: #4f46e5 !important; border: 1px solid rgba(129, 140, 248, 0.3) !important; }
+
+          .row-alltime .metric-icon-box { background: rgba(245, 158, 11, 0.15) !important; color: #d97706 !important; }
+          .row-alltime .metric-number { color: #d97706 !important; }
+          .pill-amber { background: rgba(245, 158, 11, 0.12) !important; color: #d97706 !important; border: 1px solid rgba(245, 158, 11, 0.3) !important; }
+
+          [data-theme="dark"] .traffic-metric-row { background: #0f172a !important; border-color: rgba(255, 255, 255, 0.08) !important; }
+          [data-theme="dark"] .metric-title { color: #f1f5f9 !important; }
+          [data-theme="dark"] .metric-hint { color: #94a3b8 !important; }
+          [data-theme="dark"] .row-7d .metric-icon-box, [data-theme="dark"] .row-7d .metric-number, [data-theme="dark"] .pill-cyan { color: #38bdf8 !important; }
+          [data-theme="dark"] .row-30d .metric-icon-box, [data-theme="dark"] .row-30d .metric-number, [data-theme="dark"] .pill-emerald { color: #34d399 !important; }
+          [data-theme="dark"] .row-1y .metric-icon-box, [data-theme="dark"] .row-1y .metric-number, [data-theme="dark"] .pill-indigo { color: #a5b4fc !important; }
+          [data-theme="dark"] .row-alltime .metric-icon-box, [data-theme="dark"] .row-alltime .metric-number, [data-theme="dark"] .pill-amber { color: #fbbf24 !important; }
+
+          .traffic-channels-block {
+            margin-top: 14px !important;
+            padding-top: 12px !important;
+            border-top: 1px dashed var(--border-color, #e2e8f0) !important;
+          }
+          .traffic-channels-header {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            margin-bottom: 8px !important;
+          }
+          .traffic-channels-title {
+            font-size: 0.76rem !important;
+            font-weight: 700 !important;
+            color: var(--text-primary, #1e293b) !important;
+          }
+          .traffic-channels-badge {
+            font-size: 0.65rem !important;
+            font-weight: 600 !important;
+            color: #059669 !important;
+            background: rgba(16, 185, 129, 0.12) !important;
+            padding: 2px 7px !important;
+            border-radius: 4px !important;
+          }
+          .segmented-traffic-bar {
+            display: flex !important;
+            height: 6px !important;
+            border-radius: 9999px !important;
+            overflow: hidden !important;
+            gap: 2px !important;
+            margin-bottom: 8px !important;
+          }
+          .segment-item { height: 100% !important; }
+          .segment-google { background: #4285f4 !important; }
+          .segment-linkedin { background: #0a66c2 !important; }
+          .segment-direct { background: #10b981 !important; }
+          .traffic-legend-row {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            font-size: 0.7rem !important;
+            color: var(--text-secondary, #475569) !important;
+          }
+          .legend-item {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 4px !important;
+          }
+          .legend-dot {
+            width: 7px !important;
+            height: 7px !important;
+            border-radius: 50% !important;
+          }
+          .dot-google { background: #4285f4 !important; }
+          .dot-linkedin { background: #0a66c2 !important; }
+          .dot-direct { background: #10b981 !important; }
+        </style>
         {% assign traffic = site.data.traffic %}
         <div class="col-section-block traffic-section-block" id="siteTrafficReport">
           <div class="col-header-bar">
