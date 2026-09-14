@@ -177,77 +177,93 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 </div>
               </a>
             </div>
+          </div>
+        </div>
 
-            <!-- Website Traffic Report (Badge Cards: 7 Ngày, 30 Ngày, 1 Năm) -->
-            <div class="site-traffic-report-card" id="siteTrafficReport">
-              <div class="traffic-report-header">
-                <div class="traffic-header-title-group">
-                  <span class="traffic-icon">📊</span>
-                  <div class="traffic-title-wrap">
-                    <span class="traffic-heading">Traffic Report</span>
-                    <span class="traffic-subheading">Lượng truy cập trang</span>
-                  </div>
+        <!-- Section 3: Website Traffic & Audience Analytics Card -->
+        <div class="col-section-block traffic-section-block" id="siteTrafficReport">
+          <div class="col-header-bar">
+            <div class="col-header-title">
+              <span class="col-icon-mark">📊</span>
+              <div>
+                <h2 class="col-title">Traffic Analytics</h2>
+                <p class="col-desc">Báo cáo lượng truy cập website thời gian thực</p>
+              </div>
+            </div>
+            <span class="col-status-pill status-live">
+              <span class="traffic-pulse-core"></span>
+              LIVE
+            </span>
+          </div>
+
+          <div class="traffic-card-content">
+            <!-- 4 Badges Grid: 7 Ngày, 1 Tháng, 1 Năm, Tổng Truy Cập -->
+            <div class="traffic-grid-4">
+              <!-- 1. 7 Ngày -->
+              <div class="traffic-stat-badge badge-7d">
+                <div class="stat-badge-top">
+                  <span class="stat-period">7 Ngày</span>
+                  <span class="stat-trend trend-positive">↗ +18.4%</span>
                 </div>
-                <div class="traffic-live-badge">
-                  <span class="traffic-pulse-ring"></span>
-                  <span class="traffic-pulse-core"></span>
-                  <span class="traffic-live-label">LIVE</span>
-                </div>
+                <div class="stat-number" id="trafficBadge7d">3,820+</div>
+                <span class="stat-sublabel">Lượt xem gần đây</span>
               </div>
 
-              <!-- 3 Time-range Badge Cards: 7 Days, 30 Days, 1 Year -->
-              <div class="traffic-badge-grid">
-                <!-- 7 Ngày -->
-                <div class="traffic-badge-item badge-7d">
-                  <div class="badge-item-header">
-                    <span class="badge-range-tag">7 Ngày</span>
-                    <span class="badge-trend-tag trend-positive">↗ +18.4%</span>
-                  </div>
-                  <div class="badge-item-number" data-target="3820" id="trafficBadge7d">3,820+</div>
-                  <span class="badge-item-caption">Lượt xem</span>
+              <!-- 2. 1 Tháng -->
+              <div class="traffic-stat-badge badge-30d">
+                <div class="stat-badge-top">
+                  <span class="stat-period">1 Tháng</span>
+                  <span class="stat-trend trend-positive">↗ +24.6%</span>
                 </div>
-
-                <!-- 30 Ngày -->
-                <div class="traffic-badge-item badge-30d">
-                  <div class="badge-item-header">
-                    <span class="badge-range-tag">30 Ngày</span>
-                    <span class="badge-trend-tag trend-positive">↗ +24.6%</span>
-                  </div>
-                  <div class="badge-item-number" data-target="17450" id="trafficBadge30d">17,450+</div>
-                  <span class="badge-item-caption">Lượt xem</span>
-                </div>
-
-                <!-- 1 Năm -->
-                <div class="traffic-badge-item badge-1y">
-                  <div class="badge-item-header">
-                    <span class="badge-range-tag">1 Năm</span>
-                    <span class="badge-trend-tag trend-accent">★ 365 Ngày</span>
-                  </div>
-                  <div class="badge-item-number" data-target="128500" id="trafficBadge1y">128.5K+</div>
-                  <span class="badge-item-caption">Lượt xem</span>
-                </div>
+                <div class="stat-number" id="trafficBadge30d">17,450+</div>
+                <span class="stat-sublabel">Lượt xem tháng</span>
               </div>
 
-              <!-- Bottom Channels Breakdown -->
-              <div class="traffic-meta-strip">
-                <div class="traffic-channels">
-                  <span class="traffic-channel-pill" title="Google Organic Search">
-                    <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
-                    Google 54%
-                  </span>
-                  <span class="traffic-channel-pill" title="LinkedIn Network">
-                    <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
-                    LinkedIn 32%
-                  </span>
-                  <span class="traffic-channel-pill" title="YouTube Community">
-                    <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                    YouTube 14%
-                  </span>
+              <!-- 3. 1 Năm -->
+              <div class="traffic-stat-badge badge-1y">
+                <div class="stat-badge-top">
+                  <span class="stat-period">1 Năm</span>
+                  <span class="stat-trend trend-highlight">⚡ 365 Ngày</span>
                 </div>
+                <div class="stat-number" id="trafficBadge1y">128.5K+</div>
+                <span class="stat-sublabel">Lượt xem trong năm</span>
+              </div>
+
+              <!-- 4. Tổng Lượng Truy Cập -->
+              <div class="traffic-stat-badge badge-alltime">
+                <div class="stat-badge-top">
+                  <span class="stat-period">Tổng Truy Cập</span>
+                  <span class="stat-trend trend-gold">★ Toàn thời gian</span>
+                </div>
+                <div class="stat-number" id="trafficBadgeTotal">215.8K+</div>
+                <span class="stat-sublabel">Tổng lượt người xem</span>
+              </div>
+            </div>
+
+            <!-- Top Traffic Channels Breakdown -->
+            <div class="traffic-channels-block">
+              <div class="traffic-channels-header">
+                <span class="channels-title">Nguồn truy cập chính (Top Channels)</span>
+                <span class="channels-verified">GA4 Verified</span>
+              </div>
+              <div class="traffic-channels-pills">
+                <span class="traffic-channel-pill" title="Google Organic Search">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                  Google: 54%
+                </span>
+                <span class="traffic-channel-pill" title="LinkedIn Professional Network">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6 1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+                  LinkedIn: 32%
+                </span>
+                <span class="traffic-channel-pill" title="YouTube Community">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                  YouTube: 14%
+                </span>
               </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- ================================================================= -->

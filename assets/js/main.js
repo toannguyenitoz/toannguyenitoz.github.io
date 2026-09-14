@@ -693,7 +693,7 @@
   };
 
   // =========================================================================
-  // 11. Website Traffic Analytics Badge Counter (7 Days, 30 Days, 1 Year)
+  // 11. Website Traffic Analytics Badge Counter (7 Days, 1 Month, 1 Year, Total)
   // =========================================================================
   function initTrafficReport() {
     var reportEl = document.getElementById('siteTrafficReport');
@@ -705,10 +705,12 @@
     var el7d = document.getElementById('trafficBadge7d');
     var el30d = document.getElementById('trafficBadge30d');
     var el1y = document.getElementById('trafficBadge1y');
+    var elTotal = document.getElementById('trafficBadgeTotal');
 
     var base7d = 3820 + (localVisits % 50);
     var base30d = 17450 + (localVisits % 200);
     var base1y = 128500 + localVisits;
+    var baseTotal = 215800 + localVisits;
 
     function animateCount(el, target, isK) {
       if (!el) return;
@@ -744,6 +746,7 @@
             animateCount(el7d, base7d, false);
             animateCount(el30d, base30d, false);
             animateCount(el1y, base1y, true);
+            animateCount(elTotal, baseTotal, true);
             observer.disconnect();
           }
         });
@@ -753,6 +756,7 @@
       animateCount(el7d, base7d, false);
       animateCount(el30d, base30d, false);
       animateCount(el1y, base1y, true);
+      animateCount(elTotal, baseTotal, true);
     }
   }
 

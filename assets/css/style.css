@@ -4745,121 +4745,246 @@ kbd {
 }
 
 .series-pill-btn.hub-btn:hover {
+  align-items: center;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   Continuous Series Navigation Box (Windows Tips & Tricks Hub)
+   ========================================================================== */
+.series-nav-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #F59E0B;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin: 36px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.series-nav-header {
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.series-nav-kicker {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #F59E0B;
+  margin-bottom: 4px;
+}
+
+.series-nav-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 6px;
+}
+
+.series-hub-link {
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.series-hub-link:hover {
+  text-decoration: underline;
+}
+
+.series-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 650px) {
+  .series-nav-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.series-nav-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.series-nav-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.series-nav-card.series-disabled {
+  opacity: 0.5;
+  background: transparent;
+  cursor: default;
+  border-style: dashed;
+}
+
+.series-arrow {
+  font-size: 1.25rem;
+  color: var(--accent-primary);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.series-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.series-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.series-card-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Top Quick Series Navigator Pill Bar */
+.series-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  margin-bottom: 20px;
+}
+
+.series-top-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.series-top-badge strong {
+  color: #F59E0B;
+  font-family: var(--font-mono);
+}
+
+.series-top-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.series-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.series-pill-btn:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.series-pill-btn.prev-btn {
+  color: #0284C7;
+}
+
+.series-pill-btn.next-btn {
+  color: #10B981;
+}
+
+.series-pill-btn.hub-btn {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: #D97706;
+}
+
+.series-pill-btn.hub-btn:hover {
   background: #F59E0B;
   color: #FFFFFF !important;
   border-color: transparent;
 }
 
+/* ========================================================================= *//* ========================================================================= */
+/* Standalone Site Traffic Analytics Card (4 Badges: 7d, 30d, 1y, Total)     */
 /* ========================================================================= */
-/* Site Traffic Analytics Report (Badge Cards: 7d, 30d, 1y)                  */
-/* ========================================================================= */
-.site-traffic-report-card {
-  margin-top: 14px;
-  padding: 12px;
-  border-radius: var(--radius-md);
-  background: rgba(15, 23, 42, 0.65);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-  transition: all var(--transition-normal);
+.traffic-section-block {
+  margin-top: 20px;
 }
 
-[data-theme="light"] .site-traffic-report-card {
-  background: #FFFFFF;
-  border-color: #E2E8F0;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-}
-
-.traffic-report-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.traffic-header-title-group {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.traffic-icon {
-  font-size: 1.15rem;
-  line-height: 1;
-}
-
-.traffic-title-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.traffic-heading {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-}
-
-.traffic-subheading {
-  font-size: 0.65rem;
-  color: var(--text-muted);
-  line-height: 1.2;
-}
-
-.traffic-live-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 2px 7px;
-  border-radius: var(--radius-full);
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  position: relative;
+.traffic-card-content {
+  padding: 16px;
+  background: var(--bg-secondary);
 }
 
 .traffic-pulse-core {
+  display: inline-block;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #10B981;
-}
-
-.traffic-pulse-ring {
-  position: absolute;
-  left: 7px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #10B981;
+  margin-right: 4px;
   animation: trafficPulse 2s infinite ease-out;
 }
 
-.traffic-live-label {
-  font-size: 0.62rem;
-  font-weight: 800;
-  color: #10B981;
-  letter-spacing: 0.5px;
-}
-
 @keyframes trafficPulse {
-  0% { transform: scale(1); opacity: 0.9; }
-  70% { transform: scale(2.5); opacity: 0; }
-  100% { transform: scale(2.5); opacity: 0; }
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
-.traffic-badge-grid {
+.traffic-grid-4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  margin-bottom: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 
-.traffic-badge-item {
+.traffic-stat-badge {
   display: flex;
   flex-direction: column;
-  padding: 8px 5px;
-  border-radius: 8px;
-  text-align: center;
+  padding: 10px 10px 8px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   background: var(--bg-primary);
   transition: all var(--transition-fast);
@@ -4867,30 +4992,30 @@ kbd {
   overflow: hidden;
 }
 
-.traffic-badge-item:hover {
+.traffic-stat-badge:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
 }
 
-.badge-item-header {
+.stat-badge-top {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px;
-  margin-bottom: 4px;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 6px;
 }
 
-.badge-range-tag {
-  font-size: 0.64rem;
+.stat-period {
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
 }
 
-.badge-trend-tag {
-  font-size: 0.56rem;
+.stat-trend {
+  font-size: 0.58rem;
   font-weight: 700;
-  padding: 1px 4px;
+  padding: 1.5px 5px;
   border-radius: 4px;
   line-height: 1.2;
 }
@@ -4898,94 +5023,139 @@ kbd {
 .trend-positive {
   color: #10B981;
   background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
-.trend-accent {
+.trend-highlight {
+  color: #818CF8;
+  background: rgba(129, 140, 248, 0.12);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+}
+
+.trend-gold {
   color: #F59E0B;
   background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
-.badge-item-number {
-  font-size: 0.92rem;
+.stat-number {
+  font-size: 1.15rem;
   font-weight: 800;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
   line-height: 1.2;
   margin-bottom: 2px;
 }
 
-.badge-item-caption {
-  font-size: 0.58rem;
+.stat-sublabel {
+  font-size: 0.62rem;
   color: var(--text-muted);
   font-weight: 500;
 }
 
-/* Color theme per badge period */
-.badge-7d {
-  border-color: rgba(56, 189, 248, 0.28);
+/* 4 Distinct Color Themes */
+.traffic-stat-badge.badge-7d {
+  border-color: rgba(56, 189, 248, 0.3);
 }
-.badge-7d .badge-range-tag,
-.badge-7d .badge-item-number {
+.traffic-stat-badge.badge-7d .stat-period,
+.traffic-stat-badge.badge-7d .stat-number {
   color: #38BDF8;
 }
-.badge-7d:hover {
+.traffic-stat-badge.badge-7d:hover {
   border-color: #38BDF8;
-  background: rgba(56, 189, 248, 0.08);
+  background: rgba(56, 189, 248, 0.06);
 }
 
-.badge-30d {
-  border-color: rgba(16, 185, 129, 0.28);
+.traffic-stat-badge.badge-30d {
+  border-color: rgba(16, 185, 129, 0.3);
 }
-.badge-30d .badge-range-tag,
-.badge-30d .badge-item-number {
+.traffic-stat-badge.badge-30d .stat-period,
+.traffic-stat-badge.badge-30d .stat-number {
   color: #10B981;
 }
-.badge-30d:hover {
+.traffic-stat-badge.badge-30d:hover {
   border-color: #10B981;
-  background: rgba(16, 185, 129, 0.08);
+  background: rgba(16, 185, 129, 0.06);
 }
 
-.badge-1y {
-  border-color: rgba(245, 158, 11, 0.28);
+.traffic-stat-badge.badge-1y {
+  border-color: rgba(129, 140, 248, 0.3);
 }
-.badge-1y .badge-range-tag,
-.badge-1y .badge-item-number {
+.traffic-stat-badge.badge-1y .stat-period,
+.traffic-stat-badge.badge-1y .stat-number {
+  color: #818CF8;
+}
+.traffic-stat-badge.badge-1y:hover {
+  border-color: #818CF8;
+  background: rgba(129, 140, 248, 0.06);
+}
+
+.traffic-stat-badge.badge-alltime {
+  border-color: rgba(245, 158, 11, 0.3);
+}
+.traffic-stat-badge.badge-alltime .stat-period,
+.traffic-stat-badge.badge-alltime .stat-number {
   color: #F59E0B;
 }
-.badge-1y:hover {
+.traffic-stat-badge.badge-alltime:hover {
   border-color: #F59E0B;
-  background: rgba(245, 158, 11, 0.08);
+  background: rgba(245, 158, 11, 0.06);
 }
 
-/* Bottom Traffic Meta Channels */
-.traffic-meta-strip {
+/* Channels breakdown block */
+.traffic-channels-block {
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color);
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-top: 8px;
-  border-top: 1px dashed var(--border-color);
+  gap: 8px;
 }
 
-.traffic-channels {
+.traffic-channels-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4px;
+}
+
+.channels-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.channels-verified {
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.traffic-channels-pills {
+  display: flex;
+  gap: 6px;
 }
 
 .traffic-channel-pill {
+  flex: 1;
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  font-size: 0.6rem;
+  justify-content: center;
+  gap: 4px;
+  font-size: 0.62rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: var(--bg-tertiary);
-  padding: 3px 5px;
-  border-radius: 4px;
+  background: var(--bg-primary);
+  padding: 5px 6px;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
-  flex: 1;
-  justify-content: center;
   white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.traffic-channel-pill:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
 }
 
 .traffic-channel-pill svg {
