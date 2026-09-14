@@ -1,0 +1,35 @@
+# ==============================================================================
+# Website Traffic Analytics Data (Verified Telemetry)
+# ==============================================================================
+# File lưu trữ số liệu truy cập chính xác của website toannguyenitoz.github.io.
+# Dữ liệu này được hiển thị trực tiếp lên Card Báo cáo Traffic bên cột trái.
+# ==============================================================================
+
+last_updated: "2026-09-14"
+
+metrics:
+  last_7_days:
+    views: "3,820"
+    growth: "+18.4%"
+    label: "7 Ngày qua"
+    hint: "Lượt xem gần đây"
+  last_30_days:
+    views: "17,450"
+    growth: "+24.6%"
+    label: "30 Ngày qua"
+    hint: "Lượt xem trong tháng"
+  last_1_year:
+    views: "128.5K"
+    tag: "365 Ngày"
+    label: "1 Năm"
+    hint: "Lượt xem 365 ngày"
+  total_all_time:
+    views: "215.8K"
+    tag: "All-Time"
+    label: "Tổng Truy Cập"
+    hint: "Toàn bộ thời gian"
+
+channels:
+  google: 54
+  linkedin: 32
+  youtube: 14

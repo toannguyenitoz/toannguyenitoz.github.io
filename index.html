@@ -181,18 +181,19 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
         </div>
 
         <!-- Section 3: Website Traffic & Audience Analytics Card -->
+        {% assign traffic = site.data.traffic %}
         <div class="col-section-block traffic-section-block" id="siteTrafficReport">
           <div class="col-header-bar">
             <div class="col-header-title">
               <span class="col-icon-mark">📊</span>
               <div>
                 <h2 class="col-title">Traffic Analytics</h2>
-                <p class="col-desc">Báo cáo lượng truy cập website thời gian thực</p>
+                <p class="col-desc">Báo cáo lượt xem website chính xác</p>
               </div>
             </div>
-            <span class="col-status-pill status-live">
+            <span class="col-status-pill status-live" title="Dữ liệu xác thực từ Google Analytics">
               <span class="traffic-pulse-core"></span>
-              LIVE
+              GA4 Verified
             </span>
           </div>
 
@@ -204,13 +205,13 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 <div class="metric-row-left">
                   <div class="metric-icon-box">⚡</div>
                   <div class="metric-info">
-                    <span class="metric-title">7 Ngày qua</span>
-                    <span class="metric-hint">Lượt xem gần đây</span>
+                    <span class="metric-title">{{ traffic.metrics.last_7_days.label | default: "7 Ngày qua" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.last_7_days.hint | default: "Lượt xem gần đây" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
-                  <span class="metric-number" id="trafficBadge7d">3,820</span>
-                  <span class="metric-badge-pill pill-cyan">↗ +18.4%</span>
+                  <span class="metric-number" id="trafficBadge7d">{{ traffic.metrics.last_7_days.views }}</span>
+                  <span class="metric-badge-pill pill-cyan">↗ {{ traffic.metrics.last_7_days.growth }}</span>
                 </div>
               </div>
 
@@ -219,13 +220,13 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 <div class="metric-row-left">
                   <div class="metric-icon-box">📅</div>
                   <div class="metric-info">
-                    <span class="metric-title">30 Ngày qua</span>
-                    <span class="metric-hint">Lượt xem trong tháng</span>
+                    <span class="metric-title">{{ traffic.metrics.last_30_days.label | default: "30 Ngày qua" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.last_30_days.hint | default: "Lượt xem trong tháng" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
-                  <span class="metric-number" id="trafficBadge30d">17,450</span>
-                  <span class="metric-badge-pill pill-emerald">↗ +24.6%</span>
+                  <span class="metric-number" id="trafficBadge30d">{{ traffic.metrics.last_30_days.views }}</span>
+                  <span class="metric-badge-pill pill-emerald">↗ {{ traffic.metrics.last_30_days.growth }}</span>
                 </div>
               </div>
 
@@ -234,13 +235,13 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 <div class="metric-row-left">
                   <div class="metric-icon-box">🗓️</div>
                   <div class="metric-info">
-                    <span class="metric-title">1 Năm</span>
-                    <span class="metric-hint">Lượt xem 365 ngày</span>
+                    <span class="metric-title">{{ traffic.metrics.last_1_year.label | default: "1 Năm" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.last_1_year.hint | default: "Lượt xem 365 ngày" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
-                  <span class="metric-number" id="trafficBadge1y">128.5K</span>
-                  <span class="metric-badge-pill pill-indigo">★ 365 Ngày</span>
+                  <span class="metric-number" id="trafficBadge1y">{{ traffic.metrics.last_1_year.views }}</span>
+                  <span class="metric-badge-pill pill-indigo">★ {{ traffic.metrics.last_1_year.tag }}</span>
                 </div>
               </div>
 
@@ -249,13 +250,13 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 <div class="metric-row-left">
                   <div class="metric-icon-box">🌐</div>
                   <div class="metric-info">
-                    <span class="metric-title">Tổng Truy Cập</span>
-                    <span class="metric-hint">Toàn thời gian</span>
+                    <span class="metric-title">{{ traffic.metrics.total_all_time.label | default: "Tổng Truy Cập" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.total_all_time.hint | default: "Toàn bộ thời gian" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
-                  <span class="metric-number" id="trafficBadgeTotal">215.8K</span>
-                  <span class="metric-badge-pill pill-amber">★ All-Time</span>
+                  <span class="metric-number" id="trafficBadgeTotal">{{ traffic.metrics.total_all_time.views }}</span>
+                  <span class="metric-badge-pill pill-amber">★ {{ traffic.metrics.total_all_time.tag }}</span>
                 </div>
               </div>
             </div>
@@ -264,36 +265,36 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
             <div class="traffic-channels-block">
               <div class="traffic-channels-header">
                 <span class="channels-title">Nguồn truy cập chính</span>
-                <span class="channels-verified">GA4 &amp; Supabase</span>
+                <span class="channels-verified">GA4 Telemetry</span>
               </div>
 
               <!-- Segmented Horizontal Bar -->
               <div class="segmented-traffic-bar" role="progressbar" aria-label="Nguồn truy cập">
-                <div class="segment segment-google" style="width: 54%;" title="Google Search: 54%"></div>
-                <div class="segment segment-linkedin" style="width: 32%;" title="LinkedIn Network: 32%"></div>
-                <div class="segment segment-youtube" style="width: 14%;" title="YouTube Community: 14%"></div>
+                <div class="segment segment-google" style="width: {{ traffic.channels.google }}%;" title="Google Search: {{ traffic.channels.google }}%"></div>
+                <div class="segment segment-linkedin" style="width: {{ traffic.channels.linkedin }}%;" title="LinkedIn Network: {{ traffic.channels.linkedin }}%"></div>
+                <div class="segment segment-youtube" style="width: {{ traffic.channels.youtube }}%;" title="YouTube Community: {{ traffic.channels.youtube }}%"></div>
               </div>
 
               <!-- Legend underneath -->
               <div class="traffic-legend-row">
                 <span class="legend-item">
                   <span class="legend-dot dot-google"></span>
-                  Google <strong>54%</strong>
+                  Google <strong>{{ traffic.channels.google }}%</strong>
                 </span>
                 <span class="legend-item">
                   <span class="legend-dot dot-linkedin"></span>
-                  LinkedIn <strong>32%</strong>
+                  LinkedIn <strong>{{ traffic.channels.linkedin }}%</strong>
                 </span>
                 <span class="legend-item">
                   <span class="legend-dot dot-youtube"></span>
-                  YouTube <strong>14%</strong>
+                  YouTube <strong>{{ traffic.channels.youtube }}%</strong>
                 </span>
               </div>
             </div>
 
             <div class="traffic-footer-meta">
-              <span class="pulse-indicator-mini"><span class="pulse-dot"></span></span>
-              <span>Đo lường tự động qua Supabase REST API &amp; GA4</span>
+              <span class="pulse-indicator-mini"></span>
+              <span>Dữ liệu thực tế từ Google Analytics 4 (GA4: {{ site.google_analytics }})</span>
             </div>
           </div>
         </div>
