@@ -4946,14 +4946,14 @@ kbd {
 }
 
 /* ========================================================================= *//* ========================================================================= */
-/* Standalone Site Traffic Analytics Card (4 Badges: 7d, 30d, 1y, Total)     */
+/* Standalone Site Traffic Analytics Card (Redesigned Enterprise Style)      */
 /* ========================================================================= */
 .traffic-section-block {
   margin-top: 20px;
 }
 
 .traffic-card-content {
-  padding: 16px;
+  padding: 14px;
   background: var(--bg-secondary);
 }
 
@@ -4973,133 +4973,135 @@ kbd {
   100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
-.traffic-grid-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+/* 4 Refined Horizontal Metric Rows */
+.traffic-metrics-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 14px;
 }
 
-.traffic-stat-badge {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 10px 8px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-  background: var(--bg-primary);
-  transition: all var(--transition-fast);
-  position: relative;
-  overflow: hidden;
-}
-
-.traffic-stat-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
-}
-
-.stat-badge-top {
+.traffic-metric-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4px;
-  margin-bottom: 6px;
+  padding: 10px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
 }
 
-.stat-period {
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
+.traffic-metric-row:hover {
+  transform: translateX(3px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.stat-trend {
-  font-size: 0.58rem;
+.metric-row-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.metric-icon-box {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.metric-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.metric-title {
+  font-size: 0.78rem;
   font-weight: 700;
-  padding: 1.5px 5px;
-  border-radius: 4px;
+  color: var(--text-primary);
   line-height: 1.2;
 }
 
-.trend-positive {
-  color: #10B981;
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.25);
+.metric-hint {
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  line-height: 1.2;
 }
 
-.trend-highlight {
-  color: #818CF8;
-  background: rgba(129, 140, 248, 0.12);
-  border: 1px solid rgba(129, 140, 248, 0.25);
+.metric-row-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
-.trend-gold {
-  color: #F59E0B;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.25);
-}
-
-.stat-number {
-  font-size: 1.15rem;
+.metric-number {
+  font-size: 1.05rem;
   font-weight: 800;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
-  line-height: 1.2;
-  margin-bottom: 2px;
 }
 
-.stat-sublabel {
+.metric-badge-pill {
   font-size: 0.62rem;
-  color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 700;
+  padding: 2.5px 6px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
-/* 4 Distinct Color Themes */
-.traffic-stat-badge.badge-7d {
-  border-color: rgba(56, 189, 248, 0.3);
-}
-.traffic-stat-badge.badge-7d .stat-period,
-.traffic-stat-badge.badge-7d .stat-number {
-  color: #38BDF8;
-}
-.traffic-stat-badge.badge-7d:hover {
-  border-color: #38BDF8;
-  background: rgba(56, 189, 248, 0.06);
+/* Individual Color Accents */
+.row-7d .metric-icon-box { background: rgba(56, 189, 248, 0.12); }
+.row-7d .metric-number { color: #0284C7; }
+.pill-cyan {
+  color: #0284C7;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
 }
 
-.traffic-stat-badge.badge-30d {
-  border-color: rgba(16, 185, 129, 0.3);
-}
-.traffic-stat-badge.badge-30d .stat-period,
-.traffic-stat-badge.badge-30d .stat-number {
-  color: #10B981;
-}
-.traffic-stat-badge.badge-30d:hover {
-  border-color: #10B981;
-  background: rgba(16, 185, 129, 0.06);
+.row-30d .metric-icon-box { background: rgba(16, 185, 129, 0.12); }
+.row-30d .metric-number { color: #059669; }
+.pill-emerald {
+  color: #059669;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.28);
 }
 
-.traffic-stat-badge.badge-1y {
-  border-color: rgba(129, 140, 248, 0.3);
-}
-.traffic-stat-badge.badge-1y .stat-period,
-.traffic-stat-badge.badge-1y .stat-number {
-  color: #818CF8;
-}
-.traffic-stat-badge.badge-1y:hover {
-  border-color: #818CF8;
-  background: rgba(129, 140, 248, 0.06);
+.row-1y .metric-icon-box { background: rgba(129, 140, 248, 0.12); }
+.row-1y .metric-number { color: #4F46E5; }
+.pill-indigo {
+  color: #4F46E5;
+  background: rgba(129, 140, 248, 0.12);
+  border: 1px solid rgba(129, 140, 248, 0.28);
 }
 
-.traffic-stat-badge.badge-alltime {
-  border-color: rgba(245, 158, 11, 0.3);
+.row-alltime .metric-icon-box { background: rgba(245, 158, 11, 0.12); }
+.row-alltime .metric-number { color: #D97706; }
+.pill-amber {
+  color: #D97706;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.28);
 }
-.traffic-stat-badge.badge-alltime .stat-period,
-.traffic-stat-badge.badge-alltime .stat-number {
-  color: #F59E0B;
-}
-.traffic-stat-badge.badge-alltime:hover {
-  border-color: #F59E0B;
-  background: rgba(245, 158, 11, 0.06);
-}
+
+[data-theme="dark"] .row-7d .metric-number { color: #38BDF8; }
+[data-theme="dark"] .pill-cyan { color: #38BDF8; }
+
+[data-theme="dark"] .row-30d .metric-number { color: #10B981; }
+[data-theme="dark"] .pill-emerald { color: #10B981; }
+
+[data-theme="dark"] .row-1y .metric-number { color: #818CF8; }
+[data-theme="dark"] .pill-indigo { color: #818CF8; }
+
+[data-theme="dark"] .row-alltime .metric-number { color: #F59E0B; }
+[data-theme="dark"] .pill-amber { color: #F59E0B; }
 
 /* Channels breakdown block */
 .traffic-channels-block {
@@ -5107,7 +5109,7 @@ kbd {
   border-top: 1px dashed var(--border-color);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .traffic-channels-header {
@@ -5117,7 +5119,7 @@ kbd {
 }
 
 .channels-title {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--text-secondary);
 }
@@ -5127,37 +5129,78 @@ kbd {
   font-weight: 700;
   color: #10B981;
   background: rgba(16, 185, 129, 0.1);
-  padding: 1px 5px;
+  padding: 1.5px 5px;
   border-radius: 4px;
 }
 
-.traffic-channels-pills {
+/* Segmented progress bar (GitHub Language style) */
+.segmented-traffic-bar {
   display: flex;
-  gap: 6px;
+  width: 100%;
+  height: 8px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background: var(--bg-tertiary);
+  margin: 4px 0 6px;
+  gap: 2px;
 }
 
-.traffic-channel-pill {
-  flex: 1;
+.segment {
+  height: 100%;
+  border-radius: 2px;
+  transition: width var(--transition-normal);
+}
+
+.segment-google { background: #4285F4; }
+.segment-linkedin { background: #0A66C2; }
+.segment-youtube { background: #FF0000; }
+
+.traffic-legend-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+}
+
+.legend-item {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 4px;
-  font-size: 0.62rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: var(--bg-primary);
-  padding: 5px 6px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
   white-space: nowrap;
-  transition: all var(--transition-fast);
 }
 
-.traffic-channel-pill:hover {
-  border-color: var(--accent-primary);
-  color: var(--text-primary);
-}
-
-.traffic-channel-pill svg {
+.legend-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
   flex-shrink: 0;
 }
+
+.dot-google { background: #4285F4; }
+.dot-linkedin { background: #0A66C2; }
+.dot-youtube { background: #FF0000; }
+
+.traffic-footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-color);
+  margin-top: 10px;
+}
+
+.pulse-indicator-mini {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  display: inline-block;
+  animation: trafficPulse 2s infinite ease-out;
+}
+
