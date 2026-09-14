@@ -4749,201 +4749,7 @@ kbd {
   gap: 6px;
 }
 
-/* ==========================================================================
-   Continuous Series Navigation Box (Windows Tips & Tricks Hub)
-   ========================================================================== */
-.series-nav-box {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-left: 4px solid #F59E0B;
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  margin: 36px 0;
-  box-shadow: var(--shadow-sm);
-}
 
-.series-nav-header {
-  margin-bottom: 18px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.series-nav-kicker {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #F59E0B;
-  margin-bottom: 4px;
-}
-
-.series-nav-title {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin: 0 0 6px;
-}
-
-.series-hub-link {
-  display: inline-flex;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--accent-primary);
-  text-decoration: none;
-}
-
-.series-hub-link:hover {
-  text-decoration: underline;
-}
-
-.series-nav-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-@media (max-width: 650px) {
-  .series-nav-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.series-nav-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  transition: all var(--transition-fast);
-}
-
-.series-nav-card:hover {
-  border-color: var(--accent-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
-  text-decoration: none;
-}
-
-.series-nav-card.series-disabled {
-  opacity: 0.5;
-  background: transparent;
-  cursor: default;
-  border-style: dashed;
-}
-
-.series-arrow {
-  font-size: 1.25rem;
-  color: var(--accent-primary);
-  font-weight: 800;
-  flex-shrink: 0;
-}
-
-.series-meta {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  flex: 1;
-}
-
-.series-label {
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  margin-bottom: 2px;
-}
-
-.series-card-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.35;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Top Quick Series Navigator Pill Bar */
-.series-top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 8px 14px;
-  margin-bottom: 20px;
-}
-
-.series-top-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-}
-
-.series-top-badge strong {
-  color: #F59E0B;
-  font-family: var(--font-mono);
-}
-
-.series-top-controls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.series-pill-btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-decoration: none;
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  transition: all var(--transition-fast);
-}
-
-.series-pill-btn:hover {
-  background: var(--accent-light);
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
-  text-decoration: none;
-  transform: translateY(-1px);
-}
-
-.series-pill-btn.prev-btn {
-  color: #0284C7;
-}
-
-.series-pill-btn.next-btn {
-  color: #10B981;
-}
-
-.series-pill-btn.hub-btn {
-  background: rgba(245, 158, 11, 0.1);
-  border-color: rgba(245, 158, 11, 0.3);
-  color: #D97706;
-}
-
-.series-pill-btn.hub-btn:hover {
-  background: #F59E0B;
-  color: #FFFFFF !important;
-  border-color: transparent;
-}
 
 /* ========================================================================= *//* ========================================================================= */
 /* Standalone Site Traffic Analytics Card (Redesigned Enterprise Style)      */
@@ -4973,22 +4779,22 @@ kbd {
   100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
-/* 4 Refined Horizontal Metric Rows */
+/* 4 Refined Horizontal Metric Rows (Minimal & Clean) */
 .traffic-metrics-stack {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .traffic-metric-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 12px;
+  padding: 8px 12px;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
 }
 
@@ -5001,39 +4807,26 @@ kbd {
 .metric-row-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   min-width: 0;
 }
 
-.metric-icon-box {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-}
-
-.metric-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  min-width: 0;
+.metric-symbol-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
 }
 
 .metric-title {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.2;
-}
-
-.metric-hint {
-  font-size: 0.64rem;
-  color: var(--text-muted);
-  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .metric-row-right {
@@ -5050,16 +4843,16 @@ kbd {
 }
 
 .metric-badge-pill {
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  padding: 2.5px 6px;
-  border-radius: var(--radius-sm);
+  padding: 2px 6px;
+  border-radius: 4px;
   white-space: nowrap;
   line-height: 1.2;
 }
 
 /* Individual Color Accents */
-.row-7d .metric-icon-box { background: rgba(56, 189, 248, 0.12); color: #0284C7; }
+.row-7d .metric-symbol-badge { background: rgba(56, 189, 248, 0.15); color: #0284C7; }
 .row-7d .metric-number { color: #0284C7; }
 .pill-cyan {
   color: #0284C7;
@@ -5067,7 +4860,7 @@ kbd {
   border: 1px solid rgba(56, 189, 248, 0.28);
 }
 
-.row-30d .metric-icon-box { background: rgba(16, 185, 129, 0.12); color: #059669; }
+.row-30d .metric-symbol-badge { background: rgba(16, 185, 129, 0.15); color: #059669; }
 .row-30d .metric-number { color: #059669; }
 .pill-emerald {
   color: #059669;
@@ -5075,7 +4868,7 @@ kbd {
   border: 1px solid rgba(16, 185, 129, 0.28);
 }
 
-.row-1y .metric-icon-box { background: rgba(129, 140, 248, 0.12); color: #4F46E5; }
+.row-1y .metric-symbol-badge { background: rgba(129, 140, 248, 0.15); color: #4F46E5; }
 .row-1y .metric-number { color: #4F46E5; }
 .pill-indigo {
   color: #4F46E5;
@@ -5083,7 +4876,7 @@ kbd {
   border: 1px solid rgba(129, 140, 248, 0.28);
 }
 
-.row-alltime .metric-icon-box { background: rgba(245, 158, 11, 0.12); color: #D97706; }
+.row-alltime .metric-symbol-badge { background: rgba(245, 158, 11, 0.15); color: #D97706; }
 .row-alltime .metric-number { color: #D97706; }
 .pill-amber {
   color: #D97706;
@@ -5091,19 +4884,19 @@ kbd {
   border: 1px solid rgba(245, 158, 11, 0.28);
 }
 
-[data-theme="dark"] .row-7d .metric-icon-box { color: #38BDF8; }
+[data-theme="dark"] .row-7d .metric-symbol-badge { color: #38BDF8; }
 [data-theme="dark"] .row-7d .metric-number { color: #38BDF8; }
 [data-theme="dark"] .pill-cyan { color: #38BDF8; }
 
-[data-theme="dark"] .row-30d .metric-icon-box { color: #10B981; }
+[data-theme="dark"] .row-30d .metric-symbol-badge { color: #10B981; }
 [data-theme="dark"] .row-30d .metric-number { color: #10B981; }
 [data-theme="dark"] .pill-emerald { color: #10B981; }
 
-[data-theme="dark"] .row-1y .metric-icon-box { color: #818CF8; }
+[data-theme="dark"] .row-1y .metric-symbol-badge { color: #818CF8; }
 [data-theme="dark"] .row-1y .metric-number { color: #818CF8; }
 [data-theme="dark"] .pill-indigo { color: #818CF8; }
 
-[data-theme="dark"] .row-alltime .metric-icon-box { color: #F59E0B; }
+[data-theme="dark"] .row-alltime .metric-symbol-badge { color: #F59E0B; }
 [data-theme="dark"] .row-alltime .metric-number { color: #F59E0B; }
 [data-theme="dark"] .pill-amber { color: #F59E0B; }
 

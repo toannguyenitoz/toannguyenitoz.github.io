@@ -10,24 +10,24 @@ last_updated: "September 2026"
 metrics:
   last_7_days:
     views: "142"
-    growth: "+18.4%"
-    label: "Last 7 Days"
-    hint: "Recent visits"
+    growth: "+18%"
+    label: "7 Days"
+    badge: "7D"
   last_30_days:
     views: "586"
-    growth: "+24.6%"
-    label: "Last 30 Days"
-    hint: "Monthly readers"
+    growth: "+25%"
+    label: "30 Days"
+    badge: "30D"
   last_1_year:
     views: "3,420"
-    tag: "365 Days"
-    label: "Past 1 Year"
-    hint: "Annual traffic"
+    tag: "365D"
+    label: "1 Year"
+    badge: "1Y"
   total_all_time:
     views: "5,890"
-    tag: "All-Time"
-    label: "Total Readership"
-    hint: "Cumulative views"
+    tag: "ALL"
+    label: "Total"
+    badge: "ALL"
 
 channels:
   google: 54
