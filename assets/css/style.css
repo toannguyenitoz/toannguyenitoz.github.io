@@ -5059,7 +5059,7 @@ kbd {
 }
 
 /* Individual Color Accents */
-.row-7d .metric-icon-box { background: rgba(56, 189, 248, 0.12); }
+.row-7d .metric-icon-box { background: rgba(56, 189, 248, 0.12); color: #0284C7; }
 .row-7d .metric-number { color: #0284C7; }
 .pill-cyan {
   color: #0284C7;
@@ -5067,7 +5067,7 @@ kbd {
   border: 1px solid rgba(56, 189, 248, 0.28);
 }
 
-.row-30d .metric-icon-box { background: rgba(16, 185, 129, 0.12); }
+.row-30d .metric-icon-box { background: rgba(16, 185, 129, 0.12); color: #059669; }
 .row-30d .metric-number { color: #059669; }
 .pill-emerald {
   color: #059669;
@@ -5075,7 +5075,7 @@ kbd {
   border: 1px solid rgba(16, 185, 129, 0.28);
 }
 
-.row-1y .metric-icon-box { background: rgba(129, 140, 248, 0.12); }
+.row-1y .metric-icon-box { background: rgba(129, 140, 248, 0.12); color: #4F46E5; }
 .row-1y .metric-number { color: #4F46E5; }
 .pill-indigo {
   color: #4F46E5;
@@ -5083,7 +5083,7 @@ kbd {
   border: 1px solid rgba(129, 140, 248, 0.28);
 }
 
-.row-alltime .metric-icon-box { background: rgba(245, 158, 11, 0.12); }
+.row-alltime .metric-icon-box { background: rgba(245, 158, 11, 0.12); color: #D97706; }
 .row-alltime .metric-number { color: #D97706; }
 .pill-amber {
   color: #D97706;
@@ -5091,15 +5091,19 @@ kbd {
   border: 1px solid rgba(245, 158, 11, 0.28);
 }
 
+[data-theme="dark"] .row-7d .metric-icon-box { color: #38BDF8; }
 [data-theme="dark"] .row-7d .metric-number { color: #38BDF8; }
 [data-theme="dark"] .pill-cyan { color: #38BDF8; }
 
+[data-theme="dark"] .row-30d .metric-icon-box { color: #10B981; }
 [data-theme="dark"] .row-30d .metric-number { color: #10B981; }
 [data-theme="dark"] .pill-emerald { color: #10B981; }
 
+[data-theme="dark"] .row-1y .metric-icon-box { color: #818CF8; }
 [data-theme="dark"] .row-1y .metric-number { color: #818CF8; }
 [data-theme="dark"] .pill-indigo { color: #818CF8; }
 
+[data-theme="dark"] .row-alltime .metric-icon-box { color: #F59E0B; }
 [data-theme="dark"] .row-alltime .metric-number { color: #F59E0B; }
 [data-theme="dark"] .pill-amber { color: #F59E0B; }
 
@@ -5153,6 +5157,7 @@ kbd {
 
 .segment-google { background: #4285F4; }
 .segment-linkedin { background: #0A66C2; }
+.segment-direct { background: #10B981; }
 .segment-youtube { background: #FF0000; }
 
 .traffic-legend-row {
@@ -5181,6 +5186,7 @@ kbd {
 
 .dot-google { background: #4285F4; }
 .dot-linkedin { background: #0A66C2; }
+.dot-direct { background: #10B981; }
 .dot-youtube { background: #FF0000; }
 
 .traffic-footer-meta {
@@ -5203,4 +5209,5 @@ kbd {
   display: inline-block;
   animation: trafficPulse 2s infinite ease-out;
 }
+
 

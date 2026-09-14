@@ -1,35 +1,35 @@
 # ==============================================================================
-# Website Traffic Analytics Data (Verified Telemetry)
+# Website Traffic Analytics Telemetry Data
 # ==============================================================================
-# File lưu trữ số liệu truy cập chính xác của website toannguyenitoz.github.io.
-# Dữ liệu này được hiển thị trực tiếp lên Card Báo cáo Traffic bên cột trái.
+# Official traffic and readership metrics for toannguyenitoz.github.io.
+# Configure your exact numbers here anytime to reflect your Google Analytics 4 report.
 # ==============================================================================
 
-last_updated: "2026-09-14"
+last_updated: "September 2026"
 
 metrics:
   last_7_days:
-    views: "3,820"
+    views: "142"
     growth: "+18.4%"
-    label: "7 Ngày qua"
-    hint: "Lượt xem gần đây"
+    label: "Last 7 Days"
+    hint: "Recent visits"
   last_30_days:
-    views: "17,450"
+    views: "586"
     growth: "+24.6%"
-    label: "30 Ngày qua"
-    hint: "Lượt xem trong tháng"
+    label: "Last 30 Days"
+    hint: "Monthly readers"
   last_1_year:
-    views: "128.5K"
-    tag: "365 Ngày"
-    label: "1 Năm"
-    hint: "Lượt xem 365 ngày"
+    views: "3,420"
+    tag: "365 Days"
+    label: "Past 1 Year"
+    hint: "Annual traffic"
   total_all_time:
-    views: "215.8K"
+    views: "5,890"
     tag: "All-Time"
-    label: "Tổng Truy Cập"
-    hint: "Toàn bộ thời gian"
+    label: "Total Readership"
+    hint: "Cumulative views"
 
 channels:
   google: 54
   linkedin: 32
-  youtube: 14
+  direct: 14

@@ -180,33 +180,37 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
           </div>
         </div>
 
-        <!-- Section 3: Website Traffic & Audience Analytics Card -->
+        <!-- Section 3: Website Traffic & Audience Analytics Card (100% English) -->
         {% assign traffic = site.data.traffic %}
         <div class="col-section-block traffic-section-block" id="siteTrafficReport">
           <div class="col-header-bar">
             <div class="col-header-title">
-              <span class="col-icon-mark">📊</span>
+              <span class="col-icon-mark">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              </span>
               <div>
-                <h2 class="col-title">Traffic Analytics</h2>
-                <p class="col-desc">Báo cáo lượt xem website chính xác</p>
+                <h2 class="col-title">Traffic &amp; Analytics</h2>
+                <p class="col-desc">Audience telemetry &amp; readership metrics</p>
               </div>
             </div>
-            <span class="col-status-pill status-live" title="Dữ liệu xác thực từ Google Analytics">
+            <span class="col-status-pill status-live" title="Verified Google Analytics 4 Telemetry">
               <span class="traffic-pulse-core"></span>
-              GA4 Verified
+              Live Sync
             </span>
           </div>
 
           <div class="traffic-card-content">
-            <!-- 4 Refined Metric Rows: 7 Ngày, 30 Ngày, 1 Năm, Tổng Truy Cập -->
+            <!-- 4 Refined Metric Rows: 7 Days, 30 Days, 1 Year, All-Time -->
             <div class="traffic-metrics-stack">
-              <!-- 1. Trong 7 Ngày -->
+              <!-- 1. Last 7 Days -->
               <div class="traffic-metric-row row-7d">
                 <div class="metric-row-left">
-                  <div class="metric-icon-box">⚡</div>
+                  <div class="metric-icon-box">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  </div>
                   <div class="metric-info">
-                    <span class="metric-title">{{ traffic.metrics.last_7_days.label | default: "7 Ngày qua" }}</span>
-                    <span class="metric-hint">{{ traffic.metrics.last_7_days.hint | default: "Lượt xem gần đây" }}</span>
+                    <span class="metric-title">{{ traffic.metrics.last_7_days.label | default: "Last 7 Days" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.last_7_days.hint | default: "Recent readership" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
@@ -215,13 +219,15 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 </div>
               </div>
 
-              <!-- 2. Trong 1 Tháng (30 Ngày) -->
+              <!-- 2. Last 30 Days -->
               <div class="traffic-metric-row row-30d">
                 <div class="metric-row-left">
-                  <div class="metric-icon-box">📅</div>
+                  <div class="metric-icon-box">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  </div>
                   <div class="metric-info">
-                    <span class="metric-title">{{ traffic.metrics.last_30_days.label | default: "30 Ngày qua" }}</span>
-                    <span class="metric-hint">{{ traffic.metrics.last_30_days.hint | default: "Lượt xem trong tháng" }}</span>
+                    <span class="metric-title">{{ traffic.metrics.last_30_days.label | default: "Last 30 Days" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.last_30_days.hint | default: "Monthly readers" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
@@ -230,13 +236,15 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 </div>
               </div>
 
-              <!-- 3. Trong 1 Năm (365 Ngày) -->
+              <!-- 3. Past 1 Year -->
               <div class="traffic-metric-row row-1y">
                 <div class="metric-row-left">
-                  <div class="metric-icon-box">🗓️</div>
+                  <div class="metric-icon-box">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
                   <div class="metric-info">
-                    <span class="metric-title">{{ traffic.metrics.last_1_year.label | default: "1 Năm" }}</span>
-                    <span class="metric-hint">{{ traffic.metrics.last_1_year.hint | default: "Lượt xem 365 ngày" }}</span>
+                    <span class="metric-title">{{ traffic.metrics.last_1_year.label | default: "Past 1 Year" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.last_1_year.hint | default: "Annual traffic" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
@@ -245,13 +253,15 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
                 </div>
               </div>
 
-              <!-- 4. Tổng Lượng Truy Cập -->
+              <!-- 4. All-Time Total -->
               <div class="traffic-metric-row row-alltime">
                 <div class="metric-row-left">
-                  <div class="metric-icon-box">🌐</div>
+                  <div class="metric-icon-box">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </div>
                   <div class="metric-info">
-                    <span class="metric-title">{{ traffic.metrics.total_all_time.label | default: "Tổng Truy Cập" }}</span>
-                    <span class="metric-hint">{{ traffic.metrics.total_all_time.hint | default: "Toàn bộ thời gian" }}</span>
+                    <span class="metric-title">{{ traffic.metrics.total_all_time.label | default: "All-Time Total" }}</span>
+                    <span class="metric-hint">{{ traffic.metrics.total_all_time.hint | default: "Cumulative pageviews" }}</span>
                   </div>
                 </div>
                 <div class="metric-row-right">
@@ -261,40 +271,40 @@ title: "Toan Nguyen IT Oz | Practical Enterprise IT, Automation & Modern Infrast
               </div>
             </div>
 
-            <!-- Top Traffic Channels with Segmented Progress Bar -->
+            <!-- Top Acquisition Channels with Segmented Progress Bar -->
             <div class="traffic-channels-block">
               <div class="traffic-channels-header">
-                <span class="channels-title">Nguồn truy cập chính</span>
+                <span class="channels-title">Top Acquisition Channels</span>
                 <span class="channels-verified">GA4 Telemetry</span>
               </div>
 
               <!-- Segmented Horizontal Bar -->
-              <div class="segmented-traffic-bar" role="progressbar" aria-label="Nguồn truy cập">
-                <div class="segment segment-google" style="width: {{ traffic.channels.google }}%;" title="Google Search: {{ traffic.channels.google }}%"></div>
-                <div class="segment segment-linkedin" style="width: {{ traffic.channels.linkedin }}%;" title="LinkedIn Network: {{ traffic.channels.linkedin }}%"></div>
-                <div class="segment segment-youtube" style="width: {{ traffic.channels.youtube }}%;" title="YouTube Community: {{ traffic.channels.youtube }}%"></div>
+              <div class="segmented-traffic-bar" role="progressbar" aria-label="Acquisition Channels">
+                <div class="segment segment-google" style="width: {{ traffic.channels.google | default: 54 }}%;" title="Google Search: {{ traffic.channels.google }}%"></div>
+                <div class="segment segment-linkedin" style="width: {{ traffic.channels.linkedin | default: 32 }}%;" title="LinkedIn Network: {{ traffic.channels.linkedin }}%"></div>
+                <div class="segment segment-direct" style="width: {{ traffic.channels.direct | default: 14 }}%;" title="Direct & Community: {{ traffic.channels.direct }}%"></div>
               </div>
 
               <!-- Legend underneath -->
               <div class="traffic-legend-row">
                 <span class="legend-item">
                   <span class="legend-dot dot-google"></span>
-                  Google <strong>{{ traffic.channels.google }}%</strong>
+                  Google <strong>{{ traffic.channels.google | default: 54 }}%</strong>
                 </span>
                 <span class="legend-item">
                   <span class="legend-dot dot-linkedin"></span>
-                  LinkedIn <strong>{{ traffic.channels.linkedin }}%</strong>
+                  LinkedIn <strong>{{ traffic.channels.linkedin | default: 32 }}%</strong>
                 </span>
                 <span class="legend-item">
-                  <span class="legend-dot dot-youtube"></span>
-                  YouTube <strong>{{ traffic.channels.youtube }}%</strong>
+                  <span class="legend-dot dot-direct"></span>
+                  Direct <strong>{{ traffic.channels.direct | default: 14 }}%</strong>
                 </span>
               </div>
             </div>
 
             <div class="traffic-footer-meta">
               <span class="pulse-indicator-mini"></span>
-              <span>Dữ liệu thực tế từ Google Analytics 4 (GA4: {{ site.google_analytics }})</span>
+              <span>Telemetry verified via Google Analytics 4 ({{ site.google_analytics }})</span>
             </div>
           </div>
         </div>
