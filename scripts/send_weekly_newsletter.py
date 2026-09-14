@@ -23,6 +23,11 @@ import urllib.request
 import urllib.error
 from urllib.parse import quote as url_quote
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
 SITE_URL = "https://toannguyenitoz.github.io"
 AUTHOR_NAME = "Toan Nguyen"
 AUTHOR_BRAND = "IT Support With Toan (Toan Nguyen IT OZ)"
@@ -249,7 +254,12 @@ def send_via_resend(api_key, recipient, subject, html_content):
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
     }
-    from_addr = f"{SENDER_NAME} <onboarding@resend.dev>" if "onboarding" in SENDER_EMAIL else f"{SENDER_NAME} <{SENDER_EMAIL}>"
+    # Resend cannot send from github.io domain without custom DNS records. Default to onboarding@resend.dev if unverified.
+    if not SENDER_EMAIL or "github.io" in SENDER_EMAIL or "onboarding" in SENDER_EMAIL:
+        from_addr = f"{SENDER_NAME} <onboarding@resend.dev>"
+    else:
+        from_addr = f"{SENDER_NAME} <{SENDER_EMAIL}>"
+
     payload = json.dumps({
         "from": from_addr,
         "reply_to": "noreply@toannguyenitoz.github.io",   # replies go to dead-end, hides real sender
@@ -268,8 +278,9 @@ def send_via_brevo(api_key, recipient, subject, html_content):
         "api-key": api_key,
         "Content-Type": "application/json"
     }
+    sender_email = os.getenv("GMAIL_USER") or "theodorenguyensa@gmail.com"
     payload = json.dumps({
-        "sender": {"name": SENDER_NAME, "email": "theodorenguyensa@gmail.com"},
+        "sender": {"name": SENDER_NAME, "email": sender_email},
         "to": [{"email": recipient}],
         "subject": subject,
         "htmlContent": html_content
@@ -315,8 +326,8 @@ def dispatch_email_with_failover(recipient, subject, html_content):
         providers.append(("Gmail SMTP", lambda: send_via_gmail_smtp(os.getenv("GMAIL_USER"), os.getenv("GMAIL_APP_PASSWORD"), recipient, subject, html_content)))
 
     if not providers:
-        print("  [!] Notice: No provider credentials in environment. Simulated dispatch successful.")
-        return True
+        print("  [!] Error: No email provider credentials found in environment (RESEND_API_KEY, BREVO_API_KEY, or GMAIL_APP_PASSWORD). Cannot send email.")
+        return False
 
     for provider_name, send_fn in providers:
         try:
@@ -368,6 +379,10 @@ def main():
     print("\n=================================================================")
     print(f" Newsletter Run Finished: {success_count} succeeded, {fail_count} failed.")
     print("=================================================================")
+
+    if fail_count > 0:
+        print(f"[!] Warning: {fail_count} email(s) failed to dispatch.")
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()
