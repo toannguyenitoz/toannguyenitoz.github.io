@@ -30,6 +30,40 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Open Any File with Just ONE Click in Windows! 🖱️⚡
+  youtube_id: Tqc_0oKWk7M
+  duration: 01:00
+  category: Shorts
+  description: Tired of double-clicking every single file and folder in Windows? You
+    can change your File Explorer settings so that one click instantly launches files—just
+    like browsing links on the web! In this ...
+  published_date: '2026-09-15'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 30 SECRET Windows 11 Emergency Hacks Every IT Pro & User MUST Know! (Complete
+    Masterclass)
+  youtube_id: 21wvbchncq8
+  duration: 01:00
+  category: Windows 11
+  description: Master Windows 11 like a Senior IT Systems Administrator! In this definitive
+    4K Masterclass, we reveal 30 secret Windows 11 emergency commands, diagnostic
+    toolkits, registry performance tweaks, and...
+  published_date: '2026-09-15'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 'Automatically Clean Junk Files & Free Up C: Drive Space! 🧹💻'
+  youtube_id: p74QhVy_rDk
+  duration: 01:00
+  category: Shorts
+  description: 'Is your C: Drive constantly running out of storage? You don''t need
+    third-party cleaners! Windows 10 and 11 have a secret built-in automated maintenance
+    tool called Storage Sense that cleans gigabyt...'
+  published_date: '2026-09-15'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Check Your Windows License Details with This Secret Command! 🔑💻
   youtube_id: 1fUgAO9CAjE
   duration: 01:00
