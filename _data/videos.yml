@@ -30,6 +30,28 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
+  youtube_id: CANOV6ofT0s
+  duration: 01:00
+  category: Shorts
+  description: Stop remembering complex Command Prompt commands for PC troubleshooting!
+    Here is how to create your own all-in-one Windows Recovery Toolkit batch file
+    (.bat) directly on your desktop. With a single...
+  published_date: '2026-09-16'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Secret Windows Drivers You Didn't Know Existed! 🛠️💻
+  youtube_id: l3eD5vMIzC0
+  duration: 01:00
+  category: Shorts
+  description: Think your Windows PC is fully up to date? Think again! Windows Update
+    quietly hides critical hardware drivers, chipset patches, and firmware updates
+    under Optional Updates. Here is how to find and...
+  published_date: '2026-09-16'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Fix Slow Internet in 5 Seconds with This Secret Command! 🚀🌐
   youtube_id: 2lAb5mD6tZA
   duration: 01:00
