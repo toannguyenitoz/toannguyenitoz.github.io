@@ -30,6 +30,17 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Fix Slow Internet in 5 Seconds with This Secret Command! 🚀🌐
+  youtube_id: 2lAb5mD6tZA
+  duration: 01:00
+  category: Shorts
+  description: Is your internet suddenly sluggish or taking forever to load websites?
+    Before calling your ISP or restarting your router, try flushing your Windows DNS
+    resolver cache! With just one simple command ...
+  published_date: '2026-09-15'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Open Any File with Just ONE Click in Windows! 🖱️⚡
   youtube_id: Tqc_0oKWk7M
   duration: 01:00
