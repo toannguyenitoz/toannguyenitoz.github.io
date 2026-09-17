@@ -30,6 +30,17 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Fix Windows Time Sync Error 0x80070426 in 10 Seconds! ⏰💻
+  youtube_id: 1VHwO5lIJ3w
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows clock showing the wrong time or throwing Error 0x80070426
+    when you click Sync Now in Date & Time Settings? That means the Windows Time service
+    (w32time) has stopped running! Here is...
+  published_date: '2026-09-16'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
   duration: 01:00
