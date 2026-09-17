@@ -30,6 +30,28 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Password Protect Any USB Port on Windows! 🔒⚡
+  youtube_id: arV4PTVe_mI
+  duration: 01:00
+  category: Shorts
+  description: Did you know you can completely block or password-protect USB ports
+    on Windows without installing any third-party software? With a simple Registry
+    key tweak or automated script, you can stop anyone...
+  published_date: '2026-09-17'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Save Your PC from BSOD! Enable Windows Recovery in 5 Seconds 🛡️💻
+  youtube_id: wnYWw9YmKOc
+  duration: 01:00
+  category: Shorts
+  description: 'If your Windows PC ever crashes, blue-screens, or gets stuck in an
+    endless boot loop, having Windows Recovery Environment (WinRE) enabled can literally
+    save your entire operating system! '
+  published_date: '2026-09-17'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Fix Windows Time Sync Error 0x80070426 in 10 Seconds! ⏰💻
   youtube_id: 1VHwO5lIJ3w
   duration: 01:00
