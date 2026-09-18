@@ -30,6 +30,16 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Fix Slow File Transfer on Windows in 10 Seconds! ⚡📂
+  youtube_id: yMCevIqwUP8
+  duration: 01:00
+  category: Shorts
+  description: 'Is your Windows PC taking forever to copy large files, move folders,
+    or transfer data between drives? '
+  published_date: '2026-09-17'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Password Protect Any USB Port on Windows! 🔒⚡
   youtube_id: arV4PTVe_mI
   duration: 01:00
