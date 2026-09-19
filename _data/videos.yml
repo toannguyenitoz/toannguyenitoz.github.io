@@ -30,6 +30,39 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Delete Stubborn & Corrupted Windows Drivers Permanently with CMD! 🛠️⚡
+  youtube_id: CCWyKtMqV-k
+  duration: 01:00
+  category: Shorts
+  description: Device Manager won't let you uninstall a locked, conflicting, or corrupted
+    driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
+    (pnputil) in Command Prompt to permane...
+  published_date: '2026-09-19'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
+  youtube_id: ARNGuhkcXY8
+  duration: 01:00
+  category: Shorts
+  description: Is your PC running slow or running out of drive space? Stop installing
+    sketchy third-party cleaning apps! Here is the ultimate built-in 1-line Command
+    Prompt hack that purges locked Temp cache, sys...
+  published_date: '2026-09-19'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Fix Slow Wi-Fi & Internet Drops with 1 Click! Master Network Repair Script
+    🌐⚡
+  youtube_id: WSEWmMNjf_8
+  duration: 01:00
+  category: Shorts
+  description: Wi-Fi keeps disconnecting, ping randomly spikes while gaming, or web
+    pages taking forever to resolve?
+  published_date: '2026-09-18'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Unlock Secret Windows 11 'God Mode' in 10 Seconds! ⚡📂
   youtube_id: 7nYb26mpEp0
   duration: 01:00
