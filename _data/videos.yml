@@ -30,6 +30,17 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Update ALL Your PC Apps with Just 1 Secret Windows Command! ⚡💻
+  youtube_id: J4nk5f_7CTY
+  duration: 01:00
+  category: Shorts
+  description: Stop opening every single program or website to check for updates manually!
+    Windows 11 has a secret built-in package manager (winget) that updates all your
+    installed applications automatically with...
+  published_date: '2026-09-19'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Delete Stubborn & Corrupted Windows Drivers Permanently with CMD! 🛠️⚡
   youtube_id: CCWyKtMqV-k
   duration: 01:00
