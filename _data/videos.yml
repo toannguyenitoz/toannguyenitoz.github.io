@@ -30,6 +30,28 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
+  youtube_id: H2KkXwsfcgo
+  duration: 01:00
+  category: Shorts
+  description: Experiencing random Blue Screen of Death (BSOD) crashes, game crashes,
+    or memory management errors in Windows 11 or 10? Your RAM memory might have corrupted
+    sectors or faulty hardware modules!
+  published_date: '2026-09-20'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
+  youtube_id: sSUxsPtwOfQ
+  duration: 01:00
+  category: Shorts
+  description: Is your PC taking forever to boot up or load into the desktop? Most
+    slow boot times are caused by hidden background apps launching on startup without
+    your permission!
+  published_date: '2026-09-20'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Update ALL Your PC Apps with Just 1 Secret Windows Command! ⚡💻
   youtube_id: J4nk5f_7CTY
   duration: 01:00
