@@ -30,6 +30,24 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: How to Reset Network in Windows 11! 🌐⚡
+  youtube_id: CX8waDUpeiY
+  duration: 01:00
+  category: Shorts
+  description: Wi-Fi dropping out or internet connection broken on Windows 11? 🌐❌
+  published_date: '2026-09-21'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Fix Missing Photo Thumbnails in Windows 11! 🖼️⚡
+  youtube_id: YQFBy3ABpCw
+  duration: 01:00
+  category: Shorts
+  description: Can't see photo or video thumbnails in Windows File Explorer? 🖼️❌
+  published_date: '2026-09-21'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
   youtube_id: DOXHHy538RY
   duration: 01:00
