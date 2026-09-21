@@ -30,6 +30,16 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
+  youtube_id: DOXHHy538RY
+  duration: 01:00
+  category: Shorts
+  description: Wi-Fi constantly dropping out or internet connection broken on Windows
+    11 or 10? 🌐❌
+  published_date: '2026-09-20'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
   youtube_id: H2KkXwsfcgo
   duration: 01:00
