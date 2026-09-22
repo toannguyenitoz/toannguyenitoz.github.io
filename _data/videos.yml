@@ -30,6 +30,35 @@ items:
   views_count: 155
   views_display: 155 views
   is_pinned: true
+- title: 2 Secret PowerShell Commands You MUST Know! ⚡💻
+  youtube_id: yFf0YIzUDRU
+  duration: 01:00
+  category: Shorts
+  description: Think Windows forgets what you run on your PC? Think again! ⚡💻
+  published_date: '2026-09-22'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Fix Yellow Warning Drivers in 5 Seconds! ⚠️🛠️
+  youtube_id: lJaeccqeQIg
+  duration: 01:00
+  category: Shorts
+  description: See a mysterious yellow exclamation mark or warning triangle next to
+    your device in Windows Device Manager? ⚠️❌
+  published_date: '2026-09-22'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Fix Slow Internet & Load Websites Fast! 🌐⚡
+  youtube_id: uoNOLUA69u0
+  duration: 01:00
+  category: Shorts
+  description: Websites refusing to load, server not found errors, or internet lagging
+    on Windows 11 or 10? 🌐❌
+  published_date: '2026-09-21'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: How to Reset Network in Windows 11! 🌐⚡
   youtube_id: CX8waDUpeiY
   duration: 01:00
