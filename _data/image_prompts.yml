@@ -1,324 +1,246 @@
-- id: casual-to-executive-headshot
-  title: Casual Desk Snapshot to Executive LinkedIn Headshot
-  category: Portrait & Headshot
-  slash_command: /portrait
+- id: tinyworkers
+  title: Product Miniature Workers
+  category: Miniature & Diorama
+  slash_command: /tinyworkers
   models:
-  - Google Imagen 3 (Gemini)
-  - ChatGPT GPT-4o Vision
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
   aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/executive_headshot_before.jpg
-  after_image: /assets/images/prompts/executive_headshot_after.jpg
-  description: Transforms a casual indoor selfie into an elite corporate executive portrait, replacing casual wear with a bespoke tailored Italian suit while retaining 100% facial identity.
-  prompt: '/portrait --input:[original_image]
-
-    --preserve-identity:100%
-
-    --outfit:"tailored dark navy Italian wool suit jacket, crisp pressed white dress shirt, structured collar, subtle royal blue silk necktie"
-
-    --posture:"confident, natural upright executive stance with a friendly approachable professional smile"
-
-    --background:"modern architectural corporate headquarters glass atrium, floor-to-ceiling windows, creamy soft natural bokeh with city light orbs"
-
-    --camera-optics:"85mm f/1.4 prime lens, shallow depth of field, sharp focus on facial features, realistic skin pores and texture"
-
-    --lighting:"cinematic three-point studio lighting, soft key light from 45 degrees, subtle cool rim light separating shoulders from background"
-
-    --exclude:"plastic skin, AI airbrushing, oversaturated colors, altered jawline, distorted teeth"
-
-    --aspect-ratio:1:1 --model:imagen-3'
+  before_image: /assets/images/prompts/tinyworkers_before.jpg
+  after_image: /assets/images/prompts/tinyworkers_after.jpg
+  description: Upload any product photo and type /tinyworkers to create an ultra-detailed macro scene of miniature construction workers in hardhats and safety gear assembling, painting, or repairing your product with tiny scaffolding and ladders.
+  prompt: /tinyworkers
   tags:
-  - Portrait
-  - LinkedIn
-  - Executive
-  - Corporate
-  - Identity-Preserved
-- id: street-photo-to-ghibli-anime
-  title: Real Street Cafe to Studio Ghibli Anime Watercolor
-  category: Style Remix & Anime
-  slash_command: /remix
+    - TinyWorkers
+    - Miniature
+    - Product
+    - Macro
+    - Trending
+
+- id: lego
+  title: LEGO Plastic Brick Rebuild
+  category: Miniature & Diorama
+  slash_command: /lego
   models:
-  - ChatGPT (DALL-E 3)
-  - Google Imagen 3
+    - ChatGPT (DALL-E 3)
+    - Google Imagen 3
   aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/cafe_street_before.jpg
-  after_image: /assets/images/prompts/ghibli_cafe_after.jpg
-  description: Remixes an ordinary street cafe photograph into a whimsical, hand-painted Studio Ghibli watercolor anime masterpiece with lush foliage and dreamy clouds.
-  prompt: '/remix --input:[original_image]
-
-    --target-style:"traditional 1990s Studio Ghibli hand-painted anime animation cel, Hayao Miyazaki aesthetic"
-
-    --medium:"gouache and watercolor on cold-press textured paper with gentle organic pigment bleeding and delicate ink contours"
-
-    --elements:"ivy vines climbing warm terracotta brick walls, painterly vintage bicycle with wicker basket, fluffy cumulus clouds in an azure sky"
-
-    --lighting:"warm golden afternoon sunbeams filtering through lush tree canopies, dappled light patterns across cobblestones"
-
-    --atmosphere:"peaceful, nostalgic, cozy fairytale European town"
-
-    --palette:"warm terracotta, olive green, cream, cornflower blue, golden ochre"
-
-    --exclude:"3D CGI render, photorealism, glossy plastic textures, high-frequency digital noise"
-
-    --aspect-ratio:1:1 --model:dall-e-3'
+  before_image: /assets/images/prompts/tinyworkers_before.jpg
+  after_image: /assets/images/prompts/lego_after.jpg
+  description: Recreates your uploaded product or subject completely out of authentic colorful LEGO plastic bricks with iconic stud textures and glossy plastic reflections.
+  prompt: /lego
   tags:
-  - Anime
-  - Studio Ghibli
-  - Watercolor
-  - Remix
-  - Nostalgic
-- id: product-bottle-studio-water-splash
-  title: Plain Product Bottle to High-End Liquid Splash Ad
-  category: Product & Commercial
-  slash_command: /edit
+    - LEGO
+    - Bricks
+    - Toy
+    - Product
+    - 3D
+
+- id: exploded
+  title: 3D Radial Exploded Teardown
+  category: Product & Advertising
+  slash_command: /exploded
   models:
-  - Google Imagen 3 (Gemini)
-  - ChatGPT DALL-E 3
+    - ChatGPT (DALL-E 3)
+    - Google Imagen 3
+  aspect_ratio: '1:1'
+  before_image: /assets/images/prompts/exploded_before.jpg
+  after_image: /assets/images/prompts/exploded_after.jpg
+  description: Disassembles your uploaded gadget, camera, or mechanical product into a floating radial exploded view showing all internal gears, optics, and precision components.
+  prompt: /exploded
+  tags:
+    - Exploded
+    - Teardown
+    - Engineering
+    - Product
+    - Studio
+
+- id: splash
+  title: Dynamic Liquid Studio Splash
+  category: Product & Advertising
+  slash_command: /splash
+  models:
+    - Google Imagen 3
+    - ChatGPT (DALL-E 3)
   aspect_ratio: '1:1'
   before_image: /assets/images/prompts/product_bottle_before.jpg
   after_image: /assets/images/prompts/product_splash_after.jpg
-  description: Isolates a product bottle from a flat background and stages it on wet volcanic obsidian with dynamic high-speed water splash droplets and ray-traced caustics.
-  prompt: '/edit --input:[original_image]
-
-    --select-subject:"cosmetic bottle" --keep-geometry:exact --keep-label:intact
-
-    --replace-environment:"luxury commercial studio stage, wet dark volcanic obsidian stone pedestal with thin water layer creating pristine mirror reflections"
-
-    --action:"explosive crystal-clear water splash droplets captured at 1/8000s shutter speed, suspended liquid ribbons encircling the product without occluding branding"
-
-    --lighting:"high-contrast commercial dual softbox lighting, crisp amber rim light accentuating bottle contours, delicate caustics shimmering through water droplets"
-
-    --atmosphere:"clean, botanical, premium dermatological aesthetic"
-
-    --render-quality:"8K commercial print resolution, photorealistic fluid physics, ray-traced glass refraction"
-
-    --aspect-ratio:1:1 --model:imagen-3'
+  description: Adds high-speed commercial studio liquid splashes, bursting crystal water droplets, and luxury advertising lighting around your uploaded bottle or cosmetic product.
+  prompt: /splash
   tags:
-  - Product Ad
-  - Commercial
-  - Inpainting
-  - Water Splash
-  - Macro
-- id: daytime-city-to-cyberpunk-neon
-  title: Daytime Cityscape to Rain-Drenched Cyberpunk Night
-  category: Cyberpunk & VFX
-  slash_command: /style
+    - Splash
+    - Commercial
+    - Product
+    - Water
+    - Studio
+
+- id: claymation
+  title: Handcrafted Clay Stop-Motion
+  category: Miniature & Diorama
+  slash_command: /claymation
   models:
-  - ChatGPT (DALL-E 3)
-  - Google Imagen 3
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/city_street_day_before.jpg
-  after_image: /assets/images/prompts/city_cyberpunk_after.jpg
-  description: Transforms a standard daylight urban street into an atmospheric futuristic metropolis drenched in torrential rain, glowing neon signs, and moody reflections.
-  prompt: '/style --input:[original_image]
-
-    --genre:cyberpunk-metropolis --time-of-day:midnight
-
-    --environment:"torrential rainstorm, slick asphalt roads glistening with neon reflections, dense atmospheric steam rising from subway sewer grates"
-
-    --architecture:"futuristic high-rise skyscrapers adorned with massive holographic advertisements, glowing neon kanji signs, elevated monorail tracks"
-
-    --lighting:"dramatic high-contrast palette of electric cyan, hot magenta, and amber streetlamps piercing through volumetric night fog"
-
-    --camera-optics:"anamorphic 35mm cinema lens, horizontal blue streak flares, optical glass rain smears, shallow depth of field"
-
-    --aesthetic:"Blade Runner 2049, gritty lived-in sci-fi realism, cinematic color grading"
-
-    --aspect-ratio:1:1 --model:dall-e-3'
-  tags:
-  - Cyberpunk
-  - Sci-Fi
-  - Neon
-  - Rain
-  - Cinematic Night
-- id: cat-photo-to-claymation-figurine
-  title: Real Pet Photo to Handmade 3D Claymation Miniature
-  category: 3D Clay & Craft
-  slash_command: /clay
-  models:
-  - ChatGPT (DALL-E 3)
-  - Google Imagen 3
+    - Google Imagen 3
+    - ChatGPT (DALL-E 3)
   aspect_ratio: '1:1'
   before_image: /assets/images/prompts/cat_photo_before.jpg
   after_image: /assets/images/prompts/claymation_cat_after.jpg
-  description: Converts a real photograph of a pet into an adorable tactile plasticine claymation figurine with visible artisan thumbprints and miniature tilt-shift set design.
-  prompt: '/clay --input:[original_image]
-
-    --medium:"handcrafted polymer plasticine clay figurine sculpture, Aardman Animation and Wallace & Gromit stop-motion aesthetic"
-
-    --craft-details:"tactile surface texture with subtle artisan thumbprints, slight seams where clay parts join, soft matte plasticine sheen"
-
-    --proportions:"cute slightly chunky stylized miniature proportions while maintaining the pet''s unique fur markings, eye color, and playful posture"
-
-    --environment:"miniature dioramas tabletop set made of painted cardboard and wool felt fabric, warm wooden desk base"
-
-    --camera-optics:"macro tilt-shift 50mm lens, creamy miniature blur on foreground and background, sharp focus on clay character"
-
-    --lighting:"warm desk lamp practical lighting, cozy domestic craft studio ambience"
-
-    --exclude:"photoreal fur, realistic anatomy, glossy smooth 3D CGI plastic, digital smoothness"
-
-    --aspect-ratio:1:1 --model:dall-e-3'
+  description: Transforms your uploaded subject into an Aardman-style handcrafted plasticine clay animation figure with visible tactile fingerprint textures and clay seams.
+  prompt: /claymation
   tags:
-  - Claymation
-  - Stop-Motion
-  - Craft
-  - Miniature
-  - Stylized
-- id: architectural-sketch-to-photoreal-villa
-  title: 2D Concept Sketch to Photorealistic Luxury Villa
-  category: Architectural Render
+    - Claymation
+    - Stop-Motion
+    - Craft
+    - Miniature
+    - Character
+
+- id: cyberpunk
+  title: Rainy Neon Cyberpunk 2088
+  category: Futuristic & VFX
+  slash_command: /cyberpunk
+  models:
+    - ChatGPT (DALL-E 3)
+    - Google Imagen 3
+  aspect_ratio: '1:1'
+  before_image: /assets/images/prompts/city_street_day_before.jpg
+  after_image: /assets/images/prompts/city_cyberpunk_after.jpg
+  description: Transforms daytime streets or objects into a moody, rain-soaked 2088 cyberpunk cityscape with glowing neon signage, holographic displays, and asphalt reflections.
+  prompt: /cyberpunk
+  tags:
+    - Cyberpunk
+    - Neon
+    - Sci-Fi
+    - Futuristic
+    - Night
+
+- id: ghibli
+  title: Studio Ghibli Watercolor Cel
+  category: Artistic & Animation
+  slash_command: /ghibli
+  models:
+    - ChatGPT (DALL-E 3)
+    - Google Imagen 3
+  aspect_ratio: '1:1'
+  before_image: /assets/images/prompts/cafe_street_before.jpg
+  after_image: /assets/images/prompts/ghibli_cafe_after.jpg
+  description: Converts real photos into a whimsical, hand-painted Studio Ghibli anime watercolor animation cel with warm golden sunlight and lush painterly foliage.
+  prompt: /ghibli
+  tags:
+    - Ghibli
+    - Anime
+    - Watercolor
+    - Cel
+    - Artistic
+
+- id: render
+  title: 2D Line Sketch to Photoreal Render
+  category: Artistic & Animation
   slash_command: /render
   models:
-  - Google Imagen 3 (Gemini)
-  - ChatGPT DALL-E 3
+    - Google Imagen 3
+    - ChatGPT (DALL-E 3)
   aspect_ratio: '1:1'
   before_image: /assets/images/prompts/architectural_sketch_before.jpg
   after_image: /assets/images/prompts/villa_render_after.jpg
-  description: Translates a 2D line architectural perspective sketch into a photorealistic modern architectural masterpiece during twilight with interior lighting and infinity pool.
-  prompt: '/render --input:[original_sketch]
-
-    --structure-adherence:strict --align-perspective:100%
-
-    --materials:"board-formed architectural concrete, warm horizontal cedar slats, ultra-clear low-iron double-glazed floor-to-ceiling glass"
-
-    --time-of-day:"blue hour dusk, deep twilight indigo sky with soft warm horizon glow"
-
-    --lighting:"warm 2700K recessed interior architectural LED downlights illuminating open-plan living room, subtle exterior landscape uplighting"
-
-    --features:"calm infinity pool with gentle water ripples reflecting evening lights, minimalist perimeter travertine stone deck, native architectural grasses"
-
-    --camera-optics:"24mm architectural tilt-shift lens, perfectly straight vertical lines, zero keystoning, professional ArchDaily architectural photography"
-
-    --aspect-ratio:1:1 --model:imagen-3'
+  description: Transforms hand-drawn pencil/ink sketches into a photorealistic 3D architectural visualization with natural travertine stone, ambient lighting, and pool water.
+  prompt: /render
   tags:
-  - Architecture
-  - ArchViz
-  - Render
-  - Modern Villa
-  - Photoreal
-- id: portrait-outpaint-alpine-panorama
-  title: Tight Portrait to Expansive Alpine Panorama (Outpaint)
-  category: Canvas Expansion
-  slash_command: /outpaint
-  models:
-  - ChatGPT GPT-4o Vision & DALL-E 3
-  - Google Imagen 3
-  aspect_ratio: '16:9'
-  before_image: /assets/images/prompts/portrait_tight_before.jpg
-  after_image: /assets/images/prompts/panorama_expanded_after.jpg
-  description: Expands the canvas boundaries of a tight portrait, outpainting a vast cinematic alpine valley with snow-dusted jagged mountain ridges and sunset light.
-  prompt: '/outpaint --input:[original_image]
+    - Render
+    - Architecture
+    - Sketch-to-3D
+    - Realism
+    - Visualization
 
-    --expand-direction:horizontal-both --aspect-ratio:16:9
-
-    --preserve-central-subject:100% --seamless-blending:true
-
-    --extended-environment:"majestic Swiss alpine mountain range, towering granite jagged peaks dusted with fresh snow, vibrant purple alpine wildflower valley below"
-
-    --atmosphere:"crisp mountain air, low-drifting sunset mist in mountain valleys, dramatic golden hour sun breaking behind cloud crevices"
-
-    --lighting:"directional warm sunset rays matching the original portrait''s ambient illumination and shadows"
-
-    --camera:"panoramic wide-angle 21mm landscape format, edge-to-edge optical sharpness, National Geographic expedition grade"
-
-    --model:gpt-4o-dalle3'
-  tags:
-  - Outpainting
-  - Canvas Expansion
-  - Panorama
-  - Landscape
-  - Mountains
-- id: vintage-photo-restoration-colorization
-  title: 1920s B&W Damaged Photo to 4K Colorized Restoration
-  category: Photo Restoration
-  slash_command: /restore
-  models:
-  - Google Imagen 3 (Gemini)
-  - ChatGPT GPT-4o
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/vintage_bw_before.jpg
-  after_image: /assets/images/prompts/colorized_restored_after.jpg
-  description: 'Restores an antique damaged black-and-white portrait: removes scratches and dust, reconstructs missing skin detail, and applies period-authentic 4K colorization.'
-  prompt: '/restore --input:[original_image]
-
-    --denoise:true --repair-scratches:true --fill-creases:true
-
-    --colorization:"historically accurate period palette, natural warm Caucasian skin undertones, soft rose blush on cheeks, realistic eye iris pigmentation"
-
-    --clothing-restoration:"restore fine herringbone tweed wool weave on overcoat, crisp linen collar, natural textile color depth"
-
-    --texture-reconstruction:"gentle authentic Kodachrome 64 analog film grain, micro-detail on hair strands, lifelike pore texture without artificial blur"
-
-    --lighting:"soft natural window daylight with gentle photographic shadow roll-off"
-
-    --aspect-ratio:1:1 --model:imagen-3'
-  tags:
-  - Restoration
-  - Colorization
-  - Vintage
-  - Historical
-  - Enhance
-- id: photo-to-flat-vector-sticker
-  title: Real Photo to Modern Minimalist Flat Vector Icon
-  category: Vector & Graphic
+- id: vector
+  title: Minimalist Flat Vector Graphic
+  category: Artistic & Animation
   slash_command: /vector
   models:
-  - ChatGPT (DALL-E 3)
-  - Google Imagen 3
+    - ChatGPT (DALL-E 3)
+    - Google Imagen 3
   aspect_ratio: '1:1'
   before_image: /assets/images/prompts/coffee_barista_before.jpg
   after_image: /assets/images/prompts/vector_icon_after.jpg
-  description: Converts a busy real-world coffee scene into a clean, modern vector illustration with bold outlines, cohesive duotone color palette, and sticker aesthetic.
-  prompt: '/vector --input:[original_image]
-
-    --style:"clean modern minimalist flat design vector graphic, Dribbble trending tech branding aesthetic"
-
-    --lines:"bold smooth uniform vector stroke outlines, crisp geometric curvature, simplified silhouette"
-
-    --palette:"cohesive 4-color palette of deep midnight navy, warm terracotta, creamy latte, and sage green"
-
-    --composition:"isolated subject on solid neutral background with subtle white die-cut sticker border"
-
-    --shading:"flat color fills with minimal hard-edged cel-shading, zero photographic gradients, zero blur"
-
-    --format:"SVG vector print asset ready, high readability at small icon scale"
-
-    --aspect-ratio:1:1 --model:dall-e-3'
+  description: Distills complex real-life photography into a clean, modern SVG-style flat vector illustration with balanced contours and trendy pastel color palette.
+  prompt: /vector
   tags:
-  - Vector
-  - Flat Design
-  - Sticker
-  - Branding
-  - Minimalist
-- id: casual-photo-to-vogue-fashion-editorial
-  title: Casual Portrait to Haute Couture Vogue Editorial
-  category: Portrait & Headshot
+    - Vector
+    - Flat-Art
+    - Graphic
+    - Minimalist
+    - SVG
+
+- id: portrait
+  title: Executive LinkedIn Headshot
+  category: Photography & Style
+  slash_command: /portrait
+  models:
+    - Google Imagen 3
+    - ChatGPT (GPT-4o)
+  aspect_ratio: '1:1'
+  before_image: /assets/images/prompts/executive_headshot_before.jpg
+  after_image: /assets/images/prompts/executive_headshot_after.jpg
+  description: Upgrades a casual selfie into an elite corporate executive portrait dressed in a tailored Italian navy wool suit while preserving 100% facial identity.
+  prompt: /portrait
+  tags:
+    - Portrait
+    - LinkedIn
+    - Executive
+    - Corporate
+    - Identity-Preserved
+
+- id: restore
+  title: Historical Photo Restore & Colorize
+  category: Photography & Style
+  slash_command: /restore
+  models:
+    - Google Imagen 3
+    - ChatGPT (GPT-4o)
+  aspect_ratio: '1:1'
+  before_image: /assets/images/prompts/vintage_bw_before.jpg
+  after_image: /assets/images/prompts/colorized_restored_after.jpg
+  description: Removes scratches, creases, and noise from vintage black-and-white photos, infusing realistic warm skin tones and historical color accuracy.
+  prompt: /restore
+  tags:
+    - Restore
+    - Colorize
+    - Vintage
+    - HD
+    - Historical
+
+- id: outpaint
+  title: Panoramic Vista Canvas Expansion
+  category: Photography & Style
+  slash_command: /outpaint
+  models:
+    - ChatGPT (DALL-E 3)
+    - Google Imagen 3
+  aspect_ratio: '1:1'
+  before_image: /assets/images/prompts/portrait_tight_before.jpg
+  after_image: /assets/images/prompts/panorama_expanded_after.jpg
+  description: Expands a tight close-up crop into a 16:9 cinematic panoramic landscape, seamlessly generating realistic surrounding environments and terrain.
+  prompt: /outpaint
+  tags:
+    - Outpaint
+    - Panorama
+    - Landscape
+    - Expansion
+    - Cinematic
+
+- id: editorial
+  title: Vogue High-Fashion Editorial Cover
+  category: Photography & Style
   slash_command: /editorial
   models:
-  - ChatGPT (DALL-E 3)
-  - Google Imagen 3
+    - Google Imagen 3
+    - ChatGPT (DALL-E 3)
   aspect_ratio: '1:1'
   before_image: /assets/images/prompts/casual_model_before.jpg
   after_image: /assets/images/prompts/vogue_editorial_after.jpg
-  description: Upgrades a casual candid model snapshot into a Paris Fashion Week haute couture editorial magazine cover with high-fashion tailoring and Hasselblad optics.
-  prompt: '/editorial --input:[original_image]
-
-    --styling:"avant-garde luxury haute couture by Yohji Yamamoto, architectural silk-blend pleated coat with exaggerated sculptural lapels"
-
-    --makeup:"editorial Paris Fashion Week runway look, dewy luminous glass skin, understated brushed brows, subtle glossy nude lips"
-
-    --background:"minimalist brutalist concrete architecture with dramatic sharp diagonal sunbeam shadows"
-
-    --camera-optics:"Hasselblad H6D-100c medium format camera, 100mm f/2.2 HC lens, exquisite color fidelity, creamy background falloff"
-
-    --lighting:"strong directional afternoon sunlight softened through large silk diffusion scrim, high fashion contrast"
-
-    --grade:"Kodak Portra 400 film profile, natural skin tones, deep rich shadows"
-
-    --aspect-ratio:1:1 --model:dall-e-3'
+  description: Transforms an everyday casual portrait into a high-fashion magazine cover feature with dramatic studio rim lighting, haute couture styling, and editorial contrast.
+  prompt: /editorial
   tags:
-  - Fashion
-  - Editorial
-  - Vogue
-  - Haute Couture
-  - Medium Format
+    - Editorial
+    - Vogue
+    - High-Fashion
+    - Studio
+    - Glamour

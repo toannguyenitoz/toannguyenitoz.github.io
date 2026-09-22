@@ -571,6 +571,338 @@ permalink: /seedance/
   opacity: 1;
 }
 
+
+/* Master Instruction Card (How It Works) */
+.master-instruction-card {
+  max-width: 1200px;
+  margin: 0 auto 36px;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.12) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.master-instruction-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.master-instruction-icon {
+  font-size: 28px;
+  background: rgba(2, 132, 199, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.master-instruction-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0 0 6px;
+}
+
+.master-instruction-sub {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.master-instruction-sub code {
+  color: #38bdf8;
+  background: rgba(15, 23, 42, 0.6);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.master-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.master-step-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.master-step-num {
+  width: 24px;
+  height: 24px;
+  background: #0284c7;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.master-step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+
+.master-step-content strong {
+  color: #f8fafc;
+}
+
+.master-prompt-code-wrap {
+  position: relative;
+  background: #070b13;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 16px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+.master-prompt-code-wrap pre {
+  margin: 0;
+  font-family: Consolas, 'Fira Code', Monaco, monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #38bdf8;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.master-prompt-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn-copy-master {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border: 1px solid #38bdf8;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+}
+
+.btn-copy-master:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.6);
+  border-color: #7dd3fc;
+}
+
+.btn-copy-master.copied {
+  background: #059669;
+  border-color: #34d399;
+}
+
+/* Section Titles */
+.section-title-wrap {
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0 0 6px;
+}
+
+.section-sub {
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Short Prompt Box */
+.prompt-box-short {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: #38bdf8 !important;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 10px !important;
+  background: rgba(2, 132, 199, 0.1) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Complete Slash Command Directory */
+.slash-dict-section {
+  max-width: 1200px;
+  margin: 20px auto 80px;
+  padding: 0 20px;
+}
+
+.slash-dict-category {
+  margin-bottom: 36px;
+}
+
+.slash-dict-category-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.slash-dict-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+}
+
+.slash-dict-item {
+  background: var(--card-bg, #0f172a);
+  border: 1px solid var(--border-color, #1e293b);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.slash-dict-item:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.2);
+}
+
+.slash-dict-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slash-badge {
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  font-weight: 800;
+  color: #38bdf8;
+  background: rgba(2, 132, 199, 0.15);
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.slash-tag {
+  font-size: 10px;
+  font-weight: 600;
+  color: #94a3b8;
+  background: rgba(51, 65, 85, 0.5);
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slash-dict-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.slash-dict-desc {
+  font-size: 12px;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+
+.slash-dict-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.slash-click-copy {
+  font-size: 11px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.slash-dict-item:hover .slash-click-copy {
+  color: #38bdf8;
+}
+
+/* Light Theme Additions */
+[data-theme="light"] .master-instruction-card {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, #ffffff 100%);
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+[data-theme="light"] .master-step-card {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .master-step-content strong {
+  color: #0f172a;
+}
+[data-theme="light"] .master-prompt-code-wrap {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .master-prompt-code-wrap pre {
+  color: #0369a1;
+}
+[data-theme="light"] .section-title {
+  color: #0f172a;
+}
+[data-theme="light"] .slash-dict-category-title {
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .slash-dict-item {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+[data-theme="light"] .slash-dict-title {
+  color: #0f172a;
+}
+[data-theme="light"] .slash-dict-footer {
+  border-color: #f1f5f9;
+}
+
 /* Light Theme Overrides */
 [data-theme="light"] .prompts-hero {
   background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(241, 245, 249, 0.95) 100%);
@@ -641,7 +973,7 @@ permalink: /seedance/
     </button>
     <button class="master-tab-btn" id="tabBtnImage" onclick="switchMasterTab('image')">
       <span>🎨 Google &amp; ChatGPT Image Studio (Slash /)</span>
-      <span class="master-tab-badge">{{ site.data.image_prompts | size }}</span>
+      <span class="master-tab-badge">60+ Slash Commands</span>
     </button>
   </div>
 
@@ -664,16 +996,16 @@ permalink: /seedance/
   <!-- Image Stats (Visible in Image Tab) -->
   <div class="prompts-stats-bar" id="statsImage" style="display: none;">
     <div class="prompts-stat-pill">
-      <span>🎨 <strong>{{ site.data.image_prompts | size }}</strong> Verified Transformations</span>
+      <span>⚡ <strong>60+ Short Slash Commands</strong> (/)</span>
     </div>
     <div class="prompts-stat-pill">
-      <span>🔄 <strong>Original Reference</strong> → <strong>Slash Result</strong></span>
+      <span>🏗️ <strong>/tinyworkers</strong> &amp; 3D Diorama Ready</span>
     </div>
     <div class="prompts-stat-pill">
-      <span>⚙️ <strong>Google Imagen 3</strong> &amp; <strong>ChatGPT DALL·E 3</strong></span>
+      <span>⚙️ <strong>ChatGPT (GPT-4o)</strong> &amp; <strong>Google Gemini</strong></span>
     </div>
     <div class="prompts-stat-pill">
-      <span>⚡ <strong>Slash Command</strong> Ready (/)</span>
+      <span>🚫 <strong>No Long Prompts</strong> Required</span>
     </div>
   </div>
 </div>
@@ -812,9 +1144,77 @@ permalink: /seedance/
 </div>
 
 <!-- ========================================================================
-     TAB 2: GOOGLE & CHATGPT IMAGE STUDIO (SLASH COMMANDS)
+     TAB 2: GOOGLE & CHATGPT IMAGE STUDIO (SHORT SLASH COMMANDS)
      ======================================================================== -->
 <div class="tab-panel" id="panelImage">
+  
+  <!-- Master System Instruction Banner -->
+  <div class="master-instruction-card">
+    <div class="master-instruction-header">
+      <div class="master-instruction-icon">⚡</div>
+      <div>
+        <h2 class="master-instruction-title">How To Use: Short Slash Command Engine</h2>
+        <p class="master-instruction-sub">No complex prompts needed! Upload any photo or product to ChatGPT or Gemini, and simply type a single command like <code>/tinyworkers</code>.</p>
+      </div>
+    </div>
+
+    <div class="master-steps-grid">
+      <div class="master-step-card">
+        <div class="master-step-num">1</div>
+        <div class="master-step-content">
+          <strong>Copy Master Instruction</strong>
+          <span>Click the button below to copy the visual engine prompt.</span>
+        </div>
+      </div>
+      <div class="master-step-card">
+        <div class="master-step-num">2</div>
+        <div class="master-step-content">
+          <strong>Paste in ChatGPT / Gemini</strong>
+          <span>Paste once in Custom Instructions, a Custom GPT, or the first chat turn.</span>
+        </div>
+      </div>
+      <div class="master-step-card">
+        <div class="master-step-num">3</div>
+        <div class="master-step-content">
+          <strong>Upload Photo &amp; Type Command</strong>
+          <span>Upload your product photo and enter <code>/tinyworkers</code> (or any command below)!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="master-prompt-code-wrap">
+      <pre id="masterSetupPrompt">Act as an AI Visual Transformation Engine. When I upload an image and type a short slash command starting with '/', automatically transform the uploaded image into the corresponding style while keeping the primary product or subject recognizable:
+• /tinyworkers: Macro photography of miniature construction workers in hardhats and safety vests meticulously building, repairing, or painting the product with tiny scaffolding, ladders, and tools.
+• /lego: Rebuild the subject entirely out of colorful authentic LEGO plastic bricks with iconic stud textures.
+• /exploded: 3D technical exploded radial teardown view with internal mechanical components and optics floating in mid-air.
+• /splash: Dynamic commercial studio liquid water or beverage splash bursting with high-speed droplets around the product.
+• /claymation: Handcrafted plasticine clay animation figure with visible tactile fingerprint textures.
+• /isometric: Miniature 3D isometric floating diorama island on a clean studio pedestal.
+• /xray: Transparent internal X-ray schematic with glowing blue/green circuit boards and internal structures.
+• /flatlay: Knolling flat-lay arrangement with all parts disassembled in a crisp 90-degree overhead grid.
+• /cyberpunk: Rain-soaked 2088 cyberpunk boulevard with glowing neon signage and asphalt reflections.
+• /ghibli: Hand-painted Studio Ghibli watercolor anime cel with warm golden sunlight and lush painterly foliage.
+• /render: Photorealistic 3D architectural or industrial visualization with luxury travertine stone and realistic lighting.
+• /vector: Clean minimalist SVG flat vector illustration with modern pastel color palette.
+• /portrait: Elite corporate LinkedIn headshot in a tailored suit with soft natural office bokeh.
+• /restore: Historical high-definition scratch repair and realistic skin colorization.
+• /outpaint: Expand the frame into a wide 16:9 panoramic cinematic landscape matching the original setting.
+• /editorial: Luxury Vogue high-fashion magazine cover with dramatic studio rim lighting.
+• [Any other /command]: Interpret the keyword following '/' as the primary artistic visual style to apply to the uploaded image.</pre>
+    </div>
+
+    <div class="master-prompt-action">
+      <button class="btn-copy-master" onclick="copyRawText(document.getElementById('masterSetupPrompt').innerText, this, 'Master System Instruction')">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span>Copy Master System Instruction</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Search & Category Filters -->
   <div class="prompts-controls">
     <!-- Search Image -->
     <div class="prompts-search-wrap">
@@ -826,7 +1226,7 @@ permalink: /seedance/
         type="text" 
         id="imageSearch" 
         class="prompts-search-input" 
-        placeholder="Search image prompts by slash command (/portrait, /remix, /edit, /clay)..." 
+        placeholder="Search 60+ slash commands (/tinyworkers, /lego, /exploded, /splash, /cyberpunk)..." 
         oninput="filterImagePrompts()"
         autocomplete="off"
       >
@@ -834,17 +1234,20 @@ permalink: /seedance/
 
     <!-- Image Filter Pills -->
     <div class="prompts-filters" id="imageFilters">
-      <button class="prompts-filter-btn active" data-category="all" onclick="setImageCategory('all', this)">All Image Styles</button>
-      <button class="prompts-filter-btn" data-category="Portrait & Headshot" onclick="setImageCategory('Portrait & Headshot', this)">Portrait (/portrait)</button>
-      <button class="prompts-filter-btn" data-category="Style Remix & Anime" onclick="setImageCategory('Style Remix & Anime', this)">Anime Remix (/remix)</button>
-      <button class="prompts-filter-btn" data-category="Product & Commercial" onclick="setImageCategory('Product & Commercial', this)">Product Splash (/edit)</button>
-      <button class="prompts-filter-btn" data-category="Cyberpunk & VFX" onclick="setImageCategory('Cyberpunk & VFX', this)">Cyberpunk Night (/style)</button>
-      <button class="prompts-filter-btn" data-category="3D Clay & Craft" onclick="setImageCategory('3D Clay & Craft', this)">Claymation (/clay)</button>
-      <button class="prompts-filter-btn" data-category="Architectural Render" onclick="setImageCategory('Architectural Render', this)">ArchViz Render (/render)</button>
-      <button class="prompts-filter-btn" data-category="Canvas Expansion" onclick="setImageCategory('Canvas Expansion', this)">Outpainting (/outpaint)</button>
-      <button class="prompts-filter-btn" data-category="Photo Restoration" onclick="setImageCategory('Photo Restoration', this)">Restoration (/restore)</button>
-      <button class="prompts-filter-btn" data-category="Vector & Graphic" onclick="setImageCategory('Vector & Graphic', this)">Vector Icon (/vector)</button>
+      <button class="prompts-filter-btn active" data-category="all" onclick="setImageCategory('all', this)">All Styles</button>
+      <button class="prompts-filter-btn" data-category="Miniature & Diorama" onclick="setImageCategory('Miniature & Diorama', this)">Miniature &amp; Diorama</button>
+      <button class="prompts-filter-btn" data-category="Product & Advertising" onclick="setImageCategory('Product & Advertising', this)">Product &amp; Commercial</button>
+      <button class="prompts-filter-btn" data-category="Materials & Textures" onclick="setImageCategory('Materials & Textures', this)">Materials &amp; Textures</button>
+      <button class="prompts-filter-btn" data-category="Futuristic & VFX" onclick="setImageCategory('Futuristic & VFX', this)">Futuristic &amp; Sci-Fi</button>
+      <button class="prompts-filter-btn" data-category="Artistic & Animation" onclick="setImageCategory('Artistic & Animation', this)">Art &amp; Animation</button>
+      <button class="prompts-filter-btn" data-category="Photography & Style" onclick="setImageCategory('Photography & Style', this)">Photography &amp; Style</button>
     </div>
+  </div>
+
+  <!-- Section Header: Featured Visual Transformations -->
+  <div class="section-title-wrap">
+    <h2 class="section-title">🔥 Featured Transformations with Before &amp; After Previews</h2>
+    <p class="section-sub">Original reference image on the left, result after executing the short slash command on the right.</p>
   </div>
 
   <!-- Image Prompts Grid with Before/After Pairs -->
@@ -879,7 +1282,7 @@ permalink: /seedance/
       <!-- Card Body -->
       <div class="prompt-body">
         <div class="prompt-category-tag">
-          {{ p.category }} • <span style="color: #cbd5e1;">{{ p.slash_command }}</span>
+          {{ p.category }}
         </div>
         <h3 class="prompt-title">{{ p.title }}</h3>
         <p class="prompt-description">{{ p.description }}</p>
@@ -894,17 +1297,17 @@ permalink: /seedance/
           <span class="prompt-mini-tag">{{ p.aspect_ratio }}</span>
         </div>
 
-        <!-- Slash Command Syntax Box -->
-        <div class="prompt-box" id="prompt-image-{{ p.id }}">{{ p.prompt | escape }}</div>
+        <!-- Short Slash Command Box -->
+        <div class="prompt-box prompt-box-short" id="prompt-image-{{ p.id }}">{{ p.slash_command }}</div>
 
         <!-- Card Actions -->
         <div class="prompt-card-actions">
-          <button class="btn-copy-prompt" onclick="copyText('prompt-image-{{ p.id }}', this, 'Slash Command')">
+          <button class="btn-copy-prompt" onclick="copyRawText('{{ p.slash_command }}', this, '{{ p.slash_command }}')">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
             </svg>
-            <span>Copy Slash Command</span>
+            <span>Copy Command ({{ p.slash_command }})</span>
           </button>
 
           <a href="{{ p.after_image | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn-demo-link" title="Open full-resolution generated output">
@@ -930,6 +1333,51 @@ permalink: /seedance/
       <p>No image prompts matched your slash command or search query.</p>
     </div>
   </div>
+
+  <!-- Slash Command Directory Section -->
+  <div class="slash-dict-section" id="slashDictSection">
+    <div class="section-title-wrap" style="padding: 0; margin-top: 0;">
+      <h2 class="section-title">📚 Complete Slash Command Directory (Cheat Sheet)</h2>
+      <p class="section-sub">Click any command card to copy the exact short slash command to your clipboard.</p>
+    </div>
+
+    {% for cat in site.data.slash_dictionary %}
+    <div class="slash-dict-category" data-cat-name="{{ cat.category }}">
+      <h3 class="slash-dict-category-title">
+        <span>{{ cat.icon }}</span>
+        <span>{{ cat.category }}</span>
+      </h3>
+      <div class="slash-dict-grid">
+        {% for item in cat.commands %}
+        <div class="slash-dict-item" 
+             onclick="copyRawText('{{ item.cmd }}', this, '{{ item.cmd }}')"
+             data-cmd="{{ item.cmd | downcase }}"
+             data-title="{{ item.title | downcase }}"
+             data-desc="{{ item.desc | downcase }}"
+             data-tag="{{ item.tag | downcase }}"
+             data-category="{{ cat.category }}">
+          <div class="slash-dict-header">
+            <span class="slash-badge">{{ item.cmd }}</span>
+            <span class="slash-tag">{{ item.tag }}</span>
+          </div>
+          <div class="slash-dict-title">{{ item.title }}</div>
+          <div class="slash-dict-desc">{{ item.desc }}</div>
+          <div class="slash-dict-footer">
+            <span class="slash-click-copy">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Click to copy {{ item.cmd }}
+            </span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
 </div>
 
 <!-- Copy Feedback Toast Notification -->
@@ -1019,7 +1467,7 @@ function filterVideoPrompts() {
   }
 }
 
-// Image Tab Filtering
+// Enhanced Image Tab Filtering (Cards + Slash Command Directory)
 let currentImageCat = 'all';
 
 function setImageCategory(cat, btn) {
@@ -1032,8 +1480,9 @@ function setImageCategory(cat, btn) {
 function filterImagePrompts() {
   const query = document.getElementById('imageSearch').value.toLowerCase().trim();
   const cards = document.querySelectorAll('.image-card');
-  let visibleCount = 0;
+  let visibleCardsCount = 0;
 
+  // Filter Visual Cards
   cards.forEach(card => {
     const cardCat = card.getAttribute('data-category');
     const cardTitle = card.getAttribute('data-title');
@@ -1052,7 +1501,7 @@ function filterImagePrompts() {
 
     if (matchesCat && matchesQuery) {
       card.style.display = 'flex';
-      visibleCount++;
+      visibleCardsCount++;
     } else {
       card.style.display = 'none';
     }
@@ -1060,11 +1509,74 @@ function filterImagePrompts() {
 
   const emptyState = document.getElementById('imageEmpty');
   if (emptyState) {
-    emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    emptyState.style.display = visibleCardsCount === 0 ? 'block' : 'none';
   }
+
+  // Filter Dictionary Items
+  const dictCategories = document.querySelectorAll('.slash-dict-category');
+  dictCategories.forEach(catBlock => {
+    const items = catBlock.querySelectorAll('.slash-dict-item');
+    let visibleItemsInCat = 0;
+
+    items.forEach(item => {
+      const itemCat = item.getAttribute('data-category');
+      const itemCmd = item.getAttribute('data-cmd');
+      const itemTitle = item.getAttribute('data-title');
+      const itemDesc = item.getAttribute('data-desc');
+      const itemTag = item.getAttribute('data-tag');
+
+      const matchesCat = (currentImageCat === 'all' || itemCat.includes(currentImageCat) || currentImageCat.includes(itemCat.split('&')[0].trim()));
+      const matchesQuery = !query ||
+        itemCmd.includes(query) ||
+        itemTitle.includes(query) ||
+        itemDesc.includes(query) ||
+        itemTag.includes(query);
+
+      if (matchesCat && matchesQuery) {
+        item.style.display = 'flex';
+        visibleItemsInCat++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    catBlock.style.display = visibleItemsInCat > 0 ? 'block' : 'none';
+  });
 }
 
-// Copy Text Helper
+// Copy Raw Text Helper
+function copyRawText(text, btn, label) {
+  if (!text) return;
+
+  navigator.clipboard.writeText(text).then(() => {
+    const origHtml = btn.innerHTML;
+    btn.classList.add('copied');
+    btn.innerHTML = `
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span>Copied! ✓</span>
+    `;
+
+    const toast = document.getElementById('promptsToast');
+    const toastMsg = document.getElementById('toastMessage');
+    if (toast && toastMsg) {
+      toastMsg.textContent = `${label} copied to clipboard! Ready to use in ChatGPT / Gemini.`;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.innerHTML = origHtml;
+    }, 2200);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
+
 function copyText(elementId, btn, label) {
   const el = document.getElementById(elementId);
   if (!el) return;

@@ -1,0 +1,384 @@
+- category: Miniature & Surreal Dioramas
+  icon: 🏗️
+  commands:
+  - cmd: /tinyworkers
+    title: Miniature Product Workers
+    desc: A team of miniature construction workers in hardhats and safety gear building,
+      repairing, or painting the uploaded product with tiny ladders, scaffolding,
+      and cranes.
+    tag: Trending
+  - cmd: /lego
+    title: LEGO Plastic Brick Rebuild
+    desc: Recreates the subject or product entirely from colorful authentic LEGO plastic
+      bricks with realistic stud textures.
+    tag: Toy & Craft
+  - cmd: /isometric
+    title: 3D Isometric Diorama
+    desc: Converts the scene into a miniature 3D isometric floating island diorama
+      with clean edges and soft studio lighting.
+    tag: 3D & Scene
+  - cmd: /diorama
+    title: Glass Cube World
+    desc: Places the uploaded subject inside a miniature enchanted diorama encased
+      in a crystal-clear acrylic cube.
+    tag: Miniature
+  - cmd: /claymation
+    title: Plasticine Clay Stop-Motion
+    desc: Transforms the subject into a handcrafted Aardman-style clay animation puppet
+      with visible fingerprint textures.
+    tag: Stop-Motion
+  - cmd: /knitted
+    title: Crocheted Wool Yarn
+    desc: Reimagines the subject as a cozy hand-knitted woolen yarn plush toy with
+      detailed stitch patterns.
+    tag: Textile
+  - cmd: /origami
+    title: Folded Papercraft Sculpture
+    desc: Rebuilds the subject using crisp geometric Japanese origami folded paper
+      with delicate shadows.
+    tag: Papercraft
+  - cmd: /chibi
+    title: Cute Chibi Miniature
+    desc: Redraws characters or subjects in adorable Japanese chibi proportions with
+      oversized expressive eyes.
+    tag: Cute & Anime
+  - cmd: /funko
+    title: Funko Pop Vinyl Collectible
+    desc: Turns any person or character into a stylized Funko Pop vinyl figurine inside
+      its numbered retail packaging.
+    tag: Collectible
+  - cmd: /snowglobe
+    title: Enclosed Winter Snowglobe
+    desc: Encapsulates the subject inside a classic glass water snowglobe with swirling
+      glittery snowflakes.
+    tag: Seasonal
+  - cmd: /plushie
+    title: Fluffy Stuffed Plushie
+    desc: Converts the subject into an adorable ultra-soft plush toy with plush velvet
+      fur and stitched embroidery.
+    tag: Plush & Toy
+  - cmd: /woodtoy
+    title: Minimalist Nordic Wooden Toy
+    desc: Reimagines the subject as a smooth carved Scandinavian wooden toy with rounded
+      edges and matte natural varnish.
+    tag: Woodcraft
+  - cmd: /microchip
+    title: Silicon Microchip City
+    desc: Transforms the subject into an intricate futuristic metropolis built directly
+      on a silicon computer circuit board.
+    tag: Microtech
+- category: Product & Commercial Advertising
+  icon: 🔬
+  commands:
+  - cmd: /splash
+    title: High-Speed Liquid Splash
+    desc: Surrounds the uploaded product with dynamic bursting crystal water, milk,
+      or beverage splashes and flying droplets.
+    tag: Commercial
+  - cmd: /exploded
+    title: Radial Exploded Teardown
+    desc: Disassembles mechanical gadgets, cameras, or sneakers with all internal
+      parts floating symmetrically along a central axis.
+    tag: Technical
+  - cmd: /xray
+    title: Transparent X-Ray Schematic
+    desc: Renders the product with a see-through translucent casing revealing glowing
+      holographic internal circuit boards and wiring.
+    tag: Sci-Fi Tech
+  - cmd: /flatlay
+    title: Knolling Component Flatlay
+    desc: Arranges all individual components, accessories, and tools in a perfectly
+      aligned 90-degree knolling overhead grid.
+    tag: Studio
+  - cmd: /ghostmannequin
+    title: Invisible Ghost Mannequin
+    desc: Displays clothing or apparel in 3D hollow form as if worn by an invisible
+      mannequin for e-commerce catalogs.
+    tag: Fashion E-com
+  - cmd: /pedestal
+    title: Luxury Marble Pedestal
+    desc: Places the product on a cylindrical travertine marble pedestal with dramatic
+      soft three-point studio lighting.
+    tag: E-commerce
+  - cmd: /packaging
+    title: Retail Shelf Box Packaging
+    desc: Generates premium branded unboxing packaging and corrugated cardboard shipping
+      box for the uploaded product.
+    tag: Packaging
+  - cmd: /macro
+    title: 100mm Extreme Macro Detail
+    desc: Captures an ultra-close-up 100mm macro shot highlighting microscopic material
+      textures, threads, and craftsmanship.
+    tag: Macro
+  - cmd: /floating
+    title: Zero-Gravity Levitation
+    desc: Causes the product and related ingredients or accessories to levitate weightlessly
+      in mid-air with soft drop shadows.
+    tag: Surreal
+  - cmd: /billboard
+    title: Times Square 3D Anamorphic Display
+    desc: Presents the product bursting out of a curved massive 3D LED digital billboard
+      in Tokyo Shibuya or Times Square.
+    tag: Out-of-Home
+  - cmd: /drop
+    title: Liquid Surface Drop Impact
+    desc: Captures the millisecond the product impacts a calm liquid surface, creating
+      a perfect crown splash ring.
+    tag: High-Speed
+  - cmd: /refraction
+    title: Prism Crystal Light Refraction
+    desc: Baths the product in ethereal rainbow light prisms and spectral optical
+      flares passing through faceted crystal.
+    tag: Lighting
+  - cmd: /monolith
+    title: Black Volcanic Sand Monolith
+    desc: Displays the product on a dramatic black basalt monolith rising from Icelandic
+      black volcanic sand under moody skies.
+    tag: Atmospheric
+- category: Materials & Textures
+  icon: 💎
+  commands:
+  - cmd: /gold
+    title: 24K Molten & Polished Gold
+    desc: Coats the subject in luxurious 24-karat mirror-polished yellow gold with
+      flowing molten gold accents.
+    tag: Luxury
+  - cmd: /ice
+    title: Carved Glacial Crystal Ice
+    desc: Sculpts the subject out of transparent frosted Arctic glacier ice with frozen
+      condensation droplets.
+    tag: Elements
+  - cmd: /chocolate
+    title: Confectionery Melted Chocolate
+    desc: Transforms the product into a delicious edible sculpture crafted from dark,
+      milk, and white confectionery chocolate.
+    tag: Food & F&B
+  - cmd: /glass
+    title: Hand-Blown Murano Glass
+    desc: Renders the subject as an exquisite translucent hand-blown glass sculpture
+      with chromatic optical refractions.
+    tag: Glassware
+  - cmd: /chrome
+    title: Cyber Liquid Mercury Chrome
+    desc: Covers the object in ultra-reflective liquid chrome with distorted studio
+      light reflections and futuristic sheen.
+    tag: Metallic
+  - cmd: /marble
+    title: Classical Carrara White Marble
+    desc: Carves the subject into an ancient Roman or Greek sculpture of polished
+      white Carrara marble with gray veining.
+    tag: Classical
+  - cmd: /crystal
+    title: Amethyst Quartz Geode
+    desc: Hallows the subject to reveal glittering purple amethyst raw crystal clusters
+      and quartz facets inside.
+    tag: Geode
+  - cmd: /woodcarving
+    title: Handcrafted Teak Wood Carving
+    desc: Recreates the subject from warm solid oak and teak hardwood with natural
+      grain rings and artisan chisel marks.
+    tag: Woodcraft
+  - cmd: /neon
+    title: Glowing Neon Tube Signage
+    desc: Outlines the subject as a vibrant illuminated glass neon tube sign buzzing
+      against a dark exposed brick wall.
+    tag: Light & Glow
+  - cmd: /sand
+    title: Carved Beach Sand Sculpture
+    desc: Sculpts the subject entirely out of golden beach sand with intricate micro-grains
+      and gentle ocean foam.
+    tag: Organic
+  - cmd: /obsidian
+    title: Black Obsidian & Kintsugi Gold
+    desc: Forges the subject from pitch-black reflective volcanic glass with cracked
+      veins repaired in Japanese molten gold.
+    tag: Luxury
+  - cmd: /bronze
+    title: Antique Patina Bronze Monument
+    desc: Casts the subject as a centuries-old oxidized bronze statue with verdigris
+      green patina highlights.
+    tag: Sculpture
+  - cmd: /smoke
+    title: Swirling Ethereal Smoke Silhouette
+    desc: Dissolves the contours of the subject into multi-colored billowing ethereal
+      smoke clouds against a black void.
+    tag: Abstract
+- category: Futuristic, VFX & Sci-Fi
+  icon: ⚡
+  commands:
+  - cmd: /cyberpunk
+    title: Rain-Soaked Cyberpunk 2088
+    desc: Infuses the image with futuristic neon billboards, dark rain-slicked asphalt,
+      holographic ads, and teal-magenta lighting.
+    tag: Sci-Fi
+  - cmd: /steampunk
+    title: Victorian Brass Clockwork
+    desc: Retrofits the subject with intricate brass gears, copper pipes, pressure
+      gauges, and billowing steam.
+    tag: Retro Sci-Fi
+  - cmd: /synthwave
+    title: 1984 Retrowave Sunset Grid
+    desc: Applies an 80s retro synthwave aesthetic with purple-orange wireframe digital
+      grid, chrome typography, and palm trees.
+    tag: 80s Retro
+  - cmd: /hologram
+    title: Glowing Blue 3D Hologram
+    desc: Projects the subject as a semi-transparent flickering cyan sci-fi hologram
+      beam with scanlines and glitch artifacts.
+    tag: Holographic
+  - cmd: /matrix
+    title: Digital Rain Matrix Code
+    desc: Constructs the subject out of descending streams of luminous emerald green
+      digital binary glyphs on a pitch-black background.
+    tag: Hacker
+  - cmd: /apocalypse
+    title: Post-Apocalyptic Overgrown Ruin
+    desc: Weathers the subject into a centuries-old relic covered in moss, rusted
+      metal, wild climbing vines, and cracked concrete.
+    tag: Wasteland
+  - cmd: /solarpunk
+    title: Solarpunk Eco-Utopian Future
+    desc: Reimagines the scene in an eco-futuristic world of curved glass architecture,
+      rooftop gardens, and clean solar technology.
+    tag: Solarpunk
+  - cmd: /spacesuit
+    title: Orbital Spacewalk Astronaut
+    desc: Suits the subject in high-tech NASA extravehicular gear floating in zero-gravity
+      with Earth reflected in the gold visor.
+    tag: Cosmic
+  - cmd: /cybernetic
+    title: Titanium Cybernetic Augmentation
+    desc: Equips the subject with bionic carbon-fiber limbs, exposed hydraulic servos,
+      and glowing optic nerve implants.
+    tag: Cyborg
+  - cmd: /multiverse
+    title: Dimensional Multiverse Glitch
+    desc: Splits the subject into multiple shifting quantum realities, each rendered
+      in a different art style and dimension.
+    tag: VFX
+- category: Art, Painting & Illustration
+  icon: 🎨
+  commands:
+  - cmd: /ghibli
+    title: Studio Ghibli Watercolor Cel
+    desc: Converts photos into a nostalgic, hand-painted anime animation cel in the
+      warm, whimsical aesthetic of Hayao Miyazaki.
+    tag: Anime
+  - cmd: /anime
+    title: Modern Shonen Sakuga Anime
+    desc: Transforms subjects into high-octane modern Japanese anime artwork with
+      bold dynamic action lines and vibrant cel-shading.
+    tag: Manga
+  - cmd: /watercolor
+    title: Fluid Wet-on-Wet Watercolor
+    desc: Re-renders the scene as a soft watercolor painting on cold-press textured
+      paper with organic pigment bleeding.
+    tag: Traditional
+  - cmd: /oilpainting
+    title: Impressionist Textured Oil
+    desc: Translates the image into a rich classical oil painting with visible palette
+      knife strokes and heavy impasto texture.
+    tag: Fine Art
+  - cmd: /sketch
+    title: Architectural Pencil & Ink Sketch
+    desc: Converts the image into a detailed hand-drawn architectural perspective
+      sketch with crosshatching on drafting parchment.
+    tag: Drawing
+  - cmd: /vector
+    title: Clean Minimalist SVG Vector
+    desc: Simplifies complex scenes into a modern flat graphic vector illustration
+      with smooth clean shapes and contemporary colors.
+    tag: Graphic Design
+  - cmd: /popart
+    title: Andy Warhol 1960s Pop Art
+    desc: Reinterprets the subject as a 4-panel screenprint with bold contrasting
+      silkscreen inks, halftone dots, and vintage newsprint.
+    tag: 60s Vintage
+  - cmd: /pixelart
+    title: 16-Bit Retro Arcade Pixel Art
+    desc: Recreates the image using an authentic 16-bit color-limited pixel art grid
+      reminiscent of classic SNES and arcade games.
+    tag: Retro Gaming
+  - cmd: /comic
+    title: Vintage Graphic Novel Comic
+    desc: Transforms the photo into a classic vintage American comic book panel with
+      Ben-Day dot shading and black inked outlines.
+    tag: Comic
+  - cmd: /graffiti
+    title: Urban Street Art Spray Mural
+    desc: Paints the subject as a vibrant hip-hop street art mural on a brick wall
+      with stencils, markers, and paint drips.
+    tag: Street Art
+  - cmd: /charcoal
+    title: High-Contrast Charcoal Drawing
+    desc: Sketches the subject with expressive smudged vine charcoal on textured off-white
+      heavy art paper.
+    tag: Traditional
+  - cmd: /ukiyo-e
+    title: Japanese Woodblock Ukiyo-e Print
+    desc: Reinterprets the scene in the style of Hokusai with distinctive woodblock
+      ink outlines and wave patterns.
+    tag: Heritage
+- category: Photography, Fashion & Enhancement
+  icon: 📸
+  commands:
+  - cmd: /portrait
+    title: Executive LinkedIn Headshot
+    desc: Upgrades casual selfies into an executive headshot in tailored formal attire
+      with soft corporate office bokeh background.
+    tag: Headshot
+  - cmd: /editorial
+    title: Vogue High-Fashion Editorial Cover
+    desc: Transforms the subject into a luxury fashion magazine cover story with high-contrast
+      studio rim lighting and haute couture styling.
+    tag: Fashion
+  - cmd: /restore
+    title: Historical Photo Restore & Colorize
+    desc: Removes scratches, creases, and fading from vintage antique photographs,
+      adding natural realistic skin color and clarity.
+    tag: Restoration
+  - cmd: /outpaint
+    title: 16:9 Panoramic Vista Outpainting
+    desc: Seamlessly expands the canvas beyond a tight photo frame into a panoramic
+      landscape matching the original scene.
+    tag: Expansion
+  - cmd: /vintage
+    title: 1970s Warm Film Aesthetic
+    desc: Imbues the photo with warm Kodachrome 64 tones, gentle analog film grain,
+      subtle lens flare, and muted 70s nostalgia.
+    tag: Analog Film
+  - cmd: /polaroid
+    title: Instant Polaroid SX-70 Print
+    desc: Frames the image inside a classic vintage white-bordered Polaroid print
+      with creamy chemical color development.
+    tag: Instant Film
+  - cmd: /fisheye
+    title: 90s Skate Culture Fisheye Lens
+    desc: Distorts the frame using an extreme 8mm ultra-wide fisheye barrel distortion
+      with dramatic skate video perspective.
+    tag: Action
+  - cmd: /cinematic
+    title: 35mm Anamorphic Film Still
+    desc: Renders the shot as a movie still with 2.39:1 widescreen aspect ratio, teal-and-orange
+      color grading, and horizontal lens streak.
+    tag: Hollywood
+  - cmd: /monochrome
+    title: Classic Film Noir Monochrome
+    desc: High-contrast black-and-white photography with Venetian blind shadow slats
+      and smoky atmosphere.
+    tag: Noir
+  - cmd: /doubleexposure
+    title: Nature Silhouette Double Exposure
+    desc: Blends the subject silhouette with an evergreen pine forest, misty mountain
+      ridge, and starry night sky.
+    tag: Artistic
+  - cmd: /drone
+    title: Top-Down 90° Aerial Drone View
+    desc: Takes a perpendicular bird-eye perspective from 200 meters above, revealing
+      geometric environment patterns.
+    tag: Aerial
+  - cmd: /nightvision
+    title: Tactical Phosphor Night-Vision Scope
+    desc: Views the target through a green military GEN-3 night-vision optic with
+      digital HUD readouts.
+    tag: Tactical

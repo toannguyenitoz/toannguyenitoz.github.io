@@ -63,13 +63,13 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - Bổ sung bộ lọc thẻ thể loại và thanh tìm kiếm thời gian thực.
   - [x] **Tích hợp lối tắt điều hướng trực tiếp trên thanh menu `_includes/header.html`.**
 
-### 2.4. Google & ChatGPT AI Image Studio (`/seedance/#image`)
-- [x] **Xây dựng trung tâm chuyển đổi ảnh sáng tạo sử dụng Slash Commands (`/`):**
-  - Tích hợp 10 kịch bản biến đổi hình ảnh chuyên sâu tương thích với Google Imagen 3 (Gemini) và ChatGPT (DALL·E 3 / GPT-4o Vision).
-  - Hệ thống các câu lệnh Slash Command chuyên dụng: `/portrait` (ảnh thẻ doanh nhân), `/remix` (Studio Ghibli anime), `/edit` (chụp sản phẩm thương mại splash), `/style` (Cyberpunk tương lai), `/clay` (đất sét hoạt hình Stop-Motion 3D), `/render` (phác thảo kiến trúc thành render biệt thự hiện thực), `/outpaint` (mở rộng góc nhìn toàn cảnh), `/restore` (phục hồi & tô màu ảnh cũ), `/vector` (chuyển ảnh chụp thành vector icon phẳng), `/editorial` (ảnh thời trang tạp chí cao cấp).
-  - Trình bày trực quan dạng **Before & After (Ảnh gốc & Kết quả)** song song chất lượng cao, lưu trữ nội bộ tại `/assets/images/prompts/` chống đứt gãy link.
-  - Toàn bộ giao diện và mô tả hiển thị **100% bằng Tiếng Anh chuyên ngành**, hỗ trợ copy nhanh câu lệnh 1-click, lọc theo tag và công cụ AI.
-  - Tích hợp điều hướng Dual-Tab động mượt mà giữa Tab Video Seedance và Tab Image Studio.
+### 2.4. Google & ChatGPT Short Slash Command Studio (`/seedance/#image`)
+- [x] **Xây dựng trung tâm chuyển đổi ảnh sáng tạo sử dụng hệ thống câu lệnh ngắn Slash Command (`/`):**
+  - Khắc phục hoàn toàn việc phải nhập prompt dài: Người dùng chỉ cần tải ảnh sản phẩm/chủ thể lên ChatGPT (GPT-4o) hoặc Google Gemini và gõ 1 câu lệnh ngắn gọn bắt đầu bằng `/` (Ví dụ: `/tinyworkers`, `/lego`, `/exploded`, `/splash`, `/claymation`, `/cyberpunk`).
+  - **Tích hợp bộ chỉ dẫn nền tảng (Master Setup Prompt 1-Click Copy):** Cung cấp sẵn prompt động cơ chuyển đổi thị giác để người dùng dán vào Custom Instructions hoặc mở đầu đoạn chat, giúp AI tự động nhận diện và áp dụng chính xác mọi lệnh slash mà không cần giải thích thêm.
+  - **13 Card biến đổi mẫu có đối chiếu Before & After trực quan:** Bao gồm nổi bật `/tinyworkers` (đội thợ công trình tí hon đang xây dựng, vệ sinh, sửa chữa sản phẩm với thang và giàn giáo), `/lego` (tái tạo bằng gạch nhựa LEGO 3D), `/exploded` (bóc tách 3D toàn bộ linh kiện cơ khí bên trong), `/splash` (bắn tung tóe nước thương mại cao cấp), `/claymation`, `/isometric`, `/cyberpunk`, `/ghibli`, `/render`, `/vector`, `/portrait`, `/restore`, `/outpaint`, `/editorial`.
+  - **Thư viện danh bạ tra cứu hơn 70 câu lệnh Slash Commands (Cheat Sheet Directory):** Phân chia thành 6 nhóm chuyên đề (Miniature & Diorama, Product & Advertising, Materials & Textures, Futuristic & Sci-Fi, Art & Animation, Photography & Enhancement), hỗ trợ click để copy ngay lập tức và tìm kiếm thời gian thực.
+  - Toàn bộ giao diện, mô tả và hệ thống lệnh hiển thị **100% bằng Tiếng Anh chuyên ngành**, tối ưu giao diện Dark/Light mode trên mọi thiết bị.
 
 ### 2.5. Hệ Thống Tự Động Hóa (CI/CD & Automation Workflows)
 - [x] **GitHub Actions Workflow `fetch-vouchers.yml`:** Tự động lấy, lọc và cập nhật 60 voucher khóa học Udemy miễn phí còn hạn mỗi ngày.
