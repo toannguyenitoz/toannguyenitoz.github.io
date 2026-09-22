@@ -2,7 +2,7 @@
 
 > **Project:** Toan Nguyen IT Oz Website Portal (`toannguyenitoz.github.io`)  
 > **Repository:** `https://github.com/toannguyenitoz/toannguyenitoz.github.io`  
-> **Last Updated:** September 19, 2026  
+> **Last Updated:** September 23, 2026  
 > **Platform:** Jekyll on GitHub Pages, Supabase, Resend API, GitHub Actions
 
 ---
@@ -61,9 +61,17 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - Tích hợp tính năng **Copy Prompt 1-Click** với hiệu ứng thông báo Toast mượt mà.
   - Tích hợp 100% video demo / poster chất lượng cao (hỗ trợ preview MP4 từ AtlasCloud và GitHub user-attachments) và liên kết trực tiếp đến repo gốc.
   - Bổ sung bộ lọc thẻ thể loại và thanh tìm kiếm thời gian thực.
-  - Tích hợp lối tắt điều hướng trực tiếp trên thanh menu `_includes/header.html`.
+  - [x] **Tích hợp lối tắt điều hướng trực tiếp trên thanh menu `_includes/header.html`.**
 
-### 2.4. Hệ Thống Tự Động Hóa (CI/CD & Automation Workflows)
+### 2.4. Google & ChatGPT AI Image Studio (`/seedance/#image`)
+- [x] **Xây dựng trung tâm chuyển đổi ảnh sáng tạo sử dụng Slash Commands (`/`):**
+  - Tích hợp 10 kịch bản biến đổi hình ảnh chuyên sâu tương thích với Google Imagen 3 (Gemini) và ChatGPT (DALL·E 3 / GPT-4o Vision).
+  - Hệ thống các câu lệnh Slash Command chuyên dụng: `/portrait` (ảnh thẻ doanh nhân), `/remix` (Studio Ghibli anime), `/edit` (chụp sản phẩm thương mại splash), `/style` (Cyberpunk tương lai), `/clay` (đất sét hoạt hình Stop-Motion 3D), `/render` (phác thảo kiến trúc thành render biệt thự hiện thực), `/outpaint` (mở rộng góc nhìn toàn cảnh), `/restore` (phục hồi & tô màu ảnh cũ), `/vector` (chuyển ảnh chụp thành vector icon phẳng), `/editorial` (ảnh thời trang tạp chí cao cấp).
+  - Trình bày trực quan dạng **Before & After (Ảnh gốc & Kết quả)** song song chất lượng cao, lưu trữ nội bộ tại `/assets/images/prompts/` chống đứt gãy link.
+  - Toàn bộ giao diện và mô tả hiển thị **100% bằng Tiếng Anh chuyên ngành**, hỗ trợ copy nhanh câu lệnh 1-click, lọc theo tag và công cụ AI.
+  - Tích hợp điều hướng Dual-Tab động mượt mà giữa Tab Video Seedance và Tab Image Studio.
+
+### 2.5. Hệ Thống Tự Động Hóa (CI/CD & Automation Workflows)
 - [x] **GitHub Actions Workflow `fetch-vouchers.yml`:** Tự động lấy, lọc và cập nhật 60 voucher khóa học Udemy miễn phí còn hạn mỗi ngày.
 - [x] **GitHub Actions Workflow `sync-youtube.yml`:** Tự động quét và đồng bộ các video hướng dẫn mới nhất từ YouTube vào website (vừa cập nhật lên 72 video có số lượt xem chính xác).
 - [x] **GitHub Actions Workflow `sync-linkedin.yml`:** Đồng bộ các cập nhật và chia sẻ kỹ thuật từ LinkedIn. Bổ sung cơ chế xác thực URL (URL guard) để ngăn chặn các liên kết feed chung làm phát sinh bài viết lỗi.
