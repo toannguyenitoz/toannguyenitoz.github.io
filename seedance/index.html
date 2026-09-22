@@ -555,7 +555,7 @@ permalink: /seedance/
       <span class="prompt-media-badge">{{ p.model }}</span>
       <span class="prompt-duration-badge">{{ p.duration }} • {{ p.aspect_ratio }}</span>
       
-      {% if p.video_url contains '.mp4' or p.video_url contains '.mov' %}
+      {% if p.video_url contains '.mp4' or p.video_url contains '.mov' or p.video_url contains 'user-attachments' %}
       <video class="prompt-video-preview" 
              src="{{ p.video_url }}" 
              muted 

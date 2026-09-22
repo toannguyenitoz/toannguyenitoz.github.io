@@ -49,12 +49,17 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - Tự động sinh thanh điều hướng lùi/tiến giữa các phần liên tiếp (Ví dụ: từ Part 107 sang 108, từ 108 sang 110).
 
 ### 2.3. Chuyên Mục Seedance AI Video Prompts Hub (`/seedance/`)
-- [x] **Xây dựng trung tâm tuyển chọn Prompt tạo video Seedance 2.5 & 2.0:**
-  - Tổng hợp và cấu trúc hóa các prompt xuất sắc nhất từ kho lưu trữ `AtlasCloudAI/awesome-seedance-2.5-prompts-skills`.
-  - Mở rộng thêm các kịch bản video generation chuyên nghiệp từ các kho GitHub uy tín: `LearnPrompt/awesome-seedance`, `YouMind-OpenLab`, `ZeroLu`.
-  - Hỗ trợ đa dạng thể loại: Cinematic & Match-Cut, Product & Commercial Ads, Multi-Image References, VFX & Sci-Fi, Stylized Anime, UGC & Handheld Vlog.
+- [x] **Xây dựng và mở rộng trung tâm tuyển chọn Prompt tạo video Seedance 2.5 & 2.0 (37 kịch bản):**
+  - Mở rộng kho lưu trữ lên **37 kịch bản sản xuất video hoàn chỉnh** từ `AtlasCloudAI/awesome-seedance-2.5-prompts-skills`, `ZeroLu/awesome-seedance-2.5`, `LearnPrompt`, và `YouMind-OpenLab`.
+  - Bao quát 6 thể loại thực chiến:
+    - *Cinematic & Match-Cut (9 prompts):* Cắt ghép theo nhịp (beat film), One-take bánh răng Steampunk 30s, tua ngược thời gian trong quán ăn 1950s (360° orbit), kịch tính tâm lý giằng xé giơ súng, Game of Thrones Walk of Shame (Cooke anamorphic).
+    - *Product & Commercial (7 prompts):* Bánh quy trái cây bùng nổ, máy pha cà phê, giọt serum mỹ phẩm slow-motion 1000fps, nước chanh đá hạ nhiệt 111°F xuống 69°F, thằn lằn sa mạc 3D giải khát, bốt da cao cấp, tai nghe chống ồn flash sale.
+    - *Multi-Image Reference (4 prompts):* Bay qua các chiều không gian (5 ảnh tham chiếu), One-take xuyên 6 phòng (8 ảnh tham chiếu), chợ đồ cổ bảo toàn 12 đạo cụ, công thức khóa gương mặt nhân vật chuẩn xác.
+    - *VFX & Sci-Fi (5 prompts):* Tàu hỏa xé toạc màn hình chiếu phim (đen trắng hóa màu sắc), inpainting xóa sạch đám đông giữ chủ thể, FPV đuổi bắt đêm mưa Cyberpunk, thám hiểm sinh vật phát quang vực sâu 4000m, rơi từ nóc nhà Cyberpunk phong cách black comedy.
+    - *Stylized & Anime (4 prompts):* Hoạt hình 2D Sakuga đối đầu quái vật bóng đêm, Stop-motion đất sét làm bánh, chiếc ô biết bay The Umbrella Escape phong cách 3D Pixar, cận chiến Kali 1v2 tại chợ đêm giữ nguyên vẹn vũ khí.
+    - *UGC & Vlog (8 prompts):* Vlog selfie thần tượng K-pop hậu trường trước giờ diễn, boyfriend POV một ngày tại Tokyo, phim tư liệu 16mm Địa Trung Hải thập niên 70, tiệc bể bơi ngoại ô Paris nhảy lặn không cắt cảnh, ASMR MiniDV quán cà phê cổ điển 2002.
   - Tích hợp tính năng **Copy Prompt 1-Click** với hiệu ứng thông báo Toast mượt mà.
-  - Tích hợp video demo / poster chất lượng cao và liên kết trực tiếp đến repo gốc.
+  - Tích hợp 100% video demo / poster chất lượng cao (hỗ trợ preview MP4 từ AtlasCloud và GitHub user-attachments) và liên kết trực tiếp đến repo gốc.
   - Bổ sung bộ lọc thẻ thể loại và thanh tìm kiếm thời gian thực.
   - Tích hợp lối tắt điều hướng trực tiếp trên thanh menu `_includes/header.html`.
 

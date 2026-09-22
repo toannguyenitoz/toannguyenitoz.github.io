@@ -38,45 +38,142 @@
   - 3D Animation
   - Macro
   - Camera Motion
-- id: windows-through-worlds
-  title: Windows Through Worlds (5 Multi-Ref)
-  category: Multi-Image Reference
-  model: Seedance 2.5
-  duration: 20s
-  aspect_ratio: '16:9'
-  author: Volcengine Ark
-  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
-  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
-  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/firstScreen-group3-output.mp4
-  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/firstScreen-group3-output.mp4
-  description: Multi-image reference concept short gliding through windows into different environmental dimensions with underwater transition.
-  prompt: 'A cinematic brand concept short. @image1 is the first frame; the picture trembles slightly, the camera pushes in to tree shadows rushing backward outside the window, their retreat accelerating, then abruptly cuts to @image2, speed easing as the camera glides slowly along a stream, birdsong and blossoms. The camera drops underwater — bubble sounds — as orange jellyfish drift gracefully past the lens @image3; the camera pulls back as small fish flit past and swim from the water into the window @image4, a girl looking around, watching them. The camera pulls back, defocuses, then refocuses sharp, switching to the music''s rhythm: a Chinese-garden lattice window @image5 with light circling, church stained glass, an airplane porthole, a dome skylight, a bay window, louver blinds, a European dormer, a door peephole, a camera viewfinder, a bird''s eye, a human eye close-up. It settles on the human eye; the eye closes, screen black, then suddenly opens — "seedance" appearing in the center
-    of the eye on the accent beat.'
-  tags:
-  - Multi-Reference
-  - Transitions
-  - Surreal
-  - Cinematography
-- id: one-take-through-six-rooms
-  title: One-Take Through Six Rooms (8 Multi-Ref)
-  category: Multi-Image Reference
+- id: diner-time-freeze-liquid-rewind
+  title: Time Freeze & Liquid Rewind Diner — 360° Orbit
+  category: Cinematic & Match-Cut
   model: Seedance 2.5
   duration: 30s
   aspect_ratio: '16:9'
-  author: Volcengine Ark
-  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
-  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
-  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab1-group2-output.mp4
-  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab1-group2-output.mp4
-  description: Continuous walking take following a protagonist through six mood-shifting artistic rooms governed by 8 reference styles.
-  prompt: 'One continuous take. The camera smoothly follows a person in a black coat (reference @image1) moving left to right through six connected rooms of different tones and moods. Every room shares the same structure: white walls, light herringbone wood floor, French floor-to-ceiling windows, white sheer curtains (reference @image2) but the outside view and mood differ each time. The protagonist walks at a constant pace, passing through every open door. 0-5s room one, American-comic fight: the protagonist fights a character (@image3), who is defeated; 5-10s room two, warmth, felt-craft style, window view a sunflower field (@image4), warm-orange soft light, a painter painting sunflowers (@image5), the protagonist turning felt-style on entering; 10-15s room three, sorrow, black-and-white comic stop-motion, rain outside, cold-grey light, a person alone on the floor hugging their knees, a phone glowing with an unanswered call; on entering, the light blinks off then on, the room turns color,
-    flowers bursting into bloom; 15-20s room four, joy, a room submerged in the sea (reference @image6), the protagonist turning transparent among coral and fish; 20-25s room five, surprise, window view a sky of fireworks (reference @image7), colorful flickering light, the protagonist swept up in a cheering crowd; 25-30s a blank white room, the protagonist snaps their fingers — snap SFX — frame goes black, "seedance" in the middle (reference @image8). Cinematic quality, high-fashion advertising style, lighting entirely determined by the window views for strong emotional contrast, no text in frame.'
+  author: '@techhalla'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/ce4d92ba-3bfe-4aa4-b299-de5e19844a59
+  video_url: https://github.com/user-attachments/assets/ce4d92ba-3bfe-4aa4-b299-de5e19844a59
+  description: Photorealistic 1950s diner spill collision with suspended coffee droplets, 360° orbital camera, and seamless temporal rewind.
+  prompt: 'Photorealistic cinematic 1950s American diner, chrome stools, red vinyl, neon glow and checkerboard floor, shot with modern lived-in realism and soft natural window light. Subtle handheld texture, warm practicals, rich period detail, heavy film grain.
+
+    0-4s: [Medium Wide] A striking young woman in her early 20s sits alone at the counter, calm and slightly amused, slowly sipping a tall thick milkshake through a straw. Behind her a young waitress in classic uniform approaches with a tray of eggs and bacon in one hand and a full glass coffee pot in the other. An older lady starts rising from a nearby booth.
+
+    4-8s: [Dynamic Tracking] The older lady collides hard into the waitress. Tray, plate, eggs, bacon and coffee pot explode upward in chaotic slow motion. Coffee erupts into long liquid ribbons and perfect suspended droplets. Camera immediately begins a smooth continuous orbit around the impact. Time locks completely at the peak of the spill. Every face freezes in pure shock. Only the girl at the counter keeps moving, completely unfazed.
+
+    8-17s: [Slow 360° Orbital] Camera glides in a full elegant orbit through the frozen diner. Coffee hangs in mid-air as glassy ribbons and spheres with perfect volume and surface tension. Bacon strips, eggs and the spinning tray float weightlessly. Patrons and waitress remain locked in startled expressions. The girl at the counter takes one slow, deliberate sip, eyes half-lidded, almost bored, while the entire frozen world (except her) begins an elegant reverse: every droplet, every piece of food and every person rewinds smoothly back to the exact starting positions.
+
+    17-24s: [Medium Shot] Rewind lands perfectly. Waitress stands balanced again with tray and coffee pot. The girl lifts her eyes, raises two fingers in a small casual gesture and softly calls the waitress by name. The waitress turns toward her just before the older lady begins to stand, completely avoiding the collision. A tiny private smile crosses the girl''s face.
+
+    24-30s: [Extreme Close-Up] Hard cut to her face as she takes one last slow sip. Soft knowing smile, eyes almost closed in quiet satisfaction, like she has done this a hundred times. Shallow depth of field, creamy bokeh of the neon diner behind her.
+
+    Photorealistic, ultra-detailed fluid physics, perfect motion blur only on moving elements, stable characters, cinematic lighting, heavy natural film grain, no artifacts, movie-level temporal coherence, high rewatch value.'
   tags:
-  - One-Take
-  - Multi-Style
-  - Comic
-  - Artistic
-  - Continuity
+  - Time Freeze
+  - Cinematic
+  - 360 Orbit
+  - Fluid Dynamics
+  - Retro Diner
+- id: roller-coaster-wig-gum-rewind
+  title: Roller Coaster Time Rewind & Gum Fix
+  category: Cinematic & Match-Cut
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@techhalla'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/ff1899e1-49b6-4b6c-bd8c-58e1fc5f1ccb
+  video_url: https://github.com/user-attachments/assets/ff1899e1-49b6-4b6c-bd8c-58e1fc5f1ccb
+  description: High-speed amusement park comedy where time freezes mid-drop, the protagonist chews gum and locks a flying wig in reverse.
+  prompt: 'Photorealistic cinematic daytime amusement park roller coaster, bright hard sunlight, strong wind, realistic motion blur on tracks and background, subtle handheld camera energy, rich skin detail, heavy natural film grain.
+
+    0-5s: [Medium Shot] A young woman in her early 20s sits in the front seat of a moving roller coaster car, calm and slightly bored, hair whipping in the wind. Beside her sits a middle-aged man wearing what looks like a normal full head of hair. Behind them, another car with a woman is visible. The coaster drops and banks hard.
+
+    5-9s: [Dynamic Tracking] The force of the turn rips the man''s wig free. It peels off his bald head in a chaotic upward arc, spinning and flying backward through the air. The wig lands messily on the head of the woman in the car behind. Everyone''s faces freeze in pure shock and confusion at the peak of the chaos. Time locks completely. Only the young woman in the front keeps moving.
+
+    9-15s: [Slow Orbital + Detail] Camera slowly orbits the frozen cars. The wig hangs mid-air in a twisted shape with individual hairs suspended. The bald man''s scalp is fully exposed, mouth open. The woman behind is frozen mid-scream with the wig draped over her face. The young woman looks sideways, rolls her eyes and mouths "joder, otra vez". She reaches into her pocket, pulls out a stick of chewing gum, unwraps it and calmly puts it in her mouth, starting to chew while the entire frozen scene (except her) begins a precise reverse.
+
+    15-20s: [Medium Close-up] The rewind is controlled and elegant: the wig lifts off the woman behind, flies backward through the air in reverse, and returns exactly to the moment it is only beginning to peel off the bald man''s head. Time freezes again at that precise instant — the front edge of the wig just lifting, a few strands already loose.
+
+    20-26s: [Tight Medium] Still frozen for everyone else, the young woman takes the chewed gum out of her mouth, reaches over and firmly presses it onto the center of the bald man''s scalp, right under the lifting wig. With the same hand she smooths and presses the wig back down into perfect place, locking it with the gum. She sits back, looks straight ahead with a tiny private smile, completely unbothered.
+
+    26-30s: [Medium Shot] Time suddenly resumes at full real-time speed. The coaster continues its drop. The man touches his head, feels the wig still firmly in place, looks confused for a second, then breaks into a relieved, happy smile. The young woman stares forward, already chewing a new piece of gum, expression of quiet satisfaction.
+
+    Photorealistic, ultra-detailed wind and hair physics, perfect motion blur only on moving elements, stable characters, cinematic lighting, heavy natural film grain, no artifacts, movie-level temporal coherence, high rewatch value.'
+  tags:
+  - Comedy
+  - Action
+  - Time Manipulation
+  - Roller Coaster
+  - Photoreal
+- id: medieval-shame-walk-alexa-xt
+  title: Gritty Medieval Shame Walk — Alexa XT Cooke Lens
+  category: Cinematic & Match-Cut
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@techhalla'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/1048d768-2bb4-4415-80f8-73e526a27681
+  video_url: https://github.com/user-attachments/assets/1048d768-2bb4-4415-80f8-73e526a27681
+  description: Period production look with Cooke anamorphic lenses, Steadicam tracking barefoot on cobblestones, ringing iron bell, and intense public condemnation.
+  prompt: '[STYLE + CAMERA + ATMOSPHERE]
+
+    Gritty high-end medieval television production look. Shot on ARRI Alexa XT with Cooke anamorphic lenses, mix of Steadicam tracking and handheld inside the crowd. Natural overcast daylight, desaturated dirty palette, visible film grain, realistic crowd physics and fabric movement. No modern polish.
+
+    [CHARACTERS]
+
+    Central figure: proud middle-aged noblewoman with roughly cropped short blonde hair, wearing a plain rough grey woolen penitential robe that fully covers her, barefoot, pale skin, rigid upright posture that slowly cracks under public condemnation. Stern middle-aged woman in plain brown religious robes walking just behind her, continuously ringing a large heavy iron handbell and chanting in a loud flat voice. Dense crowd of dirty medieval city dwellers of every age and class in period clothing packed on both sides and leaning from windows.
+
+    [LOCATION]
+
+    Narrow winding cobblestone streets of a medieval coastal city, high stone walls, arched doorways, wooden shutters, mud on the ground.
+
+    [TIMELINE]
+
+    0-6s: [Steadicam tracking medium-wide from the side] The woman in the plain robe walks steadily forward with forced dignity. The robed woman stays half a step behind ringing the bell and chanting "Shame. Shame. Shame." Crowd begins to notice, first heads turn, early shouts of "Shame!" rise.
+
+    6-12s: [Handheld inside the pack, pushing closer] Crowd presses tighter along the path. Faces show pure contempt. Children point and call out. The woman keeps her chin high but her eyes start to glaze. Bell never stops. Chant continues: "Shame. Shame. Shame."
+
+    12-18s: [Low tracking shot moving with her feet then tilting up to face] Bare feet slap wet cobblestones. A woman leans from a window and shouts "Shame!" The central woman''s jaw tightens, first tears form but she does not break stride. Crowd noise becomes a continuous wall of overlapping "Shame!" mixed with the bell.
+
+    18-24s: [Medium close-up handheld, slight shake] Camera stays locked on her face as the controlled mask cracks. Tears finally fall. She stares straight ahead, breathing harder. Behind her the religious woman rings harder and keeps the flat chant. The plain robe shifts with every step under the weight of the stares.
+
+    24-30s: [Pull-back Steadicam wide tracking] The full street is visible: wall of bodies on both sides, continuous shouting of "Shame! Shame! Shame!" mixed with the bell. The woman continues walking, posture still upright but now visibly broken, tears streaming, until the frame holds on her isolated figure moving through the condemnation.
+
+    [STYLE & QUALITY BOOSTERS]
+
+    Exact period production texture of a major series, coherent physics of every body and fabric movement, stable character continuity, natural motion blur, no modern digital cleanliness, no artificial enhancement.'
+  tags:
+  - Medieval
+  - Period Drama
+  - Steadicam
+  - Anamorphic
+  - Emotional Acting
+- id: conflicted-trigger-dilemma
+  title: Emotional Confrontation — Over-the-Shoulder Dilemma
+  category: Cinematic & Match-Cut
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@BubbleBrain'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/e567fd0a-dff3-4c1b-9551-c59c62396f80
+  video_url: https://github.com/user-attachments/assets/e567fd0a-dff3-4c1b-9551-c59c62396f80
+  description: 'Masterclass in subtle character acting and high-tension dilemma: trembling trigger hand, held-back tears, heavy breathing, and silent room tone.'
+  prompt: 'Use the uploaded character reference image as the only protagonist. Strictly preserve the protagonist’s facial features, hairstyle, skin tone, age, overall aura, and visual identity throughout the entire clip. Generate a 30-second emotionally intense dramatic scene. This is not an action scene or a gunfight. The focus is not on shooting itself, but on the protagonist’s extremely painful and conflicted emotional struggle in the moment before pulling the trigger. The entire clip should center on the character’s performance and facial expression.
+
+    The setting should be a quiet, oppressive, high-tension environment with a cinematic atmosphere. It can be a dim interior, an abandoned room, a dark hallway, an empty warehouse, or a nighttime indoor setting. The background should not be too visually busy or distracting. The lighting should feel restrained, dramatic, and moody, with clear contrast on the protagonist’s face. The eyes and the visible moisture of tears must be clearly readable. The overall atmosphere should feel silent, heavy, and emotionally suffocating.
+
+    The camera uses an over-the-shoulder shot from behind the other person. Do not show the other person’s face. The foreground should include a blurred shoulder, the back of the head, or the silhouette edge of the other person’s body, creating a clear over-the-shoulder composition. The camera faces the protagonist directly. Focus must stay locked on the protagonist’s facial expression and the gun pointed forward. The gun is aimed toward the camera, meaning it is aimed at "us," the unseen other person. The camera style should feel like a stable cinematic handheld shot with a subtle sense of breathing. A very slight slow push-in is allowed, gradually tightening on the protagonist’s face to intensify the emotion, but avoid exaggerated camera movement.
+
+    The protagonist is holding a gun aimed at the person in front of him. His emotions are extremely complex: anger, hurt, resentment, and the forced determination to do something terrible, mixed with clear reluctance, sorrow, and an inability to truly go through with it. He is not a cold-blooded killer, and he is not simply afraid. This is the feeling of "I have to do this, but I cannot bring myself to do it." His eyes are red and wet with tears. He is breathing hard. His lips tremble slightly. His jaw is tense. He keeps the gun raised, but his hand shakes subtly.
+
+    Style keywords: cinematic, emotional confrontation, over-the-shoulder shot, gun aimed forward, tear-filled eyes, restrained breakdown, conflicted emotion, internal struggle, high tension silence, character close-up, dramatic film scene.'
+  tags:
+  - Drama
+  - Acting Masterclass
+  - Over-the-Shoulder
+  - Emotional
+  - Tension
 - id: multilingual-hiphop-mv
   title: Multilingual Hip-Hop 'Hello' MV
   category: Cinematic & Match-Cut
@@ -97,6 +194,66 @@
   - Hard Cuts
   - Golden Hour
   - Audio Sync
+- id: pop-superstar-y2k-editorial-mv
+  title: Pop Superstar 30s Y2K Fashion Editorial MV
+  category: Cinematic & Match-Cut
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@ZaraIrahh'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/2b320d9d-bb0a-4885-baa1-1b1f4b574524
+  video_url: https://github.com/user-attachments/assets/2b320d9d-bb0a-4885-baa1-1b1f4b574524
+  description: Blockbuster 30-second pop music video blending Vogue fashion editorials, Y2K magazine typography, concert arenas, and floating sunrise stages.
+  prompt: 'Create a premium 30-second cinematic pop music video in 16:9 landscape with blockbuster production quality.
+
+    The video features one female pop superstar and one male pop singer with youthful, attractive faces, expressive eyes, natural skin texture, confident stage presence, and authentic chemistry. Both artists remain visually consistent throughout every shot.
+
+    The female artist wears a crystal-embellished blush corset, oversized pastel pink faux-fur jacket, glossy satin cargo pants, platform sneakers, layered diamond jewelry, shimmering body chains, glamorous editorial makeup, luminous skin, glossy lips, and flowing textured hair. The male artist wears an oversized powder-blue embellished trench coat, shimmering silver knit top, relaxed ivory trousers, crystal sneakers, tinted luxury sunglasses, layered silver chains, rings, bracelets, and premium pop-star accessories. Their outfits naturally react to wind and movement.
+
+    Both artists actively perform the song with perfect lip synchronization, realistic mouth movements, expressive facial expressions, confident body language, and emotional delivery. They frequently sing directly into the camera. During instrumental moments they naturally interact with each other through elegant movement and subtle choreography.
+
+    Blend luxury pop music, Vogue fashion editorials, beauty campaigns, Y2K magazine aesthetics, and world-tour concert visuals.
+
+    Visual quality should resemble ARRI Alexa 65 with Cooke Anamorphic lenses, IMAX-quality cinematography, HDR color science, cinematic lens flares, volumetric haze, premium beauty lighting, elegant camera movement, shallow depth of field, ultra-realistic skin texture, blockbuster VFX, and luxury commercial production.
+
+    Scene 1 (0–5s): Pastel studio with giant LED walls and kinetic typography.
+
+    Scene 2 (5–10s): Golden-hour rooftop overlooking modern skyline.
+
+    Scene 3 (10–15s): Blue-hour luxury shopping district with digital displays.
+
+    Scene 4 (15–20s): Sold-out concert arena with lasers, confetti, and screaming fans.
+
+    Scene 5 (20–25s): Luxury penthouse overlooking city night skyline.
+
+    Scene 6 (25–30s): Surreal stage floating above golden clouds at sunrise.'
+  tags:
+  - Pop Music Video
+  - Y2K
+  - Fashion Editorial
+  - Concert
+  - VFX
+- id: cinematic-desert-dunes-fpv
+  title: Golden-Hour Saharan Desert FPV Sweep
+  category: Cinematic & Match-Cut
+  model: Seedance 2.5
+  duration: 20s
+  aspect_ratio: '16:9'
+  author: Reviral AI
+  source: Reviral-ai / seedance-2.5-prompts
+  source_url: https://github.com/Reviral-ai/seedance-2.5-prompts
+  thumbnail: https://media.goodcase.ai/cases/39b33ab9f88e.jpg
+  video_url: https://media.goodcase.ai/cases/39b33ab9f88e.jpg
+  description: Sweeping cinematic drone shot gliding inches above razor-sharp sand ridges as evening shadows stretch across golden desert dunes.
+  prompt: Ultra-wide 2.39:1 anamorphic establishing drone shot skimming just 10 centimeters above the razor-sharp crest of an undulating Saharan sand dune during golden hour. Fine golden sand grains blow horizontally across the ridge in crisp micro-detail. The setting sun sits low on the horizon, bathing the undulating sea of dunes in deep amber, burnt orange, and violet shadow gradients. The camera gracefully accelerates forward, cresting the precipice and banking smoothly downward to reveal a small Bedouin caravan with camels trekking quietly in the distance. 35mm film grain, Hasselblad color science, atmospheric dust haze, majestic cinematic grandeur.
+  tags:
+  - Landscape
+  - Cinematic
+  - Drone
+  - Golden Hour
+  - Desert
 - id: fruity-cookie-commercial
   title: Fruity Cookie Commercial (Multimodal)
   category: Product & Commercial
@@ -138,24 +295,6 @@
   - Product Demo
   - Step-by-Step
   - Instructional
-- id: video-edit-remove-all-but-lead
-  title: Video Inpainting — Lead Subject Isolation
-  category: VFX & Sci-Fi
-  model: Seedance 2.5
-  duration: 10s
-  aspect_ratio: '16:9'
-  author: Volcengine Ark
-  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
-  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
-  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part2-group1-output.mov
-  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part2-group1-output.mov
-  description: High-precision reference video inpainting prompt isolating the main protagonist and cleanly replacing background crowds with temporal consistency.
-  prompt: 'Video editing: remove everyone in @video1 except the protagonist. Clean inpainting of the revealed background environment with zero flicker, retaining the original camera motion, shadows, ground reflections, and realistic motion blur of the primary subject. Seamless temporal consistency across all frames.'
-  tags:
-  - Inpainting
-  - Video Editing
-  - VFX
-  - Subject Isolation
 - id: luxury-skincare-serum-commercial
   title: Luxury Skincare Serum Splash Commercial
   category: Product & Commercial
@@ -175,25 +314,279 @@
   - Macro
   - Fluid Dynamics
   - Slow-Motion
-- id: handheld-minidv-coffee-vlog
-  title: Early-2000s MiniDV Coffee ASMR Vlog
-  category: UGC & Vlog
+- id: summer-heatwave-lemon-iced-water
+  title: Heatwave 111°F to 69°F Lemon Water Refresh
+  category: Product & Commercial
+  model: Seedance 2.5
+  duration: 14s
+  aspect_ratio: '16:9'
+  author: '@bmx_ai13'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/8d1de0cc-9bff-4c76-a097-5e6e490478bf
+  video_url: https://github.com/user-attachments/assets/8d1de0cc-9bff-4c76-a097-5e6e490478bf
+  description: Commercial advertisement with kinetic temperature countdown graphic as a refreshing glass of iced lemon water is consumed.
+  prompt: 'High quality video 16:9 aspect ratio 14 seconds duration.
+
+    Cinematic medium shot of a young woman with a short brown bob haircut wearing an open light blue button down shirt over a white crop top and denim skirt. She stands on an outdoor patio with hazy warm lighting and out of focus string lights in the background.
+
+    A text graphic reading 111 F is overlaid at the top center. She is visibly hot and fans her face with her right hand.
+
+    A hand enters the frame from the right holding a tall glass of ice water with a lemon and a straw. She takes the glass with both hands and begins sipping through the straw.
+
+    As she drinks the text graphic rapidly counts down to 69 F. She closes her eyes and looks completely refreshed.
+
+    Ambient hazy lighting. Upbeat refreshing summer pop music playing. Photorealistic 8k resolution highly detailed natural lighting.'
+  tags:
+  - Commercial
+  - Beverage
+  - Kinetic Graphics
+  - Summer
+  - Refreshing
+- id: desert-horned-lizard-grapefruit-3d
+  title: Desert Horned Lizard & Grapefruit 3D Ad
+  category: Product & Commercial
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: Volcengine Ark
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab3-group1-output.mp4
+  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab3-group1-output.mp4
+  description: '3D animated commercial: a parched desert horned lizard finds a grapefruit, bites in, and a tsunami of juice turns the desert into a summer sea.'
+  prompt: 'A 3D animated commercial style, bright and translucent colors; the pulp and juice must feel intensely refreshing and impactful. The overall vibe is like a high-quality commercial animated short with a touch of exaggerated humor. The desert horned lizard character is cute, lively and expressive, reference @image1. The image texture references that soft natural light, delicate fuzz/skin texture, dreamy macro depth of field, and a realistic-yet-slightly-childlike feel from the reference image.
+
+    0-3s: a desert scorched by the blazing sun, the air shimmering with heat and the sand searing hot; a desert horned lizard lies on the scalding sand, tongue slightly out, eyes glazed, nearly dried out.
+
+    3-6s: it spots a cool, plump, dew-covered grapefruit half-buried in the sand, glistening like a desert miracle; the lizard''s eyes go wide in an instant.
+
+    6-8s: it pounces over, hugging the grapefruit tightly with both hands, pressing its face against the rind.
+
+    8-11s: it takes a big bite; the grapefruit rind splits open, pulp glistening, and juice erupts like a tsunami.
+
+    11-16s: translucent orange-pink juice gushes wildly, flooding the desert into a sparkling summer sea.
+
+    16-24s: the lizard floats on half a grapefruit like a life buoy, sipping juice through a straw with tiny sunglasses. Slogan: "Seedance Grapefruit — bite in for the pulp, what pours out is summer."'
+  tags:
+  - 3D Animation
+  - Commercial
+  - Character Animation
+  - Juice Splash
+  - Humor
+- id: e-commerce-leather-footwear-craft
+  title: Genuine Leather Ankle Boots Product Showcase
+  category: Product & Commercial
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '9:16'
+  author: Atlas Cloud
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://media.goodcase.ai/media/poster/luxury-skincare-commercial.jpg
+  video_url: https://media.goodcase.ai/media/poster/luxury-skincare-commercial.jpg
+  description: Vertical 9:16 high-end e-commerce product video showcasing leather textures, toe stitching, and heel curvature.
+  prompt: 'Vertical 9:16, high-end textured realistic style, main subject is a pair of genuine leather ankle boots, generate a 30-second footwear detail short video.
+
+    Shot 1: Macro close-up, ankle boots resting on a matte stone platform, camera slowly pushes in to the toe stitching, cool-toned side light sweeps across the leather, (low atmospheric electronic music starts) <sound of light leather contact>.
+
+    Shot 2: Close-up, camera orbits around the shoe body for one full circle showcasing the streamlined shape and heel curve, reflector fill light.
+
+    Shot 3: Macro close-up, fixed camera position, fingertip flips the tongue to reveal the inner lining logo and stitching.
+
+    Shot 4: Medium shot, booted foot steps down and lightly lifts the heel, camera looks down to capture the moment of contact, <sound of heel tapping ground>.
+
+    Shot 5: Close-up, camera slowly pulls out to frame the full shoe, (music concludes).
+
+    Constraints: Ankle boot style, leather texture, and color scheme must remain consistent throughout; stone platform and cool-toned lighting setup locked; prevent inconsistency between left and right shoe shapes.
+
+    General Constraints: Keep no subtitles; Do not generate Logo; Do not generate watermarks; Use only one camera movement per shot; Characters should have natural slight movements, not be statues.'
+  tags:
+  - E-commerce
+  - Vertical 9:16
+  - Product Video
+  - Leather Craft
+  - Macro
+- id: wireless-headphones-flash-sale
+  title: Wireless Noise-Cancelling Headphones Flash Sale
+  category: Product & Commercial
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '9:16'
+  author: Atlas Cloud
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://media.goodcase.ai/media/poster/seedance-2-5-ugc-69e79f387106.jpg
+  video_url: https://media.goodcase.ai/media/poster/seedance-2-5-ugc-69e79f387106.jpg
+  description: Vertical 9:16 high-contrast commercial promotion with synchronized kinetic captions and rotating tech hardware.
+  prompt: 'Vertical 9:16, flash sale high-contrast realistic style, featuring a pair of wireless noise-cancelling headphones. Generate a 30-second promotional flash sale short video.
+
+    Shot 1: Close-up, headphones float and rotate against a neon gradient background, camera quickly pushes in, (strong rhythmic electronic drumbeat starts) <power-on prompt sound>, 【Storewide Direct Discount $50】.
+
+    Shot 2: Macro close-up, camera cuts to the earcup hinge and charging contacts, hard light highlights sweep across.
+
+    Shot 3: Medium shot, camera cuts to a person wearing headphones nodding to the beat, light and shadow flicker, 【Active Noise Cancellation 40-hour Battery Life】.
+
+    Shot 4: Close-up, camera quickly pans horizontally past the charging case opening and closing, <magnetic snap sound>, 【Limited-time Flash Sale First 100 Customers】.
+
+    Shot 5: Medium close-up, headphones and price tag share the frame, camera quickly pulls back and freezes, (drumbeat concludes) 【Buy Now】.
+
+    Constraints: Headphone color and design remain consistent throughout; neon background color palette is locked; captions appear rhythmically synchronized with shot changes, maintaining high-contrast promotional feel.
+
+    General constraints: Keep no subtitles; do not generate a Logo; do not generate watermarks; use only one camera movement per shot.'
+  tags:
+  - E-commerce
+  - Gadgets
+  - Audio
+  - Commercial
+  - Vertical 9:16
+- id: windows-through-worlds
+  title: Windows Through Worlds (5 Multi-Ref)
+  category: Multi-Image Reference
+  model: Seedance 2.5
+  duration: 20s
+  aspect_ratio: '16:9'
+  author: Volcengine Ark
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/firstScreen-group3-output.mp4
+  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/firstScreen-group3-output.mp4
+  description: Multi-image reference concept short gliding through windows into different environmental dimensions with underwater transition.
+  prompt: 'A cinematic brand concept short. @image1 is the first frame; the picture trembles slightly, the camera pushes in to tree shadows rushing backward outside the window, their retreat accelerating, then abruptly cuts to @image2, speed easing as the camera glides slowly along a stream, birdsong and blossoms. The camera drops underwater — bubble sounds — as orange jellyfish drift gracefully past the lens @image3; the camera pulls back as small fish flit past and swim from the water into the window @image4, a girl looking around, watching them. The camera pulls back, defocuses, then refocuses sharp, switching to the music''s rhythm: a Chinese-garden lattice window @image5 with light circling, church stained glass, an airplane porthole, a dome skylight, a bay window, louver blinds, a European dormer, a door peephole, a camera viewfinder, a bird''s eye, a human eye close-up. It settles on the human eye; the eye closes, screen black, then suddenly opens — "seedance" appearing in the center
+    of the eye on the accent beat.'
+  tags:
+  - Multi-Reference
+  - Transitions
+  - Surreal
+  - Cinematography
+- id: one-take-through-six-rooms
+  title: One-Take Through Six Rooms (8 Multi-Ref)
+  category: Multi-Image Reference
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: Volcengine Ark
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab1-group2-output.mp4
+  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab1-group2-output.mp4
+  description: Continuous walking take following a protagonist through six mood-shifting artistic rooms governed by 8 reference styles.
+  prompt: 'One continuous take. The camera smoothly follows a person in a black coat (reference @image1) moving left to right through six connected rooms of different tones and moods. Every room shares the same structure: white walls, light herringbone wood floor, French floor-to-ceiling windows, white sheer curtains (reference @image2) but the outside view and mood differ each time. The protagonist walks at a constant pace, passing through every open door. 0-5s room one, American-comic fight: the protagonist fights a character (@image3), who is defeated; 5-10s room two, warmth, felt-craft style, window view a sunflower field (@image4), warm-orange soft light, a painter painting sunflowers (@image5), the protagonist turning felt-style on entering; 10-15s room three, sorrow, black-and-white comic stop-motion, rain outside, cold-grey light, a person alone on the floor hugging their knees, a phone glowing with an unanswered call; on entering, the light blinks off then on, the room turns color,
+    flowers bursting into bloom; 15-20s room four, joy, a room submerged in the sea (reference @image6), the protagonist turning transparent among coral and fish; 20-25s room five, surprise, window view a sky of fireworks (reference @image7), colorful flickering light, the protagonist swept up in a cheering crowd; 25-30s a blank white room, the protagonist snaps their fingers — snap SFX — frame goes black, "seedance" in the middle (reference @image8). Cinematic quality, high-fashion advertising style, lighting entirely determined by the window views for strong emotional contrast, no text in frame.'
+  tags:
+  - One-Take
+  - Multi-Style
+  - Comic
+  - Artistic
+  - Continuity
+- id: antique-market-multi-prop-lock
+  title: Outdoor Antique Market 30s Prop Continuity
+  category: Multi-Image Reference
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@CuriousRefuge'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/465cd44c-d57b-4ae3-be2b-7c69ae51f935
+  video_url: https://github.com/user-attachments/assets/465cd44c-d57b-4ae3-be2b-7c69ae51f935
+  description: Thirty-second continuous take in an antique stall tracking 12 distinct prop references (sextant, pocket watch, cracked porcelain) with zero morphing.
+  prompt: 'Use [Worn Leather Reference] as a reference for WORN LEATHER
+
+    Use [Tarnished Frames Reference] as a reference for TARNISHED FRAMES
+
+    Use [Pocket Watch Reference] as a reference for POCKET WATCH
+
+    Use [Location Reference] as the location reference
+
+    Use [Layout Reference] as a reference for LAYOUT
+
+    Use [Drinking Glass Reference] as a reference for DRINKING GLASS
+
+    Use [Cracked Porcelain Reference] as a reference for CRACKED PORCELAIN
+
+    Use [Color Grading Reference] as a color grading reference
+
+    Use [Character Reference_03] as a character reference for ISAAC
+
+    Thirty-second continuous take, an outdoor antique market at overcast midday. ISAAC moves slowly along a crowded stall, camera tracking with him at chest height. The stall is dense with the referenced objects — BRASS INSTRUMENTS, CRACKED PORCELAIN, TARNISHED FRAMES, WORN LEATHER, CASED TAXIDERMY — arranged exactly as in the LAYOUT REFERENCE. ISAAC lifts a BRASS SEXTANT, turns it once, sets it down. He lifts a POCKET WATCH, opens the case, closes it, sets it down. MARKUS (the stall/shop owner) watches him without speaking. ISAAC passes SYDNEY (who is browsing the far end). Then ISAAC stops. Camera pushes in as he reaches past THREE OBJECTS and lifts a green glass ornate DRINKING GLASS. ISAAC turns it to the light. His expression changes completely. Camera holds on his face. Photoreal, overcast diffuse light, muted palette, 35mm, natural handheld.'
+  tags:
+  - Multi-Reference
+  - Prop Lock
+  - Continuous Take
+  - Antique Market
+  - 35mm
+- id: reference-character-identity-lock
+  title: Reference Image Character Identity Lock Blueprint
+  category: Multi-Image Reference
   model: Seedance 2.5
   duration: 20s
   aspect_ratio: '16:9'
   author: GoodCase / LearnPrompt
   source: LearnPrompt / awesome-seedance
   source_url: https://github.com/LearnPrompt/awesome-seedance
-  thumbnail: https://media.goodcase.ai/media/poster/seedance-25-minidv-coffee-asmr-vlog.jpg
-  video_url: https://media.goodcase.ai/media/poster/seedance-25-minidv-coffee-asmr-vlog.jpg
-  description: Authentic nostalgic handheld vlog capturing consumer camcorder autofocus hunting, natural tape noise, and cozy morning cafe acoustics.
-  prompt: 'Handheld POV consumer camcorder footage from 2002. A young barista in an oversized knit sweater prepares a pour-over coffee on a weathered wooden cafe counter. Natural morning sunlight streams through rainy street-facing windows. The camera has subtle authentic imperfections: slight handheld micro-jitter, warm vintage interlaced sensor roll-off, optical zoom hesitation, and gentle chromatic aberration at the frame edges. Audio captures crisp tactile ASMR details: the coarse grind of coffee beans falling into the filter, boiling kettle hiss, water gently pouring in circular motions, and gentle cafe murmur in the background. No color grade polish, raw naturalistic home-video fidelity.'
+  thumbnail: https://media.goodcase.ai/cases/d0baab1d99c4.jpg
+  video_url: https://media.goodcase.ai/cases/d0baab1d99c4.jpg
+  description: Master reference-binding formula ensuring identical facial geometry, hairstyle, and body proportions across multiple angle transitions.
+  prompt: '[CHARACTER LOCK MANDATE]
+
+    Use @image1 strictly as the character reference for PROTAGONIST.
+
+    INHERIT FROM @image1: exact facial bone structure, almond eye shape, dark iris tone, natural jawline curvature, specific ear shape, unblemished skin texture with natural pores, and raven-black wavy shoulder-length hair parted on the left.
+
+    INHERIT NOTHING ELSE: Do not inherit the background lighting, compression artifacts, flat pose, or clothing from @image1.
+
+    Throughout the 20-second sequence across three camera positions (wide 35mm lateral track, 45-degree over-the-shoulder push, and 85mm eye-level portrait close-up), PROTAGONIST must remain visibly identical with zero face morphing, zero flickering, and seamless spatial persistence.'
   tags:
-  - Vlog
-  - MiniDV
-  - ASMR
-  - Handheld
-  - Nostalgic
+  - Identity Lock
+  - Character Consistency
+  - Multi-Angle
+  - Prompt Formula
+- id: video-edit-remove-all-but-lead
+  title: Video Inpainting — Lead Subject Isolation
+  category: VFX & Sci-Fi
+  model: Seedance 2.5
+  duration: 10s
+  aspect_ratio: '16:9'
+  author: Volcengine Ark
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part2-group1-output.mov
+  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part2-group1-output.mov
+  description: High-precision reference video inpainting prompt isolating the main protagonist and cleanly replacing background crowds with temporal consistency.
+  prompt: 'Video editing: remove everyone in @video1 except the protagonist. Clean inpainting of the revealed background environment with zero flicker, retaining the original camera motion, shadows, ground reflections, and realistic motion blur of the primary subject. Seamless temporal consistency across all frames.'
+  tags:
+  - Inpainting
+  - Video Editing
+  - VFX
+  - Subject Isolation
+- id: steam-train-bursts-screen
+  title: Steam Train Bursts the Screen (B&W to Color Impact)
+  category: VFX & Sci-Fi
+  model: Seedance 2.5
+  duration: 20s
+  aspect_ratio: '16:9'
+  author: Volcengine Ark
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part2-group2-output.mov
+  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part2-group2-output.mov
+  description: A steam locomotive bursts through an old cinema projection screen, tearing cloth fibers as monochrome film shocks into full photoreal color.
+  prompt: 'Hyper-real cinematic realist style with photorealistic live-action texture, emphasizing the real-world plausibility of the physical object bursting out (the steam train); no CGI gloss / game engine / stylized 3D. Preserve @video1''s original composition, projection-hall lighting, handheld camera state and natural imperfections.
+
+    Source video locked: keep @video1 fully intact as the base image (the old-fashioned projection hall, the rows of hat-wearing audience seen from behind, the projector''s conical beam, the screen, the ambient light); the only additions: the train bursting out of the screen, the tearing of the screen, and the physical impact on the hall.
+
+    Color-shift rule: at the start strictly keep @video1''s original black-and-white old-film texture (grain / scratches / flicker); at the exact moment the locomotive breaks through the screen, the image abruptly shifts from black-and-white to full real color like a shockwave centered on the impact.
+
+    Subject: an old-fashioned steam locomotive with black steel body, red-copper boiler, venting white steam, charging forward with immense inertia. Cloth fibers tear radially.
+
+    Sound: projector clatter followed by tearing fabric, steam eruption, steel wheel roar, and shock blast. Total duration matching @video1.'
+  tags:
+  - VFX
+  - Screen Burst
+  - Color Transition
+  - Cinema
+  - Photoreal
 - id: cyberpunk-rainy-car-chase
   title: Cyberpunk Neon Night Pursuit — FPV Drone
   category: VFX & Sci-Fi
@@ -213,25 +606,6 @@
   - Sci-Fi
   - High Speed
   - Neon Lighting
-- id: anime-shonen-combat-lock
-  title: 2D Hand-Drawn Anime Epic Combat Sequence
-  category: Stylized & Anime
-  model: Seedance 2.5
-  duration: 15s
-  aspect_ratio: '16:9'
-  author: GoodCase / LearnPrompt
-  source: LearnPrompt / awesome-seedance
-  source_url: https://github.com/LearnPrompt/awesome-seedance
-  thumbnail: https://media.goodcase.ai/media/poster/case-a9ab0266f96a.jpg
-  video_url: https://media.goodcase.ai/media/poster/case-a9ab0266f96a.jpg
-  description: Sakuga-style high-framerate 2D animation with impact frames, dynamic perspective distortion, and stylized kinetic wind lines.
-  prompt: 'Masterpiece 2D Japanese anime sakuga action animation sequence. A lone young swordsman with disheveled dark hair and a tattered crimson haori clashes against a towering shadow beast in a torrential thunderstorm. Extreme dynamic foreshortening and wide-angle fish-eye perspective during sudden sword slashes. Hand-drawn brushstroke outlines, vibrant black-and-white impact frames on weapon contact, followed by electric golden spark explosions and stylized speed lines. Dynamic camera swoops around the duelists in continuous fluid choreography. Exclude: 3D CGI rendering, plastic doll textures, realistic photorealism. Maintain authentic 24fps hand-drawn cell animation cadence with dramatic emotional intensity.'
-  tags:
-  - Anime
-  - Sakuga
-  - 2D Animation
-  - Action
-  - Style Lock
 - id: bioluminescent-deep-sea-expedition
   title: Bioluminescent Abyssal Creature Expedition
   category: VFX & Sci-Fi
@@ -251,6 +625,68 @@
   - Bioluminescence
   - Sci-Fi
   - Photoreal
+- id: drunk-man-cyberpunk-rooftop-fall
+  title: Cyberpunk Rooftop Fall — Black Comedy Short
+  category: VFX & Sci-Fi
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: Volcengine Ark
+  source: AtlasCloudAI / awesome-seedance-2.5-prompts-skills
+  source_url: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+  thumbnail: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab3-group2-output.mp4
+  video_url: https://static.atlascloud.ai/model/example/seedance-2.5/cn-part1-tab3-group2-output.mp4
+  description: 'Black-comedy short: a tipsy man slips off a cyberpunk high-rise, swings on a cable through a window, and falls peacefully asleep on the floor.'
+  prompt: '[Drunk Man''s Rooftop Fright — falls off the edge — grabs a rope through the window — passes out on the spot | black-comedy short | 30 seconds]
+
+    Reference image @image1 — chubby, cute, drunk middle-aged man holding a half-eaten burger in a white tank top and old jeans.
+
+    Look: nighttime cyberpunk mega-city, dense glass-and-steel skyscrapers, neon signs (cyan/magenta), holographic billboards, wet reflective streets.
+
+    Camera: mixes handheld with jib; after the slip the camera plunges down with him as building neon streaks upward, 24-35mm widescreen cinematic lens, 180-degree shutter motion blur.
+
+    Sound design is key: hard-cutting repeatedly between "huge roar" and "total silence".
+
+    Storyboard:
+
+    S1 (0-4s): Close-up chewing burger happily.
+
+    S2 (4-9s): Stands, wobbles, loses footing, backward tumble over the ledge still clutching the burger.
+
+    S3 (9-12s): Facial close-up scream with howling wind.
+
+    S4 (12-16s): Eye-level long shot from distant building in TOTAL SILENCE as tiny figure plummets.
+
+    S5 (16-21s): Grabs a lifesaving cable with a twang, swings across the neon chasm.
+
+    S6 (21-26s): Crashes explosively through a high-rise office window in bullet time, glass raining down.
+
+    S7 (26-30s): Sprawled on carpet covered in glass, blinks once, rolls over, hugs the burger, and falls asleep snoring softly. Hard cut to black.'
+  tags:
+  - Black Comedy
+  - Cyberpunk
+  - Action
+  - Stunt
+  - Sound Design
+- id: anime-shonen-combat-lock
+  title: 2D Hand-Drawn Anime Epic Combat Sequence
+  category: Stylized & Anime
+  model: Seedance 2.5
+  duration: 15s
+  aspect_ratio: '16:9'
+  author: GoodCase / LearnPrompt
+  source: LearnPrompt / awesome-seedance
+  source_url: https://github.com/LearnPrompt/awesome-seedance
+  thumbnail: https://media.goodcase.ai/media/poster/case-a9ab0266f96a.jpg
+  video_url: https://media.goodcase.ai/media/poster/case-a9ab0266f96a.jpg
+  description: Sakuga-style high-framerate 2D animation with impact frames, dynamic perspective distortion, and stylized kinetic wind lines.
+  prompt: 'Masterpiece 2D Japanese anime sakuga action animation sequence. A lone young swordsman with disheveled dark hair and a tattered crimson haori clashes against a towering shadow beast in a torrential thunderstorm. Extreme dynamic foreshortening and wide-angle fish-eye perspective during sudden sword slashes. Hand-drawn brushstroke outlines, vibrant black-and-white impact frames on weapon contact, followed by electric golden spark explosions and stylized speed lines. Dynamic camera swoops around the duelists in continuous fluid choreography. Exclude: 3D CGI rendering, plastic doll textures, realistic photorealism. Maintain authentic 24fps hand-drawn cell animation cadence with dramatic emotional intensity.'
+  tags:
+  - Anime
+  - Sakuga
+  - 2D Animation
+  - Action
+  - Style Lock
 - id: stop-motion-claymation-baker
   title: Handmade Claymation Baker Kitchen Story
   category: Stylized & Anime
@@ -270,6 +706,239 @@
   - Stepped Timing
   - Craft
   - Miniature
+- id: umbrella-escape-3d-pixar-animation
+  title: The Umbrella Escape — 3D Pixar Animation
+  category: Stylized & Anime
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@Dheepanratnam'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/750306bb-38a0-45e0-8768-82cded325738
+  video_url: https://github.com/user-attachments/assets/750306bb-38a0-45e0-8768-82cded325738
+  description: '3D Pixar-style family animation: a sentient red umbrella escapes from a kid in a yellow raincoat, surfing puddles and dodging street sweepers.'
+  prompt: '{ "title": "The Umbrella Escape", "style": "3D Pixar family animation. Rainy city afternoon, vibrant reflections on wet pavement, action-comedy chase, warm and cool contrast, dynamic camera.",
+
+    "shots": [
+
+    {"time":"00:00-00:03","type":"CLOSE-UP","action":"Kid in yellow raincoat opens a bright red umbrella. A gust of wind hits. The umbrella inverts and yanks free.","camera":"Macro, raindrops flying.","dialogue":"Umbrella: ''FREEDOM!'' Kid: ''Hey!''"},
+
+    {"time":"00:03-00:06","type":"TRACKING","action":"Umbrella surfs down the sidewalk, opening and closing to dodge pedestrians. It hops over a puddle like a skipping stone.","camera":"Low tracking, fast.","dialogue":"Umbrella: ''Can\''t catch me! I\''m born to fly!''"},
+
+    {"time":"00:06-00:09","type":"WIDE","action":"Umbrella weaves through a flock of pigeons. They scatter. One pigeon gets caught inside and spins out dizzy.","camera":"Chaotic wide.","dialogue":"Pigeon: ''What the-''"},
+
+    {"time":"00:09-00:12","type":"ACTION","action":"Umbrella surfs a puddle wave, smacks into a lamppost, spinning like a tetherball.","camera":"Spinning camera with umbrella.","dialogue":"Umbrella: ''Wheee! Okay, that hurt.''"},
+
+    {"time":"00:12-00:15","type":"TRACKING","action":"A street sweeper approaches. The umbrella gets sucked into the brush, spins wildly, and launches out like a frisbee.","camera":"Following shot, fast.","dialogue":"Umbrella: ''I REGRET NOTHING!''"},
+
+    {"time":"00:15-00:18","type":"WIDE","action":"Umbrella glides toward a tree, sticks in branches. Kid arrives below out of breath.","camera":"Wide, rain falling.","dialogue":"Kid: ''Got... you...''"},
+
+    {"time":"00:18-00:25","type":"TWO-SHOT","action":"Kid climbs up. Kid: ''I\''ll let you pick the movie.'' Umbrella gently covers the kid from rain, settling onto shoulder.","camera":"Warm push-in.","dialogue":"Umbrella: ''Fine. But I\''m driving next time.''"},
+
+    {"time":"00:25-00:30","type":"WIDE","action":"Kid walks home splashing puddles playfully under the umbrella.","camera":"Wide, beautiful rainy street.","dialogue":"Kid: ''You\''re impossible.'' Umbrella: ''Thank you.''"}
+
+    ] }'
+  tags:
+  - 3D Animation
+  - Pixar Style
+  - Action-Comedy
+  - Family
+  - Rainy City
+- id: kali-night-market-fight-scene
+  title: 1v2 Kali Night Market Martial Arts Fight
+  category: Stylized & Anime
+  model: Seedance 2.5
+  duration: 15s
+  aspect_ratio: '16:9'
+  author: '@aimikoda'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/6f8a7889-47a7-438f-98cf-debf626f80e7
+  video_url: https://github.com/user-attachments/assets/6f8a7889-47a7-438f-98cf-debf626f80e7
+  description: 'Grounded 15-second martial arts sequence with strict prop permanence: umbrella breaks once into 2 pieces, towel disarms knife, broom sweeps attacker.'
+  prompt: 'Create a 15-second action sequence.
+
+    SOURCES: @[char1] = <C1>; @[char2] = <C2>; @[char3] = <C3>; preserve complete appearance and continuous outfits.
+
+    STYLE: Stylized 3D anime, rain-noir tension, wet neon, warm bulbs, crisp grounded impacts, responsive debris, no gore. One night-market corridor.
+
+    CONTINUITY: Exactly one bag, folded umbrella, tray, towel, knife, and broom. The umbrella breaks once into two pieces; no intact umbrella appears afterward.
+
+    SEQUENCE:
+
+    Beat 1: High-corner wide. C2 rushes center with a punch while C3 cuts right to seize C1 from behind. C1 triangle-steps, slings bag to safe zone.
+
+    Beat 2: Umbrella tip catches C2''s wrist, redirecting him into stall. Umbrella strikes C2''s knee and breaks into exactly two pieces beside the puddle.
+
+    Beat 3: C1 lifts tray from shelf, clips C2''s nose with rim as C3 closes flank.
+
+    Beat 4: C3 draws knife. C1 pins C3''s arm to counter with tray, wraps towel around C3''s wrist, twists down, dropping knife into puddle.
+
+    Beat 5: C2 surges with front kick. C1 snatches broom, strikes forearm and thigh, buckling him into wooden crates.
+
+    Beat 6: C1 drops broom, returns tray, retrieves bag, and exits. The two broken umbrella pieces and knife remain visible in the puddle.
+
+    AUDIO: No dialogue or music. Rain, wet shoes, plastic scrape, umbrella crack, blade-metal clinks, crate collapse.'
+  tags:
+  - Martial Arts
+  - Choreography
+  - Prop Permanence
+  - Stylized Anime
+  - Noir
+- id: kpop-idol-backstage-minidv-vlog
+  title: K-Pop Idol Backstage Selfie Vlog (Pre-Show)
+  category: UGC & Vlog
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@frametheory058'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/d43d6f71-a43a-4097-97df-40035b31a7ef
+  video_url: https://github.com/user-attachments/assets/d43d6f71-a43a-4097-97df-40035b31a7ef
+  description: Intimate first-person handheld selfie vlog of a K-pop idol moments before walking onto stage, capturing nervous breathing and roaring audience cheers.
+  prompt: 'Handheld MiniDV camcorder aesthetic with a genuine first-person selfie POV. CHASE is always holding the camera herself—there is never a camera operator. Natural handheld movement with slight nervous shake, imperfect framing, autofocus hunting, exposure breathing, realistic motion blur, subtle tape grain, soft highlight bloom, authentic DV colors, and onboard camcorder microphone audio.
+
+    Create a 30-second ultra-realistic backstage vlog of CHASE, a stunning Korean K-pop idol moments before going on stage. The entire video should feel completely unscripted.
+
+    The video opens with the camera accidentally turning on while she''s already walking, only half of her face visible before she notices and laughs softly: "Oh... it''s recording already? Okay... hi. I have about one minute before I go on stage."
+
+    She continues walking through a busy backstage hallway. She stops near a mirror, adjusts one sparkling earring, notices her slightly trembling hand, and quietly laughs: "My hands are always cold before a show... see? Still happening."
+
+    As she approaches the stage curtain, muffled audience cheers begin building naturally from behind the curtain, growing louder. She whispers: "Wait... can you hear that? That''s why I never get tired of this... Thank you for waiting for me."
+
+    A stage manager calls: "CHASE, standby!" She smiles warmly into the camera, makes a tiny finger heart, whispers "Okay... let''s go," and jogs onto the illuminated stage as the audience erupts.
+
+    Voice must sound like a real Korean woman in her 20s with soft, conversational delivery. Prioritize perfect character consistency, natural lip sync, and authentic environmental audio.'
+  tags:
+  - K-Pop
+  - MiniDV
+  - Selfie Vlog
+  - Backstage
+  - Lip-Sync
+- id: tokyo-girlfriend-boyfriend-pov-vlog
+  title: Tokyo Day Tour — 30s Unbroken Boyfriend POV
+  category: UGC & Vlog
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@BubbleBrain'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/bdc1eb65-0c54-4dd1-af96-aade0e9b6ecb
+  video_url: https://github.com/user-attachments/assets/bdc1eb65-0c54-4dd1-af96-aade0e9b6ecb
+  description: Authentic personal travel vlog following a girlfriend through morning apartment routines, quiet streets, ramen shops, and illuminated night trains.
+  prompt: 'Single unbroken handheld boyfriend vlog take throughout, 30 seconds total. A realistic personal travel vlog filmed by a boyfriend following his girlfriend during a normal day in Tokyo. Use the woman from the reference image as the main character. Maintain her exact facial identity, hairstyle, and body proportions throughout.
+
+    The camera feels like a real boyfriend holding a small mirrorless camera or phone: natural handheld movement, imperfect framing, spontaneous reactions.
+
+    0-5s: Morning at a small Tokyo apartment. Soft sunlight through the window. She is sitting near the bed fixing her hair, notices the camera, smiles, laughs, and playfully tells him to stop filming.
+
+    5-10s: Walking through quiet Tokyo neighborhood streets. She stops at a convenience store, turns around and asks which snack to choose.
+
+    10-18s: Small alley ramen shop. She tastes hot ramen, reacts naturally, laughing when the food is hotter than expected.
+
+    18-25s: Exploring lively afternoon shops and street atmosphere.
+
+    25-30s: Riding an evening train home, sitting beside the window watching neon city lights drift past, smiling warmly at the camera.
+
+    Visual style: Realistic smartphone/mirrorless camera look, natural exposure changes, authentic human interactions, no commercial gloss, no artificial transitions.'
+  tags:
+  - Boyfriend POV
+  - Tokyo
+  - Travel Vlog
+  - Naturalistic
+  - Day in the Life
+- id: mediterranean-1970s-16mm-documentary
+  title: 1970s Mediterranean Seaside 16mm Archival
+  category: UGC & Vlog
+  model: Seedance 2.5
+  duration: 15s
+  aspect_ratio: '4:3'
+  author: '@hey_am_cherry'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/48b2623d-2d16-4aef-a269-f18d66081398
+  video_url: https://github.com/user-attachments/assets/48b2623d-2d16-4aef-a269-f18d66081398
+  description: Authentic late-1970s Mediterranean travelogue on vintage 16mm Kodak stock with soft highlight bloom, cat crossing, and cobblestone seaside stroll.
+  prompt: 'Style: Authentic late-1970s Mediterranean documentary captured on vintage 16mm Kodak film, naturally faded colors, subtle film grain, real optical imperfections, slight gate weave, shoulder-mounted handheld camera with imperfect human movement, soft vintage lenses, warm afternoon sunlight, realistic skin texture, feels like forgotten archival footage discovered decades later.
+
+    0–3 seconds: A close handheld tracking shot follows a young woman in her 20s walking slowly through a narrow seaside alley lined with whitewashed houses, linen curtains moving in the ocean breeze. She wears a simple linen dress, woven shoulder bag, naturally messy hair with no makeup. She lightly brushes fingertips across textured walls.
+
+    3–7 seconds: Camera falls behind her entering a tiny open courtyard where an elderly man repairs a bicycle and a sleepy orange cat crosses in front of the lens. The camera subtly adjusts to avoid the cat.
+
+    7–11 seconds: A child''s wooden toy rolls past her feet. She bends down, catches it, smiles warmly, and hands it back without stopping.
+
+    11–15 seconds: She reaches a stone overlook facing the sparkling sea, resting an elbow on an old stone railing while watching distant fishing boats. Gust of wind lifts hair across her face.
+
+    Image Quality: 4:3 aspect ratio, Kodak 16mm archival texture, analog exposure, organic focus breathing, no AI smoothness.'
+  tags:
+  - 16mm Film
+  - Vintage
+  - Mediterranean
+  - Documentary
+  - Kodak Archive
+- id: brazil-house-party-pool-sequence
+  title: Suburban House Party 30s Unbroken Dive
+  category: UGC & Vlog
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@matt_elevenlabs'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/06bb4e53-6f1e-4e38-be04-a6c14ed1850f
+  video_url: https://github.com/user-attachments/assets/06bb4e53-6f1e-4e38-be04-a6c14ed1850f
+  description: Single unbroken 30s Steadicam shot weaving through a lively house party, out into the garden, and diving underwater into the swimming pool.
+  prompt: 'SEQUENCE SHOT. NO CUT.
+
+    Single unbroken handheld take throughout, 30 seconds total.
+
+    Young woman with chin-length auburn bob haircut, green eyes, wearing a yellow-and-green Brazil national football jersey and white denim shorts, sitting pensively on a sofa inside a bright suburban house during summer daytime, surrounded by laughing party guests.
+
+    0-4s: She rises from the sofa, walks toward a kitchen table lined with drinks. Handheld camera follows close behind her shoulder.
+
+    4-8s: She pours a glass of champagne, sips it. Camera holds behind her, shaky, intimate.
+
+    8-13s: She weaves through the dancing crowd toward a large glass bay window leading to the sunlit garden.
+
+    13-16s: She steps outside toward a large backyard pool where friends are swimming. Camera smoothly rotates to face her as she sets her glass down.
+
+    16-20s: She removes her jersey and shorts, placing them on a lounge chair to reveal a swimsuit.
+
+    20-24s: She breaks into a run toward the pool. Handheld camera follows fast behind her.
+
+    24-27s: She dives into the pool shouting "take care", camera plunges into the water with her, briefly submerged underwater alongside swimmers.
+
+    27-30s: She resurfaces laughing, camera rises into the air to reveal a wide aerial view of the house, garden, and pool.
+
+    Natural summer daylight, warm candid documentary energy, no hard cuts at any point.'
+  tags:
+  - One-Take
+  - House Party
+  - Underwater Dive
+  - Summer
+  - Steadicam
+- id: handheld-minidv-coffee-vlog
+  title: Early-2000s MiniDV Coffee ASMR Vlog
+  category: UGC & Vlog
+  model: Seedance 2.5
+  duration: 20s
+  aspect_ratio: '16:9'
+  author: GoodCase / LearnPrompt
+  source: LearnPrompt / awesome-seedance
+  source_url: https://github.com/LearnPrompt/awesome-seedance
+  thumbnail: https://media.goodcase.ai/media/poster/seedance-25-minidv-coffee-asmr-vlog.jpg
+  video_url: https://media.goodcase.ai/media/poster/seedance-25-minidv-coffee-asmr-vlog.jpg
+  description: Authentic nostalgic handheld vlog capturing consumer camcorder autofocus hunting, natural tape noise, and cozy morning cafe acoustics.
+  prompt: 'Handheld POV consumer camcorder footage from 2002. A young barista in an oversized knit sweater prepares a pour-over coffee on a weathered wooden cafe counter. Natural morning sunlight streams through rainy street-facing windows. The camera has subtle authentic imperfections: slight handheld micro-jitter, warm vintage interlaced sensor roll-off, optical zoom hesitation, and gentle chromatic aberration at the frame edges. Audio captures crisp tactile ASMR details: the coarse grind of coffee beans falling into the filter, boiling kettle hiss, water gently pouring in circular motions, and gentle cafe murmur in the background. No color grade polish, raw naturalistic home-video fidelity.'
+  tags:
+  - Vlog
+  - MiniDV
+  - ASMR
+  - Handheld
+  - Nostalgic
 - id: ugc-tech-gadget-review
   title: Smartphone UGC Creator Unboxing & Test
   category: UGC & Vlog
@@ -289,22 +958,61 @@
   - Unboxing
   - Lip-Sync
   - Vertical 9:16
-- id: cinematic-desert-dunes-fpv
-  title: Golden-Hour Saharan Desert FPV Sweep
-  category: Cinematic & Match-Cut
+- id: korean-morning-laundry-home-video
+  title: Korean Sunlit Laundry Morning Routine
+  category: UGC & Vlog
   model: Seedance 2.5
-  duration: 20s
+  duration: 15s
   aspect_ratio: '16:9'
-  author: Reviral AI
-  source: Reviral-ai / seedance-2.5-prompts
-  source_url: https://github.com/Reviral-ai/seedance-2.5-prompts
-  thumbnail: https://media.goodcase.ai/cases/39b33ab9f88e.jpg
-  video_url: https://media.goodcase.ai/cases/39b33ab9f88e.jpg
-  description: Sweeping cinematic drone shot gliding inches above razor-sharp sand ridges as evening shadows stretch across golden desert dunes.
-  prompt: Ultra-wide 2.39:1 anamorphic establishing drone shot skimming just 10 centimeters above the razor-sharp crest of an undulating Saharan sand dune during golden hour. Fine golden sand grains blow horizontally across the ridge in crisp micro-detail. The setting sun sits low on the horizon, bathing the undulating sea of dunes in deep amber, burnt orange, and violet shadow gradients. The camera gracefully accelerates forward, cresting the precipice and banking smoothly downward to reveal a small Bedouin caravan with camels trekking quietly in the distance. 35mm film grain, Hasselblad color science, atmospheric dust haze, majestic cinematic grandeur.
+  author: '@doctorwasif'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/ada7e735-acf4-4a66-a702-94d055b52742
+  video_url: https://github.com/user-attachments/assets/ada7e735-acf4-4a66-a702-94d055b52742
+  description: Cozy 15-second 7-shot smartphone home-video montage of morning laundry chores in sunlit Korean apartment nook.
+  prompt: '15s handheld home-video vlog, 7-shot montage. Photorealistic phone footage with slight tilt, natural shake, window light, subtle film grain.
+
+    A woman (use Image1 only for facial identity and hairstyle) does laundry alone on a quiet morning. Outfit: oversized cream linen shirt with rolled sleeves, grey knit shorts, loose cotton apron. Cozy sunlit laundry nook with an open front-load washer, overflowing basket, wooden drying rack, clothespins, and warm sunlight.
+
+    Sequence: untangles wet clothes → shakes out a shirt → checks a collar stain by the window → hangs it saying "Good enough." → finds a mismatched sock → struggles with a heavy bedsheet while laughing → finishes hanging it and quietly admires the sunlit laundry.
+
+    Dialogue is natural spoken Korean (except "Good enough"), reacting casually to each moment. Ambient sound only: washer winding down, wet fabric, clothespins, rustling clothes, soft laughter, breeze. No subtitles, text, logos, or watermarks.'
   tags:
-  - Landscape
-  - Cinematic
-  - Drone
-  - Golden Hour
-  - Desert
+  - Home Video
+  - Korean
+  - Morning Routine
+  - Lifestyle
+  - Realistic
+- id: indonesian-coconut-hunt-flip-vlog
+  title: Tropical Coconut Village Flip-Camera Adventure
+  category: UGC & Vlog
+  model: Seedance 2.5
+  duration: 30s
+  aspect_ratio: '16:9'
+  author: '@saniaspeaks_'
+  source: ZeroLu / awesome-seedance-2.5
+  source_url: https://github.com/ZeroLu/awesome-seedance-2.5
+  thumbnail: https://github.com/user-attachments/assets/b9b95ce4-4289-4b32-843a-86f8d5b1da9f
+  video_url: https://github.com/user-attachments/assets/b9b95ce4-4289-4b32-843a-86f8d5b1da9f
+  description: Authentic late-2000s handheld flip-camera vacation vlog hunting for fresh green coconuts with local Indonesian village hospitality.
+  prompt: 'Preserve the exact face, hairstyle, identity, skin tone, and body proportions from @image1 throughout. Outfit: oversized terracotta linen shirt, dusty burgundy wide-leg trousers, brown leather sandals. Authentic Indonesian woman. Late-2000s personal vlog aesthetic. Extremely raw handheld flip-camera footage with heavy camera shake, natural reframing, partial face crops, focus hunting, exposure shifts, warm faded colors, mild digital noise, and authentic home-video imperfections.
+
+    00:00–00:04 Walking through a peaceful tropical village lined with coconut trees, smiling into camera: "Today we''re hunting for fresh coconuts!"
+
+    00:04–00:08 Stops at a roadside stall where a vendor chops open a fresh green coconut.
+
+    00:08–00:12 Takes first sip, smiles brightly: "This is so refreshing!"
+
+    00:12–00:20 Sits with local villagers on a wooden bench, tries opening another coconut herself playfully with shared laughter.
+
+    00:20–00:27 Scoops out soft coconut meat with a spoon, gives a happy thumbs-up.
+
+    00:27–00:30 Beneath tall palms, turns toward camera with a warm wave: "See you in my next adventure. Bye!"
+
+    Natural ambience only: birds, palm leaves rustling, village conversations, coconut chopping sounds, breeze. No background music, subtitles, logos, or watermarks.'
+  tags:
+  - Travel Vlog
+  - Tropical
+  - Flip Camera
+  - Retro
+  - Authentic
