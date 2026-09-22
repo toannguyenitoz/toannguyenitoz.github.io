@@ -130,7 +130,23 @@
                 </div>
               </a>
             </li>
+            <li>
+              <a href="{{ '/seedance/' | relative_url }}" class="dropdown-item">
+                <span class="dropdown-item-icon">🎬</span>
+                <div class="dropdown-item-text">
+                  <strong>Seedance AI Prompts</strong>
+                  <span>Curated video generation blueprints</span>
+                </div>
+              </a>
+            </li>
           </ul>
+        </li>
+
+        <!-- Seedance AI Prompts Direct Link -->
+        <li class="nav-item">
+          <a href="{{ '/seedance/' | relative_url }}" class="nav-link{% if page.url contains '/seedance/' %} active{% endif %}">
+            <span class="nav-icon">🎬</span> Seedance AI
+          </a>
         </li>
 
         <!-- About Direct Link -->

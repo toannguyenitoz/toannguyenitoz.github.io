@@ -77,8 +77,22 @@ def is_post_already_published(part_num, title):
 
     return False
 
+def is_valid_post_url(url):
+    """Ensures URL points to a specific LinkedIn post or shortlink, not feed or profile root."""
+    if not url or not isinstance(url, str):
+        return False
+    # Reject generic feeds or homepages
+    if re.search(r'linkedin\.com/(feed|in|company|mynetwork|jobs)/?$', url.lower()):
+        return False
+    # Valid post patterns: lnkd.in, /posts/, /feed/update/urn:li:activity:
+    if "lnkd.in" in url or "/posts/" in url or "urn:li:activity:" in url or "urn:li:share:" in url:
+        return True
+    return False
+
 def fetch_linkedin_data(url):
     """Fetches LinkedIn post page and parses structured JSON-LD & OpenGraph metadata."""
+    if not is_valid_post_url(url):
+        raise ValueError(f"Invalid LinkedIn post URL: '{url}'. Please provide a specific post link or shortened lnkd.in link.")
     print(f"[*] Fetching LinkedIn URL: {url}")
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=15) as resp:

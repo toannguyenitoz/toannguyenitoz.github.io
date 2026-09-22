@@ -48,11 +48,22 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
 - [x] **Hệ thống điều hướng chuỗi bài thông minh (Sequential Series Navigation):**
   - Tự động sinh thanh điều hướng lùi/tiến giữa các phần liên tiếp (Ví dụ: từ Part 107 sang 108, từ 108 sang 110).
 
-### 2.3. Hệ Thống Tự Động Hóa (CI/CD & Automation Workflows)
+### 2.3. Chuyên Mục Seedance AI Video Prompts Hub (`/seedance/`)
+- [x] **Xây dựng trung tâm tuyển chọn Prompt tạo video Seedance 2.5 & 2.0:**
+  - Tổng hợp và cấu trúc hóa các prompt xuất sắc nhất từ kho lưu trữ `AtlasCloudAI/awesome-seedance-2.5-prompts-skills`.
+  - Mở rộng thêm các kịch bản video generation chuyên nghiệp từ các kho GitHub uy tín: `LearnPrompt/awesome-seedance`, `YouMind-OpenLab`, `ZeroLu`.
+  - Hỗ trợ đa dạng thể loại: Cinematic & Match-Cut, Product & Commercial Ads, Multi-Image References, VFX & Sci-Fi, Stylized Anime, UGC & Handheld Vlog.
+  - Tích hợp tính năng **Copy Prompt 1-Click** với hiệu ứng thông báo Toast mượt mà.
+  - Tích hợp video demo / poster chất lượng cao và liên kết trực tiếp đến repo gốc.
+  - Bổ sung bộ lọc thẻ thể loại và thanh tìm kiếm thời gian thực.
+  - Tích hợp lối tắt điều hướng trực tiếp trên thanh menu `_includes/header.html`.
+
+### 2.4. Hệ Thống Tự Động Hóa (CI/CD & Automation Workflows)
 - [x] **GitHub Actions Workflow `fetch-vouchers.yml`:** Tự động lấy, lọc và cập nhật 60 voucher khóa học Udemy miễn phí còn hạn mỗi ngày.
-- [x] **GitHub Actions Workflow `sync-youtube.yml`:** Tự động quét và đồng bộ các video hướng dẫn mới nhất từ YouTube vào website.
-- [x] **GitHub Actions Workflow `sync-linkedin.yml`:** Đồng bộ các cập nhật và chia sẻ kỹ thuật từ LinkedIn.
+- [x] **GitHub Actions Workflow `sync-youtube.yml`:** Tự động quét và đồng bộ các video hướng dẫn mới nhất từ YouTube vào website (vừa cập nhật lên 72 video có số lượt xem chính xác).
+- [x] **GitHub Actions Workflow `sync-linkedin.yml`:** Đồng bộ các cập nhật và chia sẻ kỹ thuật từ LinkedIn. Bổ sung cơ chế xác thực URL (URL guard) để ngăn chặn các liên kết feed chung làm phát sinh bài viết lỗi.
 - [x] **GitHub Actions Workflow `weekly-newsletter.yml`:** Tự động tạo và gửi email tóm tắt tin công nghệ và bài viết mới vào sáng thứ Hai qua Resend API.
+- [x] **Kiểm tra sức khỏe tự động hóa:** 100/100 lượt chạy gần nhất trên GitHub Actions đều đạt trạng thái Success 100%.
 
 ---
 

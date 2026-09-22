@@ -6,389 +6,389 @@ items:
   description: 'Is your document stuck in the print queue and refusing to delete?
     Stop restarting your PC over and over! '
   published_date: '2026-09-09'
-  views_count: 656
-  views_display: 656 views
+  views_count: 749
+  views_display: 749 views
   is_pinned: true
-- title: Speed Up Your Windows SSD in 10 Seconds! ⚡ | Toan Nguyen IT OZ
-  youtube_id: CzM49O0Buzo
-  duration: 00:31
-  category: Shorts
-  description: Practical IT Support. Real-World Troubleshooting.  Welcome to IT Support
-    with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
-    Intune, PowerShell, Networking \u0026 SysAdmin...
-  published_date: '2026-09-10'
-  views_count: 339
-  views_display: 339 views
-  is_pinned: true
-- title: Unlock Secret GOD MODE in Windows 11! 🤯⚡
-  youtube_id: 38F1KFKKUX8
-  duration: 00:25
-  category: Shorts
-  description: It consolidates over 200+ Control Panel tools, administrative utilities,
-    and system tweaks into a single master folder on your desktop!
-  published_date: '2026-09-09'
-  views_count: 155
-  views_display: 155 views
-  is_pinned: true
-- title: 2 Secret PowerShell Commands You MUST Know! ⚡💻
-  youtube_id: yFf0YIzUDRU
-  duration: 01:00
-  category: Shorts
-  description: Think Windows forgets what you run on your PC? Think again! ⚡💻
-  published_date: '2026-09-22'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Yellow Warning Drivers in 5 Seconds! ⚠️🛠️
-  youtube_id: lJaeccqeQIg
-  duration: 01:00
-  category: Shorts
-  description: See a mysterious yellow exclamation mark or warning triangle next to
-    your device in Windows Device Manager? ⚠️❌
-  published_date: '2026-09-22'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Slow Internet & Load Websites Fast! 🌐⚡
-  youtube_id: uoNOLUA69u0
-  duration: 01:00
-  category: Shorts
-  description: Websites refusing to load, server not found errors, or internet lagging
-    on Windows 11 or 10? 🌐❌
-  published_date: '2026-09-21'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: How to Reset Network in Windows 11! 🌐⚡
-  youtube_id: CX8waDUpeiY
-  duration: 01:00
-  category: Shorts
-  description: Wi-Fi dropping out or internet connection broken on Windows 11? 🌐❌
-  published_date: '2026-09-21'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Missing Photo Thumbnails in Windows 11! 🖼️⚡
-  youtube_id: YQFBy3ABpCw
-  duration: 01:00
-  category: Shorts
-  description: Can't see photo or video thumbnails in Windows File Explorer? 🖼️❌
-  published_date: '2026-09-21'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
-  youtube_id: DOXHHy538RY
-  duration: 01:00
-  category: Shorts
-  description: Wi-Fi constantly dropping out or internet connection broken on Windows
-    11 or 10? 🌐❌
-  published_date: '2026-09-20'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
-  youtube_id: H2KkXwsfcgo
-  duration: 01:00
-  category: Shorts
-  description: Experiencing random Blue Screen of Death (BSOD) crashes, game crashes,
-    or memory management errors in Windows 11 or 10? Your RAM memory might have corrupted
-    sectors or faulty hardware modules!
-  published_date: '2026-09-20'
-  views_count: 0
-  views_display: New
-  is_pinned: false
 - title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
   youtube_id: sSUxsPtwOfQ
-  duration: 01:00
+  duration: 00:39
   category: Shorts
   description: Is your PC taking forever to boot up or load into the desktop? Most
     slow boot times are caused by hidden background apps launching on startup without
-    your permission!
+    your permission!  Here is the secret Task Manag...
   published_date: '2026-09-20'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Update ALL Your PC Apps with Just 1 Secret Windows Command! ⚡💻
-  youtube_id: J4nk5f_7CTY
-  duration: 01:00
-  category: Shorts
-  description: Stop opening every single program or website to check for updates manually!
-    Windows 11 has a secret built-in package manager (winget) that updates all your
-    installed applications automatically with...
-  published_date: '2026-09-19'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Delete Stubborn & Corrupted Windows Drivers Permanently with CMD! 🛠️⚡
-  youtube_id: CCWyKtMqV-k
-  duration: 01:00
-  category: Shorts
-  description: Device Manager won't let you uninstall a locked, conflicting, or corrupted
-    driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
-    (pnputil) in Command Prompt to permane...
-  published_date: '2026-09-19'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
-  youtube_id: ARNGuhkcXY8
-  duration: 01:00
-  category: Shorts
-  description: Is your PC running slow or running out of drive space? Stop installing
-    sketchy third-party cleaning apps! Here is the ultimate built-in 1-line Command
-    Prompt hack that purges locked Temp cache, sys...
-  published_date: '2026-09-19'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Slow Wi-Fi & Internet Drops with 1 Click! Master Network Repair Script
-    🌐⚡
-  youtube_id: WSEWmMNjf_8
-  duration: 01:00
-  category: Shorts
-  description: Wi-Fi keeps disconnecting, ping randomly spikes while gaming, or web
-    pages taking forever to resolve?
-  published_date: '2026-09-18'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Unlock Secret Windows 11 'God Mode' in 10 Seconds! ⚡📂
-  youtube_id: 7nYb26mpEp0
-  duration: 01:00
-  category: Shorts
-  description: Did you know Windows has a secret hidden 'God Mode' that puts over
-    200 control panel settings, admin tools, BitLocker, and system tweaks into a single
-    master folder?
-  published_date: '2026-09-18'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix ALL Windows 11 Errors with 1 Click! Master PC Repair Script 🛠️⚡
-  youtube_id: Nja6jDGuYa8
-  duration: 01:00
-  category: Shorts
-  description: 'Windows acting weird, freezing, losing sound, or throwing random system
-    errors? '
-  published_date: '2026-09-18'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Slow File Transfer on Windows in 10 Seconds! ⚡📂
-  youtube_id: yMCevIqwUP8
-  duration: 01:00
-  category: Shorts
-  description: 'Is your Windows PC taking forever to copy large files, move folders,
-    or transfer data between drives? '
-  published_date: '2026-09-17'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Password Protect Any USB Port on Windows! 🔒⚡
-  youtube_id: arV4PTVe_mI
-  duration: 01:00
-  category: Shorts
-  description: Did you know you can completely block or password-protect USB ports
-    on Windows without installing any third-party software? With a simple Registry
-    key tweak or automated script, you can stop anyone...
-  published_date: '2026-09-17'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Save Your PC from BSOD! Enable Windows Recovery in 5 Seconds 🛡️💻
-  youtube_id: wnYWw9YmKOc
-  duration: 01:00
-  category: Shorts
-  description: 'If your Windows PC ever crashes, blue-screens, or gets stuck in an
-    endless boot loop, having Windows Recovery Environment (WinRE) enabled can literally
-    save your entire operating system! '
-  published_date: '2026-09-17'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Windows Time Sync Error 0x80070426 in 10 Seconds! ⏰💻
-  youtube_id: 1VHwO5lIJ3w
-  duration: 01:00
-  category: Shorts
-  description: Is your Windows clock showing the wrong time or throwing Error 0x80070426
-    when you click Sync Now in Date & Time Settings? That means the Windows Time service
-    (w32time) has stopped running! Here is...
-  published_date: '2026-09-16'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
-  youtube_id: CANOV6ofT0s
-  duration: 01:00
-  category: Shorts
-  description: Stop remembering complex Command Prompt commands for PC troubleshooting!
-    Here is how to create your own all-in-one Windows Recovery Toolkit batch file
-    (.bat) directly on your desktop. With a single...
-  published_date: '2026-09-16'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Secret Windows Drivers You Didn't Know Existed! 🛠️💻
-  youtube_id: l3eD5vMIzC0
-  duration: 01:00
-  category: Shorts
-  description: Think your Windows PC is fully up to date? Think again! Windows Update
-    quietly hides critical hardware drivers, chipset patches, and firmware updates
-    under Optional Updates. Here is how to find and...
-  published_date: '2026-09-16'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Fix Slow Internet in 5 Seconds with This Secret Command! 🚀🌐
-  youtube_id: 2lAb5mD6tZA
-  duration: 01:00
-  category: Shorts
-  description: Is your internet suddenly sluggish or taking forever to load websites?
-    Before calling your ISP or restarting your router, try flushing your Windows DNS
-    resolver cache! With just one simple command ...
-  published_date: '2026-09-15'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Open Any File with Just ONE Click in Windows! 🖱️⚡
-  youtube_id: Tqc_0oKWk7M
-  duration: 01:00
-  category: Shorts
-  description: Tired of double-clicking every single file and folder in Windows? You
-    can change your File Explorer settings so that one click instantly launches files—just
-    like browsing links on the web! In this ...
-  published_date: '2026-09-15'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: 30 SECRET Windows 11 Emergency Hacks Every IT Pro & User MUST Know! (Complete
-    Masterclass)
-  youtube_id: 21wvbchncq8
-  duration: 01:00
-  category: Windows 11
-  description: Master Windows 11 like a Senior IT Systems Administrator! In this definitive
-    4K Masterclass, we reveal 30 secret Windows 11 emergency commands, diagnostic
-    toolkits, registry performance tweaks, and...
-  published_date: '2026-09-15'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: 'Automatically Clean Junk Files & Free Up C: Drive Space! 🧹💻'
-  youtube_id: p74QhVy_rDk
-  duration: 01:00
-  category: Shorts
-  description: 'Is your C: Drive constantly running out of storage? You don''t need
-    third-party cleaners! Windows 10 and 11 have a secret built-in automated maintenance
-    tool called Storage Sense that cleans gigabyt...'
-  published_date: '2026-09-15'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Check Your Windows License Details with This Secret Command! 🔑💻
-  youtube_id: 1fUgAO9CAjE
-  duration: 01:00
-  category: Shorts
-  description: Is your Windows 10/11 copy activated with a permanent Retail license
-    or a temporary expiring KMS volume key? With one secret command in Windows Terminal
-    or CMD, you can reveal your full activation ...
-  published_date: '2026-09-14'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Secret Built-in Windows Screen Recorder Nobody Knows! 📸🖥️
-  youtube_id: kSMvbZMPVQw
-  duration: 01:00
-  category: Shorts
-  description: Stop downloading shady third-party screen recording tools! Windows
-    has a secret, built-in utility called Steps Recorder (psr) that automatically
-    captures screenshots and documents every single clic...
-  published_date: '2026-09-14'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Control Your PC From Anywhere on Your Phone! 📱💻 (Free & Fast)
-  youtube_id: m7Z7_GtdxP8
-  duration: 01:00
-  category: Shorts
-  description: Did you know you can control your entire Windows computer directly
-    from your iPhone or Android phone from anywhere in the world for free? In this
-    quick guide, Kangaroo Jace & Pip Koala show you how...
-  published_date: '2026-09-14'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
-  youtube_id: meX4UKgM24M
-  duration: 01:00
-  category: Shorts
-  description: Practical IT Support. Real-World Troubleshooting.
-  published_date: '2026-09-13'
-  views_count: 0
-  views_display: New
-  is_pinned: false
-- title: Is Your Windows License Real or Expiring? Check Now! 🔑🖥️
-  youtube_id: hfP8iREoQ9Y
-  duration: 01:00
-  category: Shorts
-  description: Bought a second-hand laptop or got Windows installed at a repair shop?
-    Check whether your Windows license is genuine and permanent, or if it will suddenly
-    expire in a few months!
-  published_date: '2026-09-13'
-  views_count: 0
-  views_display: New
-  is_pinned: false
+  views_count: 575
+  views_display: 575 views
+  is_pinned: true
 - title: Secret Windows Virus Scanner Nobody Tells You About! 🛡️💻
   youtube_id: xDhGMHqtiuU
-  duration: 01:00
+  duration: 00:33
   category: Shorts
   description: Did you know Windows has a hidden, free malware scanner already pre-installed
     on your system? You don't need expensive third-party antivirus to find stubborn
     rootkits. Just run mrt!
   published_date: '2026-09-13'
-  views_count: 0
-  views_display: New
+  views_count: 484
+  views_display: 484 views
+  is_pinned: true
+- title: Instant SSD Speed Boost in Windows 11! ⚡🚀
+  youtube_id: 3PI5kqYIb3Q
+  duration: 00:35
+  category: Shorts
+  description: Is your Windows 11 PC feeling sluggish? Your SSD might need a quick
+    TRIM! Over time, deleted blocks reduce write performance. Windows has a built-in
+    optimizer that trims your SSD in seconds—no extr...
+  published_date: '2026-09-22'
+  views_count: 41
+  views_display: 41 views
+  is_pinned: false
+- title: 2 Secret PowerShell Commands You MUST Know! ⚡💻
+  youtube_id: yFf0YIzUDRU
+  duration: 00:36
+  category: Shorts
+  description: 'Think Windows forgets what you run on your PC? Think again! ⚡💻 Here
+    are 2 secret PowerShell commands that reveal deep system info and drive health
+    in seconds:  ⚡ **Secret Commands:** 1️⃣ **Reveal E...'
+  published_date: '2026-09-22'
+  views_count: 27
+  views_display: 27 views
+  is_pinned: false
+- title: Fix Yellow Warning Drivers in 5 Seconds! ⚠️🛠️
+  youtube_id: lJaeccqeQIg
+  duration: 00:35
+  category: Shorts
+  description: See a mysterious yellow exclamation mark or warning triangle next to
+    your device in Windows Device Manager? ⚠️❌ That warning means Windows has disabled
+    the hardware due to driver corruption, missin...
+  published_date: '2026-09-22'
+  views_count: 131
+  views_display: 131 views
+  is_pinned: false
+- title: Fix Slow Internet & Load Websites Fast! 🌐⚡
+  youtube_id: uoNOLUA69u0
+  duration: 00:35
+  category: Shorts
+  description: Websites refusing to load, server not found errors, or internet lagging
+    on Windows 11 or 10? 🌐❌ Over time, outdated or corrupted DNS cache files slow
+    down your browsing speed and block access to re...
+  published_date: '2026-09-21'
+  views_count: 120
+  views_display: 120 views
+  is_pinned: false
+- title: How to Reset Network in Windows 11! 🌐⚡
+  youtube_id: CX8waDUpeiY
+  duration: 00:35
+  category: Shorts
+  description: Wi-Fi dropping out or internet connection broken on Windows 11? 🌐❌
+    When simple troubleshooting fails, the ultimate built-in fix is a full Network
+    Reset. Here is how to restore all network component...
+  published_date: '2026-09-21'
+  views_count: 137
+  views_display: 137 views
+  is_pinned: false
+- title: Fix Missing Photo Thumbnails in Windows 11! 🖼️⚡
+  youtube_id: YQFBy3ABpCw
+  duration: 00:35
+  category: Shorts
+  description: Can't see photo or video thumbnails in Windows File Explorer? 🖼️❌ Are
+    your files only showing blank, generic white icons instead of picture previews?
+    Don't panic! You don't need third-party apps to...
+  published_date: '2026-09-21'
+  views_count: 313
+  views_display: 313 views
+  is_pinned: false
+- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
+  youtube_id: DOXHHy538RY
+  duration: 00:35
+  category: Shorts
+  description: Wi-Fi constantly dropping out or internet connection broken on Windows
+    11 or 10? 🌐❌ Don't worry! Most Wi-Fi drops are caused by glitched network drivers
+    or corrupted adapter settings. Here is how t...
+  published_date: '2026-09-20'
+  views_count: 479
+  views_display: 479 views
+  is_pinned: false
+- title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
+  youtube_id: H2KkXwsfcgo
+  duration: 00:35
+  category: Shorts
+  description: Experiencing random Blue Screen of Death (BSOD) crashes, game crashes,
+    or memory management errors in Windows 11 or 10? Your RAM memory might have corrupted
+    sectors or faulty hardware modules!  Her...
+  published_date: '2026-09-20'
+  views_count: 233
+  views_display: 233 views
+  is_pinned: false
+- title: Update ALL Your PC Apps with Just 1 Secret Windows Command! ⚡💻
+  youtube_id: J4nk5f_7CTY
+  duration: 00:37
+  category: Shorts
+  description: Stop opening every single program or website to check for updates manually!
+    Windows 11 has a secret built-in package manager (winget) that updates all your
+    installed applications automatically with...
+  published_date: '2026-09-19'
+  views_count: 105
+  views_display: 105 views
+  is_pinned: false
+- title: Delete Stubborn & Corrupted Windows Drivers Permanently with CMD! 🛠️⚡
+  youtube_id: CCWyKtMqV-k
+  duration: 00:46
+  category: Shorts
+  description: Device Manager won't let you uninstall a locked, conflicting, or corrupted
+    driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
+    (pnputil) in Command Prompt to permane...
+  published_date: '2026-09-19'
+  views_count: 206
+  views_display: 206 views
+  is_pinned: false
+- title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
+  youtube_id: ARNGuhkcXY8
+  duration: 00:43
+  category: Shorts
+  description: Is your PC running slow or running out of drive space? Stop installing
+    sketchy third-party cleaning apps! Here is the ultimate built-in 1-line Command
+    Prompt hack that purges locked Temp cache, sys...
+  published_date: '2026-09-19'
+  views_count: 129
+  views_display: 129 views
+  is_pinned: false
+- title: Fix Slow Wi-Fi & Internet Drops with 1 Click! Master Network Repair Script
+    🌐⚡
+  youtube_id: WSEWmMNjf_8
+  duration: 00:41
+  category: Shorts
+  description: Wi-Fi keeps disconnecting, ping randomly spikes while gaming, or web
+    pages taking forever to resolve?  Here is how to create a 12-tool Automated Network
+    Troubleshooter in Windows using a single bat...
+  published_date: '2026-09-18'
+  views_count: 86
+  views_display: 86 views
+  is_pinned: false
+- title: Unlock Secret Windows 11 'God Mode' in 10 Seconds! ⚡📂
+  youtube_id: 7nYb26mpEp0
+  duration: 00:41
+  category: Shorts
+  description: Did you know Windows has a secret hidden 'God Mode' that puts over
+    200 control panel settings, admin tools, BitLocker, and system tweaks into a single
+    master folder?
+  published_date: '2026-09-18'
+  views_count: 63
+  views_display: 63 views
+  is_pinned: false
+- title: Fix ALL Windows 11 Errors with 1 Click! Master PC Repair Script 🛠️⚡
+  youtube_id: Nja6jDGuYa8
+  duration: 00:40
+  category: Shorts
+  description: 'Windows acting weird, freezing, losing sound, or throwing random system
+    errors? '
+  published_date: '2026-09-18'
+  views_count: 310
+  views_display: 310 views
+  is_pinned: false
+- title: Fix Slow File Transfer on Windows in 10 Seconds! ⚡📂
+  youtube_id: yMCevIqwUP8
+  duration: 00:36
+  category: Shorts
+  description: 'Is your Windows PC taking forever to copy large files, move folders,
+    or transfer data between drives? '
+  published_date: '2026-09-17'
+  views_count: 184
+  views_display: 184 views
+  is_pinned: false
+- title: Password Protect Any USB Port on Windows! 🔒⚡
+  youtube_id: arV4PTVe_mI
+  duration: 00:53
+  category: Shorts
+  description: Did you know you can completely block or password-protect USB ports
+    on Windows without installing any third-party software? With a simple Registry
+    key tweak or automated script, you can stop anyone...
+  published_date: '2026-09-17'
+  views_count: 38
+  views_display: 38 views
+  is_pinned: false
+- title: Save Your PC from BSOD! Enable Windows Recovery in 5 Seconds 🛡️💻
+  youtube_id: wnYWw9YmKOc
+  duration: 00:39
+  category: Shorts
+  description: 'If your Windows PC ever crashes, blue-screens, or gets stuck in an
+    endless boot loop, having Windows Recovery Environment (WinRE) enabled can literally
+    save your entire operating system! '
+  published_date: '2026-09-17'
+  views_count: 210
+  views_display: 210 views
+  is_pinned: false
+- title: Fix Windows Time Sync Error 0x80070426 in 10 Seconds! ⏰💻
+  youtube_id: 1VHwO5lIJ3w
+  duration: 00:34
+  category: Shorts
+  description: Is your Windows clock showing the wrong time or throwing Error 0x80070426
+    when you click Sync Now in Date & Time Settings? That means the Windows Time service
+    (w32time) has stopped running! Here is...
+  published_date: '2026-09-16'
+  views_count: 317
+  views_display: 317 views
+  is_pinned: false
+- title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
+  youtube_id: CANOV6ofT0s
+  duration: 00:37
+  category: Shorts
+  description: Stop remembering complex Command Prompt commands for PC troubleshooting!
+    Here is how to create your own all-in-one Windows Recovery Toolkit batch file
+    (.bat) directly on your desktop. With a single...
+  published_date: '2026-09-16'
+  views_count: 20
+  views_display: 20 views
+  is_pinned: false
+- title: Secret Windows Drivers You Didn't Know Existed! 🛠️💻
+  youtube_id: l3eD5vMIzC0
+  duration: 00:36
+  category: Shorts
+  description: Think your Windows PC is fully up to date? Think again! Windows Update
+    quietly hides critical hardware drivers, chipset patches, and firmware updates
+    under Optional Updates. Here is how to find and...
+  published_date: '2026-09-16'
+  views_count: 227
+  views_display: 227 views
+  is_pinned: false
+- title: Fix Slow Internet in 5 Seconds with This Secret Command! 🚀🌐
+  youtube_id: 2lAb5mD6tZA
+  duration: 00:35
+  category: Shorts
+  description: Is your internet suddenly sluggish or taking forever to load websites?
+    Before calling your ISP or restarting your router, try flushing your Windows DNS
+    resolver cache! With just one simple command ...
+  published_date: '2026-09-15'
+  views_count: 128
+  views_display: 128 views
+  is_pinned: false
+- title: Open Any File with Just ONE Click in Windows! 🖱️⚡
+  youtube_id: Tqc_0oKWk7M
+  duration: 00:36
+  category: Shorts
+  description: Tired of double-clicking every single file and folder in Windows? You
+    can change your File Explorer settings so that one click instantly launches files—just
+    like browsing links on the web! In this ...
+  published_date: '2026-09-15'
+  views_count: 101
+  views_display: 101 views
+  is_pinned: false
+- title: 30 SECRET Windows 11 Emergency Hacks Every IT Pro & User MUST Know! (Complete
+    Masterclass)
+  youtube_id: 21wvbchncq8
+  duration: '14:45'
+  category: Windows 11
+  description: Master Windows 11 like a Senior IT Systems Administrator! In this definitive
+    4K Masterclass, we reveal 30 secret Windows 11 emergency commands, diagnostic
+    toolkits, registry performance tweaks, and...
+  published_date: '2026-09-15'
+  views_count: 120
+  views_display: 120 views
+  is_pinned: false
+- title: 'Automatically Clean Junk Files & Free Up C: Drive Space! 🧹💻'
+  youtube_id: p74QhVy_rDk
+  duration: 00:36
+  category: Shorts
+  description: 'Is your C: Drive constantly running out of storage? You don''t need
+    third-party cleaners! Windows 10 and 11 have a secret built-in automated maintenance
+    tool called Storage Sense that cleans gigabyt...'
+  published_date: '2026-09-15'
+  views_count: 70
+  views_display: 70 views
+  is_pinned: false
+- title: Check Your Windows License Details with This Secret Command! 🔑💻
+  youtube_id: 1fUgAO9CAjE
+  duration: 00:34
+  category: Shorts
+  description: Is your Windows 10/11 copy activated with a permanent Retail license
+    or a temporary expiring KMS volume key? With one secret command in Windows Terminal
+    or CMD, you can reveal your full activation ...
+  published_date: '2026-09-14'
+  views_count: 34
+  views_display: 34 views
+  is_pinned: false
+- title: Secret Built-in Windows Screen Recorder Nobody Knows! 📸🖥️
+  youtube_id: kSMvbZMPVQw
+  duration: 00:38
+  category: Shorts
+  description: Stop downloading shady third-party screen recording tools! Windows
+    has a secret, built-in utility called Steps Recorder (psr) that automatically
+    captures screenshots and documents every single clic...
+  published_date: '2026-09-14'
+  views_count: 379
+  views_display: 379 views
+  is_pinned: false
+- title: Control Your PC From Anywhere on Your Phone! 📱💻 (Free & Fast)
+  youtube_id: m7Z7_GtdxP8
+  duration: 00:41
+  category: Shorts
+  description: Did you know you can control your entire Windows computer directly
+    from your iPhone or Android phone from anywhere in the world for free? In this
+    quick guide, Kangaroo Jace & Pip Koala show you how...
+  published_date: '2026-09-14'
+  views_count: 222
+  views_display: 222 views
+  is_pinned: false
+- title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
+  youtube_id: meX4UKgM24M
+  duration: 00:35
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.
+  published_date: '2026-09-13'
+  views_count: 114
+  views_display: 114 views
+  is_pinned: false
+- title: Is Your Windows License Real or Expiring? Check Now! 🔑🖥️
+  youtube_id: hfP8iREoQ9Y
+  duration: 00:36
+  category: Shorts
+  description: Bought a second-hand laptop or got Windows installed at a repair shop?
+    Check whether your Windows license is genuine and permanent, or if it will suddenly
+    expire in a few months!
+  published_date: '2026-09-13'
+  views_count: 65
+  views_display: 65 views
   is_pinned: false
 - title: final shorts 40 create windows recovery toolkit bat
   youtube_id: 1xdaaTnKhHg
-  duration: 01:00
+  duration: 00:37
   category: Shorts
   description: Practical IT Support. Real-World Troubleshooting.
   published_date: '2026-09-12'
-  views_count: 0
-  views_display: New
+  views_count: 111
+  views_display: 111 views
   is_pinned: false
 - title: Never Lose PC Drivers Again! 1-Click Backup Trick 💾⚡
   youtube_id: DKT09b_yrVY
-  duration: 01:00
+  duration: 00:34
   category: Shorts
   description: Before formatting your computer or installing a fresh copy of Windows,
     always back up your installed third-party drivers! Here is the built-in Windows
     pnputil trick to export every single driver to...
   published_date: '2026-09-12'
-  views_count: 0
-  views_display: New
+  views_count: 74
+  views_display: 74 views
   is_pinned: false
 - title: Fix Slow Internet in 10 Seconds! Flush DNS Hack 🌐🚀
   youtube_id: biNTeQKBv_g
-  duration: 01:00
+  duration: 00:34
   category: Shorts
   description: Web pages loading slow or giving connection errors even though your
     internet is fine? Your Windows DNS cache is probably full of stale entries. Here
     is how to flush it in seconds with ipconfig /flu...
   published_date: '2026-09-12'
-  views_count: 0
-  views_display: New
+  views_count: 108
+  views_display: 108 views
   is_pinned: false
 - title: How to Reveal Saved Wi-Fi Passwords in 3 Seconds! 🔑📶
   youtube_id: 7kNy54_OoQs
-  duration: 01:00
+  duration: 00:33
   category: Shorts
   description: Forgot your Wi-Fi password but your Windows PC is already connected?
     Here is the secret IT support command to reveal the plain-text password in seconds
     without installing any shady software!
   published_date: '2026-09-12'
-  views_count: 0
-  views_display: New
+  views_count: 151
+  views_display: 151 views
   is_pinned: false
 - title: Bypass Windows 11 Network Screen in 5 Seconds!
   youtube_id: HtHU1JRk8iM
@@ -398,8 +398,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 11
-  views_display: 11 views
+  views_count: 185
+  views_display: 185 views
   is_pinned: false
 - title: 1-Click Script Cleans 20GB of Windows Junk!
   youtube_id: P_heOFPpEbI
@@ -409,8 +409,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 8
-  views_display: 8 views
+  views_count: 114
+  views_display: 114 views
   is_pinned: false
 - title: Fix Laptop Keyboard Not Typing in 8 Seconds!
   youtube_id: -3-gtqfqsdU
@@ -420,8 +420,19 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 47
-  views_display: 47 views
+  views_count: 443
+  views_display: 443 views
+  is_pinned: false
+- title: Speed Up Your Windows SSD in 10 Seconds! ⚡ | Toan Nguyen IT OZ
+  youtube_id: CzM49O0Buzo
+  duration: 00:31
+  category: Shorts
+  description: Practical IT Support. Real-World Troubleshooting.  Welcome to IT Support
+    with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
+    Intune, PowerShell, Networking \u0026 SysAdmin...
+  published_date: '2026-09-10'
+  views_count: 429
+  views_display: 429 views
   is_pinned: false
 - title: Do THIS Before Updating Windows! (Life Saver) 🛡️
   youtube_id: cwDLoxniA3I
@@ -431,8 +442,8 @@ items:
     on System Protection allows you to time-travel back to a working state in minutes!  📌
     Step-by-Step Guide: 1. Press Win + R to...'
   published_date: '2026-09-10'
-  views_count: 20
-  views_display: 20 views
+  views_count: 107
+  views_display: 107 views
   is_pinned: false
 - title: Stop Browsing Fake Download Sites! Install Apps via CMD ⚡
   youtube_id: MT1kXcMws3Y
@@ -442,8 +453,8 @@ items:
     the built-in Windows Package Manager (winget) to install any software directly
     from the command line!  📌 Step-by-Step Guide: 1. Pre...'
   published_date: '2026-09-10'
-  views_count: 11
-  views_display: 11 views
+  views_count: 107
+  views_display: 107 views
   is_pinned: false
 - title: Wi-Fi Icon Completely Gone on Windows? 100% Working Fix! 🌐
   youtube_id: kyYU3EaFzNM
@@ -453,8 +464,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 16
-  views_display: 16 views
+  views_count: 98
+  views_display: 98 views
   is_pinned: false
 - title: Bluetooth Icon Disappeared on Windows 11? Fix in 20s! 📶
   youtube_id: qr50ELXC3kk
@@ -464,8 +475,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 48
-  views_display: 48 views
+  views_count: 259
+  views_display: 259 views
   is_pinned: false
 - title: 'The Ultimate Windows Secret Console: compmgmt.msc 💻'
   youtube_id: JavoxuItzXc
@@ -475,8 +486,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 18
-  views_display: 18 views
+  views_count: 74
+  views_display: 74 views
   is_pinned: false
 - title: Stop Windows CPU Throttling in 30 Seconds! ⚡
   youtube_id: YAsAppPh4pM
@@ -486,8 +497,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 25
-  views_display: 25 views
+  views_count: 151
+  views_display: 151 views
   is_pinned: false
 - title: Monitor CPU & RAM Live on Your Desktop! 📊 | Toan Nguyen IT OZ
   youtube_id: iAyGWrAkax0
@@ -497,8 +508,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 32
-  views_display: 32 views
+  views_count: 83
+  views_display: 83 views
   is_pinned: false
 - title: Windows Built-in Packet Sniffer (No Wireshark Needed!) 📡 | Toan Nguyen IT
     OZ
@@ -509,8 +520,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 20
-  views_display: 20 views
+  views_count: 44
+  views_display: 44 views
   is_pinned: false
 - title: Stop Windows 11 Auto-Installing Junk Bloatware! 🚫 | Toan Nguyen IT OZ
   youtube_id: vtGCUUkMOQc
@@ -520,8 +531,18 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 42
-  views_display: 42 views
+  views_count: 88
+  views_display: 88 views
+  is_pinned: false
+- title: Unlock Secret GOD MODE in Windows 11! 🤯⚡
+  youtube_id: 38F1KFKKUX8
+  duration: 00:25
+  category: Shorts
+  description: It consolidates over 200+ Control Panel tools, administrative utilities,
+    and system tweaks into a single master folder on your desktop!
+  published_date: '2026-09-09'
+  views_count: 210
+  views_display: 210 views
   is_pinned: false
 - title: Fix Windows NO SOUND Glitch in 3 Seconds! 🔊⚡
   youtube_id: oqTAqGmAr_I
@@ -529,8 +550,8 @@ items:
   category: Shorts
   description: Practical technical walkthrough and IT support tutorial.
   published_date: '2026-09-09'
-  views_count: 147
-  views_display: 147 views
+  views_count: 170
+  views_display: 170 views
   is_pinned: false
 - title: Fix Any Broken or Locked PC with ONE USB! 💻⚡
   youtube_id: _2IpFjztYVY
@@ -538,8 +559,8 @@ items:
   category: Shorts
   description: Practical technical walkthrough and IT support tutorial.
   published_date: '2026-09-09'
-  views_count: 31
-  views_display: 31 views
+  views_count: 38
+  views_display: 38 views
   is_pinned: false
 - title: 2 Secret PowerShell Commands Every IT Pro Uses! 💻⚡
   youtube_id: bWKi6w_5e7E
@@ -549,8 +570,8 @@ items:
     commands that sysadmins and IT professionals use every single day to audit PC
     security and encryption! 🚀  📌 COMMANDS COVERED: 1️⃣ G...'
   published_date: '2026-09-08'
-  views_count: 117
-  views_display: 117 views
+  views_count: 137
+  views_display: 137 views
   is_pinned: false
 - title: How to Automatically Repair Windows 11 Corrupt Files! 🛠️⚡
   youtube_id: Rr-DRO7DhPY
@@ -560,8 +581,8 @@ items:
     is how to create a 1-click automated system repair script using SFC and DISM to
     fix broken system files in minutes! 🛠️💻  📌 WHAT...
   published_date: '2026-09-08'
-  views_count: 105
-  views_display: 105 views
+  views_count: 113
+  views_display: 113 views
   is_pinned: false
 - title: 9 Windows Settings EVERY User Should Change NOW! (Stop Crashes & Speed Up
     PC)
@@ -572,8 +593,8 @@ items:
     IT Support guide reveals the 9 critical Windows settings that every user must
     change right now to dramatically improve security, ...
   published_date: '2026-09-08'
-  views_count: 6
-  views_display: 6 views
+  views_count: 10
+  views_display: 10 views
   is_pinned: false
 - title: 20 Windows Shortcuts You Wish You Knew Sooner (Stop Wasting Time!)
   youtube_id: 7MuUW7S1rXQ
@@ -592,8 +613,8 @@ items:
   description: Access all Windows 11 administrative tools, hidden control panel applets,
     and system tweaks from a single unified master folder.
   published_date: '2026-09-08'
-  views_count: 23
-  views_display: 23 views
+  views_count: 30
+  views_display: 30 views
   is_pinned: false
 - title: Boost Slow Wi-Fi to 5GHz in 30s! 🚀⚡
   youtube_id: dJxjPHLJAh4
@@ -602,8 +623,8 @@ items:
   description: Force Windows 11 to prioritize ultra-fast 5GHz / 6GHz Wi-Fi bands over
     congested 2.4GHz for instant latency reduction and transfer speed boosts.
   published_date: '2026-09-08'
-  views_count: 119
-  views_display: 119 views
+  views_count: 130
+  views_display: 130 views
   is_pinned: false
 - title: 20 Windows 11 Tips & Tricks You Wish You Knew Sooner! (Boost Productivity)
   youtube_id: ZcSK1jPf9v8
@@ -612,8 +633,8 @@ items:
   description: Deep dive into hidden Windows 11 features, UI customizations, taskbar
     optimizations, and multitasking secrets to maximize system efficiency.
   published_date: '2026-09-07'
-  views_count: 8
-  views_display: 8 views
+  views_count: 12
+  views_display: 12 views
   is_pinned: false
 - title: All-in-One Windows 11 Health Toolkit in PowerShell! (9 Tools in 1 Script)
   youtube_id: zc70D8zDj8E
@@ -623,8 +644,8 @@ items:
     health checks, SFC repairs, temp purge, drive health, and network diagnostics
     into a single script.
   published_date: '2026-09-07'
-  views_count: 75
-  views_display: 75 views
+  views_count: 84
+  views_display: 84 views
   is_pinned: false
 - title: 4 Secret Windows 11 Features You Must Turn On NOW! 💻🔥
   youtube_id: DnrB8j9iXPk
@@ -633,8 +654,8 @@ items:
   description: Must-enable Windows 11 security and productivity settings that enhance
     daily workstation performance and battery life.
   published_date: '2026-09-07'
-  views_count: 5
-  views_display: 5 views
+  views_count: 16
+  views_display: 16 views
   is_pinned: false
 - title: 4 Windows Shortcuts That Feel Illegal to Know! ⌨️⚡
   youtube_id: HYmntYPPSNE
@@ -643,8 +664,8 @@ items:
   description: Secret Windows keyboard combinations that unlock hidden clipboard history,
     emoji pickers, and screen recording without extra software.
   published_date: '2026-09-06'
-  views_count: 80
-  views_display: 80 views
+  views_count: 82
+  views_display: 82 views
   is_pinned: false
 - title: PC FROZEN? 3 Emergency Keys To Rescue Your Windows! 🚨⚡
   youtube_id: DEpzPieoF6E
@@ -653,8 +674,8 @@ items:
   description: Three emergency keyboard shortcuts to recover your system, force close
     unresponsive processes, and unfreeze display drivers.
   published_date: '2026-09-05'
-  views_count: 34
-  views_display: 34 views
+  views_count: 37
+  views_display: 37 views
   is_pinned: false
 - title: 15 Windows Admin Shortcuts Every IT Professional Should Know! 🚀
   youtube_id: Ey2LpCmJKVw
@@ -664,8 +685,8 @@ items:
     sysadmins to instantly access Computer Management, Device Manager, Registry, and
     Network Adapters.
   published_date: '2026-09-02'
-  views_count: 33
-  views_display: 33 views
+  views_count: 37
+  views_display: 37 views
   is_pinned: false
 - title: Access Remote Files Silently Without Remote Desktop! Windows Admin Shares
     (C$) Guide
@@ -676,8 +697,8 @@ items:
     ADMIN$) over SMB to inspect event logs, retrieve files, and deploy scripts without
     disrupting active users.
   published_date: '2026-09-01'
-  views_count: 22
-  views_display: 22 views
+  views_count: 24
+  views_display: 24 views
   is_pinned: false
 - title: How to Check Your RAM Before Upgrading (PowerShell Guide)
   youtube_id: OP0EuItOREc
@@ -686,8 +707,8 @@ items:
   description: Extract complete memory specs (speed, form factor, manufacturer, empty
     slots) directly from the command line without opening the physical PC chassis.
   published_date: '2026-08-31'
-  views_count: 28
-  views_display: 28 views
+  views_count: 35
+  views_display: 35 views
   is_pinned: false
 - title: 'The Win + X Secret: Instant Access to Windows 11 Admin Tools!'
   youtube_id: HS7dyfRiPhk
@@ -697,8 +718,8 @@ items:
     menu to launch Terminal (Admin), Disk Management, Device Manager, and PowerShell
     in seconds.
   published_date: '2026-08-30'
-  views_count: 5
-  views_display: 5 views
+  views_count: 7
+  views_display: 7 views
   is_pinned: false
 - title: 99% of People DON'T Know These 10 Secret Windows Shortcuts!
   youtube_id: zLNIuJXGnlI
@@ -729,8 +750,8 @@ items:
     the official, Microsoft-built PC Manager tool, completely replacing third-party
     bloatware.
   published_date: '2026-08-20'
-  views_count: 147
-  views_display: 147 views
+  views_count: 185
+  views_display: 185 views
   is_pinned: false
 - title: 'Win + Ctrl + Shift + B: The Secret Shortcut to Restart GPU Driver in Windows
     11/10!'
@@ -740,8 +761,8 @@ items:
   description: How to instantly recover from frozen displays, black screens, and graphical
     glitching without rebooting your PC or losing unsaved work.
   published_date: '2026-08-18'
-  views_count: 37
-  views_display: 37 views
+  views_count: 47
+  views_display: 47 views
   is_pinned: false
 - title: 'The #1 Windows Shortcut for Security'
   youtube_id: tjMnYPYN2B8
@@ -751,6 +772,6 @@ items:
     safeguard confidential enterprise data and corporate domain credentials whenever
     stepping away.
   published_date: '2026-08-15'
-  views_count: 32
-  views_display: 32 views
+  views_count: 35
+  views_display: 35 views
   is_pinned: false
