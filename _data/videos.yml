@@ -31,6 +31,28 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Free Up Gigabytes of Junk Files in Windows 11! 🗑️⚡
+  youtube_id: KZOEWQPZv3g
+  duration: 01:00
+  category: Shorts
+  description: 'Is your C: drive running out of space in Windows 11? Before you download
+    risky third-party cleaners, use Windows'' own built-in Disk Cleanup tool to safely
+    wipe away gigabytes of hidden junk!'
+  published_date: '2026-09-23'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Secret 1-Click RAM Boost in Windows 11! ⚡🚀
+  youtube_id: 10g5SfJTdVA
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows 11 PC slowing down with too many background tasks eating
+    up RAM? Here is how to create a 1-click desktop shortcut that immediately flushes
+    idle memory and cached background tasks!
+  published_date: '2026-09-23'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Instant SSD Speed Boost in Windows 11! ⚡🚀
   youtube_id: 3PI5kqYIb3Q
   duration: 00:35
