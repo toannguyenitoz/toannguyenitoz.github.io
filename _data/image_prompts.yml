@@ -1,3 +1,136 @@
+- id: double
+  title: Forest Stream Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /DOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_forest_after.jpg
+  description: Upload any portrait and enter /DOUBLE to seamlessly blend the face into an ethereal, sunlit mossy rainforest with a rocky stream and natural canopy lighting.
+  prompt: /DOUBLE
+  tags:
+    - DoubleExposure
+    - Nature
+    - Forest
+    - Portrait
+    - Trending
+
+- id: cinematicdouble
+  title: Tokyo Night Skyline Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /CINEMATICDOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_nightcity_after.jpg
+  description: Fuses the portrait with a glowing nocturnal Tokyo metropolis, illuminated skyscrapers, and streaming traffic light trails in dramatic cinematic perspective.
+  prompt: /CINEMATICDOUBLE
+  tags:
+    - Cinematic
+    - Cityscape
+    - Night
+    - Tokyo
+    - Portrait
+
+- id: editorialdouble
+  title: Alpine Mountain Sunset Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /EDITORIALDOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_mountain_after.jpg
+  description: Merges the portrait contours with snow-capped Alpine peaks, sunset clouds, and an emerald evergreen canyon river in a luxury magazine editorial aesthetic.
+  prompt: /EDITORIALDOUBLE
+  tags:
+    - Editorial
+    - Mountain
+    - Sunset
+    - Landscape
+    - Vogue
+
+- id: naturedouble
+  title: Sunlit Redwood Canopy Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /NATUREDOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_redwood_after.jpg
+  description: Combines the portrait with giant ancient redwood canopies, lush fern undergrowth, and streaming golden sunbeams through the silhouette.
+  prompt: /NATUREDOUBLE
+  tags:
+    - Nature
+    - Redwood
+    - Sunlight
+    - Forest
+    - Ethereal
+
+- id: floraldouble
+  title: Radiant Golden Metropolis Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /FLORALDOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_goldencity_after.jpg
+  description: Blends the portrait with a radiant golden skyline at dusk, illuminated expressways, and high-rise panoramic windows glowing with ambient light.
+  prompt: /FLORALDOUBLE
+  tags:
+    - GoldenHour
+    - City
+    - Metropolis
+    - Glow
+    - Portrait
+
+- id: citydouble
+  title: Cyber Blue Urban Night Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /CITYDOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_cyberstreet_after.jpg
+  description: Projects a modern urban avenue with cyan-blue high-rise architecture, speeding vehicle headlights, and reflective street asphalt through the subject.
+  prompt: /CITYDOUBLE
+  tags:
+    - Urban
+    - CyberBlue
+    - NightView
+    - Architecture
+    - Modern
+
+- id: seadouble
+  title: Golden Coastal Sunset Waves Double Exposure
+  category: Double Exposure & Portrait
+  slash_command: /SEADOUBLE
+  models:
+    - ChatGPT (GPT-4o)
+    - Google Imagen 3 (Gemini)
+  aspect_ratio: '9:16'
+  before_image: /assets/images/prompts/portrait_original_before.jpg
+  after_image: /assets/images/prompts/double_exposure_sunsetsea_after.jpg
+  description: Encapsulates warm coastal ocean tides, crashing golden sunset surf, and coastal hills seamlessly across the subject's portrait.
+  prompt: /SEADOUBLE
+  tags:
+    - Ocean
+    - Sunset
+    - Waves
+    - Coastal
+    - Romantic
+
 - id: tinyworkers
   title: Product Miniature Workers
   category: Miniature & Diorama
@@ -93,25 +226,6 @@
     - Miniature
     - Character
 
-- id: cyberpunk
-  title: Rainy Neon Cyberpunk 2088
-  category: Futuristic & VFX
-  slash_command: /cyberpunk
-  models:
-    - ChatGPT (DALL-E 3)
-    - Google Imagen 3
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/city_street_day_before.jpg
-  after_image: /assets/images/prompts/city_cyberpunk_after.jpg
-  description: Transforms daytime streets or objects into a moody, rain-soaked 2088 cyberpunk cityscape with glowing neon signage, holographic displays, and asphalt reflections.
-  prompt: /cyberpunk
-  tags:
-    - Cyberpunk
-    - Neon
-    - Sci-Fi
-    - Futuristic
-    - Night
-
 - id: ghibli
   title: Studio Ghibli Watercolor Cel
   category: Artistic & Animation
@@ -130,117 +244,3 @@
     - Watercolor
     - Cel
     - Artistic
-
-- id: render
-  title: 2D Line Sketch to Photoreal Render
-  category: Artistic & Animation
-  slash_command: /render
-  models:
-    - Google Imagen 3
-    - ChatGPT (DALL-E 3)
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/architectural_sketch_before.jpg
-  after_image: /assets/images/prompts/villa_render_after.jpg
-  description: Transforms hand-drawn pencil/ink sketches into a photorealistic 3D architectural visualization with natural travertine stone, ambient lighting, and pool water.
-  prompt: /render
-  tags:
-    - Render
-    - Architecture
-    - Sketch-to-3D
-    - Realism
-    - Visualization
-
-- id: vector
-  title: Minimalist Flat Vector Graphic
-  category: Artistic & Animation
-  slash_command: /vector
-  models:
-    - ChatGPT (DALL-E 3)
-    - Google Imagen 3
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/coffee_barista_before.jpg
-  after_image: /assets/images/prompts/vector_icon_after.jpg
-  description: Distills complex real-life photography into a clean, modern SVG-style flat vector illustration with balanced contours and trendy pastel color palette.
-  prompt: /vector
-  tags:
-    - Vector
-    - Flat-Art
-    - Graphic
-    - Minimalist
-    - SVG
-
-- id: portrait
-  title: Executive LinkedIn Headshot
-  category: Photography & Style
-  slash_command: /portrait
-  models:
-    - Google Imagen 3
-    - ChatGPT (GPT-4o)
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/executive_headshot_before.jpg
-  after_image: /assets/images/prompts/executive_headshot_after.jpg
-  description: Upgrades a casual selfie into an elite corporate executive portrait dressed in a tailored Italian navy wool suit while preserving 100% facial identity.
-  prompt: /portrait
-  tags:
-    - Portrait
-    - LinkedIn
-    - Executive
-    - Corporate
-    - Identity-Preserved
-
-- id: restore
-  title: Historical Photo Restore & Colorize
-  category: Photography & Style
-  slash_command: /restore
-  models:
-    - Google Imagen 3
-    - ChatGPT (GPT-4o)
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/vintage_bw_before.jpg
-  after_image: /assets/images/prompts/colorized_restored_after.jpg
-  description: Removes scratches, creases, and noise from vintage black-and-white photos, infusing realistic warm skin tones and historical color accuracy.
-  prompt: /restore
-  tags:
-    - Restore
-    - Colorize
-    - Vintage
-    - HD
-    - Historical
-
-- id: outpaint
-  title: Panoramic Vista Canvas Expansion
-  category: Photography & Style
-  slash_command: /outpaint
-  models:
-    - ChatGPT (DALL-E 3)
-    - Google Imagen 3
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/portrait_tight_before.jpg
-  after_image: /assets/images/prompts/panorama_expanded_after.jpg
-  description: Expands a tight close-up crop into a 16:9 cinematic panoramic landscape, seamlessly generating realistic surrounding environments and terrain.
-  prompt: /outpaint
-  tags:
-    - Outpaint
-    - Panorama
-    - Landscape
-    - Expansion
-    - Cinematic
-
-- id: editorial
-  title: Vogue High-Fashion Editorial Cover
-  category: Photography & Style
-  slash_command: /editorial
-  models:
-    - Google Imagen 3
-    - ChatGPT (DALL-E 3)
-  aspect_ratio: '1:1'
-  before_image: /assets/images/prompts/casual_model_before.jpg
-  after_image: /assets/images/prompts/vogue_editorial_after.jpg
-  description: Transforms an everyday casual portrait into a high-fashion magazine cover feature with dramatic studio rim lighting, haute couture styling, and editorial contrast.
-  prompt: /editorial
-  tags:
-    - Editorial
-    - Vogue
-    - High-Fashion
-    - Studio
-    - Glamour

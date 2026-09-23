@@ -1,3 +1,46 @@
+- category: Double Exposure & Viral Portrait FX
+  icon: ✨
+  commands:
+  - cmd: /DOUBLE
+    title: Mystical Rainforest Stream Double Exposure
+    desc: Seamlessly blends portrait contours into a mossy enchanted rainforest canopy
+      with sunbeams filtering down over a rocky mountain brook.
+    tag: Viral Video
+  - cmd: /CINEMATICDOUBLE
+    title: Tokyo Night Skyline & Traffic Trails
+    desc: Fuses the subject with nocturnal Tokyo skyscrapers, neon-lit high-rises,
+      and streaming vehicle long-exposure headlight trails.
+    tag: Viral Video
+  - cmd: /EDITORIALDOUBLE
+    title: Alpine Sunset Mountain & Pine Canyon
+    desc: High-fashion editorial double exposure merging the portrait with snow-capped
+      Alpine peaks, sunset clouds, and an emerald canyon river.
+    tag: Viral Video
+  - cmd: /NATUREDOUBLE
+    title: Sunlit Giant Redwood Forest Canopy
+    desc: Infuses the portrait hair and silhouette with ancient redwood giants, lush
+      fern undergrowth, and golden morning sun rays.
+    tag: Viral Video
+  - cmd: /FLORALDOUBLE
+    title: Radiant Golden Hour Metropolis
+    desc: Combines the portrait with a warm golden sunset city skyline, illuminated
+      expressway ribbons, and penthouse panoramic windows.
+    tag: Viral Video
+  - cmd: /CITYDOUBLE
+    title: Cyber Blue Urban Night Avenue
+    desc: Projects a futuristic cyan-blue city boulevard with towering architecture
+      and speeding taxi light trails through the subject.
+    tag: Viral Video
+  - cmd: /SEADOUBLE
+    title: Golden Coastal Sunset Waves & Surf
+    desc: Wraps the portrait silhouette in golden sunset ocean tides, coastal cliffs,
+      and white foam sea waves.
+    tag: Viral Video
+  - cmd: /COSMICDOUBLE
+    title: Deep Nebula & Stellar Constellation
+    desc: Transposes a glowing cosmic nebula, violet spiral galaxies, and stardust
+      through the profile of the portrait.
+    tag: Cosmic
 - category: Miniature & Surreal Dioramas
   icon: 🏗️
   commands:

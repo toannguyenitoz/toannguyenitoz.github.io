@@ -349,6 +349,7 @@ permalink: /seedance/
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -973,7 +974,7 @@ permalink: /seedance/
     </button>
     <button class="master-tab-btn" id="tabBtnImage" onclick="switchMasterTab('image')">
       <span>🎨 Google &amp; ChatGPT Image Studio (Slash /)</span>
-      <span class="master-tab-badge">60+ Slash Commands</span>
+      <span class="master-tab-badge">80+ Slash Commands</span>
     </button>
   </div>
 
@@ -996,10 +997,10 @@ permalink: /seedance/
   <!-- Image Stats (Visible in Image Tab) -->
   <div class="prompts-stats-bar" id="statsImage" style="display: none;">
     <div class="prompts-stat-pill">
-      <span>⚡ <strong>60+ Short Slash Commands</strong> (/)</span>
+      <span>⚡ <strong>80+ Short Slash Commands</strong> (/)</span>
     </div>
     <div class="prompts-stat-pill">
-      <span>🏗️ <strong>/tinyworkers</strong> &amp; 3D Diorama Ready</span>
+      <span>✨ <strong>Double Exposure &amp; AI Portraits</strong></span>
     </div>
     <div class="prompts-stat-pill">
       <span>⚙️ <strong>ChatGPT (GPT-4o)</strong> &amp; <strong>Google Gemini</strong></span>
@@ -1183,16 +1184,20 @@ permalink: /seedance/
     </div>
 
     <div class="master-prompt-code-wrap">
-      <pre id="masterSetupPrompt">Act as an AI Visual Transformation Engine. When I upload an image and type a short slash command starting with '/', automatically transform the uploaded image into the corresponding style while keeping the primary product or subject recognizable:
-• /tinyworkers: Macro photography of miniature construction workers in hardhats and safety vests meticulously building, repairing, or painting the product with tiny scaffolding, ladders, and tools.
+      <pre id="masterSetupPrompt">Act as an AI Visual Transformation Engine. When I upload an image and type a short slash command starting with '/', automatically transform the uploaded image into the corresponding style while keeping the primary subject or product recognizable:
+• /DOUBLE: Double exposure blending the portrait into a mystical, sunlit mossy rainforest with a rocky stream and natural canopy lighting.
+• /CINEMATICDOUBLE: Cinematic double exposure fusing the subject with a Tokyo night city skyline, illuminated skyscrapers, and streaming traffic light trails.
+• /EDITORIALDOUBLE: Vogue high-fashion editorial double exposure merging the portrait with sunset alpine mountain peaks, canyon river, and pine forest.
+• /NATUREDOUBLE: Sun-drenched redwood forest canopy and woodland river double exposure through the subject's hair and silhouette.
+• /FLORALDOUBLE: Radiant golden metropolis skyline at dusk with glowing highway light trails and bokeh.
+• /CITYDOUBLE: Modern cyber-blue night city avenue with cyan skyscrapers, headlights, and urban atmosphere.
+• /SEADOUBLE: Golden hour ocean coastline with crashing waves, setting sun reflection, and coastal cliffs.
+• /tinyworkers: Macro photography of miniature construction workers in hardhats and safety gear meticulously building, repairing, or painting the product with tiny scaffolding, ladders, and tools.
 • /lego: Rebuild the subject entirely out of colorful authentic LEGO plastic bricks with iconic stud textures.
 • /exploded: 3D technical exploded radial teardown view with internal mechanical components and optics floating in mid-air.
 • /splash: Dynamic commercial studio liquid water or beverage splash bursting with high-speed droplets around the product.
 • /claymation: Handcrafted plasticine clay animation figure with visible tactile fingerprint textures.
 • /isometric: Miniature 3D isometric floating diorama island on a clean studio pedestal.
-• /xray: Transparent internal X-ray schematic with glowing blue/green circuit boards and internal structures.
-• /flatlay: Knolling flat-lay arrangement with all parts disassembled in a crisp 90-degree overhead grid.
-• /cyberpunk: Rain-soaked 2088 cyberpunk boulevard with glowing neon signage and asphalt reflections.
 • /ghibli: Hand-painted Studio Ghibli watercolor anime cel with warm golden sunlight and lush painterly foliage.
 • /render: Photorealistic 3D architectural or industrial visualization with luxury travertine stone and realistic lighting.
 • /vector: Clean minimalist SVG flat vector illustration with modern pastel color palette.
@@ -1235,6 +1240,7 @@ permalink: /seedance/
     <!-- Image Filter Pills -->
     <div class="prompts-filters" id="imageFilters">
       <button class="prompts-filter-btn active" data-category="all" onclick="setImageCategory('all', this)">All Styles</button>
+      <button class="prompts-filter-btn" data-category="Double Exposure & Portrait" onclick="setImageCategory('Double Exposure & Portrait', this)">Double Exposure</button>
       <button class="prompts-filter-btn" data-category="Miniature & Diorama" onclick="setImageCategory('Miniature & Diorama', this)">Miniature &amp; Diorama</button>
       <button class="prompts-filter-btn" data-category="Product & Advertising" onclick="setImageCategory('Product & Advertising', this)">Product &amp; Commercial</button>
       <button class="prompts-filter-btn" data-category="Materials & Textures" onclick="setImageCategory('Materials & Textures', this)">Materials &amp; Textures</button>
