@@ -31,6 +31,28 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: How to Check If Your Windows 11 License is Genuine! 🔑⚡
+  youtube_id: QalbGmBg-NY
+  duration: 01:00
+  category: Shorts
+  description: Did you buy a refurbished PC or get a Windows key online? Here is how
+    to verify if your Windows 11 installation has an official, permanent genuine activation
+    or a temporary volume license that will...
+  published_date: '2026-09-24'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Secret Boot Configuration in Windows 11 You Didn't Know! 💻⚡
+  youtube_id: OaYSWxTyLV4
+  duration: 01:00
+  category: Shorts
+  description: Want to see how Windows 11 really boots up behind the scenes? The Boot
+    Configuration Data (BCD) store controls your entire startup sequence, device partitions,
+    and OS loader parameters! Here is how...
+  published_date: '2026-09-24'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Unlock ALL CPU Cores in Windows 11 for Max Power! ⚡🔥
   youtube_id: ciyODfFn12k
   duration: 01:00
