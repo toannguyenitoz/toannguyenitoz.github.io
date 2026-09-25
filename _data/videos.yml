@@ -31,6 +31,28 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Boost GPU Performance in Windows 11! Secret Registry Tweak! ⚡🎮
+  youtube_id: O6YL7HhykWQ
+  duration: 01:00
+  category: Shorts
+  description: 'Is your graphics card not delivering maximum performance or suffering
+    from micro-stutters and input lag in Windows 11? Unlock full GPU capabilities
+    with Hardware-Accelerated GPU Scheduling (HAGS)! '
+  published_date: '2026-09-25'
+  views_count: 4
+  views_display: 4 views
+  is_pinned: false
+- title: Speed Up Windows 11 Search Instantly! Secret Registry Hack! ⚡🔍
+  youtube_id: R5OVkk6Sxjk
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows 11 search bar slow to respond or taking several seconds
+    before showing results? By default, Windows sets the search indexer service to
+    "Delayed Start", causing annoying lag whenever...
+  published_date: '2026-09-25'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Stop Windows 11 Tracking Your Activity! Turn This Off Now! 🛑💻
   youtube_id: rT4itx8pOzM
   duration: 01:00
@@ -105,8 +127,8 @@ items:
     TRIM! Over time, deleted blocks reduce write performance. Windows has a built-in
     optimizer that trims your SSD in seconds—no extr...
   published_date: '2026-09-22'
-  views_count: 41
-  views_display: 41 views
+  views_count: 195
+  views_display: 195 views
   is_pinned: false
 - title: 2 Secret PowerShell Commands You MUST Know! ⚡💻
   youtube_id: yFf0YIzUDRU
