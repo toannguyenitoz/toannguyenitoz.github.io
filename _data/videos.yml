@@ -31,6 +31,17 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Stop Windows 11 Tracking Your Activity! Turn This Off Now! 🛑💻
+  youtube_id: rT4itx8pOzM
+  duration: 01:00
+  category: Shorts
+  description: Did you know that by default, Windows 11 collects and sends optional
+    diagnostic data about the websites you browse, how you use apps, and detailed
+    device activity back to Microsoft? Here is how to ...
+  published_date: '2026-09-24'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: How to Check If Your Windows 11 License is Genuine! 🔑⚡
   youtube_id: QalbGmBg-NY
   duration: 01:00
@@ -409,8 +420,8 @@ items:
   category: Shorts
   description: Practical IT Support. Real-World Troubleshooting.
   published_date: '2026-09-12'
-  views_count: 111
-  views_display: 111 views
+  views_count: 113
+  views_display: 113 views
   is_pinned: false
 - title: Never Lose PC Drivers Again! 1-Click Backup Trick 💾⚡
   youtube_id: DKT09b_yrVY
@@ -475,8 +486,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 443
-  views_display: 443 views
+  views_count: 442
+  views_display: 442 views
   is_pinned: false
 - title: Speed Up Your Windows SSD in 10 Seconds! ⚡ | Toan Nguyen IT OZ
   youtube_id: CzM49O0Buzo
