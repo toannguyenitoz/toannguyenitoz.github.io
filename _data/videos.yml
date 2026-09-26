@@ -31,6 +31,28 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Copy Text From Any Image in Windows 11 Instantly! ⚡📄
+  youtube_id: IgeZNt7HzD0
+  duration: 01:00
+  category: Shorts
+  description: Ever had to manually retype text from a scanned document, a YouTube
+    video screenshot, or a locked PDF? Stop wasting your precious time! Windows 11
+    has a built-in optical character recognition (OCR)...
+  published_date: '2026-09-26'
+  views_count: 1
+  views_display: 1 views
+  is_pinned: false
+- title: Fix 100% CPU Usage in Windows 11 in 30 Seconds! ⚡🔥
+  youtube_id: zZyKtQl01oA
+  duration: 01:00
+  category: Shorts
+  description: Is your computer fan screaming and Windows freezing up with CPU usage
+    stuck at 100%? Here is how to track down rogue runaway background tasks and bring
+    your CPU back down to normal in under 30 seco...
+  published_date: '2026-09-26'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Top 8 Windows Run Commands You Must Use Daily! ⚡🚀
   youtube_id: ngyT-e-SRU4
   duration: 01:00
@@ -39,8 +61,8 @@ items:
     These 8 essential Windows Run shortcuts will supercharge your daily PC workflow
     and give you instant access to powerful built-...
   published_date: '2026-09-25'
-  views_count: 0
-  views_display: New
+  views_count: 80
+  views_display: 80 views
   is_pinned: false
 - title: Boost GPU Performance in Windows 11! Secret Registry Tweak! ⚡🎮
   youtube_id: O6YL7HhykWQ
@@ -182,8 +204,8 @@ items:
     When simple troubleshooting fails, the ultimate built-in fix is a full Network
     Reset. Here is how to restore all network component...
   published_date: '2026-09-21'
-  views_count: 137
-  views_display: 137 views
+  views_count: 191
+  views_display: 191 views
   is_pinned: false
 - title: Fix Missing Photo Thumbnails in Windows 11! 🖼️⚡
   youtube_id: YQFBy3ABpCw
@@ -732,8 +754,8 @@ items:
   description: Deep dive into hidden Windows 11 features, UI customizations, taskbar
     optimizations, and multitasking secrets to maximize system efficiency.
   published_date: '2026-09-07'
-  views_count: 12
-  views_display: 12 views
+  views_count: 17
+  views_display: 17 views
   is_pinned: false
 - title: All-in-One Windows 11 Health Toolkit in PowerShell! (9 Tools in 1 Script)
   youtube_id: zc70D8zDj8E
