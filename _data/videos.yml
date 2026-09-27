@@ -31,6 +31,17 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Fix Hard Drive & SSD Errors in Windows 11 in 30 Seconds! ⚡💾
+  youtube_id: UUDXiYe-kIM
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows 11 computer freezing, showing blue screens, or struggling
+    to open files? Your storage drive might have corrupted file sectors or file system
+    errors! Here is how to use Windows' buil...
+  published_date: '2026-09-26'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Copy Text From Any Image in Windows 11 Instantly! ⚡📄
   youtube_id: IgeZNt7HzD0
   duration: 01:00
@@ -127,8 +138,8 @@ items:
     might not be utilizing all available processor threads during boot and heavy multitasking!
     Here is how to unlock all CPU cores i...
   published_date: '2026-09-23'
-  views_count: 0
-  views_display: New
+  views_count: 141
+  views_display: 141 views
   is_pinned: false
 - title: Free Up Gigabytes of Junk Files in Windows 11! 🗑️⚡
   youtube_id: KZOEWQPZv3g
@@ -193,8 +204,8 @@ items:
     on Windows 11 or 10? 🌐❌ Over time, outdated or corrupted DNS cache files slow
     down your browsing speed and block access to re...
   published_date: '2026-09-21'
-  views_count: 120
-  views_display: 120 views
+  views_count: 153
+  views_display: 153 views
   is_pinned: false
 - title: How to Reset Network in Windows 11! 🌐⚡
   youtube_id: CX8waDUpeiY
@@ -204,8 +215,8 @@ items:
     When simple troubleshooting fails, the ultimate built-in fix is a full Network
     Reset. Here is how to restore all network component...
   published_date: '2026-09-21'
-  views_count: 191
-  views_display: 191 views
+  views_count: 192
+  views_display: 192 views
   is_pinned: false
 - title: Fix Missing Photo Thumbnails in Windows 11! 🖼️⚡
   youtube_id: YQFBy3ABpCw
@@ -259,8 +270,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 206
-  views_display: 206 views
+  views_count: 256
+  views_display: 256 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -313,8 +324,8 @@ items:
   description: 'Is your Windows PC taking forever to copy large files, move folders,
     or transfer data between drives? '
   published_date: '2026-09-17'
-  views_count: 184
-  views_display: 184 views
+  views_count: 190
+  views_display: 190 views
   is_pinned: false
 - title: Password Protect Any USB Port on Windows! 🔒⚡
   youtube_id: arV4PTVe_mI
@@ -346,8 +357,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 317
-  views_display: 317 views
+  views_count: 342
+  views_display: 342 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -893,6 +904,6 @@ items:
     safeguard confidential enterprise data and corporate domain credentials whenever
     stepping away.
   published_date: '2026-08-15'
-  views_count: 35
-  views_display: 35 views
+  views_count: 37
+  views_display: 37 views
   is_pinned: false
