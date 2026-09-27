@@ -17,8 +17,8 @@ items:
     slow boot times are caused by hidden background apps launching on startup without
     your permission!  Here is the secret Task Manag...
   published_date: '2026-09-20'
-  views_count: 575
-  views_display: 575 views
+  views_count: 581
+  views_display: 581 views
   is_pinned: true
 - title: Secret Windows Virus Scanner Nobody Tells You About! 🛡️💻
   youtube_id: xDhGMHqtiuU
@@ -31,6 +31,26 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Can't Type in Windows Search Bar? Fix It in 5 Seconds! ⚡⌨️
+  youtube_id: ungor7E-BAU
+  duration: 01:00
+  category: Shorts
+  description: 'Can''t type anything into your Windows 11 Search bar or Start menu?
+    Don''t restart your computer or reinstall Windows! '
+  published_date: '2026-09-27'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 'Fix C: Drive Errors in Windows 11 in 30 Seconds! ⚡💾'
+  youtube_id: 8WWB7cfWlkY
+  duration: 01:00
+  category: Shorts
+  description: 'Is your Windows 11 PC freezing, lagging, or throwing blue screens?
+    Your C: Drive might have corrupted file system errors or bad sectors! '
+  published_date: '2026-09-27'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Fix Hard Drive & SSD Errors in Windows 11 in 30 Seconds! ⚡💾
   youtube_id: UUDXiYe-kIM
   duration: 01:00
@@ -713,8 +733,8 @@ items:
     is how to create a 1-click automated system repair script using SFC and DISM to
     fix broken system files in minutes! 🛠️💻  📌 WHAT...
   published_date: '2026-09-08'
-  views_count: 113
-  views_display: 113 views
+  views_count: 114
+  views_display: 114 views
   is_pinned: false
 - title: 9 Windows Settings EVERY User Should Change NOW! (Stop Crashes & Speed Up
     PC)
