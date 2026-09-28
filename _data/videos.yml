@@ -31,6 +31,17 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Did Microsoft Defender Catch Something? Check With This! 🛡️⚡
+  youtube_id: 9va-kadr0_w
+  duration: 01:00
+  category: Shorts
+  description: Wondering what malware or suspicious files Microsoft Defender caught
+    on your PC? 🛡️ Don't rely only on the standard Windows Security GUI—use PowerShell
+    to see active threats, severity levels, and d...
+  published_date: '2026-09-27'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Can't Type in Windows Search Bar? Fix It in 5 Seconds! ⚡⌨️
   youtube_id: ungor7E-BAU
   duration: 01:00
@@ -136,8 +147,8 @@ items:
     to verify if your Windows 11 installation has an official, permanent genuine activation
     or a temporary volume license that will...
   published_date: '2026-09-24'
-  views_count: 0
-  views_display: New
+  views_count: 166
+  views_display: 166 views
   is_pinned: false
 - title: Secret Boot Configuration in Windows 11 You Didn't Know! 💻⚡
   youtube_id: OaYSWxTyLV4
@@ -279,8 +290,8 @@ items:
     Windows 11 has a secret built-in package manager (winget) that updates all your
     installed applications automatically with...
   published_date: '2026-09-19'
-  views_count: 105
-  views_display: 105 views
+  views_count: 106
+  views_display: 106 views
   is_pinned: false
 - title: Delete Stubborn & Corrupted Windows Drivers Permanently with CMD! 🛠️⚡
   youtube_id: CCWyKtMqV-k
@@ -313,8 +324,8 @@ items:
     pages taking forever to resolve?  Here is how to create a 12-tool Automated Network
     Troubleshooter in Windows using a single bat...
   published_date: '2026-09-18'
-  views_count: 86
-  views_display: 86 views
+  views_count: 93
+  views_display: 93 views
   is_pinned: false
 - title: Unlock Secret Windows 11 'God Mode' in 10 Seconds! ⚡📂
   youtube_id: 7nYb26mpEp0
@@ -497,8 +508,8 @@ items:
     Check whether your Windows license is genuine and permanent, or if it will suddenly
     expire in a few months!
   published_date: '2026-09-13'
-  views_count: 65
-  views_display: 65 views
+  views_count: 66
+  views_display: 66 views
   is_pinned: false
 - title: final shorts 40 create windows recovery toolkit bat
   youtube_id: 1xdaaTnKhHg
@@ -859,8 +870,8 @@ items:
   description: Extract complete memory specs (speed, form factor, manufacturer, empty
     slots) directly from the command line without opening the physical PC chassis.
   published_date: '2026-08-31'
-  views_count: 35
-  views_display: 35 views
+  views_count: 37
+  views_display: 37 views
   is_pinned: false
 - title: 'The Win + X Secret: Instant Access to Windows 11 Admin Tools!'
   youtube_id: HS7dyfRiPhk
@@ -880,8 +891,8 @@ items:
   description: High-productivity shortcuts and window management techniques designed
     to supercharge daily workflows for both power users and enterprise IT personnel.
   published_date: '2026-08-28'
-  views_count: 9
-  views_display: 9 views
+  views_count: 10
+  views_display: 10 views
   is_pinned: false
 - title: IT Support Quiz Episode 1
   youtube_id: whs3lM6KiUI
