@@ -31,6 +31,38 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Stop Clicking 3 Times to Shut Down! (Do This Instead) ⚡💻
+  youtube_id: 2xrg9forcVU
+  duration: 01:00
+  category: Shorts
+  description: Tired of clicking Start, Power, then Shutdown every single time? Create
+    a clean 1-click desktop shutdown button that turns off your PC instantly! ⚡💻
+  published_date: '2026-09-28'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Windows Hides Files Deeply! Reveal Them With This Secret 🔓👁️
+  youtube_id: SiKTGaqtSJ0
+  duration: 01:00
+  category: Shorts
+  description: 'Did you know Windows hides sensitive operating system files so deeply
+    that they stay completely invisible even after enabling "Show hidden files" in
+    File Explorer? 👁️🔒 '
+  published_date: '2026-09-28'
+  views_count: 4
+  views_display: 4 views
+  is_pinned: false
+- title: Windows Update Stuck Downloading? Try This Quick Fix! ⚡🛠️
+  youtube_id: 0VgSdnNovoA
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows Update stuck at 0%, freezing during download, or failing
+    with error codes? 🛠️⚡ Don't worry—you don't need to reinstall Windows! Simply
+    restart the core Windows Update service to cle...
+  published_date: '2026-09-28'
+  views_count: 55
+  views_display: 55 views
+  is_pinned: false
 - title: Did Microsoft Defender Catch Something? Check With This! 🛡️⚡
   youtube_id: 9va-kadr0_w
   duration: 01:00
@@ -70,8 +102,8 @@ items:
     to open files? Your storage drive might have corrupted file sectors or file system
     errors! Here is how to use Windows' buil...
   published_date: '2026-09-26'
-  views_count: 0
-  views_display: New
+  views_count: 180
+  views_display: 180 views
   is_pinned: false
 - title: Copy Text From Any Image in Windows 11 Instantly! ⚡📄
   youtube_id: IgeZNt7HzD0
@@ -224,8 +256,8 @@ items:
     your device in Windows Device Manager? ⚠️❌ That warning means Windows has disabled
     the hardware due to driver corruption, missin...
   published_date: '2026-09-22'
-  views_count: 131
-  views_display: 131 views
+  views_count: 261
+  views_display: 261 views
   is_pinned: false
 - title: Fix Slow Internet & Load Websites Fast! 🌐⚡
   youtube_id: uoNOLUA69u0
@@ -455,8 +487,8 @@ items:
     third-party cleaners! Windows 10 and 11 have a secret built-in automated maintenance
     tool called Storage Sense that cleans gigabyt...'
   published_date: '2026-09-15'
-  views_count: 70
-  views_display: 70 views
+  views_count: 71
+  views_display: 71 views
   is_pinned: false
 - title: Check Your Windows License Details with This Secret Command! 🔑💻
   youtube_id: 1fUgAO9CAjE
@@ -572,8 +604,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 114
-  views_display: 114 views
+  views_count: 115
+  views_display: 115 views
   is_pinned: false
 - title: Fix Laptop Keyboard Not Typing in 8 Seconds!
   youtube_id: -3-gtqfqsdU
@@ -583,8 +615,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 442
-  views_display: 442 views
+  views_count: 443
+  views_display: 443 views
   is_pinned: false
 - title: Speed Up Your Windows SSD in 10 Seconds! ⚡ | Toan Nguyen IT OZ
   youtube_id: CzM49O0Buzo
