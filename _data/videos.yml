@@ -31,6 +31,39 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Check Full PC Specs & Hardware in 10 Seconds! (Secret CMD Trick) ⚡💻
+  youtube_id: O-BUqygNst0
+  duration: 01:00
+  category: Shorts
+  description: Need to check your computer's motherboard, exact processor model, total
+    RAM, BIOS version, or Windows install date without downloading sketchy third-party
+    apps? Here is the built-in 10-second IT pr...
+  published_date: '2026-09-29'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Stop Windows 11 File Explorer Ads! (Secret Sync Setting) 🛑📁
+  youtube_id: thCOmz-T-iE
+  duration: 01:00
+  category: Shorts
+  description: Did you know Windows 11 sneaks promotional ads and OneDrive upgrade
+    popups directly inside your File Explorer? Here is how to disable them permanently
+    in 10 seconds! 🛑📁
+  published_date: '2026-09-29'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Lock Any Folder So No One Can Peek Inside! (WinRAR Secret) 🔒📁
+  youtube_id: NQBp2QuhL1w
+  duration: 01:00
+  category: Shorts
+  description: Want to lock a private folder so completely that nobody can even preview
+    what files are inside? Here is the secret encryption setting most people miss!
+    🔒👁️
+  published_date: '2026-09-29'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Stop Clicking 3 Times to Shut Down! (Do This Instead) ⚡💻
   youtube_id: 2xrg9forcVU
   duration: 01:00
@@ -49,8 +82,8 @@ items:
     that they stay completely invisible even after enabling "Show hidden files" in
     File Explorer? 👁️🔒 '
   published_date: '2026-09-28'
-  views_count: 4
-  views_display: 4 views
+  views_count: 43
+  views_display: 43 views
   is_pinned: false
 - title: Windows Update Stuck Downloading? Try This Quick Fix! ⚡🛠️
   youtube_id: 0VgSdnNovoA
@@ -91,8 +124,8 @@ items:
   description: 'Is your Windows 11 PC freezing, lagging, or throwing blue screens?
     Your C: Drive might have corrupted file system errors or bad sectors! '
   published_date: '2026-09-27'
-  views_count: 0
-  views_display: New
+  views_count: 112
+  views_display: 112 views
   is_pinned: false
 - title: Fix Hard Drive & SSD Errors in Windows 11 in 30 Seconds! ⚡💾
   youtube_id: UUDXiYe-kIM
@@ -201,8 +234,8 @@ items:
     might not be utilizing all available processor threads during boot and heavy multitasking!
     Here is how to unlock all CPU cores i...
   published_date: '2026-09-23'
-  views_count: 141
-  views_display: 141 views
+  views_count: 148
+  views_display: 148 views
   is_pinned: false
 - title: Free Up Gigabytes of Junk Files in Windows 11! 🗑️⚡
   youtube_id: KZOEWQPZv3g
@@ -344,8 +377,8 @@ items:
     sketchy third-party cleaning apps! Here is the ultimate built-in 1-line Command
     Prompt hack that purges locked Temp cache, sys...
   published_date: '2026-09-19'
-  views_count: 130
-  views_display: 130 views
+  views_count: 137
+  views_display: 137 views
   is_pinned: false
 - title: Fix Slow Wi-Fi & Internet Drops with 1 Click! Master Network Repair Script
     🌐⚡
@@ -409,8 +442,8 @@ items:
     endless boot loop, having Windows Recovery Environment (WinRE) enabled can literally
     save your entire operating system! '
   published_date: '2026-09-17'
-  views_count: 210
-  views_display: 210 views
+  views_count: 219
+  views_display: 219 views
   is_pinned: false
 - title: Fix Windows Time Sync Error 0x80070426 in 10 Seconds! ⏰💻
   youtube_id: 1VHwO5lIJ3w
@@ -549,8 +582,8 @@ items:
   category: Shorts
   description: Practical IT Support. Real-World Troubleshooting.
   published_date: '2026-09-12'
-  views_count: 113
-  views_display: 113 views
+  views_count: 117
+  views_display: 117 views
   is_pinned: false
 - title: Never Lose PC Drivers Again! 1-Click Backup Trick 💾⚡
   youtube_id: DKT09b_yrVY
@@ -754,8 +787,8 @@ items:
   category: Shorts
   description: Practical technical walkthrough and IT support tutorial.
   published_date: '2026-09-09'
-  views_count: 38
-  views_display: 38 views
+  views_count: 44
+  views_display: 44 views
   is_pinned: false
 - title: 2 Secret PowerShell Commands Every IT Pro Uses! 💻⚡
   youtube_id: bWKi6w_5e7E
@@ -798,8 +831,8 @@ items:
   description: Supercharge your daily computer workflow with 20 high-efficiency Windows
     shortcuts designed to cut navigation time in half for power users and IT pros.
   published_date: '2026-09-08'
-  views_count: 3
-  views_display: 3 views
+  views_count: 4
+  views_display: 4 views
   is_pinned: false
 - title: Unlock Secret "God Mode" in Windows 11! 📁⚡
   youtube_id: EiWjMDPo3pE
