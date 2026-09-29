@@ -6,8 +6,8 @@ items:
   description: 'Is your document stuck in the print queue and refusing to delete?
     Stop restarting your PC over and over! '
   published_date: '2026-09-09'
-  views_count: 749
-  views_display: 749 views
+  views_count: 763
+  views_display: 763 views
   is_pinned: true
 - title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
   youtube_id: sSUxsPtwOfQ
@@ -190,8 +190,8 @@ items:
     Configuration Data (BCD) store controls your entire startup sequence, device partitions,
     and OS loader parameters! Here is how...
   published_date: '2026-09-24'
-  views_count: 0
-  views_display: New
+  views_count: 110
+  views_display: 110 views
   is_pinned: false
 - title: Unlock ALL CPU Cores in Windows 11 for Max Power! ⚡🔥
   youtube_id: ciyODfFn12k
@@ -234,8 +234,8 @@ items:
     TRIM! Over time, deleted blocks reduce write performance. Windows has a built-in
     optimizer that trims your SSD in seconds—no extr...
   published_date: '2026-09-22'
-  views_count: 195
-  views_display: 195 views
+  views_count: 196
+  views_display: 196 views
   is_pinned: false
 - title: 2 Secret PowerShell Commands You MUST Know! ⚡💻
   youtube_id: yFf0YIzUDRU
@@ -498,8 +498,8 @@ items:
     or a temporary expiring KMS volume key? With one secret command in Windows Terminal
     or CMD, you can reveal your full activation ...
   published_date: '2026-09-14'
-  views_count: 34
-  views_display: 34 views
+  views_count: 36
+  views_display: 36 views
   is_pinned: false
 - title: Secret Built-in Windows Screen Recorder Nobody Knows! 📸🖥️
   youtube_id: kSMvbZMPVQw
@@ -593,8 +593,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 185
-  views_display: 185 views
+  views_count: 186
+  views_display: 186 views
   is_pinned: false
 - title: 1-Click Script Cleans 20GB of Windows Junk!
   youtube_id: P_heOFPpEbI
@@ -956,8 +956,8 @@ items:
   description: How to instantly recover from frozen displays, black screens, and graphical
     glitching without rebooting your PC or losing unsaved work.
   published_date: '2026-08-18'
-  views_count: 47
-  views_display: 47 views
+  views_count: 48
+  views_display: 48 views
   is_pinned: false
 - title: 'The #1 Windows Shortcut for Security'
   youtube_id: tjMnYPYN2B8
