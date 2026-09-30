@@ -31,6 +31,39 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Fix Any PC Problem in 2 Minutes! (Secret System Restore Command) ⚡💻
+  youtube_id: O8717E3Zy7Q
+  duration: 01:00
+  category: Shorts
+  description: Did your PC start crashing, freezing, or glitching after a bad Windows
+    update? Don't panic or reinstall Windows! Here is the secret 2-minute time-machine
+    command that fixes almost any PC problem! ⚡💻
+  published_date: '2026-09-30'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Control All Laptop Settings in 1 Click! (Secret Windows Shortcut) ⚡💻
+  youtube_id: 6MTbZhSrYRs
+  duration: 01:00
+  category: Shorts
+  description: Tired of digging through Windows Settings just to adjust brightness,
+    change volume, or switch power plans? Here is the secret 1-click shortcut every
+    laptop and PC user needs! ⚡💻
+  published_date: '2026-09-30'
+  views_count: 21
+  views_display: 21 views
+  is_pinned: false
+- title: Check Your PC Performance Score in 5 Seconds! (Secret WinSAT Trick) ⚡🚀
+  youtube_id: _RbxHBguyA0
+  duration: 01:00
+  category: Shorts
+  description: Did you know Windows has a secret built-in benchmark tool that scores
+    your CPU, RAM, Disk, and graphics card without downloading third-party software?
+    Here is how to reveal your official Windows pe...
+  published_date: '2026-09-30'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Check Full PC Specs & Hardware in 10 Seconds! (Secret CMD Trick) ⚡💻
   youtube_id: O-BUqygNst0
   duration: 01:00
@@ -212,8 +245,8 @@ items:
     to verify if your Windows 11 installation has an official, permanent genuine activation
     or a temporary volume license that will...
   published_date: '2026-09-24'
-  views_count: 166
-  views_display: 166 views
+  views_count: 167
+  views_display: 167 views
   is_pinned: false
 - title: Secret Boot Configuration in Windows 11 You Didn't Know! 💻⚡
   youtube_id: OaYSWxTyLV4
@@ -278,8 +311,8 @@ items:
     are 2 secret PowerShell commands that reveal deep system info and drive health
     in seconds:  ⚡ **Secret Commands:** 1️⃣ **Reveal E...'
   published_date: '2026-09-22'
-  views_count: 27
-  views_display: 27 views
+  views_count: 122
+  views_display: 122 views
   is_pinned: false
 - title: Fix Yellow Warning Drivers in 5 Seconds! ⚠️🛠️
   youtube_id: lJaeccqeQIg
@@ -420,8 +453,8 @@ items:
   description: 'Is your Windows PC taking forever to copy large files, move folders,
     or transfer data between drives? '
   published_date: '2026-09-17'
-  views_count: 190
-  views_display: 190 views
+  views_count: 192
+  views_display: 192 views
   is_pinned: false
 - title: Password Protect Any USB Port on Windows! 🔒⚡
   youtube_id: arV4PTVe_mI
