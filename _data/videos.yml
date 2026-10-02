@@ -452,8 +452,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 256
-  views_display: 256 views
+  views_count: 276
+  views_display: 276 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -822,8 +822,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 83
-  views_display: 83 views
+  views_count: 84
+  views_display: 84 views
   is_pinned: false
 - title: Windows Built-in Packet Sniffer (No Wireshark Needed!) 📡 | Toan Nguyen IT
     OZ
@@ -1021,8 +1021,8 @@ items:
   description: Extract complete memory specs (speed, form factor, manufacturer, empty
     slots) directly from the command line without opening the physical PC chassis.
   published_date: '2026-08-31'
-  views_count: 37
-  views_display: 37 views
+  views_count: 38
+  views_display: 38 views
   is_pinned: false
 - title: 'The Win + X Secret: Instant Access to Windows 11 Admin Tools!'
   youtube_id: HS7dyfRiPhk
