@@ -31,6 +31,39 @@ items:
   views_count: 484
   views_display: 484 views
   is_pinned: true
+- title: Windows Secret Built-in Anti-Ransomware Shield! 🛡️💻
+  youtube_id: kpXPZfva1DM
+  duration: 01:00
+  category: Shorts
+  description: Did you know Windows includes a powerful enterprise-grade anti-ransomware
+    shield that completely prevents malware from encrypting your personal files? 🛡️💻
+    Microsoft leaves it turned off by default ...
+  published_date: '2026-10-02'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Stop Slow Windows Menus in 30 Seconds! (Instant Speed Boost) ⚡💻
+  youtube_id: UB_r1D8pSPg
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows context menu lagging or taking forever to open submenus?
+    🛑💻 Microsoft actually built in a hidden 400 millisecond delay by default! Here
+    is the native registry tweak to eliminate tha...
+  published_date: '2026-10-02'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 'Free Up 20GB+ on C: Drive in 30 Seconds! (Secret DISM Cleanup) 🧹💻'
+  youtube_id: CKOkWwH-mNo
+  duration: 01:00
+  category: Shorts
+  description: Is your C drive running out of space even though you haven't downloaded
+    anything? 🛑💻 It's likely hidden Windows update backups inside the WinSxS Component
+    Store! Here is the native administrator DI...
+  published_date: '2026-10-02'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Unlock All CPU Cores in Windows 11? (The Viral msconfig Trick Explained!)
     ⚡💻
   youtube_id: JDsQPIHoGH4
@@ -200,8 +233,8 @@ items:
   description: 'Can''t type anything into your Windows 11 Search bar or Start menu?
     Don''t restart your computer or reinstall Windows! '
   published_date: '2026-09-27'
-  views_count: 76
-  views_display: 76 views
+  views_count: 78
+  views_display: 78 views
   is_pinned: false
 - title: 'Fix C: Drive Errors in Windows 11 in 30 Seconds! ⚡💾'
   youtube_id: 8WWB7cfWlkY
@@ -320,8 +353,8 @@ items:
     might not be utilizing all available processor threads during boot and heavy multitasking!
     Here is how to unlock all CPU cores i...
   published_date: '2026-09-23'
-  views_count: 148
-  views_display: 148 views
+  views_count: 159
+  views_display: 159 views
   is_pinned: false
 - title: Free Up Gigabytes of Junk Files in Windows 11! 🗑️⚡
   youtube_id: KZOEWQPZv3g
@@ -767,8 +800,8 @@ items:
     the built-in Windows Package Manager (winget) to install any software directly
     from the command line!  📌 Step-by-Step Guide: 1. Pre...'
   published_date: '2026-09-10'
-  views_count: 107
-  views_display: 107 views
+  views_count: 109
+  views_display: 109 views
   is_pinned: false
 - title: Wi-Fi Icon Completely Gone on Windows? 100% Working Fix! 🌐
   youtube_id: kyYU3EaFzNM
