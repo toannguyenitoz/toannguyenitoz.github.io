@@ -34,7 +34,7 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - Khắc phục triệt để hiện tượng số nhảy loạn khi F5 và phòng chống cache CSS trên trình duyệt.
 
 ### 2.2. Nội Dung & Chuỗi Bài Viết Thực Chiến (Content & Series)
-- [x] **Xuất bản tổng cộng 136 bài viết SOP kỹ thuật:**
+- [x] **Xuất bản tổng cộng 137 bài viết SOP kỹ thuật:**
   - Các bài viết nền tảng: Active Directory, Entra ID, Windows Server, Group Policy, Network Troubleshooting, BitLocker.
 - [x] **Chuỗi LinkedIn Windows Tips & Tricks (Phase 3: SysAdmin Tools):**
   - **Part 101:** Quản trị server từ xa không cần RDP (`Enter-PSSession`, WinRM).
@@ -46,6 +46,7 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - **Part 108:** Kiểm tra và xuất báo cáo Group Policy từ xa (`gpresult /S /USER /H`).
   - **Part 110:** Xử lý lệch thời gian gây lỗi xác thực Kerberos và Access Denied (`w32tm /stripchart`, `Invoke-Command w32tm /resync`).
   - **Part 111:** Giải phóng hàng chục GB dung lượng ổ C bị ẩn bởi Volume Shadow Storage (`vssadmin list shadowstorage`, `vssadmin resize shadowstorage /maxsize=2GB`, PowerShell CIM Win32_ShadowCopy).
+  - **Part 112:** Sự thật về CHKDSK – Sửa lỗi hệ thống tệp ổ C đúng chuẩn enterprise (`chkdsk C: /scan`, `chkdsk C: /spotfix`, PowerShell `Repair-Volume`).
 - [x] **Hệ thống điều hướng chuỗi bài thông minh (Sequential Series Navigation):**
   - Tự động sinh thanh điều hướng lùi/tiến giữa các phần liên tiếp (Ví dụ: từ Part 107 sang 108, từ 108 sang 110).
 
