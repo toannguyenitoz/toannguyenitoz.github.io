@@ -2,7 +2,7 @@
 
 > **Project:** Toan Nguyen IT Oz Website Portal (`toannguyenitoz.github.io`)  
 > **Repository:** `https://github.com/toannguyenitoz/toannguyenitoz.github.io`  
-> **Last Updated:** September 23, 2026  
+> **Last Updated:** October 3, 2026  
 > **Platform:** Jekyll on GitHub Pages, Supabase, Resend API, GitHub Actions
 
 ---
@@ -12,7 +12,7 @@
 Trang web **Toan Nguyen IT Oz** là cổng thông tin chuyên ngành Quản trị Hệ thống (Systems Administration), Điện toán Đám mây (Cloud Computing - Azure/M365) và Tự động hóa PowerShell thực chiến, được phát triển bởi **Toan Nguyen** (Adelaide, Nam Úc).
 
 Website kết hợp 3 trụ cột giá trị cốt lõi:
-1. **Learn:** Hơn 135 bài viết chuyên sâu dạng Standard Operating Procedure (SOP) và chuỗi *Windows Tips & Tricks* (giai đoạn Phase 3: Công cụ SysAdmin).
+1. **Learn:** Hơn 136 bài viết chuyên sâu dạng Standard Operating Procedure (SOP) và chuỗi *Windows Tips & Tricks* (giai đoạn Phase 3: Công cụ SysAdmin).
 2. **Build:** Trung tâm lệnh tự động hóa PowerShell Hub (`/powershell/`) với 100 script thực chiến cho vận hành doanh nghiệp.
 3. **Share:** Hệ sinh thái video thực hành từ kênh YouTube `@ITSupportwithToan_Adl`, chuyên mục khóa học công nghệ miễn phí (`/courses/`) và bản tin tự động hàng tuần (Weekly Tech Dispatch).
 
@@ -34,7 +34,7 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - Khắc phục triệt để hiện tượng số nhảy loạn khi F5 và phòng chống cache CSS trên trình duyệt.
 
 ### 2.2. Nội Dung & Chuỗi Bài Viết Thực Chiến (Content & Series)
-- [x] **Xuất bản tổng cộng 135 bài viết SOP kỹ thuật:**
+- [x] **Xuất bản tổng cộng 136 bài viết SOP kỹ thuật:**
   - Các bài viết nền tảng: Active Directory, Entra ID, Windows Server, Group Policy, Network Troubleshooting, BitLocker.
 - [x] **Chuỗi LinkedIn Windows Tips & Tricks (Phase 3: SysAdmin Tools):**
   - **Part 101:** Quản trị server từ xa không cần RDP (`Enter-PSSession`, WinRM).
@@ -45,6 +45,7 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
   - **Part 107:** Truy tìm nguồn gốc khóa tài khoản AD tự động (Event ID 4740 trên PDC Emulator).
   - **Part 108:** Kiểm tra và xuất báo cáo Group Policy từ xa (`gpresult /S /USER /H`).
   - **Part 110:** Xử lý lệch thời gian gây lỗi xác thực Kerberos và Access Denied (`w32tm /stripchart`, `Invoke-Command w32tm /resync`).
+  - **Part 111:** Giải phóng hàng chục GB dung lượng ổ C bị ẩn bởi Volume Shadow Storage (`vssadmin list shadowstorage`, `vssadmin resize shadowstorage /maxsize=2GB`, PowerShell CIM Win32_ShadowCopy).
 - [x] **Hệ thống điều hướng chuỗi bài thông minh (Sequential Series Navigation):**
   - Tự động sinh thanh điều hướng lùi/tiến giữa các phần liên tiếp (Ví dụ: từ Part 107 sang 108, từ 108 sang 110).
 
