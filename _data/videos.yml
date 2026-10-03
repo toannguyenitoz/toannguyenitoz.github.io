@@ -31,6 +31,28 @@ items:
   views_count: 513
   views_display: 513 views
   is_pinned: true
+- title: Secret Windows Tool to Scan & Remove Viruses! 🛡️💻
+  youtube_id: vFheKayR2OQ
+  duration: 01:00
+  category: Shorts
+  description: Stop paying for expensive antivirus subscriptions just to scan your
+    PC for malware! 🛡️💻 Windows actually comes with a powerful, enterprise-grade virus
+    removal engine developed directly by Microsoft...
+  published_date: '2026-10-03'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Secret Windows Tool to Check Full PC Specs! 💻🔍
+  youtube_id: gVDtcUhxB4Y
+  duration: 01:00
+  category: Shorts
+  description: Want to see your computer's exact motherboard model, processor cores,
+    installed RAM, and dedicated graphics video memory in under 10 seconds? 💻🔍 Stop
+    downloading sketchy third-party apps! Windows h...
+  published_date: '2026-10-03'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Windows Secret Built-in Anti-Ransomware Shield! 🛡️💻
   youtube_id: kpXPZfva1DM
   duration: 01:00
@@ -50,8 +72,8 @@ items:
     🛑💻 Microsoft actually built in a hidden 400 millisecond delay by default! Here
     is the native registry tweak to eliminate tha...
   published_date: '2026-10-02'
-  views_count: 147
-  views_display: 147 views
+  views_count: 158
+  views_display: 158 views
   is_pinned: false
 - title: 'Free Up 20GB+ on C: Drive in 30 Seconds! (Secret DISM Cleanup) 🧹💻'
   youtube_id: CKOkWwH-mNo
@@ -386,8 +408,8 @@ items:
     TRIM! Over time, deleted blocks reduce write performance. Windows has a built-in
     optimizer that trims your SSD in seconds—no extr...
   published_date: '2026-09-22'
-  views_count: 196
-  views_display: 196 views
+  views_count: 198
+  views_display: 198 views
   is_pinned: false
 - title: 2 Secret PowerShell Commands You MUST Know! ⚡💻
   youtube_id: yFf0YIzUDRU
