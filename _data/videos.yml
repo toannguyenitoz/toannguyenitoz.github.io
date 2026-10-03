@@ -20,16 +20,16 @@ items:
   views_count: 581
   views_display: 581 views
   is_pinned: true
-- title: Secret Windows Virus Scanner Nobody Tells You About! 🛡️💻
-  youtube_id: xDhGMHqtiuU
-  duration: 00:33
+- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
+  youtube_id: DOXHHy538RY
+  duration: 00:35
   category: Shorts
-  description: Did you know Windows has a hidden, free malware scanner already pre-installed
-    on your system? You don't need expensive third-party antivirus to find stubborn
-    rootkits. Just run mrt!
-  published_date: '2026-09-13'
-  views_count: 484
-  views_display: 484 views
+  description: Wi-Fi constantly dropping out or internet connection broken on Windows
+    11 or 10? 🌐❌ Don't worry! Most Wi-Fi drops are caused by glitched network drivers
+    or corrupted adapter settings. Here is how t...
+  published_date: '2026-09-20'
+  views_count: 513
+  views_display: 513 views
   is_pinned: true
 - title: Windows Secret Built-in Anti-Ransomware Shield! 🛡️💻
   youtube_id: kpXPZfva1DM
@@ -50,8 +50,8 @@ items:
     🛑💻 Microsoft actually built in a hidden 400 millisecond delay by default! Here
     is the native registry tweak to eliminate tha...
   published_date: '2026-10-02'
-  views_count: 0
-  views_display: New
+  views_count: 147
+  views_display: 147 views
   is_pinned: false
 - title: 'Free Up 20GB+ on C: Drive in 30 Seconds! (Secret DISM Cleanup) 🧹💻'
   youtube_id: CKOkWwH-mNo
@@ -114,8 +114,8 @@ items:
   category: Shorts
   description: Get 1 Billion Free Tokens on Muse AI 🤯🔥
   published_date: '2026-09-30'
-  views_count: 0
-  views_display: New
+  views_count: 132
+  views_display: 132 views
   is_pinned: false
 - title: Fix Any PC Problem in 2 Minutes! (Secret System Restore Command) ⚡💻
   youtube_id: O8717E3Zy7Q
@@ -444,17 +444,6 @@ items:
   views_count: 313
   views_display: 313 views
   is_pinned: false
-- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
-  youtube_id: DOXHHy538RY
-  duration: 00:35
-  category: Shorts
-  description: Wi-Fi constantly dropping out or internet connection broken on Windows
-    11 or 10? 🌐❌ Don't worry! Most Wi-Fi drops are caused by glitched network drivers
-    or corrupted adapter settings. Here is how t...
-  published_date: '2026-09-20'
-  views_count: 479
-  views_display: 479 views
-  is_pinned: false
 - title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
   youtube_id: H2KkXwsfcgo
   duration: 00:35
@@ -463,8 +452,8 @@ items:
     or memory management errors in Windows 11 or 10? Your RAM memory might have corrupted
     sectors or faulty hardware modules!  Her...
   published_date: '2026-09-20'
-  views_count: 269
-  views_display: 269 views
+  views_count: 291
+  views_display: 291 views
   is_pinned: false
 - title: Update ALL Your PC Apps with Just 1 Secret Windows Command! ⚡💻
   youtube_id: J4nk5f_7CTY
@@ -675,6 +664,17 @@ items:
   views_count: 222
   views_display: 222 views
   is_pinned: false
+- title: Secret Windows Virus Scanner Nobody Tells You About! 🛡️💻
+  youtube_id: xDhGMHqtiuU
+  duration: 00:33
+  category: Shorts
+  description: Did you know Windows has a hidden, free malware scanner already pre-installed
+    on your system? You don't need expensive third-party antivirus to find stubborn
+    rootkits. Just run mrt!
+  published_date: '2026-09-13'
+  views_count: 484
+  views_display: 484 views
+  is_pinned: false
 - title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
   youtube_id: meX4UKgM24M
   duration: 00:35
@@ -778,8 +778,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 429
-  views_display: 429 views
+  views_count: 430
+  views_display: 430 views
   is_pinned: false
 - title: Do THIS Before Updating Windows! (Life Saver) 🛡️
   youtube_id: cwDLoxniA3I
@@ -1108,8 +1108,8 @@ items:
   description: How to instantly recover from frozen displays, black screens, and graphical
     glitching without rebooting your PC or losing unsaved work.
   published_date: '2026-08-18'
-  views_count: 48
-  views_display: 48 views
+  views_count: 49
+  views_display: 49 views
   is_pinned: false
 - title: 'The #1 Windows Shortcut for Security'
   youtube_id: tjMnYPYN2B8
