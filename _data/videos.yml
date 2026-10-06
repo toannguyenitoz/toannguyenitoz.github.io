@@ -107,8 +107,8 @@ items:
     PC for malware! 🛡️💻 Windows actually comes with a powerful, enterprise-grade virus
     removal engine developed directly by Microsoft...
   published_date: '2026-10-03'
-  views_count: 0
-  views_display: New
+  views_count: 100
+  views_display: 100 views
   is_pinned: false
 - title: Secret Windows Tool to Check Full PC Specs! 💻🔍
   youtube_id: gVDtcUhxB4Y
@@ -186,8 +186,8 @@ items:
     tool that logs every process, driver, and network connection on your PC? Here
     is how to turn on Sysmon without downloading any...
   published_date: '2026-10-01'
-  views_count: 0
-  views_display: New
+  views_count: 108
+  views_display: 108 views
   is_pinned: false
 - title: Get 1 Billion Free Tokens on Muse AI 🤯🔥
   youtube_id: PQD3ammOMFo
@@ -291,8 +291,8 @@ items:
     that they stay completely invisible even after enabling "Show hidden files" in
     File Explorer? 👁️🔒 '
   published_date: '2026-09-28'
-  views_count: 78
-  views_display: 78 views
+  views_count: 81
+  views_display: 81 views
   is_pinned: false
 - title: Windows Update Stuck Downloading? Try This Quick Fix! ⚡🛠️
   youtube_id: 0VgSdnNovoA
@@ -355,8 +355,8 @@ items:
     video screenshot, or a locked PDF? Stop wasting your precious time! Windows 11
     has a built-in optical character recognition (OCR)...
   published_date: '2026-09-26'
-  views_count: 1
-  views_display: 1 views
+  views_count: 33
+  views_display: 33 views
   is_pinned: false
 - title: Fix 100% CPU Usage in Windows 11 in 30 Seconds! ⚡🔥
   youtube_id: zZyKtQl01oA
@@ -432,8 +432,8 @@ items:
     Configuration Data (BCD) store controls your entire startup sequence, device partitions,
     and OS loader parameters! Here is how...
   published_date: '2026-09-24'
-  views_count: 110
-  views_display: 110 views
+  views_count: 116
+  views_display: 116 views
   is_pinned: false
 - title: Unlock ALL CPU Cores in Windows 11 for Max Power! ⚡🔥
   youtube_id: ciyODfFn12k
@@ -465,8 +465,8 @@ items:
     up RAM? Here is how to create a 1-click desktop shortcut that immediately flushes
     idle memory and cached background tasks!
   published_date: '2026-09-23'
-  views_count: 0
-  views_display: New
+  views_count: 99
+  views_display: 99 views
   is_pinned: false
 - title: Instant SSD Speed Boost in Windows 11! ⚡🚀
   youtube_id: 3PI5kqYIb3Q
@@ -608,8 +608,8 @@ items:
   description: 'Windows acting weird, freezing, losing sound, or throwing random system
     errors? '
   published_date: '2026-09-18'
-  views_count: 310
-  views_display: 310 views
+  views_count: 342
+  views_display: 342 views
   is_pinned: false
 - title: Fix Slow File Transfer on Windows in 10 Seconds! ⚡📂
   youtube_id: yMCevIqwUP8
@@ -662,8 +662,8 @@ items:
     Here is how to create your own all-in-one Windows Recovery Toolkit batch file
     (.bat) directly on your desktop. With a single...
   published_date: '2026-09-16'
-  views_count: 29
-  views_display: 29 views
+  views_count: 33
+  views_display: 33 views
   is_pinned: false
 - title: Secret Windows Drivers You Didn't Know Existed! 🛠️💻
   youtube_id: l3eD5vMIzC0
@@ -934,8 +934,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 151
-  views_display: 151 views
+  views_count: 153
+  views_display: 153 views
   is_pinned: false
 - title: Monitor CPU & RAM Live on Your Desktop! 📊 | Toan Nguyen IT OZ
   youtube_id: iAyGWrAkax0
@@ -957,8 +957,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 44
-  views_display: 44 views
+  views_count: 46
+  views_display: 46 views
   is_pinned: false
 - title: Stop Windows 11 Auto-Installing Junk Bloatware! 🚫 | Toan Nguyen IT OZ
   youtube_id: vtGCUUkMOQc
@@ -1187,8 +1187,8 @@ items:
     the official, Microsoft-built PC Manager tool, completely replacing third-party
     bloatware.
   published_date: '2026-08-20'
-  views_count: 188
-  views_display: 188 views
+  views_count: 190
+  views_display: 190 views
   is_pinned: false
 - title: 'Win + Ctrl + Shift + B: The Secret Shortcut to Restart GPU Driver in Windows
     11/10!'
