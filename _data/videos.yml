@@ -31,6 +31,36 @@ items:
   views_count: 513
   views_display: 513 views
   is_pinned: true
+- title: Fix "No Sound / Red X" on Windows PC in 5 Seconds! 🔇➡️🔊
+  youtube_id: g0_dLBRPzBw
+  duration: 01:00
+  category: Shorts
+  description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
+    a red ''X'' on the taskbar speaker icon? '
+  published_date: '2026-10-06'
+  views_count: 10
+  views_display: 10 views
+  is_pinned: false
+- title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
+  youtube_id: rgzHPR-RW-M
+  duration: 01:00
+  category: Shorts
+  description: Is Antimalware Service Executable (MsMpEng.exe) eating 100% of your
+    CPU, locking up your system, and making your laptop fan sound like a jet engine?
+    🛑🛡️
+  published_date: '2026-10-06'
+  views_count: 21
+  views_display: 21 views
+  is_pinned: false
+- title: Shut Down Laptop in 2 Sec Without a Mouse! (Win + X, U, U) 🛑⚡
+  youtube_id: iOuB2AomGWE
+  duration: 01:00
+  category: Shorts
+  description: 'Shut Down Laptop in 2 Sec Without a Mouse! (Win + X, U, U) 🛑⚡ #Shorts'
+  published_date: '2026-10-05'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Stop Clicking the Taskbar! Open Quick Settings in 1 Sec (Win + A) ⚡🖱️
   youtube_id: 8KnTwNWbSHg
   duration: 01:00
@@ -96,8 +126,8 @@ items:
     Secured" errors on Windows! 🌐⚡ Windows actually allows you to automate complete
     network diagnostics and stack repairs using a n...
   published_date: '2026-10-03'
-  views_count: 0
-  views_display: New
+  views_count: 79
+  views_display: 79 views
   is_pinned: false
 - title: Secret Windows Tool to Scan & Remove Viruses! 🛡️💻
   youtube_id: vFheKayR2OQ
@@ -302,8 +332,8 @@ items:
     with error codes? 🛠️⚡ Don't worry—you don't need to reinstall Windows! Simply
     restart the core Windows Update service to cle...
   published_date: '2026-09-28'
-  views_count: 55
-  views_display: 55 views
+  views_count: 280
+  views_display: 280 views
   is_pinned: false
 - title: Did Microsoft Defender Catch Something? Check With This! 🛡️⚡
   youtube_id: 9va-kadr0_w
@@ -388,8 +418,8 @@ items:
     from micro-stutters and input lag in Windows 11? Unlock full GPU capabilities
     with Hardware-Accelerated GPU Scheduling (HAGS)! '
   published_date: '2026-09-25'
-  views_count: 265
-  views_display: 265 views
+  views_count: 268
+  views_display: 268 views
   is_pinned: false
 - title: Speed Up Windows 11 Search Instantly! Secret Registry Hack! ⚡🔍
   youtube_id: R5OVkk6Sxjk
@@ -443,8 +473,8 @@ items:
     might not be utilizing all available processor threads during boot and heavy multitasking!
     Here is how to unlock all CPU cores i...
   published_date: '2026-09-23'
-  views_count: 159
-  views_display: 159 views
+  views_count: 160
+  views_display: 160 views
   is_pinned: false
 - title: Free Up Gigabytes of Junk Files in Windows 11! 🗑️⚡
   youtube_id: KZOEWQPZv3g
@@ -575,8 +605,8 @@ items:
     sketchy third-party cleaning apps! Here is the ultimate built-in 1-line Command
     Prompt hack that purges locked Temp cache, sys...
   published_date: '2026-09-19'
-  views_count: 137
-  views_display: 137 views
+  views_count: 136
+  views_display: 136 views
   is_pinned: false
 - title: Fix Slow Wi-Fi & Internet Drops with 1 Click! Master Network Repair Script
     🌐⚡
