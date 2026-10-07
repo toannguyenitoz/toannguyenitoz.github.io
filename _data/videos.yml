@@ -31,6 +31,16 @@ items:
   views_count: 513
   views_display: 513 views
   is_pinned: true
+- title: Stop Paying for Remote Software! Windows Has It Built-In (MSRA) 💻🔒
+  youtube_id: TaZI5lilFww
+  duration: 01:00
+  category: Shorts
+  description: 'Stop paying expensive subscriptions for remote desktop software or
+    installing sketchy third-party tools like TeamViewer or AnyDesk! '
+  published_date: '2026-10-06'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Fix "No Sound / Red X" on Windows PC in 5 Seconds! 🔇➡️🔊
   youtube_id: g0_dLBRPzBw
   duration: 01:00
@@ -38,8 +48,8 @@ items:
   description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
     a red ''X'' on the taskbar speaker icon? '
   published_date: '2026-10-06'
-  views_count: 10
-  views_display: 10 views
+  views_count: 84
+  views_display: 84 views
   is_pinned: false
 - title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
   youtube_id: rgzHPR-RW-M
@@ -68,8 +78,8 @@ items:
   description: 'Stop Clicking the Taskbar! Open Quick Settings in 1 Sec (Win + A)
     ⚡🖱️ #Shorts'
   published_date: '2026-10-05'
-  views_count: 0
-  views_display: New
+  views_count: 10
+  views_display: 10 views
   is_pinned: false
 - title: How Long Has Your Laptop Been Running? (CPU Up Time Shock!) ⏱️💻
   youtube_id: w4o30-RptwA
@@ -86,8 +96,8 @@ items:
   category: Shorts
   description: 'Cisco Console Cable Explained in 30 Seconds! 🔌⚡ (CCNA Basics) #Shorts'
   published_date: '2026-10-04'
-  views_count: 0
-  views_display: New
+  views_count: 94
+  views_display: 94 views
   is_pinned: false
 - title: Check Exact Wi-Fi Signal Strength in 2 Seconds! (Windows Secret) 📶⚡
   youtube_id: 8nYcQhGEyVc
@@ -137,8 +147,8 @@ items:
     PC for malware! 🛡️💻 Windows actually comes with a powerful, enterprise-grade virus
     removal engine developed directly by Microsoft...
   published_date: '2026-10-03'
-  views_count: 100
-  views_display: 100 views
+  views_count: 106
+  views_display: 106 views
   is_pinned: false
 - title: Secret Windows Tool to Check Full PC Specs! 💻🔍
   youtube_id: gVDtcUhxB4Y
@@ -245,8 +255,8 @@ items:
     update? Don't panic or reinstall Windows! Here is the secret 2-minute time-machine
     command that fixes almost any PC problem! ⚡💻
   published_date: '2026-09-30'
-  views_count: 339
-  views_display: 339 views
+  views_count: 342
+  views_display: 342 views
   is_pinned: false
 - title: Control All Laptop Settings in 1 Click! (Secret Windows Shortcut) ⚡💻
   youtube_id: 6MTbZhSrYRs
@@ -321,8 +331,8 @@ items:
     that they stay completely invisible even after enabling "Show hidden files" in
     File Explorer? 👁️🔒 '
   published_date: '2026-09-28'
-  views_count: 81
-  views_display: 81 views
+  views_count: 83
+  views_display: 83 views
   is_pinned: false
 - title: Windows Update Stuck Downloading? Try This Quick Fix! ⚡🛠️
   youtube_id: 0VgSdnNovoA
@@ -332,8 +342,8 @@ items:
     with error codes? 🛠️⚡ Don't worry—you don't need to reinstall Windows! Simply
     restart the core Windows Update service to cle...
   published_date: '2026-09-28'
-  views_count: 280
-  views_display: 280 views
+  views_count: 283
+  views_display: 283 views
   is_pinned: false
 - title: Did Microsoft Defender Catch Something? Check With This! 🛡️⚡
   youtube_id: 9va-kadr0_w
@@ -792,8 +802,8 @@ items:
     on your system? You don't need expensive third-party antivirus to find stubborn
     rootkits. Just run mrt!
   published_date: '2026-09-13'
-  views_count: 484
-  views_display: 484 views
+  views_count: 487
+  views_display: 487 views
   is_pinned: false
 - title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
   youtube_id: meX4UKgM24M
@@ -832,8 +842,8 @@ items:
     always back up your installed third-party drivers! Here is the built-in Windows
     pnputil trick to export every single driver to...
   published_date: '2026-09-12'
-  views_count: 75
-  views_display: 75 views
+  views_count: 78
+  views_display: 78 views
   is_pinned: false
 - title: Fix Slow Internet in 10 Seconds! Flush DNS Hack 🌐🚀
   youtube_id: biNTeQKBv_g
