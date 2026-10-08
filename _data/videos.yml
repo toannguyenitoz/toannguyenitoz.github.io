@@ -31,6 +31,27 @@ items:
   views_count: 513
   views_display: 513 views
   is_pinned: true
+- title: Can PC A Ping PC B? 90% of IT Pros Fail This CCNA Question! ⚡🌐
+  youtube_id: ZcjBZ4VLGRs
+  duration: 01:00
+  category: Shorts
+  description: 'Ninety percent of IT pros fail this classic Cisco CCNA interview question:
+    Can PC A ping PC B?'
+  published_date: '2026-10-08'
+  views_count: 8
+  views_display: 8 views
+  is_pinned: false
+- title: Excel Keeps Crashing? Fix "Repair Now" Error in 10 Seconds! ⚡📊
+  youtube_id: zD2fg7gMUHM
+  duration: 01:00
+  category: Shorts
+  description: 'Does Microsoft Excel or Office crash with this frustrating error:
+    "We''re sorry, but Excel has run into an error that is preventing it from working
+    correctly. Excel will need to be closed as a resul...'
+  published_date: '2026-10-08'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: PC Feeling Slower Lately? Clean This Secret Prefetch Cache! ⚡💻
   youtube_id: 5CiPDK7f-g4
   duration: 01:00
@@ -60,8 +81,8 @@ items:
   description: Want to check every third-party OEM driver installed on your Windows
     11 or Windows 10 PC?
   published_date: '2026-10-07'
-  views_count: 0
-  views_display: New
+  views_count: 68
+  views_display: 68 views
   is_pinned: false
 - title: Stop Paying for Remote Software! Windows Has It Built-In (MSRA) 💻🔒
   youtube_id: TaZI5lilFww
@@ -80,8 +101,8 @@ items:
   description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
     a red ''X'' on the taskbar speaker icon? '
   published_date: '2026-10-06'
-  views_count: 84
-  views_display: 84 views
+  views_count: 207
+  views_display: 207 views
   is_pinned: false
 - title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
   youtube_id: rgzHPR-RW-M
@@ -128,8 +149,8 @@ items:
   category: Shorts
   description: 'Cisco Console Cable Explained in 30 Seconds! 🔌⚡ (CCNA Basics) #Shorts'
   published_date: '2026-10-04'
-  views_count: 94
-  views_display: 94 views
+  views_count: 98
+  views_display: 98 views
   is_pinned: false
 - title: Check Exact Wi-Fi Signal Strength in 2 Seconds! (Windows Secret) 📶⚡
   youtube_id: 8nYcQhGEyVc
@@ -168,8 +189,8 @@ items:
     Secured" errors on Windows! 🌐⚡ Windows actually allows you to automate complete
     network diagnostics and stack repairs using a n...
   published_date: '2026-10-03'
-  views_count: 79
-  views_display: 79 views
+  views_count: 81
+  views_display: 81 views
   is_pinned: false
 - title: Secret Windows Tool to Scan & Remove Viruses! 🛡️💻
   youtube_id: vFheKayR2OQ
@@ -179,8 +200,8 @@ items:
     PC for malware! 🛡️💻 Windows actually comes with a powerful, enterprise-grade virus
     removal engine developed directly by Microsoft...
   published_date: '2026-10-03'
-  views_count: 106
-  views_display: 106 views
+  views_count: 108
+  views_display: 108 views
   is_pinned: false
 - title: Secret Windows Tool to Check Full PC Specs! 💻🔍
   youtube_id: gVDtcUhxB4Y
@@ -331,8 +352,8 @@ items:
     popups directly inside your File Explorer? Here is how to disable them permanently
     in 10 seconds! 🛑📁
   published_date: '2026-09-29'
-  views_count: 302
-  views_display: 302 views
+  views_count: 358
+  views_display: 358 views
   is_pinned: false
 - title: Lock Any Folder So No One Can Peek Inside! (WinRAR Secret) 🔒📁
   youtube_id: NQBp2QuhL1w
@@ -385,8 +406,8 @@ items:
     on your PC? 🛡️ Don't rely only on the standard Windows Security GUI—use PowerShell
     to see active threats, severity levels, and d...
   published_date: '2026-09-27'
-  views_count: 34
-  views_display: 34 views
+  views_count: 49
+  views_display: 49 views
   is_pinned: false
 - title: Can't Type in Windows Search Bar? Fix It in 5 Seconds! ⚡⌨️
   youtube_id: ungor7E-BAU
@@ -581,8 +602,8 @@ items:
     on Windows 11 or 10? 🌐❌ Over time, outdated or corrupted DNS cache files slow
     down your browsing speed and block access to re...
   published_date: '2026-09-21'
-  views_count: 153
-  views_display: 153 views
+  views_count: 159
+  views_display: 159 views
   is_pinned: false
 - title: How to Reset Network in Windows 11! 🌐⚡
   youtube_id: CX8waDUpeiY
@@ -767,8 +788,8 @@ items:
     can change your File Explorer settings so that one click instantly launches files—just
     like browsing links on the web! In this ...
   published_date: '2026-09-15'
-  views_count: 101
-  views_display: 101 views
+  views_count: 106
+  views_display: 106 views
   is_pinned: false
 - title: 30 SECRET Windows 11 Emergency Hacks Every IT Pro & User MUST Know! (Complete
     Masterclass)
