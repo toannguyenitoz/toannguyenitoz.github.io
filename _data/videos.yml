@@ -31,6 +31,17 @@ items:
   views_count: 513
   views_display: 513 views
   is_pinned: true
+- title: PC Feeling Slower Lately? Clean This Secret Prefetch Cache! ⚡💻
+  youtube_id: 5CiPDK7f-g4
+  duration: 01:00
+  category: Shorts
+  description: Is your Windows PC feeling sluggish, laggy, or taking forever to open
+    your everyday apps? Over months of use, your system cache clogs up with thousands
+    of stale, obsolete files from uninstalled sof...
+  published_date: '2026-10-07'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Connect Laptop to TV in 2 Seconds! (Secret Win + K Shortcut) 📺⚡
   youtube_id: 8T5CwnJ_eB0
   duration: 01:00
@@ -625,8 +636,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 276
-  views_display: 276 views
+  views_count: 287
+  views_display: 287 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -690,8 +701,8 @@ items:
     on Windows without installing any third-party software? With a simple Registry
     key tweak or automated script, you can stop anyone...
   published_date: '2026-09-17'
-  views_count: 38
-  views_display: 38 views
+  views_count: 42
+  views_display: 42 views
   is_pinned: false
 - title: Save Your PC from BSOD! Enable Windows Recovery in 5 Seconds 🛡️💻
   youtube_id: wnYWw9YmKOc
@@ -712,8 +723,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 352
-  views_display: 352 views
+  views_count: 356
+  views_display: 356 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -973,8 +984,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 259
-  views_display: 259 views
+  views_count: 261
+  views_display: 261 views
   is_pinned: false
 - title: 'The Ultimate Windows Secret Console: compmgmt.msc 💻'
   youtube_id: JavoxuItzXc
@@ -984,8 +995,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 74
-  views_display: 74 views
+  views_count: 75
+  views_display: 75 views
   is_pinned: false
 - title: Stop Windows CPU Throttling in 30 Seconds! ⚡
   youtube_id: YAsAppPh4pM
