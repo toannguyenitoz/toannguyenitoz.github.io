@@ -9,6 +9,18 @@ items:
   views_count: 763
   views_display: 763 views
   is_pinned: true
+- title: Bypass Windows 11 Microsoft Account Setup! (100% Offline Local Account Hack)
+    💻🔓
+  youtube_id: iEz-AgbR8Mk
+  duration: 01:00
+  category: Shorts
+  description: Tired of Windows 11 forcing you to sign in with an online Microsoft
+    account during setup? 🛑💻 Here is the secret built-in accessibility loophole that
+    lets you create a 100% offline local user accoun...
+  published_date: '2026-10-01'
+  views_count: 611
+  views_display: 611 views
+  is_pinned: true
 - title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
   youtube_id: sSUxsPtwOfQ
   duration: 00:39
@@ -20,17 +32,17 @@ items:
   views_count: 581
   views_display: 581 views
   is_pinned: true
-- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
-  youtube_id: DOXHHy538RY
-  duration: 00:35
+- title: Unlock Secret Built-in Super Administrator in Windows 11! ⚡🔑
+  youtube_id: tB_DhKQox4E
+  duration: 01:00
   category: Shorts
-  description: Wi-Fi constantly dropping out or internet connection broken on Windows
-    11 or 10? 🌐❌ Don't worry! Most Wi-Fi drops are caused by glitched network drivers
-    or corrupted adapter settings. Here is how t...
-  published_date: '2026-09-20'
-  views_count: 513
-  views_display: 513 views
-  is_pinned: true
+  description: Did you know Windows 11 has a secret built-in Super Administrator account
+    hidden and disabled by default? If you ever get locked out of your PC, lose admin
+    rights, or get hit with frustrating "Acce...
+  published_date: '2026-10-08'
+  views_count: 24
+  views_display: 24 views
+  is_pinned: false
 - title: Can PC A Ping PC B? 90% of IT Pros Fail This CCNA Question! ⚡🌐
   youtube_id: ZcjBZ4VLGRs
   duration: 01:00
@@ -258,18 +270,6 @@ items:
   published_date: '2026-10-01'
   views_count: 159
   views_display: 159 views
-  is_pinned: false
-- title: Bypass Windows 11 Microsoft Account Setup! (100% Offline Local Account Hack)
-    💻🔓
-  youtube_id: iEz-AgbR8Mk
-  duration: 01:00
-  category: Shorts
-  description: Tired of Windows 11 forcing you to sign in with an online Microsoft
-    account during setup? 🛑💻 Here is the secret built-in accessibility loophole that
-    lets you create a 100% offline local user accoun...
-  published_date: '2026-10-01'
-  views_count: 0
-  views_display: New
   is_pinned: false
 - title: Windows 11 Secret Built-in Security Tool! (Sysmon) 🛡️💻
   youtube_id: 4pvBQ2OWH54
@@ -627,6 +627,17 @@ items:
   views_count: 406
   views_display: 406 views
   is_pinned: false
+- title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
+  youtube_id: DOXHHy538RY
+  duration: 00:35
+  category: Shorts
+  description: Wi-Fi constantly dropping out or internet connection broken on Windows
+    11 or 10? 🌐❌ Don't worry! Most Wi-Fi drops are caused by glitched network drivers
+    or corrupted adapter settings. Here is how t...
+  published_date: '2026-09-20'
+  views_count: 513
+  views_display: 513 views
+  is_pinned: false
 - title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
   youtube_id: H2KkXwsfcgo
   duration: 00:35
@@ -755,8 +766,8 @@ items:
     Here is how to create your own all-in-one Windows Recovery Toolkit batch file
     (.bat) directly on your desktop. With a single...
   published_date: '2026-09-16'
-  views_count: 33
-  views_display: 33 views
+  views_count: 34
+  views_display: 34 views
   is_pinned: false
 - title: Secret Windows Drivers You Didn't Know Existed! 🛠️💻
   youtube_id: l3eD5vMIzC0
@@ -1123,8 +1134,8 @@ items:
     IT Support guide reveals the 9 critical Windows settings that every user must
     change right now to dramatically improve security, ...
   published_date: '2026-09-08'
-  views_count: 11
-  views_display: 11 views
+  views_count: 12
+  views_display: 12 views
   is_pinned: false
 - title: 20 Windows Shortcuts You Wish You Knew Sooner (Stop Wasting Time!)
   youtube_id: 7MuUW7S1rXQ
@@ -1153,8 +1164,8 @@ items:
   description: Force Windows 11 to prioritize ultra-fast 5GHz / 6GHz Wi-Fi bands over
     congested 2.4GHz for instant latency reduction and transfer speed boosts.
   published_date: '2026-09-08'
-  views_count: 130
-  views_display: 130 views
+  views_count: 131
+  views_display: 131 views
   is_pinned: false
 - title: 20 Windows 11 Tips & Tricks You Wish You Knew Sooner! (Boost Productivity)
   youtube_id: ZcSK1jPf9v8
@@ -1227,8 +1238,8 @@ items:
     ADMIN$) over SMB to inspect event logs, retrieve files, and deploy scripts without
     disrupting active users.
   published_date: '2026-09-01'
-  views_count: 24
-  views_display: 24 views
+  views_count: 25
+  views_display: 25 views
   is_pinned: false
 - title: How to Check Your RAM Before Upgrading (PowerShell Guide)
   youtube_id: OP0EuItOREc
