@@ -32,6 +32,38 @@ items:
   views_count: 586
   views_display: 586 views
   is_pinned: true
+- title: Stop Copy-Pasting Emojis in Word! 5 Magic Alt + X Codes ⚡
+  youtube_id: mM0G7sb3YxE
+  duration: 01:00
+  category: Shorts
+  description: Still searching Google and copy-pasting blurry emojis into your resume
+    or business documents? Stop! Microsoft Word has a built-in shortcut trick using
+    [ Alt + X ] that transforms simple hex codes i...
+  published_date: '2026-10-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: GPT vs MBR Explained in 50 Seconds! ⚡ Which Should You Choose?
+  youtube_id: RB0PvZJBlN0
+  duration: 01:00
+  category: Shorts
+  description: Formatting a new SSD or installing Windows and asked to choose between
+    MBR and GPT? Here is the exact difference in 50 seconds!
+  published_date: '2026-10-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: Forgot Windows Password? DON'T Format! Reset in 60s! 🛑⚡
+  youtube_id: sav385DVll4
+  duration: 01:00
+  category: Shorts
+  description: Locked out of your Windows PC because you forgot your password? Whatever
+    you do, DO NOT format your drive or reinstall Windows! In this video, Toan Nguyen
+    IT OZ reveals the ultimate 3-step offline ...
+  published_date: '2026-10-11'
+  views_count: 17
+  views_display: 17 views
+  is_pinned: false
 - title: Turn ON This Secret Windows Setting BEFORE It's Too Late! 🛑⚡
   youtube_id: SjuXDj5pN4c
   duration: 01:00
@@ -50,8 +82,8 @@ items:
   description: Is your laptop feeling sluggish, running hot, or running out of battery
     way too fast? 💻🔥
   published_date: '2026-10-11'
-  views_count: 16
-  views_display: 16 views
+  views_count: 22
+  views_display: 22 views
   is_pinned: false
 - title: Fix ANY Windows Hardware Glitch with THIS Secret Tool! 🛠️💻
   youtube_id: Ac57a_odnWI
@@ -61,8 +93,8 @@ items:
     acting up? Before you reinstall Windows or buy new hardware, Microsoft hid a powerful,
     automated diagnostic troubleshooter d...
   published_date: '2026-10-10'
-  views_count: 5
-  views_display: 5 views
+  views_count: 16
+  views_display: 16 views
   is_pinned: false
 - title: Secret Built-in Virtual PC in Windows 11! ⚡🔒
   youtube_id: -KsUJyUEbv8
@@ -126,8 +158,8 @@ items:
     hidden and disabled by default? If you ever get locked out of your PC, lose admin
     rights, or get hit with frustrating "Acce...
   published_date: '2026-10-08'
-  views_count: 140
-  views_display: 140 views
+  views_count: 143
+  views_display: 143 views
   is_pinned: false
 - title: Can PC A Ping PC B? 90% of IT Pros Fail This CCNA Question! ⚡🌐
   youtube_id: ZcjBZ4VLGRs
@@ -136,8 +168,8 @@ items:
   description: 'Ninety percent of IT pros fail this classic Cisco CCNA interview question:
     Can PC A ping PC B?'
   published_date: '2026-10-08'
-  views_count: 42
-  views_display: 42 views
+  views_count: 41
+  views_display: 41 views
   is_pinned: false
 - title: Excel Keeps Crashing? Fix "Repair Now" Error in 10 Seconds! ⚡📊
   youtube_id: zD2fg7gMUHM
@@ -169,8 +201,8 @@ items:
     dongles! You can beam your Windows 11 or Windows 10 laptop straight to any Smart
     TV or monitor in literally two seconds!
   published_date: '2026-10-07'
-  views_count: 191
-  views_display: 191 views
+  views_count: 193
+  views_display: 193 views
   is_pinned: false
 - title: Check Every Driver Installed on PC in 5 Seconds! (DISM Secret) 🖥️⚡
   youtube_id: 1M6dI3kNQig
@@ -199,8 +231,8 @@ items:
   description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
     a red ''X'' on the taskbar speaker icon? '
   published_date: '2026-10-06'
-  views_count: 292
-  views_display: 292 views
+  views_count: 296
+  views_display: 296 views
   is_pinned: false
 - title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
   youtube_id: rgzHPR-RW-M
@@ -210,8 +242,8 @@ items:
     CPU, locking up your system, and making your laptop fan sound like a jet engine?
     🛑🛡️
   published_date: '2026-10-06'
-  views_count: 95
-  views_display: 95 views
+  views_count: 101
+  views_display: 101 views
   is_pinned: false
 - title: Shut Down Laptop in 2 Sec Without a Mouse! (Win + X, U, U) 🛑⚡
   youtube_id: iOuB2AomGWE
@@ -229,8 +261,8 @@ items:
   description: 'Stop Clicking the Taskbar! Open Quick Settings in 1 Sec (Win + A)
     ⚡🖱️ #Shorts'
   published_date: '2026-10-05'
-  views_count: 10
-  views_display: 10 views
+  views_count: 11
+  views_display: 11 views
   is_pinned: false
 - title: How Long Has Your Laptop Been Running? (CPU Up Time Shock!) ⏱️💻
   youtube_id: w4o30-RptwA
@@ -257,8 +289,8 @@ items:
   description: 'Check Exact Wi-Fi Signal Strength in 2 Seconds! (Windows Secret) 📶⚡
     #Shorts'
   published_date: '2026-10-04'
-  views_count: 46
-  views_display: 46 views
+  views_count: 47
+  views_display: 47 views
   is_pinned: false
 - title: Windows Screen Frozen? 1-Click Fixer & Secret Shortcut! ❄️⚡
   youtube_id: cRrpolvIVY0
@@ -342,8 +374,8 @@ items:
     anything? 🛑💻 It's likely hidden Windows update backups inside the WinSxS Component
     Store! Here is the native administrator DI...
   published_date: '2026-10-02'
-  views_count: 165
-  views_display: 165 views
+  views_count: 166
+  views_display: 166 views
   is_pinned: false
 - title: Unlock All CPU Cores in Windows 11? (The Viral msconfig Trick Explained!)
     ⚡💻
@@ -567,8 +599,8 @@ items:
     from micro-stutters and input lag in Windows 11? Unlock full GPU capabilities
     with Hardware-Accelerated GPU Scheduling (HAGS)! '
   published_date: '2026-09-25'
-  views_count: 271
-  views_display: 271 views
+  views_count: 272
+  views_display: 272 views
   is_pinned: false
 - title: Speed Up Windows 11 Search Instantly! Secret Registry Hack! ⚡🔍
   youtube_id: R5OVkk6Sxjk
@@ -677,8 +709,8 @@ items:
     your device in Windows Device Manager? ⚠️❌ That warning means Windows has disabled
     the hardware due to driver corruption, missin...
   published_date: '2026-09-22'
-  views_count: 300
-  views_display: 300 views
+  views_count: 301
+  views_display: 301 views
   is_pinned: false
 - title: Fix Slow Internet & Load Websites Fast! 🌐⚡
   youtube_id: uoNOLUA69u0
@@ -754,8 +786,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 295
-  views_display: 295 views
+  views_count: 300
+  views_display: 300 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -830,8 +862,8 @@ items:
     endless boot loop, having Windows Recovery Environment (WinRE) enabled can literally
     save your entire operating system! '
   published_date: '2026-09-17'
-  views_count: 224
-  views_display: 224 views
+  views_count: 227
+  views_display: 227 views
   is_pinned: false
 - title: Fix Windows Time Sync Error 0x80070426 in 10 Seconds! ⏰💻
   youtube_id: 1VHwO5lIJ3w
@@ -1124,8 +1156,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 157
-  views_display: 157 views
+  views_count: 158
+  views_display: 158 views
   is_pinned: false
 - title: Monitor CPU & RAM Live on Your Desktop! 📊 | Toan Nguyen IT OZ
   youtube_id: iAyGWrAkax0
@@ -1147,8 +1179,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 47
-  views_display: 47 views
+  views_count: 49
+  views_display: 49 views
   is_pinned: false
 - title: Stop Windows 11 Auto-Installing Junk Bloatware! 🚫 | Toan Nguyen IT OZ
   youtube_id: vtGCUUkMOQc
