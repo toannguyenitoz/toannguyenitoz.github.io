@@ -32,6 +32,37 @@ items:
   views_count: 586
   views_display: 586 views
   is_pinned: true
+- title: Stop Running CHKDSK Like This! ❌ Windows Secret Drive Fix in 10s!
+  youtube_id: M6ngG7JKlMo
+  duration: 01:00
+  category: Shorts
+  description: 'Stop running CHKDSK like this! Millions of Windows users follow tutorials
+    telling them to open Command Prompt and type "chkdsk C:". But if you look closely
+    at your terminal, Windows warns: "Running...'
+  published_date: '2026-10-13'
+  views_count: 0
+  views_display: New
+  is_pinned: false
+- title: 'Can''t Free Up C: Drive? ⚡ Recover 20GB+ Hidden Shadow Storage in 10s!'
+  youtube_id: hFBoa82L0VM
+  duration: 01:00
+  category: Shorts
+  description: 'Is your Windows 11 or Windows 10 C: Drive stuck in the red, but Disk
+    Cleanup deletes nothing?'
+  published_date: '2026-10-13'
+  views_count: 10
+  views_display: 10 views
+  is_pinned: false
+- title: Can't Delete File "In Use"? ⚡ Windows Secret Unlocker in 10s!
+  youtube_id: gh2xyPOtCbQ
+  duration: 01:00
+  category: Shorts
+  description: Ever get this annoying error? "The action can't be completed because
+    the file is open in another program"!
+  published_date: '2026-10-12'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: Stop Copy-Pasting Emojis in Word! 5 Magic Alt + X Codes ⚡
   youtube_id: mM0G7sb3YxE
   duration: 01:00
@@ -61,8 +92,8 @@ items:
     you do, DO NOT format your drive or reinstall Windows! In this video, Toan Nguyen
     IT OZ reveals the ultimate 3-step offline ...
   published_date: '2026-10-11'
-  views_count: 17
-  views_display: 17 views
+  views_count: 46
+  views_display: 46 views
   is_pinned: false
 - title: Turn ON This Secret Windows Setting BEFORE It's Too Late! 🛑⚡
   youtube_id: SjuXDj5pN4c
@@ -104,8 +135,8 @@ items:
     called Windows Sandbox? You can safely test suspicious files, run unknown software,
     and open virus links with ZERO risk to you...
   published_date: '2026-10-10'
-  views_count: 31
-  views_display: 31 views
+  views_count: 32
+  views_display: 32 views
   is_pinned: false
 - title: Stop Edge From Stealing Your FPS in 10s! ⚡🎮
   youtube_id: c52lpBLqzmE
@@ -147,8 +178,8 @@ items:
     Did you know Windows 11 has a secret God Mode master folder that unifies and displays
     EVERY single application installed on ...
   published_date: '2026-10-09'
-  views_count: 37
-  views_display: 37 views
+  views_count: 39
+  views_display: 39 views
   is_pinned: false
 - title: Unlock Secret Built-in Super Administrator in Windows 11! ⚡🔑
   youtube_id: tB_DhKQox4E
@@ -270,8 +301,8 @@ items:
   category: Shorts
   description: 'How Long Has Your Laptop Been Running? (CPU Up Time Shock!) ⏱️💻 #Shorts'
   published_date: '2026-10-05'
-  views_count: 80
-  views_display: 80 views
+  views_count: 86
+  views_display: 86 views
   is_pinned: false
 - title: Cisco Console Cable Explained in 30 Seconds! 🔌⚡ (CCNA Basics)
   youtube_id: AIsq9km2rVk
@@ -308,8 +339,8 @@ items:
   description: Is your Wi-Fi randomly disconnecting, dropping signal, or giving you
     high ping in games? 📶⚠️
   published_date: '2026-10-03'
-  views_count: 71
-  views_display: 71 views
+  views_count: 74
+  views_display: 74 views
   is_pinned: false
 - title: Secret Windows Network Toolkit to Fix Any Internet Issue! 🌐⚡
   youtube_id: yuAf87VRdUc
@@ -319,8 +350,8 @@ items:
     Secured" errors on Windows! 🌐⚡ Windows actually allows you to automate complete
     network diagnostics and stack repairs using a n...
   published_date: '2026-10-03'
-  views_count: 87
-  views_display: 87 views
+  views_count: 89
+  views_display: 89 views
   is_pinned: false
 - title: Secret Windows Tool to Scan & Remove Viruses! 🛡️💻
   youtube_id: vFheKayR2OQ
@@ -397,8 +428,8 @@ items:
     tool that logs every process, driver, and network connection on your PC? Here
     is how to turn on Sysmon without downloading any...
   published_date: '2026-10-01'
-  views_count: 126
-  views_display: 126 views
+  views_count: 127
+  views_display: 127 views
   is_pinned: false
 - title: Get 1 Billion Free Tokens on Muse AI 🤯🔥
   youtube_id: PQD3ammOMFo
@@ -481,8 +512,8 @@ items:
     what files are inside? Here is the secret encryption setting most people miss!
     🔒👁️
   published_date: '2026-09-29'
-  views_count: 119
-  views_display: 119 views
+  views_count: 120
+  views_display: 120 views
   is_pinned: false
 - title: Stop Clicking 3 Times to Shut Down! (Do This Instead) ⚡💻
   youtube_id: 2xrg9forcVU
@@ -742,8 +773,8 @@ items:
     your files only showing blank, generic white icons instead of picture previews?
     Don't panic! You don't need third-party apps to...
   published_date: '2026-09-21'
-  views_count: 410
-  views_display: 410 views
+  views_count: 412
+  views_display: 412 views
   is_pinned: false
 - title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
   youtube_id: DOXHHy538RY
@@ -830,8 +861,8 @@ items:
   description: 'Windows acting weird, freezing, losing sound, or throwing random system
     errors? '
   published_date: '2026-09-18'
-  views_count: 342
-  views_display: 342 views
+  views_count: 343
+  views_display: 343 views
   is_pinned: false
 - title: Fix Slow File Transfer on Windows in 10 Seconds! ⚡📂
   youtube_id: yMCevIqwUP8
@@ -840,8 +871,8 @@ items:
   description: 'Is your Windows PC taking forever to copy large files, move folders,
     or transfer data between drives? '
   published_date: '2026-09-17'
-  views_count: 196
-  views_display: 196 views
+  views_count: 197
+  views_display: 197 views
   is_pinned: false
 - title: Password Protect Any USB Port on Windows! 🔒⚡
   youtube_id: arV4PTVe_mI
@@ -873,8 +904,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 377
-  views_display: 377 views
+  views_count: 379
+  views_display: 379 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -1344,8 +1375,8 @@ items:
     sysadmins to instantly access Computer Management, Device Manager, Registry, and
     Network Adapters.
   published_date: '2026-09-02'
-  views_count: 37
-  views_display: 37 views
+  views_count: 38
+  views_display: 38 views
   is_pinned: false
 - title: Access Remote Files Silently Without Remote Desktop! Windows Admin Shares
     (C$) Guide
