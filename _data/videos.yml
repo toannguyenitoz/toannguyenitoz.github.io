@@ -6,8 +6,8 @@ items:
   description: 'Is your document stuck in the print queue and refusing to delete?
     Stop restarting your PC over and over! '
   published_date: '2026-09-09'
-  views_count: 875
-  views_display: 875 views
+  views_count: 876
+  views_display: 876 views
   is_pinned: true
 - title: Bypass Windows 11 Microsoft Account Setup! (100% Offline Local Account Hack)
     💻🔓
@@ -18,19 +18,8 @@ items:
     account during setup? 🛑💻 Here is the secret built-in accessibility loophole that
     lets you create a 100% offline local user accoun...
   published_date: '2026-10-01'
-  views_count: 670
-  views_display: 670 views
-  is_pinned: true
-- title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
-  youtube_id: sSUxsPtwOfQ
-  duration: 00:39
-  category: Shorts
-  description: Is your PC taking forever to boot up or load into the desktop? Most
-    slow boot times are caused by hidden background apps launching on startup without
-    your permission!  Here is the secret Task Manag...
-  published_date: '2026-09-20'
-  views_count: 586
-  views_display: 586 views
+  views_count: 671
+  views_display: 671 views
   is_pinned: true
 - title: 'How to Get Meta MUSE AI Unlimited Accounts! (Code: QVFOTA) 🤖'
   youtube_id: HHu36Ixumt4
@@ -40,9 +29,9 @@ items:
     in under 60 seconds! Meta's brand-new autonomous agent, Muse AI, can take real-world
     actions, send messages, and work around...
   published_date: '2026-10-13'
-  views_count: 584
-  views_display: 584 views
-  is_pinned: false
+  views_count: 589
+  views_display: 589 views
+  is_pinned: true
 - title: Stop Running CHKDSK Like This! ❌ Windows Secret Drive Fix in 10s!
   youtube_id: M6ngG7JKlMo
   duration: 01:00
@@ -51,8 +40,8 @@ items:
     telling them to open Command Prompt and type "chkdsk C:". But if you look closely
     at your terminal, Windows warns: "Running...'
   published_date: '2026-10-13'
-  views_count: 97
-  views_display: 97 views
+  views_count: 99
+  views_display: 99 views
   is_pinned: false
 - title: 'Can''t Free Up C: Drive? ⚡ Recover 20GB+ Hidden Shadow Storage in 10s!'
   youtube_id: hFBoa82L0VM
@@ -82,8 +71,8 @@ items:
     or business documents? Stop! Microsoft Word has a built-in shortcut trick using
     [ Alt + X ] that transforms simple hex codes i...
   published_date: '2026-10-12'
-  views_count: 294
-  views_display: 294 views
+  views_count: 295
+  views_display: 295 views
   is_pinned: false
 - title: GPT vs MBR Explained in 50 Seconds! ⚡ Which Should You Choose?
   youtube_id: RB0PvZJBlN0
@@ -92,8 +81,8 @@ items:
   description: Formatting a new SSD or installing Windows and asked to choose between
     MBR and GPT? Here is the exact difference in 50 seconds!
   published_date: '2026-10-12'
-  views_count: 21
-  views_display: 21 views
+  views_count: 23
+  views_display: 23 views
   is_pinned: false
 - title: Forgot Windows Password? DON'T Format! Reset in 60s! 🛑⚡
   youtube_id: sav385DVll4
@@ -146,8 +135,8 @@ items:
     called Windows Sandbox? You can safely test suspicious files, run unknown software,
     and open virus links with ZERO risk to you...
   published_date: '2026-10-10'
-  views_count: 32
-  views_display: 32 views
+  views_count: 33
+  views_display: 33 views
   is_pinned: false
 - title: Stop Edge From Stealing Your FPS in 10s! ⚡🎮
   youtube_id: c52lpBLqzmE
@@ -168,8 +157,8 @@ items:
     on your Android phone or iPhone and paste it directly onto your Windows PC in
     less than a second? '
   published_date: '2026-10-09'
-  views_count: 65
-  views_display: 65 views
+  views_count: 70
+  views_display: 70 views
   is_pinned: false
 - title: Clean Messy Desktop & Downloads in 1 Click! ⚡📁
   youtube_id: MMAOydENcME
@@ -189,8 +178,8 @@ items:
     Did you know Windows 11 has a secret God Mode master folder that unifies and displays
     EVERY single application installed on ...
   published_date: '2026-10-09'
-  views_count: 41
-  views_display: 41 views
+  views_count: 43
+  views_display: 43 views
   is_pinned: false
 - title: Unlock Secret Built-in Super Administrator in Windows 11! ⚡🔑
   youtube_id: tB_DhKQox4E
@@ -273,8 +262,8 @@ items:
   description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
     a red ''X'' on the taskbar speaker icon? '
   published_date: '2026-10-06'
-  views_count: 313
-  views_display: 313 views
+  views_count: 315
+  views_display: 315 views
   is_pinned: false
 - title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
   youtube_id: rgzHPR-RW-M
@@ -439,8 +428,8 @@ items:
     tool that logs every process, driver, and network connection on your PC? Here
     is how to turn on Sysmon without downloading any...
   published_date: '2026-10-01'
-  views_count: 128
-  views_display: 128 views
+  views_count: 129
+  views_display: 129 views
   is_pinned: false
 - title: Get 1 Billion Free Tokens on Muse AI 🤯🔥
   youtube_id: PQD3ammOMFo
@@ -490,8 +479,8 @@ items:
     your CPU, RAM, Disk, and graphics card without downloading third-party software?
     Here is how to reveal your official Windows pe...
   published_date: '2026-09-30'
-  views_count: 499
-  views_display: 499 views
+  views_count: 498
+  views_display: 498 views
   is_pinned: false
 - title: Check Full PC Specs & Hardware in 10 Seconds! (Secret CMD Trick) ⚡💻
   youtube_id: O-BUqygNst0
@@ -641,8 +630,8 @@ items:
     from micro-stutters and input lag in Windows 11? Unlock full GPU capabilities
     with Hardware-Accelerated GPU Scheduling (HAGS)! '
   published_date: '2026-09-25'
-  views_count: 274
-  views_display: 274 views
+  views_count: 275
+  views_display: 275 views
   is_pinned: false
 - title: Speed Up Windows 11 Search Instantly! Secret Registry Hack! ⚡🔍
   youtube_id: R5OVkk6Sxjk
@@ -685,8 +674,8 @@ items:
     Configuration Data (BCD) store controls your entire startup sequence, device partitions,
     and OS loader parameters! Here is how...
   published_date: '2026-09-24'
-  views_count: 119
-  views_display: 119 views
+  views_count: 120
+  views_display: 120 views
   is_pinned: false
 - title: Unlock ALL CPU Cores in Windows 11 for Max Power! ⚡🔥
   youtube_id: ciyODfFn12k
@@ -784,8 +773,19 @@ items:
     your files only showing blank, generic white icons instead of picture previews?
     Don't panic! You don't need third-party apps to...
   published_date: '2026-09-21'
-  views_count: 417
-  views_display: 417 views
+  views_count: 419
+  views_display: 419 views
+  is_pinned: false
+- title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
+  youtube_id: sSUxsPtwOfQ
+  duration: 00:39
+  category: Shorts
+  description: Is your PC taking forever to boot up or load into the desktop? Most
+    slow boot times are caused by hidden background apps launching on startup without
+    your permission!  Here is the secret Task Manag...
+  published_date: '2026-09-20'
+  views_count: 586
+  views_display: 586 views
   is_pinned: false
 - title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
   youtube_id: DOXHHy538RY
@@ -828,8 +828,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 306
-  views_display: 306 views
+  views_count: 308
+  views_display: 308 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -915,8 +915,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 388
-  views_display: 388 views
+  views_count: 389
+  views_display: 389 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -1026,8 +1026,8 @@ items:
     on your system? You don't need expensive third-party antivirus to find stubborn
     rootkits. Just run mrt!
   published_date: '2026-09-13'
-  views_count: 494
-  views_display: 494 views
+  views_count: 495
+  views_display: 495 views
   is_pinned: false
 - title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
   youtube_id: meX4UKgM24M
@@ -1046,8 +1046,8 @@ items:
     Check whether your Windows license is genuine and permanent, or if it will suddenly
     expire in a few months!
   published_date: '2026-09-13'
-  views_count: 66
-  views_display: 66 views
+  views_count: 70
+  views_display: 70 views
   is_pinned: false
 - title: final shorts 40 create windows recovery toolkit bat
   youtube_id: 1xdaaTnKhHg
@@ -1066,8 +1066,8 @@ items:
     always back up your installed third-party drivers! Here is the built-in Windows
     pnputil trick to export every single driver to...
   published_date: '2026-09-12'
-  views_count: 78
-  views_display: 78 views
+  views_count: 79
+  views_display: 79 views
   is_pinned: false
 - title: Fix Slow Internet in 10 Seconds! Flush DNS Hack 🌐🚀
   youtube_id: biNTeQKBv_g
@@ -1099,8 +1099,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-11'
-  views_count: 202
-  views_display: 202 views
+  views_count: 203
+  views_display: 203 views
   is_pinned: false
 - title: 1-Click Script Cleans 20GB of Windows Junk!
   youtube_id: P_heOFPpEbI
@@ -1345,8 +1345,8 @@ items:
     health checks, SFC repairs, temp purge, drive health, and network diagnostics
     into a single script.
   published_date: '2026-09-07'
-  views_count: 98
-  views_display: 98 views
+  views_count: 99
+  views_display: 99 views
   is_pinned: false
 - title: 4 Secret Windows 11 Features You Must Turn On NOW! 💻🔥
   youtube_id: DnrB8j9iXPk
