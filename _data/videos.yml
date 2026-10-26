@@ -32,6 +32,17 @@ items:
   views_count: 625
   views_display: 625 views
   is_pinned: true
+- title: How Neural Networks Actually Learn (in 2 Minutes)
+  youtube_id: SwdxJzlWzeI
+  duration: 01:00
+  category: IT Support
+  description: A neural network doesn't learn the way your brain does. It learns by
+    measuring exactly how wrong it is — then nudging every connection a tiny bit,
+    over and over.
+  published_date: '2026-10-25'
+  views_count: 0
+  views_display: New
+  is_pinned: false
 - title: '🎉 Programmer’s Day 1024: ZCode is giving away 500 MILLION free tokens!'
   youtube_id: Y_G8pn_x3Vw
   duration: 01:00
