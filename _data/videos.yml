@@ -198,8 +198,8 @@ items:
     Did you know Windows 11 has a secret God Mode master folder that unifies and displays
     EVERY single application installed on ...
   published_date: '2026-10-09'
-  views_count: 43
-  views_display: 43 views
+  views_count: 44
+  views_display: 44 views
   is_pinned: false
 - title: Unlock Secret Built-in Super Administrator in Windows 11! ⚡🔑
   youtube_id: tB_DhKQox4E
@@ -209,8 +209,8 @@ items:
     hidden and disabled by default? If you ever get locked out of your PC, lose admin
     rights, or get hit with frustrating "Acce...
   published_date: '2026-10-08'
-  views_count: 148
-  views_display: 148 views
+  views_count: 149
+  views_display: 149 views
   is_pinned: false
 - title: Can PC A Ping PC B? 90% of IT Pros Fail This CCNA Question! ⚡🌐
   youtube_id: ZcjBZ4VLGRs
@@ -257,13 +257,13 @@ items:
   is_pinned: false
 - title: Check Every Driver Installed on PC in 5 Seconds! (DISM Secret) 🖥️⚡
   youtube_id: 1M6dI3kNQig
-  duration: 01:00
+  duration: 00:57
   category: Shorts
   description: Want to check every third-party OEM driver installed on your Windows
     11 or Windows 10 PC?
   published_date: '2026-10-07'
-  views_count: 80
-  views_display: 80 views
+  views_count: 81
+  views_display: 81 views
   is_pinned: false
 - title: Stop Paying for Remote Software! Windows Has It Built-In (MSRA) 💻🔒
   youtube_id: TaZI5lilFww
@@ -553,8 +553,8 @@ items:
     that they stay completely invisible even after enabling "Show hidden files" in
     File Explorer? 👁️🔒 '
   published_date: '2026-09-28'
-  views_count: 89
-  views_display: 89 views
+  views_count: 90
+  views_display: 90 views
   is_pinned: false
 - title: Windows Update Stuck Downloading? Try This Quick Fix! ⚡🛠️
   youtube_id: 0VgSdnNovoA
@@ -809,14 +809,14 @@ items:
   is_pinned: false
 - title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
   youtube_id: DOXHHy538RY
-  duration: 00:35
+  duration: 00:36
   category: Shorts
   description: Wi-Fi constantly dropping out or internet connection broken on Windows
     11 or 10? 🌐❌ Don't worry! Most Wi-Fi drops are caused by glitched network drivers
     or corrupted adapter settings. Here is how t...
   published_date: '2026-09-20'
-  views_count: 513
-  views_display: 513 views
+  views_count: 514
+  views_display: 514 views
   is_pinned: false
 - title: How to Test PC RAM for Errors & Fix Blue Screens! ⚡🛠️
   youtube_id: H2KkXwsfcgo
@@ -848,8 +848,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 358
-  views_display: 358 views
+  views_count: 365
+  views_display: 365 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -935,8 +935,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 397
-  views_display: 397 views
+  views_count: 421
+  views_display: 421 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -1385,8 +1385,8 @@ items:
   description: Secret Windows keyboard combinations that unlock hidden clipboard history,
     emoji pickers, and screen recording without extra software.
   published_date: '2026-09-06'
-  views_count: 82
-  views_display: 82 views
+  views_count: 83
+  views_display: 83 views
   is_pinned: false
 - title: PC FROZEN? 3 Emergency Keys To Rescue Your Windows! 🚨⚡
   youtube_id: DEpzPieoF6E
