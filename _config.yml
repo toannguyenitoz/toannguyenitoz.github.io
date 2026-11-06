@@ -11,7 +11,7 @@ author:
   brand: "Toan Nguyen IT Oz"
   tagline: "Practical IT Support. Real-World Solutions."
   subtagline: "Real-world IT knowledge, practical automation, and enterprise solutions from Adelaide, Australia."
-  title: "Enterprise Systems Administrator & Automation Specialist"
+  title: "IT Network Systems Administrator & Enterprise Specialist"
   bio: "Specializing in Windows, Microsoft 365, Intune, Active Directory, Azure Cloud, Networking, and PowerShell automation."
   location: "Adelaide, South Australia"
   email: "theodorenguyensa@gmail.com"
@@ -21,8 +21,9 @@ author:
   youtube_name: "Toan Nguyen IT Oz"
   avatar: "/assets/images/toan-avatar.jpg"
   certifications:
-    - "Microsoft Certified: Azure Fundamentals (AZ-900)"
+    - "\"Gold Medal – IT Networking\" (WorldSkills Australia SA 2026) – IT Network Systems Administration"
     - "Silver Medalist - Cloud Computing (WorldSkills Australia SA 2026)"
+    - "Microsoft Certified: Azure Fundamentals (AZ-900)"
 
 # SEO & Webmaster Verification
 keywords: "IT Support, Systems Administration, Windows Server, Active Directory, Microsoft 365, Azure Cloud, PowerShell Automation, Adelaide IT Support, Toan Nguyen IT OZ, Tech Tips"

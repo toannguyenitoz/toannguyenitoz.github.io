@@ -5004,3 +5004,34 @@ kbd {
 }
 
 
+
+/* Gold Credential Accents for WorldSkills Gold Medal */
+.cred-chip-gold {
+  border-color: rgba(234, 179, 8, 0.45) !important;
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.08) 0%, #FFFFFF 100%) !important;
+  box-shadow: 0 2px 8px rgba(234, 179, 8, 0.12);
+}
+.cred-chip-gold:hover {
+  border-color: #EAB308 !important;
+  box-shadow: 0 4px 16px rgba(234, 179, 8, 0.22);
+}
+[data-theme="dark"] .cred-chip-gold {
+  border-color: rgba(234, 179, 8, 0.4) !important;
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.12) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+  box-shadow: 0 2px 8px rgba(234, 179, 8, 0.1);
+}
+[data-theme="dark"] .cred-chip-gold:hover {
+  border-color: #FACC15 !important;
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.18) 0%, rgba(255, 255, 255, 0.04) 100%) !important;
+  box-shadow: 0 4px 16px rgba(234, 179, 8, 0.25);
+}
+.cert-pill-gold {
+  background: rgba(234, 179, 8, 0.12) !important;
+  border-color: rgba(234, 179, 8, 0.45) !important;
+  color: #B45309 !important;
+}
+[data-theme="dark"] .cert-pill-gold {
+  background: rgba(234, 179, 8, 0.16) !important;
+  border-color: rgba(234, 179, 8, 0.45) !important;
+  color: #FDE047 !important;
+}

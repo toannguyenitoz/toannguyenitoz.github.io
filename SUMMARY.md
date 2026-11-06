@@ -24,8 +24,10 @@ Website kết hợp 3 trụ cột giá trị cốt lõi:
 - [x] **Thiết kế giao diện hiện đại phong cách Azure Tech Dashboard:**
   - Hỗ trợ đầy đủ Dark Mode / Light Mode với bộ màu chuẩn Azure (`#0078D4`, `#38BDF8`, Dark Slate).
   - Tối ưu hóa layout 3 cột linh hoạt trên trang chủ (Left Sidebar, Center Articles Feed, Right Sidebar Videos & Contact).
-- [x] **Thẻ Thông Tin Tác Giả & Kết Nối (Contact & Connect):**
+- [x] **Thẻ Thông Tin Tác Giả & Kết Nối (Contact, Profile & Credential Badges):**
   - Hiển thị avatar, chức danh, địa điểm Adelaide, nút kết nối nhanh LinkedIn và đăng ký kênh YouTube.
+  - Cập nhật chứng chỉ và thành tích xuất sắc: **"Gold Medal – IT Networking" (WorldSkills Australia SA 2026)** – Chuyên ngành *IT Network Systems Administration*, kết hợp huy chương Bạc *WorldSkills Cloud Computing 2026* và chứng chỉ *Microsoft Certified: Azure Fundamentals (AZ-900)*.
+  - Tích hợp huy hiệu vàng danh dự (`.cred-chip-gold`, `.cert-pill-gold`) trên Header Hero Banner, Contact Card trang chủ và Box Tác giả cuối bài viết.
 - [x] **Khối Phân Tích Lượng Truy Cập (Traffic Analytics Card):**
   - Chuyển đổi 100% sang tiếng Anh chuyên ngành chuẩn Enterprise.
   - Tối ưu bố cục hàng ngang (Full-width Horizontal Rows), không bị co kéo hay vỡ layout trên thiết bị di động.
