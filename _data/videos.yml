@@ -60,8 +60,8 @@ items:
     telling them to open Command Prompt and type "chkdsk C:". But if you look closely
     at your terminal, Windows warns: "Running...'
   published_date: '2026-10-13'
-  views_count: 108
-  views_display: 108 views
+  views_count: 109
+  views_display: 109 views
   is_pinned: false
 - title: 'Can''t Free Up C: Drive? ⚡ Recover 20GB+ Hidden Shadow Storage in 10s!'
   youtube_id: hFBoa82L0VM
@@ -272,8 +272,8 @@ items:
   description: 'Stop paying expensive subscriptions for remote desktop software or
     installing sketchy third-party tools like TeamViewer or AnyDesk! '
   published_date: '2026-10-06'
-  views_count: 68
-  views_display: 68 views
+  views_count: 69
+  views_display: 69 views
   is_pinned: false
 - title: Fix "No Sound / Red X" on Windows PC in 5 Seconds! 🔇➡️🔊
   youtube_id: g0_dLBRPzBw
@@ -282,8 +282,8 @@ items:
   description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
     a red ''X'' on the taskbar speaker icon? '
   published_date: '2026-10-06'
-  views_count: 323
-  views_display: 323 views
+  views_count: 330
+  views_display: 330 views
   is_pinned: false
 - title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
   youtube_id: rgzHPR-RW-M
@@ -542,8 +542,8 @@ items:
   description: Tired of clicking Start, Power, then Shutdown every single time? Create
     a clean 1-click desktop shutdown button that turns off your PC instantly! ⚡💻
   published_date: '2026-09-28'
-  views_count: 58
-  views_display: 58 views
+  views_count: 59
+  views_display: 59 views
   is_pinned: false
 - title: Windows Hides Files Deeply! Reveal Them With This Secret 🔓👁️
   youtube_id: SiKTGaqtSJ0
@@ -760,8 +760,8 @@ items:
     your device in Windows Device Manager? ⚠️❌ That warning means Windows has disabled
     the hardware due to driver corruption, missin...
   published_date: '2026-09-22'
-  views_count: 357
-  views_display: 357 views
+  views_count: 359
+  views_display: 359 views
   is_pinned: false
 - title: Fix Slow Internet & Load Websites Fast! 🌐⚡
   youtube_id: uoNOLUA69u0
@@ -848,8 +848,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 382
-  views_display: 382 views
+  views_count: 395
+  views_display: 395 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -935,8 +935,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 422
-  views_display: 422 views
+  views_count: 432
+  views_display: 432 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -1013,8 +1013,8 @@ items:
     or a temporary expiring KMS volume key? With one secret command in Windows Terminal
     or CMD, you can reveal your full activation ...
   published_date: '2026-09-14'
-  views_count: 50
-  views_display: 50 views
+  views_count: 51
+  views_display: 51 views
   is_pinned: false
 - title: Secret Built-in Windows Screen Recorder Nobody Knows! 📸🖥️
   youtube_id: kSMvbZMPVQw
@@ -1241,8 +1241,8 @@ items:
     with Toan — your practical guide to Windows, Microsoft 365, Active Directory,
     Intune, PowerShell, Networking \u0026 SysAdmin...
   published_date: '2026-09-10'
-  views_count: 67
-  views_display: 67 views
+  views_count: 69
+  views_display: 69 views
   is_pinned: false
 - title: Stop Windows 11 Auto-Installing Junk Bloatware! 🚫 | Toan Nguyen IT OZ
   youtube_id: vtGCUUkMOQc
