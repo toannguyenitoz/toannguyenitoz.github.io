@@ -1,6 +1,10 @@
 # ToanNguyen.IT | Systems Administration & Cloud Engineering Website
 
-Website cá nhân và nền tảng tri thức chuyên sâu về **IT Support, Quản trị hệ thống Windows/Linux, Microsoft 365, Azure Cloud và Tự động hóa với PowerShell** của người dùng **toannguyenitoz**.
+[![WorldSkills Gold Medal](https://img.shields.io/badge/🥇_WorldSkills_Australia-Gold_Medal_–_IT_Networking_SA_2026-FFD700?style=for-the-badge)](https://www.worldskills.org.au/)
+[![WorldSkills Silver Medal](https://img.shields.io/badge/🥈_WorldSkills_Australia-Cloud_Computing_SA_2026-C0C0C0?style=for-the-badge)](https://www.worldskills.org.au/)
+[![Azure Fundamentals](https://img.shields.io/badge/Microsoft_Certified-Azure_Fundamentals_(AZ--900)-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://learn.microsoft.com/en-us/certifications/azure-fundamentals/)
+
+Website cá nhân và cổng tri thức chuyên sâu về **IT Support, Quản trị hệ thống Windows/Linux, Microsoft 365, Azure Cloud và Tự động hóa với PowerShell** của **Toan Nguyen** (Toan Nguyen IT Oz, Adelaide, South Australia).
 
 - **URL chính thức:** [https://toannguyenitoz.github.io](https://toannguyenitoz.github.io)
 - **Hệ thống Quản trị Nội dung (CMS):** [https://toannguyenitoz.github.io/admin](https://toannguyenitoz.github.io/admin)
