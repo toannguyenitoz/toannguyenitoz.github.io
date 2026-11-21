@@ -29,8 +29,8 @@ items:
     account during setup? 🛑💻 Here is the secret built-in accessibility loophole that
     lets you create a 100% offline local user accoun...
   published_date: '2026-10-01'
-  views_count: 729
-  views_display: 729 views
+  views_count: 730
+  views_display: 730 views
   is_pinned: true
 - title: How to Install Free Android TV Apps with Downloader Codes (Step by Step)
   youtube_id: H9OvSIPBB8c
@@ -40,8 +40,8 @@ items:
     TV / Google TV apps — two easy ways: with a Downloader code, or with the APK file.
     No ads, no accounts, and the apps update them...'
   published_date: '2026-11-11'
-  views_count: 132
-  views_display: 132 views
+  views_count: 139
+  views_display: 139 views
   is_pinned: false
 - title: How Neural Networks Actually Learn (in 2 Minutes)
   youtube_id: SwdxJzlWzeI
@@ -51,8 +51,8 @@ items:
     measuring exactly how wrong it is — then nudging every connection a tiny bit,
     over and over.
   published_date: '2026-10-25'
-  views_count: 13
-  views_display: 13 views
+  views_count: 15
+  views_display: 15 views
   is_pinned: false
 - title: '🎉 Programmer’s Day 1024: ZCode is giving away 500 MILLION free tokens!'
   youtube_id: Y_G8pn_x3Vw
@@ -71,8 +71,8 @@ items:
     telling them to open Command Prompt and type "chkdsk C:". But if you look closely
     at your terminal, Windows warns: "Running...'
   published_date: '2026-10-13'
-  views_count: 122
-  views_display: 122 views
+  views_count: 123
+  views_display: 123 views
   is_pinned: false
 - title: 'Can''t Free Up C: Drive? ⚡ Recover 20GB+ Hidden Shadow Storage in 10s!'
   youtube_id: hFBoa82L0VM
@@ -81,8 +81,8 @@ items:
   description: 'Is your Windows 11 or Windows 10 C: Drive stuck in the red, but Disk
     Cleanup deletes nothing?'
   published_date: '2026-10-13'
-  views_count: 67
-  views_display: 67 views
+  views_count: 70
+  views_display: 70 views
   is_pinned: false
 - title: Can't Delete File "In Use"? ⚡ Windows Secret Unlocker in 10s!
   youtube_id: gh2xyPOtCbQ
@@ -436,8 +436,8 @@ items:
     anything? 🛑💻 It's likely hidden Windows update backups inside the WinSxS Component
     Store! Here is the native administrator DI...
   published_date: '2026-10-02'
-  views_count: 175
-  views_display: 175 views
+  views_count: 176
+  views_display: 176 views
   is_pinned: false
 - title: Unlock All CPU Cores in Windows 11? (The Viral msconfig Trick Explained!)
     ⚡💻
@@ -683,8 +683,8 @@ items:
     diagnostic data about the websites you browse, how you use apps, and detailed
     device activity back to Microsoft? Here is how to ...
   published_date: '2026-09-24'
-  views_count: 108
-  views_display: 108 views
+  views_count: 109
+  views_display: 109 views
   is_pinned: false
 - title: How to Check If Your Windows 11 License is Genuine! 🔑⚡
   youtube_id: QalbGmBg-NY
@@ -694,8 +694,8 @@ items:
     to verify if your Windows 11 installation has an official, permanent genuine activation
     or a temporary volume license that will...
   published_date: '2026-09-24'
-  views_count: 170
-  views_display: 170 views
+  views_count: 171
+  views_display: 171 views
   is_pinned: false
 - title: Secret Boot Configuration in Windows 11 You Didn't Know! 💻⚡
   youtube_id: OaYSWxTyLV4
@@ -705,8 +705,8 @@ items:
     Configuration Data (BCD) store controls your entire startup sequence, device partitions,
     and OS loader parameters! Here is how...
   published_date: '2026-09-24'
-  views_count: 125
-  views_display: 125 views
+  views_count: 126
+  views_display: 126 views
   is_pinned: false
 - title: Unlock ALL CPU Cores in Windows 11 for Max Power! ⚡🔥
   youtube_id: ciyODfFn12k
@@ -771,8 +771,8 @@ items:
     your device in Windows Device Manager? ⚠️❌ That warning means Windows has disabled
     the hardware due to driver corruption, missin...
   published_date: '2026-09-22'
-  views_count: 408
-  views_display: 408 views
+  views_count: 413
+  views_display: 413 views
   is_pinned: false
 - title: Fix Slow Internet & Load Websites Fast! 🌐⚡
   youtube_id: uoNOLUA69u0
@@ -804,8 +804,8 @@ items:
     your files only showing blank, generic white icons instead of picture previews?
     Don't panic! You don't need third-party apps to...
   published_date: '2026-09-21'
-  views_count: 449
-  views_display: 449 views
+  views_count: 450
+  views_display: 450 views
   is_pinned: false
 - title: Make Windows Boot 10X Faster in 10 Seconds! ⚡🚀
   youtube_id: sSUxsPtwOfQ
@@ -859,8 +859,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 478
-  views_display: 478 views
+  views_count: 483
+  views_display: 483 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -946,8 +946,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 467
-  views_display: 467 views
+  views_count: 468
+  views_display: 468 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -1057,8 +1057,8 @@ items:
     on your system? You don't need expensive third-party antivirus to find stubborn
     rootkits. Just run mrt!
   published_date: '2026-09-13'
-  views_count: 505
-  views_display: 505 views
+  views_count: 506
+  views_display: 506 views
   is_pinned: false
 - title: Why Your PC Never Really Turns Off! (And How to Fix It) ⚡🛑
   youtube_id: meX4UKgM24M
@@ -1108,8 +1108,8 @@ items:
     internet is fine? Your Windows DNS cache is probably full of stale entries. Here
     is how to flush it in seconds with ipconfig /flu...
   published_date: '2026-09-12'
-  views_count: 110
-  views_display: 110 views
+  views_count: 111
+  views_display: 111 views
   is_pinned: false
 - title: How to Reveal Saved Wi-Fi Passwords in 3 Seconds! 🔑📶
   youtube_id: 7kNy54_OoQs
@@ -1376,8 +1376,8 @@ items:
     health checks, SFC repairs, temp purge, drive health, and network diagnostics
     into a single script.
   published_date: '2026-09-07'
-  views_count: 102
-  views_display: 102 views
+  views_count: 103
+  views_display: 103 views
   is_pinned: false
 - title: 4 Secret Windows 11 Features You Must Turn On NOW! 💻🔥
   youtube_id: DnrB8j9iXPk
@@ -1417,8 +1417,8 @@ items:
     sysadmins to instantly access Computer Management, Device Manager, Registry, and
     Network Adapters.
   published_date: '2026-09-02'
-  views_count: 42
-  views_display: 42 views
+  views_count: 43
+  views_display: 43 views
   is_pinned: false
 - title: Access Remote Files Silently Without Remote Desktop! Windows Admin Shares
     (C$) Guide
