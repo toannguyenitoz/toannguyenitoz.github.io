@@ -40,8 +40,8 @@ items:
     TV / Google TV apps — two easy ways: with a Downloader code, or with the APK file.
     No ads, no accounts, and the apps update them...'
   published_date: '2026-11-11'
-  views_count: 182
-  views_display: 182 views
+  views_count: 184
+  views_display: 184 views
   is_pinned: false
 - title: How Neural Networks Actually Learn (in 2 Minutes)
   youtube_id: SwdxJzlWzeI
@@ -71,8 +71,8 @@ items:
     telling them to open Command Prompt and type "chkdsk C:". But if you look closely
     at your terminal, Windows warns: "Running...'
   published_date: '2026-10-13'
-  views_count: 132
-  views_display: 132 views
+  views_count: 133
+  views_display: 133 views
   is_pinned: false
 - title: 'Can''t Free Up C: Drive? ⚡ Recover 20GB+ Hidden Shadow Storage in 10s!'
   youtube_id: hFBoa82L0VM
@@ -198,8 +198,8 @@ items:
   description: 'Is your PC''s Downloads or Desktop folder a complete chaotic mess
     with hundreds of loose files? Stop wasting hours sorting them manually! '
   published_date: '2026-10-09'
-  views_count: 59
-  views_display: 59 views
+  views_count: 60
+  views_display: 60 views
   is_pinned: false
 - title: Unlock Secret "Applications" Master Folder in Windows 11! ⚡📁
   youtube_id: rCEB6ofi2Gs
@@ -241,8 +241,8 @@ items:
     "We''re sorry, but Excel has run into an error that is preventing it from working
     correctly. Excel will need to be closed as a resul...'
   published_date: '2026-10-08'
-  views_count: 189
-  views_display: 189 views
+  views_count: 193
+  views_display: 193 views
   is_pinned: false
 - title: PC Feeling Slower Lately? Clean This Secret Prefetch Cache! ⚡💻
   youtube_id: 5CiPDK7f-g4
@@ -510,8 +510,8 @@ items:
     your CPU, RAM, Disk, and graphics card without downloading third-party software?
     Here is how to reveal your official Windows pe...
   published_date: '2026-09-30'
-  views_count: 561
-  views_display: 561 views
+  views_count: 562
+  views_display: 562 views
   is_pinned: false
 - title: Check Full PC Specs & Hardware in 10 Seconds! (Secret CMD Trick) ⚡💻
   youtube_id: O-BUqygNst0
@@ -661,8 +661,8 @@ items:
     from micro-stutters and input lag in Windows 11? Unlock full GPU capabilities
     with Hardware-Accelerated GPU Scheduling (HAGS)! '
   published_date: '2026-09-25'
-  views_count: 297
-  views_display: 297 views
+  views_count: 298
+  views_display: 298 views
   is_pinned: false
 - title: Speed Up Windows 11 Search Instantly! Secret Registry Hack! ⚡🔍
   youtube_id: R5OVkk6Sxjk
@@ -804,8 +804,8 @@ items:
     your files only showing blank, generic white icons instead of picture previews?
     Don't panic! You don't need third-party apps to...
   published_date: '2026-09-21'
-  views_count: 451
-  views_display: 451 views
+  views_count: 452
+  views_display: 452 views
   is_pinned: false
 - title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
   youtube_id: DOXHHy538RY
@@ -848,8 +848,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 517
-  views_display: 517 views
+  views_count: 525
+  views_display: 525 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -935,8 +935,8 @@ items:
     when you click Sync Now in Date & Time Settings? That means the Windows Time service
     (w32time) has stopped running! Here is...
   published_date: '2026-09-16'
-  views_count: 480
-  views_display: 480 views
+  views_count: 482
+  views_display: 482 views
   is_pinned: false
 - title: Create a 15-in-1 Windows Recovery Toolkit in 10 Seconds! 🛠️💻
   youtube_id: CANOV6ofT0s
@@ -1450,8 +1450,8 @@ items:
   description: High-productivity shortcuts and window management techniques designed
     to supercharge daily workflows for both power users and enterprise IT personnel.
   published_date: '2026-08-28'
-  views_count: 11
-  views_display: 11 views
+  views_count: 12
+  views_display: 12 views
   is_pinned: false
 - title: IT Support Quiz Episode 1
   youtube_id: whs3lM6KiUI
@@ -1494,6 +1494,6 @@ items:
     safeguard confidential enterprise data and corporate domain credentials whenever
     stepping away.
   published_date: '2026-08-15'
-  views_count: 37
-  views_display: 37 views
+  views_count: 38
+  views_display: 38 views
   is_pinned: false
