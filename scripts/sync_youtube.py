@@ -26,6 +26,10 @@ VIDEOS_FILE = os.path.join(BASE_DIR, "_data", "videos.yml")
 CHANNEL_ID = "UCWmu7TK9cx0AH17OrghZZSA"
 RSS_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 
+# Videos deliberately excluded from the site (e.g. removed from featured):
+# HHu36Ixumt4 = "How to Get Meta MUSE AI Unlimited Accounts! (Code: QVFOTA)"
+EXCLUDED_VIDEO_IDS = {"HHu36Ixumt4"}
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -133,6 +137,9 @@ def sync_channel_videos():
     deduped_existing = []
     for item in existing_items:
         vid = item.get("youtube_id")
+        if vid in EXCLUDED_VIDEO_IDS:
+            print(f"[-] Dropping excluded video: [{vid}] {item.get('title')}")
+            continue
         if vid and vid not in seen_ids:
             seen_ids.add(vid)
             deduped_existing.append(item)
@@ -162,7 +169,7 @@ def sync_channel_videos():
             published = e.find('atom:published', ns).text[:10]
             desc_rss = e.find('media:group/media:description', ns).text or ""
 
-            if vid_id in seen_ids:
+            if vid_id in seen_ids or vid_id in EXCLUDED_VIDEO_IDS:
                 continue
 
             print(f"[+] Discovered NEW YouTube video: [{vid_id}] {raw_title}")
