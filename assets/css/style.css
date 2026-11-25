@@ -2989,6 +2989,7 @@ kbd {
   border-radius: var(--radius-md);
   padding: 10px 14px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  min-width: 0;
   transition: all var(--transition-fast);
 }
 
@@ -3017,6 +3018,8 @@ kbd {
 .cred-desc {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .cred-desc strong {
@@ -3852,6 +3855,9 @@ kbd {
     grid-column: span 2;
     order: -1;
   }
+  .header-banner-creds {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 800px) {
@@ -4254,7 +4260,7 @@ kbd {
   gap: 16px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .trust-metrics-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4274,6 +4280,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
   transition: all var(--transition-fast);
 }
 
@@ -4300,6 +4307,8 @@ kbd {
 .metric-text-wrap {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .metric-title {

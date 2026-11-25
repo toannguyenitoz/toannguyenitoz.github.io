@@ -19,7 +19,7 @@ items:
   published_date: '2026-10-13'
   views_count: 933
   views_display: 933 views
-  is_pinned: true
+  is_pinned: false
 - title: Bypass Windows 11 Microsoft Account Setup! (100% Offline Local Account Hack)
     💻🔓
   youtube_id: iEz-AgbR8Mk
@@ -817,7 +817,7 @@ items:
   published_date: '2026-09-20'
   views_count: 590
   views_display: 590 views
-  is_pinned: false
+  is_pinned: true
 - title: Fix No Wi-Fi & Internet Drops in Windows 11! 🌐⚡
   youtube_id: DOXHHy538RY
   duration: 00:36
@@ -1054,8 +1054,9 @@ items:
   duration: 00:33
   category: Shorts
   description: Did you know Windows has a hidden, free malware scanner already pre-installed
-    on your system? You don't need expensive third-party antivirus to find stubborn
-    rootkits. Just run mrt!
+    on your system? MRT (Microsoft Malicious Software Removal Tool) only removes some
+    prevalent malware — it is not a full antivirus and cannot reliably find rootkits.
+    For full protection, run a full scan with Microsoft Defender Antivirus.
   published_date: '2026-09-13'
   views_count: 506
   views_display: 506 views

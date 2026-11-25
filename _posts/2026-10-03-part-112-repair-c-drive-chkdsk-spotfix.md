@@ -50,7 +50,7 @@ If filesystem corruption exists, running a naked `chkdsk` leaves the damage comp
 In the days of Windows 7 and Windows Server 2008, repairing drive `C:` with `chkdsk /f /r` was a nightmare:
 * The system locked the drive and forced a reboot.
 * The computer stayed stuck at a black screen counting percentage for 3 to 8 hours.
-* If power cut out during the scan, the entire partition table could be permanently destroyed.
+* If power cut out during the scan, the repair would stop mid-way and, in rare cases, could leave filesystem corruption behind — but chkdsk itself does not destroy the partition table.
 
 Fortunately, modern Windows (Windows 10, 11, and Windows Server 2016–2025) features **Self-Healing NTFS**. You no longer need to lock down an entire workstation or server for half a day to repair filesystem anomalies.
 

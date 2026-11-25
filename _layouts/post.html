@@ -42,16 +42,16 @@ layout: default
       </div>
       <div class="series-top-controls">
         {% if top_prev_post %}
-          <a href="{{ top_prev_post.url | relative_url }}" class="series-pill-btn prev-btn" title="Lùi lại Part {{ top_prev_post.part }}: {{ top_prev_post.title }}">
-            ← Lùi Part {{ top_prev_post.part }}
+          <a href="{{ top_prev_post.url | relative_url }}" class="series-pill-btn prev-btn" title="Go back to Part {{ top_prev_post.part }}: {{ top_prev_post.title }}">
+            ← Back to Part {{ top_prev_post.part }}
           </a>
         {% endif %}
-        <a href="{{ '/articles/' | relative_url }}?cat=Tips+%26+Tricks" class="series-pill-btn hub-btn" title="Xem tất cả các phần trong Series">
-          Toàn bộ Series (102+)
+        <a href="{{ '/articles/' | relative_url }}?cat=Tips+%26+Tricks" class="series-pill-btn hub-btn" title="View all parts in the series">
+          Full Series (Parts 1–112)
         </a>
         {% if top_next_post %}
-          <a href="{{ top_next_post.url | relative_url }}" class="series-pill-btn next-btn" title="Lên tiếp Part {{ top_next_post.part }}: {{ top_next_post.title }}">
-            Lên Part {{ top_next_post.part }} →
+          <a href="{{ top_next_post.url | relative_url }}" class="series-pill-btn next-btn" title="Continue to Part {{ top_next_post.part }}: {{ top_next_post.title }}">
+            Go to Part {{ top_next_post.part }} →
           </a>
         {% endif %}
       </div>
@@ -84,7 +84,7 @@ layout: default
       <div class="meta-details">
         <div class="author-name-row">
           <span class="author-name">{{ page.author | default: site.author.name }}</span>
-          <span class="author-sub-title">• Systems Administrator</span>
+          <span class="author-sub-title">• IT Support Specialist</span>
         </div>
         <div class="meta-sub">
           <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -129,7 +129,7 @@ layout: default
           Windows Tips &amp; Tricks — Part {{ page.part }}
         </h4>
         <a href="{{ '/articles/' | relative_url }}?cat=Tips+%26+Tricks" class="series-hub-link">
-          Browse All 102+ Parts in Series →
+          Browse All Parts in Series →
         </a>
       </div>
 
@@ -138,27 +138,27 @@ layout: default
         <a href="{{ prev_post.url | relative_url }}" class="series-nav-card series-prev" title="Part {{ prev_post.part }}: {{ prev_post.title }}">
           <span class="series-arrow">←</span>
           <div class="series-meta">
-            <span class="series-label">← Lùi lại • Part {{ prev_post.part }}</span>
+            <span class="series-label">← Previous • Part {{ prev_post.part }}</span>
             <span class="series-card-title">{{ prev_post.title | remove: "Windows Tips & Tricks – " }}</span>
           </div>
         </a>
         {% else %}
         <div class="series-nav-card series-disabled">
-          <span class="series-label">Đầu danh sách</span>
+          <span class="series-label">Start of series</span>
         </div>
         {% endif %}
 
         {% if next_post %}
         <a href="{{ next_post.url | relative_url }}" class="series-nav-card series-next" title="Part {{ next_post.part }}: {{ next_post.title }}">
           <div class="series-meta" style="text-align: right;">
-            <span class="series-label">Tiếp theo • Part {{ next_post.part }} →</span>
+            <span class="series-label">Next • Part {{ next_post.part }} →</span>
             <span class="series-card-title">{{ next_post.title | remove: "Windows Tips & Tricks – " }}</span>
           </div>
           <span class="series-arrow">→</span>
         </a>
         {% else %}
         <div class="series-nav-card series-disabled" style="text-align: right;">
-          <span class="series-label">Mới nhất (Part {{ current_part }})</span>
+          <span class="series-label">Latest (Part {{ current_part }})</span>
         </div>
         {% endif %}
       </div>

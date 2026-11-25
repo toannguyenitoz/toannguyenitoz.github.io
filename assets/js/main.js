@@ -210,6 +210,17 @@
     const viewCountEl = document.getElementById('viewCount');
     if (!viewCountEl) return;
 
+    // Hide the view counter entirely while the count is still tiny
+    // (e.g. a brand-new article showing "2 views" adds no credibility).
+    function setViewCount(n) {
+      var container = document.getElementById('postViewsContainer');
+      if (n < 10) {
+        if (container) container.style.display = 'none';
+        return;
+      }
+      viewCountEl.innerText = Number(n).toLocaleString('en-US');
+    }
+
     // Track traffic source (Referrer: LinkedIn, Google, Direct)
     const referrer = document.referrer || 'Direct';
     if (window.gtag) {
@@ -228,7 +239,7 @@
       try {
         const { data, error } = await supabaseClient.rpc('increment_page_view', { p_slug: postSlug });
         if (!error && data) {
-          viewCountEl.innerText = Number(data).toLocaleString('en-US');
+          setViewCount(Number(data));
           return;
         }
       } catch (err) {
@@ -243,7 +254,7 @@
       if (countRes.ok) {
         const result = await countRes.json();
         if (result && typeof result.count === 'number') {
-          viewCountEl.innerText = result.count.toLocaleString('en-US');
+          setViewCount(result.count);
           return;
         }
       }
@@ -257,9 +268,9 @@
       let currentViews = parseInt(localStorage.getItem(localKey) || '1', 10);
       currentViews += 1;
       localStorage.setItem(localKey, currentViews.toString());
-      viewCountEl.innerText = currentViews.toLocaleString('en-US');
+      setViewCount(currentViews);
     } catch (storageErr) {
-      viewCountEl.innerText = '1';
+      setViewCount(1);
     }
   }
 
@@ -651,43 +662,52 @@
       submitBtn.innerHTML = '<span>SIGNING UP...</span>';
     }
 
-    // Store in LocalStorage for client persistence
-    try {
-      const stored = JSON.parse(localStorage.getItem('toannguyen_newsletter_subs') || '[]');
-      if (!stored.includes(email)) {
-        stored.push(email);
-        localStorage.setItem('toannguyen_newsletter_subs', JSON.stringify(stored));
-      }
-    } catch (err) {
-      console.warn('LocalStorage error:', err);
-    }
+    // NOTE: the email address is never stored in this browser's localStorage.
+    // It is only sent to Supabase below, and success is shown only if that save works.
 
-    // Optional Supabase submission if active
-    if (typeof supabaseClient !== 'undefined' && supabaseClient) {
-      try {
-        supabaseClient.from('subscribers').insert([{ email: email, created_at: new Date().toISOString() }]).then(function() {});
-      } catch (err) {
-        // silent failover to local
+    var subscribeBtnHtml = '<span>Subscribe</span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+
+    function showSubscribeError(message) {
+      feedbackBox.className = 'newsletter-feedback error';
+      feedbackBox.textContent = message;
+      feedbackBox.style.display = 'block';
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = subscribeBtnHtml;
       }
     }
 
-    setTimeout(function () {
+    function showSubscribeSuccess() {
       feedbackBox.className = 'newsletter-feedback success';
       feedbackBox.innerHTML = '🎉 <strong>Awesome! You are subscribed!</strong><br>Expect top-tier tech guides in your inbox soon.';
       feedbackBox.style.display = 'block';
-
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<span>Subscribed ✓</span>';
       }
       emailInput.value = '';
-
       setTimeout(function () {
         if (submitBtn) {
-          submitBtn.innerHTML = '<span>Subscribe</span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+          submitBtn.innerHTML = subscribeBtnHtml;
         }
       }, 5000);
-    }, 600);
+    }
+
+    // Only report success when the Supabase save actually succeeds.
+    if (typeof supabaseClient !== 'undefined' && supabaseClient) {
+      supabaseClient.from('subscribers').insert([{ email: email, created_at: new Date().toISOString() }]).then(function (result) {
+        if (result && result.error) {
+          showSubscribeError('Sorry — we could not save your subscription. Please try again later.');
+        } else {
+          showSubscribeSuccess();
+        }
+      }).catch(function () {
+        showSubscribeError('Sorry — we could not save your subscription. Please try again later.');
+      });
+    } else {
+      // No backend available — never pretend the signup worked.
+      showSubscribeError('Sorry — subscriptions are temporarily unavailable. Please try again later.');
+    }
 
     return false;
   };
