@@ -40,8 +40,8 @@ items:
     TV / Google TV apps — two easy ways: with a Downloader code, or with the APK file.
     No ads, no accounts, and the apps update them...'
   published_date: '2026-11-11'
-  views_count: 184
-  views_display: 184 views
+  views_count: 188
+  views_display: 188 views
   is_pinned: false
 - title: How Neural Networks Actually Learn (in 2 Minutes)
   youtube_id: SwdxJzlWzeI
@@ -71,8 +71,8 @@ items:
     telling them to open Command Prompt and type "chkdsk C:". But if you look closely
     at your terminal, Windows warns: "Running...'
   published_date: '2026-10-13'
-  views_count: 133
-  views_display: 133 views
+  views_count: 135
+  views_display: 135 views
   is_pinned: false
 - title: 'Can''t Free Up C: Drive? ⚡ Recover 20GB+ Hidden Shadow Storage in 10s!'
   youtube_id: hFBoa82L0VM
@@ -293,8 +293,8 @@ items:
   description: 'Did your Windows 11 or Windows 10 PC suddenly lose all sound with
     a red ''X'' on the taskbar speaker icon? '
   published_date: '2026-10-06'
-  views_count: 352
-  views_display: 352 views
+  views_count: 358
+  views_display: 358 views
   is_pinned: false
 - title: Fix "Antimalware Service High CPU" in 10 Seconds! 🛑🛡️ (Ep. 100 Special)
   youtube_id: rgzHPR-RW-M
@@ -304,8 +304,8 @@ items:
     CPU, locking up your system, and making your laptop fan sound like a jet engine?
     🛑🛡️
   published_date: '2026-10-06'
-  views_count: 164
-  views_display: 164 views
+  views_count: 167
+  views_display: 167 views
   is_pinned: false
 - title: Shut Down Laptop in 2 Sec Without a Mouse! (Win + X, U, U) 🛑⚡
   youtube_id: iOuB2AomGWE
@@ -771,8 +771,8 @@ items:
     your device in Windows Device Manager? ⚠️❌ That warning means Windows has disabled
     the hardware due to driver corruption, missin...
   published_date: '2026-09-22'
-  views_count: 428
-  views_display: 428 views
+  views_count: 429
+  views_display: 429 views
   is_pinned: false
 - title: Fix Slow Internet & Load Websites Fast! 🌐⚡
   youtube_id: uoNOLUA69u0
@@ -848,8 +848,8 @@ items:
     driver causing Blue Screens (BSOD)? Here is how to use Windows built-in PnP Utility
     (pnputil) in Command Prompt to permane...
   published_date: '2026-09-19'
-  views_count: 525
-  views_display: 525 views
+  views_count: 529
+  views_display: 529 views
   is_pinned: false
 - title: Purge Gigabytes of Windows Junk Files with 1 Secret CMD Command! 🧹⚡
   youtube_id: ARNGuhkcXY8
@@ -913,8 +913,8 @@ items:
     on Windows without installing any third-party software? With a simple Registry
     key tweak or automated script, you can stop anyone...
   published_date: '2026-09-17'
-  views_count: 46
-  views_display: 46 views
+  views_count: 47
+  views_display: 47 views
   is_pinned: false
 - title: Save Your PC from BSOD! Enable Windows Recovery in 5 Seconds 🛡️💻
   youtube_id: wnYWw9YmKOc
@@ -1419,8 +1419,8 @@ items:
     ADMIN$) over SMB to inspect event logs, retrieve files, and deploy scripts without
     disrupting active users.
   published_date: '2026-09-01'
-  views_count: 27
-  views_display: 27 views
+  views_count: 28
+  views_display: 28 views
   is_pinned: false
 - title: How to Check Your RAM Before Upgrading (PowerShell Guide)
   youtube_id: OP0EuItOREc
